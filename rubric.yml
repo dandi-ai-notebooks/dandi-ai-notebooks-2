@@ -1,0 +1,209 @@
+questions:
+  - name: describe-dandiset
+    version: 1
+    question: How well does the notebook describe the Dandiset?
+    rubric:
+      - score: 1
+        description: No description of the Dandiset is provided
+      - score: 2
+        description: Mentions only the Dandiset ID
+      - score: 3
+        description: Mentions the Dandiset ID and title
+      - score: 4
+        description: Provides basic information about the Dandiset content
+      - score: 5
+        description: Includes title, ID, and a brief overview
+      - score: 6
+        description: Describes the Dandiset purpose and basic contents
+      - score: 7
+        description: Details the Dandiset purpose, contents, and basic metadata
+      - score: 8
+        description: Provides comprehensive description of Dandiset contents and structure
+      - score: 9
+        description: Detailed description including purpose, contents, and key metadata fields
+      - score: 10
+        description: Clear, comprehensive description including title, ID, purpose, contents and data organization
+
+  - name: load-dandiset
+    version: 1
+    question: How well does the notebook show how to load information about the dandiset?
+    rubric:
+      - score: 1
+        description: No code for loading Dandiset information
+      - score: 2
+        description: Attempts to load but code fails to execute
+      - score: 3
+        description: Code executes but with significant errors
+      - score: 4
+        description: Successfully loads Dandiset ID
+      - score: 5
+        description: Loads Dandiset with minimal metadata
+      - score: 6
+        description: Loads and displays basic metadata fields
+      - score: 7
+        description: Successfully loads and explores multiple metadata fields
+      - score: 8
+        description: Demonstrates thorough metadata exploration with explanations
+      - score: 9
+        description: Comprehensive metadata loading with field descriptions
+      - score: 10
+        description: Complete demonstration of loading and working with all key metadata fields
+
+  - name: load-dandiset-assets
+    version: 1
+    question: How well does the notebook show how to load assets of the Dandiset?
+    rubric:
+      - score: 1
+        description: No code for loading Dandiset assets
+      - score: 2
+        description: Attempts to load assets but code fails
+      - score: 3
+        description: Code runs with significant errors
+      - score: 4
+        description: Successfully lists available assets
+      - score: 5
+        description: Loads basic asset information
+      - score: 6
+        description: Demonstrates loading specific assets
+      - score: 7
+        description: Shows how to access asset metadata
+      - score: 8
+        description: Explores multiple asset types with examples
+      - score: 9
+        description: Comprehensive asset handling with metadata exploration
+      - score: 10
+        description: Thorough demonstration of asset loading, metadata access, and usage examples
+
+  - name: load-nwb
+    version: 1
+    question: How well does the notebook show how to load basic information from an NWB file in the Dandiset?
+    rubric:
+      - score: 1
+        description: No code for loading NWB files
+      - score: 2
+        description: Attempts to load but code fails
+      - score: 3
+        description: Code runs with significant errors
+      - score: 4
+        description: Successfully opens an NWB file
+      - score: 5
+        description: Shows basic NWB file structure
+      - score: 6
+        description: Demonstrates accessing basic NWB components
+      - score: 7
+        description: Explores multiple NWB data structures
+      - score: 8
+        description: Shows detailed navigation of NWB hierarchy
+      - score: 9
+        description: Comprehensive exploration of NWB file contents
+      - score: 10
+        description: Complete demonstration of NWB file structure and key data components
+
+  - name: load-nwb-data
+    version: 1
+    question: How well does the notebook show how to load data from an NWB file in the Dandiset?
+    rubric:
+      - score: 1
+        description: No code for loading data from NWB files
+      - score: 2
+        description: Attempts to load data but code fails
+      - score: 3
+        description: Code runs with significant errors
+      - score: 4
+        description: Successfully loads basic data arrays
+      - score: 5
+        description: Demonstrates loading specific data types
+      - score: 6
+        description: Shows how to access multiple data elements
+      - score: 7
+        description: Handles different data types appropriately
+      - score: 8
+        description: Explores complex data structures with examples
+      - score: 9
+        description: Demonstrates advanced data access techniques
+      - score: 10
+        description: Comprehensive demonstration of loading and handling multiple data types
+
+  - name: visualize-nwb-data
+    version: 1
+    question: How well does the notebook show how to visualize data from an NWB file in the Dandiset?
+    rubric:
+      - score: 1
+        description: No code for visualizing data from NWB files
+      - score: 2
+        description: Attempts visualization but code fails
+      - score: 3
+        description: Produces basic plots with significant issues
+      - score: 4
+        description: Creates simple visualizations of one data type
+      - score: 5
+        description: Shows basic visualizations with some formatting
+      - score: 6
+        description: Demonstrates multiple visualization types
+      - score: 7
+        description: Creates clear visualizations with proper labeling
+      - score: 8
+        description: Shows advanced visualization techniques
+      - score: 9
+        description: Produces publication-quality visualizations
+      - score: 10
+        description: Creates comprehensive, well-documented visualizations of multiple data types
+
+  - name: plot-quality
+    version: 1
+    question: What is the quality of the plots in the notebook?
+    rubric:
+      - score: 1
+        description: No plots provided
+      - score: 2
+        description: Plots present but unreadable
+      - score: 3
+        description: Basic plots with major formatting issues
+      - score: 4
+        description: Simple plots with minimal formatting
+      - score: 5
+        description: Readable plots with basic labels
+      - score: 6
+        description: Clear plots with proper formatting
+      - score: 7
+        description: Well-formatted plots with complete labels
+      - score: 8
+        description: Professional quality plots with detailed labels
+      - score: 9
+        description: Publication-ready plots with comprehensive formatting
+      - score: 10
+        description: Publication-quality plots with perfect formatting and clarity
+
+  - name: load-data-quantity
+    version: 1
+    question: How many fundamentally different data streams are loaded from NWB files in this Dandiset?
+    rubric:
+      - score: 0
+        description: No data loaded
+      - score: 1
+        description: One data stream loaded
+      - score: 2
+        description: Two fundamentally different data streams loaded
+      - score: 3
+        description: Three fundamentally different data streams loaded
+      - score: 4
+        description: Four fundamentally different data streams loaded
+      - score: 5
+        description: Five or more fundamentally different data streams loaded
+
+  - name: plot-quantity
+    version: 1
+    question: How many fundamentally different types of plots are shown in the notebook?
+    rubric:
+      - score: 0
+        description: No plots shown
+      - score: 1
+        description: One type of plot shown
+      - score: 2
+        description: Two fundamentally different types of plots shown
+      - score: 3
+        description: Three fundamentally different types of plots shown
+      - score: 4
+        description: Four fundamentally different types of plots shown
+      - score: 5
+        description: Five or more fundamentally different types of plots shown

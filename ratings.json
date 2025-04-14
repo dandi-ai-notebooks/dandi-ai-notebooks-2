@@ -1,0 +1,826 @@
+[
+  {
+    "notebook": "dandisets/001333/2025-04-04-deepseek-chat-v3-0324/001333.ipynb",
+    "dandiset_id": "001333",
+    "subfolder": "2025-04-04-deepseek-chat-v3-0324",
+    "overall_score": 29.333333333333332,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook provides the Dandiset ID and title. It also gives a brief overview of the dataset content (electrophysiological signals from healthy and parkinsonian subjects, Beta Average Rectified Voltage (ARV) signals, Local Field Potential (LFP) signals). The notebook also directs to the original research paper. Thus, it provides both ID and a brief overview.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook includes the Dandiset ID (001333), title (Parkinson's Electrophysiological Signal Dataset), purpose (electrophysiological signals from healthy and parkinsonian subjects), contents (Beta ARV signals, LFP signals), and some metadata (frequency domain, time domain, STN). It provides a good overview of the dataset. However, a more comprehensive description of the data organization and key metadata fields could improve the score.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides a title (Parkinson's Electrophysiological Signal Dataset (PESD)), Dandiset ID (001333), purpose (electrophysiological signals from healthy and parkinsonian subjects), key features of the data (Beta ARV, LFP signals), and a link to the original article. The notebook gives a good overview of what the Dandiset contains, including key signal types and the distinction between healthy and Parkinsonian subjects. Furthermore, it describes the relevance of the different data fields available. The notebook mentions the Dandiset's purpose, contents, and links to the original metadata. Therefore, a score of 7 is appropriate.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 5.333333333333333,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook loads the Dandiset and lists the assets. It does not display significant Dandiset metadata fields, but it does list the assets and their sizes. Thus it goes beyond just the ID but doesn't thoroughly explore metadata.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook loads the dandiset ID and lists the assets but it does not extract or display any key metadata or demonstrate how one would explore the metadata other than listing the assets. The notebook also contains a large chunk of code commented out. The code that does not need modification is able to load but provides minimal information in the text. I would give it a 5.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook loads the dandiset using the DandiAPIClient and presents the total asset count and some basic file information (filename and size). It successfully connects to the DANDI archive and retrieves basic metadata about the Dandiset. This aligns with level 6 in the rubric.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 4.0,
+        "reps": [
+          {
+            "score": 4.0,
+            "thinking": "The notebook lists the available assets, but the asset loading function is a placeholder and does not actually load any data. Thus, the notebook shows how to list available assets of the Dandiset, but does not show how to load them. The loading code fails because it uses a fake URL, and reads the file objects but performs no operations on the data within those file objects. Thus the notebook \"Successfully lists available assets\".",
+            "repnum": 0
+          },
+          {
+            "score": 4.0,
+            "thinking": "The notebook lists the assets in the Dandiset and provides a placeholder function for loading a sample asset, but the function is not fully implemented and requires updating with the correct URL. It also prints the keys of the file. The code for listing assets runs successfully. Thus the notebook successfully Lists available assests.",
+            "repnum": 1
+          },
+          {
+            "score": 4.0,
+            "thinking": "The notebook lists available assets. It also attempts to load a file with a placeholder. However, the code to load the NWB file is commented out and would need an actual accessible URL. The suggested loading mechanism also appears to be incorrect, using h5py instead of pynwb. Therefore, it lists assets successfully (score of 4) but does not load anything and does not explore metadata etc.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 2.0,
+        "reps": [
+          {
+            "score": 2.0,
+            "thinking": "The notebook provides a function `load_nwb_file` that attempts to open an NWB file using `h5py`, but it's commented out for actual usage with a placeholder URL. The notebook indicates that the lindi URL should be used in practice, which is a step in the right direction, however, the provided code cannot run as is. It does print the datasets if the file opens. Given the code attempts to load the file and would print the keys if the file was valid, but is not easily applied, I am assessing a score of 2 because the code provided is incomplete and doesn't load a real NWB file from the DANDI archive to show its structure, instead containing placeholder code. The code execution would fail as is.",
+            "repnum": 0
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook attempts to load an NWB file using `h5py` but notes that the provided URL is a placeholder. The code includes a print statement to show the file's contents (datasets) but relies on the file being loaded correctly, which it won't be with the placeholder URL. The notebook does not successfully demonstrate accessing the basic components of an NWB file, even though it lays out the intention. Therefore, it only just \"attempts to load but code fails.\"",
+            "repnum": 1
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook provides a function `load_nwb_file` that attempts to load an NWB file using `h5py`. However, the provided URL is a placeholder and not a valid, accessible URL. The code includes a `try-except` block to handle potential errors during file loading. The function prints the keys in the `h5py` file. Although there is a placeholder for the URL the code would show the most basic NWB file structure if it was correct. The data exploration sections and visualization sections are also placeholders because the loading is not properly implememnted. Thus, the notebook shows a failed attempt to load. Therefore, it recieves a score of 2.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 2.0,
+        "reps": [
+          {
+            "score": 2.0,
+            "thinking": "The notebook includes a function to load NWB files, but the function uses h5py and assumes the file is locally available, which is unlikely given the context of a DANDI archive. The provided example usage is commented out and points to a placeholder URL, which means the code as written will not successfully load any data. It is closer to attempting to load data, but the code does not complete it, as the function will fail to open the link as a h5py file because it is actually a URL, and there is no code to actually download the file. Therefore, it scores a 2.",
+            "repnum": 0
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook provides a placeholder function `load_nwb_file` that attempts to load an NWB file using `h5py`, but the provided URL is a comment and thus not executed, and the function would likely fail due to incorrect construction of the URL as it's not a local file. It states that the URL should be updated with actual URLs. Because the file loading does not work, but it does attempt to address the task, it gets a score of 2. Functionally, the provided code does not load data due to the URL issue and placeholder nature, and the handling of `h5py` is rudimentary at best and won't return an NWBFile object, and therefore pynwb is not used properly and data is not correctly loaded. Error handling exists, but only prints an error message.",
+            "repnum": 1
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook provides a placeholder function `load_nwb_file` that attempts to load data using h5py instead of pynwb but does not seem to connect to the API correctly, and also the loading code is commented out/not runnable, so the data loading capability of the notebook is basically non-existent (though an attempt was made). The provided URL is also not working. So the score would be 2 since it attempts to load data but the code fails.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 2.6666666666666665,
+        "reps": [
+          {
+            "score": 4.0,
+            "thinking": "The notebook includes code for generating a plot, but it uses placeholder random data as it cannot properly load the NWB files. The plot includes axis labels and a title, demonstrating basic visualization formatting. However the key element of visualizing the data from the NWB file is not achieved due to an issue with loading the NWB file.\nIf the the NWB file were loaded correctly the score would be higher.",
+            "repnum": 0
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook shows how to create a basic plot. However it uses random data rather than actual data from the NWB file. The plot has title and axis labels. The code is a placeholder for visualization, and it is not functional with the actual data from the NWB file because the data loading part is not implemented. Because no actual data is used, the notebook provides only basic demonstration with major issues. Therefore, the score is 3.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook generates a placeholder plot with random data. It does not load or visualize from an actual NWB file. The notebook suggests that one updates the code with correct URLs, explores specific signals of interest and compares healthy vs parkinsonian subjects. Therefore, there is no actual visualization of data from the NWB file although the markdown cell before includes \"Visualization Examples\".",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook includes one plot. The plot is a placeholder with random data and the axes are labeled along with a title. Hence it is deemed readable with labels but not professional. The plot is not completely useless since it provides an example of what a plot should look like.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook includes a single plot. It has a title, axis labels including units, and a line plot visualization of random data representing a placeholder LFP signal. The formatting is reasonable for a basic demonstration plot in a scientific notebook. However, since the data is random and the plot serves only as a placeholder, it isn't publication-ready although it is presentable and clear. The plot helps explain what the user intends to visualize after updating the code to load actual data.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook has one plot. It would be rated higher if it contained real data but the plot is clearly labeled and displays the information appropriately given the placeholder data. The labels are easily understandable and the plot is appropriately sized, therefore it receives a rating of 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 0.0,
+        "reps": [
+          {
+            "score": 0.0,
+            "thinking": "The notebook attempts to load NWB files but the loading part is commented out. Therefore, no data is effectively loaded.",
+            "repnum": 0
+          },
+          {
+            "score": 0.0,
+            "thinking": "The notebook attempts to load data but fails due to unavailable file URLs. The notebook mentions two potential data streams: LFP signals (time series) and Beta ARV (frequency domain). However, the code includes a placeholder for loading and exploring data, indicating that no actual data loading and analysis has been performed yet, so technically nothing is loaded in this notebook. Hence, the data is not successfully loaded. Additionally, the `load_nwb_file` function, even if it worked, would print the keys in the NWB file but not load any actual data stream to memory. Therefore no data stream is technically loaded in and available in the notebook's memory.",
+            "repnum": 1
+          },
+          {
+            "score": 0.0,
+            "thinking": "The notebook attempts to load data from NWB files but the loading code is commented out and uses a placeholder URL. Therefore, no data is actually loaded. The example plot uses random data. The text says \"Time series data (LFP signals)\" and \"Frequency domain data (Beta ARV)\". Since the file is not actually loaded, the notebook currently does not load any streams.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook shows only one type of plot: a time series plot of a placeholder LFP signal.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook shows only one type of plot, a time series plot of a simulated LFP signal. Even though the data is random, the plot type is still a time series plot.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "There is one plot shown, the LFP signal. It's a line plot of random data, but it still constitutes as one type of plot shown",
+            "repnum": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "notebook": "dandisets/001333/2025-04-04-gemini-2.0-flash-001/001333.ipynb",
+    "dandiset_id": "001333",
+    "subfolder": "2025-04-04-gemini-2.0-flash-001",
+    "overall_score": 47.333333333333336,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 9.0,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good overview of the Dandiset, including its purpose (Parkinson's electrophysiological signals), contents (ARV and LFP signals), and key metadata such as contributor and measurement techniques. It also details how the data is organized within NWB files. Though it could benefit with a more explicit section on data organization. So, the score should be 9 instead of 10. However, it is much better than a score of 8.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides the Dandiset ID, describes the purpose of the dataset (Parkinson's electrophysiological signals), its contents (ARV and LFP signals), and key metadata (contributor, date created, variables measured, measurement technique). The notebook also points to a related article. The description is well-organized and informative. Thus, the notebook provides a detailed description including purpose, contents, and key metadata fields, which corresponds to a score of 9. Since the data organization is not directly described, I hesitate to provide a score of 10.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides the Dandiset ID and title and describes the purpose of the Dandiset, the contents (electrophysiological signals from healthy and parkinsonian subjects), and provides some metadata (contributor, date created, variables measured, measurement technique). It also has a link to the related research paper. The description is comprehensive enough to rate the notebook an 9, based on the information found at the start of the notebook.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset and accesses assets from it. It prints the paths of the first 5 assets, indicating that it can retrieve basic Dandiset information. The notebook loads Dandiset information and prints out the paths of the first 5 assets, which demonstrates loading and displaying some basic metadata. Therefore, the notebook successfully loads and displays basic metadata fields.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates loading the Dandiset and accessing asset metadata. It uses the DandiAPIClient to get a Dandiset by its ID (\"001333\") and list its assets. It then accesses a specific asset by path. Therefore the notebook succesfully explores multiple metadata fields. However, it doesn't explore all the available metadata fields of the dataset, like Contributor, Date Created or the other metadata listed at the beginning of the notebook.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset and retrieves its assets using the Dandi API. The code iterates through the first 5 assets and prints their paths, demonstrating how to access basic information about the Dandiset's contents. There is no exploration of the metadata, or detailed description of the fields, but the notebook does obtain asset paths, and names. This is more than just loading the Dandiset ID, but does not explore or describe multiple fields.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook effectively demonstrates how to load assets from the Dandiset. It starts by using the Dandi API to list all assets, then proceeds to select a specific NWB file and download it. It extracts the data from the downloaded file and creates a plot. This constitutes loading specific assets and using the data within. The notebook does not explicitly demonstrate metadata access, but loading assets is well done. It could be extended to explore multiple asset types and delve into metadata for an even higher score.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook demonstrates loading the Dandiset, listing assets, and loading a specific asset to visualize its data. The code executes successfully and performs basic asset loading and exploration. It doesn't delve into metadata exploration or multiple asset types extensively, but covers the fundamental aspects well. I would rate it around 6, since it does demonstrate loading specific assets for visualization, but doesn't address complex metadata or other types of advanced asset handling. The notebook does list all assets of the dandiset and then selectively loads one in particular.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook effectively demonstrates loading assets from the Dandiset. It starts by using the DANDI API to get a list of all assets. It then prints the paths of the first 5 assets, providing a basic overview of the available data. The notebook then proceeds to download a specific NWB file and extract data from it. Thus the notebook displays loading basic asset information and demonstrating loading specific assets.\nIt does not explore metadata or various data types comprehensively but fulfills the basic requirements.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully downloads and opens an NWB file. It navigates the HDF5-like structure to access 'processing', 'ecephys', 'LFP', 'Beta_Band_Voltage', and then reads the data and timestamps. Finally, it plots these data demonstrating access to basic components.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully downloads an NWB file, opens it using h5py, and accesses data and timestamp components within the file's hierarchy. It extracts a subset of the data and plots it. This demonstrates accessing basic NWB components, earning a score of 6.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook downloads an NWB file, opens it using h5py, and then navigates the HDF5 structure to access the data and timestamps, which is sufficient to rate it as a 6.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 4.666666666666667,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads data from a specific NWB file in the Dandiset, extracts the 'Beta_Band_Voltage' dataset and its timestamps, and correctly plots a subset of this data. The code downloads the file from a URL, opens it using h5py, and accesses the data stored within its hierarchical structure. It demonstrates how to extract both data and timestamps, and visualize those, reflecting a solid understanding of how data is organized and accessed within the NWB file. It loads data, timestamps and plots the data. There aren't multiple data elements that are used. so it isn't a score higher than 5.",
+            "repnum": 0
+          },
+          {
+            "score": 4.0,
+            "thinking": "The notebook successfully downloads an NWB file, opens it with h5py, and extracts the 'data' and 'timestamps' arrays from a specific location within the file. It then plots a subset of the data. This demonstrates the loading of basic data arrays from the NWB file. The notebook does not explore complex data structures or handle different data types extensively, but it provides a functional example of loading and visualizing specific data. Thus the score should reflect successfully loading basic data arrays.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads an NWB file, accesses 'data' and 'timestamps' from a specific location within the file, and plots a subset of this data. This demonstrates the ability to load basic data arrays and visualize them. It shows how to navigate the HDF5 structure of the NWB file to find the required data. It successfully loads specific data types. However, the notebook focuses on a single data element and does not explore other types or demonstrate how to handle multiple types within the same NWB file, so the score should not be higher.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook loads an NWB file from the DANDI archive, extracts the Beta Band Voltage data and timestamps, and generates a basic line plot. Figure and axes labels are present, and a grid is shown. The code executes successfully and results in a single, simple plot. Given these characteristics, the notebook does a reasonable, but not exceptional, job of visualizing NWB data after accessing it from the Dandiset. It could be improved with examples of different visualizations or more in-depth analysis.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook downloads an NWB file, extracts data (Beta Band Voltage and timestamps), and generates a plot of the data subset.  The plot has proper axis labels, title, and a grid. It demonstrates a basic visualization technique of time series data. Thus, it receives a score of 7.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook downloads an NWB file, extracts data (Beta Band Voltage and timestamps), and generates a basic line plot. The visualization is clear and properly labeled with axis labels, title, and a grid. It visualizes only one data type. So the score is 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook contains a single plot. The plot is readable and contains axes labels, a title, and a grid. There are no errors. The labels are complete and well-presented. The plot is clear and informative, but is not of publication quality.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook contains one plot. The plot is readable with basic labels (x, y axis and title). The plot has a grid and the axes are properly scaled. Overall, the plot is well-formatted and conveys the intended information effectively. However, it is not of publication quality.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook generates a plot of the beta band voltage data. The plot has axis labels, a title, and a grid. The plot is readable. The plot title could be better as well as the subset of extracted data could be bigger. Plot is well-formatted with labels",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads one data stream 'Beta_Band_Voltage' from one NWB file.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads data stream of 'Beta_Band_Voltage' from the 'LFP' processing module within the 'ecephys' namespace of the NWB file. It loads both the 'data' and 'timestamps' attributes associated with this data stream. While data and timestamps are loaded, they belong to one signal.\nThus, only one fundamentally different data stream loaded.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads data from the 'Beta_Band_Voltage' group within the NWB file, specifically extracting the 'data' and 'timestamps' datasets. These represent beta band voltage (ARV) and the corresponding time points, respectively. Although both are extracted separately, they belong to the same data stream of Beta Band Voltage over time. Therefore, only one fundamentally different data stream is loaded from the NWB file.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook displays a line plot of Beta Band Voltage over time. Since only one kind of plot is shown, the score is 1.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook only shows one type of plot: a line plot of Beta Band Voltage vs. Time.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook shows one plot of the beta band voltage over time.",
+            "repnum": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "notebook": "dandisets/001333/2025-04-07-claude-3.5-sonnet/001333.ipynb",
+    "dandiset_id": "001333",
+    "subfolder": "2025-04-07-claude-3.5-sonnet",
+    "overall_score": 50.0,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 8.0,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook includes the DANDI ID and provides a succinct description of the dataset's purpose, contents (ARV and LFP signals), and basic metadata such as the sampling rate and focus on beta oscillations. Also, it indicates that the dataset has recordings from both healthy and parkinsonian subjects. The notebook clearly describes the purpose, contents and data organization",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook includes the DANDI ID, the title in the description, the purpose of the dataset (focus on beta oscillations as a biomarker for PD), the types of signals included (beta ARV and LFP from STN), and some details about what kind of recordings the dataset contains (healthy and parkinsonian). The notebook also mentions the data organization by subjects. Thus I consider the dataset is reasonably covered.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The Notebook provides a good introduction to the DANDI dataset 001333, including the type of data (electrophysiological signals, specifically Beta ARV and LFP), the source (healthy and Parkinsonian subjects), and the focus on beta oscillations as biomarkers for Parkinson's disease. It also mentions some of the relevant structures (STN). This covers the purpose and basic content of the dataset. Hence, a reasonable score is 6. The Title and ID are specified, too.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 5.666666666666667,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully uses the DandiAPIClient to get the dandiset based on its id, then accesses the assets. It prints the number of assets and the paths of a few of them. It could explore more metadata, like license info, description, etc, but has a decent start.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook initializes the DandiAPIClient, retrieves DANDI:001333, and lists the assets. It prints the total number of files and provides a sample of the available files. This shows how to access the Dandiset and its assets. The notebook shows an effective way to get the dandiset and the names of its assets. It doesn't explore all metadata fields, but it demonstrates basic loading and display functionality. Therefore, a score of 6 is appropriate. The notebook successfully loads the Dandiset and displays basic metadata fields such as asset paths and the number of assets.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads the dandiset and accesses some basic metadata like the file paths of the assets. It does not thoroughly explore or explain a wide range of metadata fields, focusing more on the electrophysiological data itself. Therefore, it qualifies for a score of 5.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully uses the DANDI API to list assets within the Dandiset. It iterates through a sample of these assets and prints their paths, demonstrating how to access the list of available files. The notebook also downloads and loads one specific asset to display its contents. The notebook loads basic asset information such as the LFP signal and sampling rate. It could be improved by including more asset types, like the beta average rectified voltage. Metadata exploration is also basic, and could be improved. So overall, it falls into the range of 5-6.\n    Therefore, the score is 6.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook effectively demonstrates how to load and list assets from the DANDI API client. It initializes the client, retrieves a dandiset, and lists the paths of the available assets. It downloads a specific asset and opens the NWB file demonstrating how to access at least one asset type. However, it could be enhanced by exploring different asset types, delving deeper into the metadata associated with those assets, and providing diverse usage examples.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook showcases the use of the DANDI API Client to access and list assets from a specified Dandiset (\"001333\"). This allows users to determine the availability and paths of specific data files within the dataset. It also successfully downloads a sample asset. All code regarding loading assets executes without errors. Therefore, the relevant functionality is effectively demonstrated in the notebook. There is no exploration of metadata, usage examples, or exploration of multiple asset types.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully connects to the DANDI API, downloads an NWB file, opens it using h5py, and accesses LFP data. It provides information about the number of timepoints, duration, starting time, and number of electrodes. It also plots the time domain signal, spectrogram, and power spectrum. It further analyzes the beta band activity. The notebook demonstrates accessing basic NWB components, more than just loading the file and showing structure, thus a 6. It does not show extensive navigation (like iterating over every field), so cannot justify scores higher than 6.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully downloads and opens an NWB file from a DANDI dataset (score 4). It then demonstrates how to access specific data components like LFP data, electrode information, and timestamps, and extracts basic information about these components (score 6). It does not, however, explore the full hierarchy or multiple data structures exhaustively, staying primarily focused on LFP data.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully downloads and opens an NWB file. It then shows how to access basic components, such as LFP data and electrode information. It demonstrates how to extract data, sampling rate, duration, and other metadata. Therefore, the notebook demonstrates accessing basic NWB components, warranting a score of 6.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads data from an NWB file in a Dandiset. It demonstrates how to: 1. access asset list from a Dandiset, 2. download an NWB file, 3. open the NWB file using h5py, 4. access time series-based LFP data including the data array, electrode information, and starting time. Based on this, I give it a score of 6 because, while it goes beyond simply reading basic data arrays and shows how to access multiple data elements such as LFP data, electrode data, and starting times, it doesn't handle different data types as thoroughly as a higher-scored notebook would. It also lacks demonstration of advanced data access techniques.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the NWB file, accesses LFP data, extracts metadata such as starting time and electrode information, and calculates time points. This falls under demonstrating access to multiple data elements and handling different data types appropriately. It does not, however, demonstrate advanced loading techniques.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads data from an NWB file, accesses and displays LFP data including timepoints and electrode information. It further plots the raw LFP signal, spectrogram, and power spectrum. However, it does not handle a wide variety of data types or complex data structures extensively, focusing primarily on numeric arrays from the LFP data. The beta band analysis is included. However, there's an unrendered plot and zero data on the beta band plot suggesting at least a small error. Also, the removal of the local file is done without checking if the download was sucessful.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook downloads an NWB file from a DANDI dataset and proceeds to create several standard visualizations, including a time-domain plot, a spectrogram, and a power spectral density plot and analysis of the beta frequency band. It includes axis labels and titles to the plots, and it removes the downloaded file at the end. The notebook provides the basic code to perform the visualizations but the final plot (beta band), gives an empty plot perhaps due to a numpy related issue.\n\nGiven the issues, I'll rate it just below a perfect score, but high enough to appreciate the effort to visualize the data. I would have deducted a point if the beta band analysis plot would have been produced with success.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook demonstrates how to load LFP data from an NWB file within a DANDI dataset and creates several visualizations including a time domain plot, spectrogram, power spectral density, and beta band power spectrum. The plots are formatted adequately with labels and titles. The notebook focused only on LFP data visualization, hence, it is not comprehensive covering other potential data types may be present. The last plot is empty, so the analysis of the beta band is incomplete (a potential bug). It does demonstrate multiple visualization types but there are issues that impact the overall quality.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook effectively demonstrates how to visualize data from an NWB file. It starts by accessing the Dandiset, downloading an NWB file, and then proceeds to visualize the LFP data using time-domain plots, spectrograms, and power spectral density plots. The visualizations are relatively clear and include proper labeling, enhancing their interpretability. The notebook also focuses on analyzing the beta band activity, relevant for Parkinson's Disease biomarker analysis. Given the use of multiple visualization types and proper labeling, a score of 7 is appropriate.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The plots are clear and readable, with appropriate labels for the axes and titles indicating the content. The plots also include a grid to make it easier to read values off of them. The plots are well-formatted and effective at displaying the data. The first beta band plot has data, but the second is completely empty. This is a bug and will incur a penalty, but all the other plots are nice. Overall, the plots are very high-quality. However, the empty beta band plot is a serious issue that impacts the quality in a noticeable way.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook contains multiple plots that are generally readable and well-labeled. The time-domain plot, spectrogram, and power spectrum plots all convey relevant information about the LFP signal. However, the final plot for beta band power is empty, indicating an issue with the plotting or data processing in that specific section. Given that all plots besides the last one display the information they intend to, the plots can be described as properly formatted and provide clear information about the notebook's findings. Because not every single plot is properly working, I deduct a point. The plots are more simple than they are publication-ready.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The plots are generally well-formatted and readable, with appropriate labels for axes and titles. The spectrogram and power spectral density plots have informative colorbars and frequency limits. The beta band plot, however, appears to be empty, which is a significant issue, however given the other aspects of the notebook I will not penalize it as much, since the code executes, and may be a function of the specific data. Therefore I will choose between a 6 and 7 based on this analysis, opting for a 6 because without the beta plot displaying correctly the quality can't be a 7, which should have complete labels on all plots.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads LFP data, and extracts electrode information and time information. The LFP data is a time series, electrodes could be another. However, the 'analyze_beta_band' seems to use the same lfp_data so is not fundamentally different. Thus, I will give it a 1 since it loads the LFP data, and derives time data from that.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads LFP data from an NWB file. The notebook also briefly mentions Beta Average Rectified Voltage (ARV) but never attempts to load it. Therefore, only slightly more than one type of data stream is dealt with as the electrode information is also retrieved, but only incidentally.\n    The electrodes data loaded in the notebook is meta data relating to LFP as it is needed to interpret the LFP data, but the LFP is the primary data stream loaded so the notebook should get a score of 1.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads LFP data and electrode data from the NWB file. It then calculates and plots the spectrogram and power spectral density from the LFP data. All of these can be fundamentally derived from the sampling rate, data, time, so I will still consider this to be a single data stream originating in the LFP. Therefore, one data stream is loaded.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 4.0,
+        "reps": [
+          {
+            "score": 4.0,
+            "thinking": "The notebook displays a time series plot, a spectrogram, a power spectral density plot and a plot of the beta band power. Thus, there are four fundamentally different types of plots shown.",
+            "repnum": 0
+          },
+          {
+            "score": 4.0,
+            "thinking": "There is:\n1. time series plot\n2. spectrogram\n3. power spectral density (PSD) plot\n4. beta band power spectrum\n\nTherefore, there are 4 fundamentally different types of plots.",
+            "repnum": 1
+          },
+          {
+            "score": 4.0,
+            "thinking": "The notebook shows the following plot types: Time domain plot, spectrogram, power spectral density plot, and beta band power plot. The last plot is a subset of the power spectral density plot, but it is a zoomed in plot for just the frequencies in the beta band region and so is considered different.\n\nThus there are 4 fundamentally different types of plots are shown in the notebook.",
+            "repnum": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "notebook": "dandisets/001333/2025-04-09-quasar-alpha/001333.ipynb",
+    "dandiset_id": "001333",
+    "subfolder": "2025-04-09-quasar-alpha",
+    "overall_score": 49.0,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 9.666666666666666,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides title, ID, description, keywords, contributors, techniques, license and a link to more info, as well as describing the contents with the LFP and beta band data and metadata available. It also explains the file structure with average rectified voltage.\n    The data organization is mentioned but could be described in more details.",
+            "repnum": 0
+          },
+          {
+            "score": 10.0,
+            "thinking": "The notebook provides a comprehensive description of the Dandiset. It includes the title, ID, a description of the content (LFP signals and beta-band features), purpose (Parkinson's disease modeling), and key metadata (contributors, techniques, license). The notebook also explains the structure of the NWB files within the Dandiset. Thus, the notebook meets the criteria for a score of 10.",
+            "repnum": 1
+          },
+          {
+            "score": 10.0,
+            "thinking": "The notebook provides a detailed description including the title, ID, purpose, contents, and data organization of the Dandiset. It also mentions key metadata fields like session description, start time, subject ID, and species. It's a clear and comprehensive description.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset using the DANDI API, retrieves a list of assets, and prints a sample of asset paths. It then proceeds to load a specific NWB file and displays several key metadata fields (session description, session start time, subject ID, subject species, and available processing modules). This demonstrates loading and displaying basic metadata fields. The notebook could be improved by providing more extensive explanations of each metadata field and exploring additional fields. However, it also is hampered by the fact it uses a randomly generated dataset. The disclaimer at the beginning states that the notebook was AI-generated and requires further validation. This means that the quality of the datset may not be as high as a manually generated one.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset and displays basic metadata fields such as session description, start time, subject ID, subject species, and available processing modules. It doesn't fully explore all possible metadata fields, but it provides a good starting point.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook uses `dandiapi` and `remfile` to access information about the dandiset. It successfully loads the dandiset, prints the total number of assets, previews a sample of asset paths, and retrieves session descriptions and subject information, as well as lists available processing modules. This demonstrates the ability to load and explore multiple metadata fields, but could be more explicit about showing how to load more fields and describing their meaning. Therefore the score is 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook initializes the Dandi API client and lists the available assets in the Dandiset. It then demonstrates how to load a single NWB file, access its session description, start time, subject ID, species, and available processing modules. It further explores and plots the LFP data structure within the NWB file. Therefore the notebook demonstrates loading specific assets and loading basic asset information.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully lists assets using the DANDI API and demonstrates how to load a specific NWB file. It also shows how to access basic metadata from the loaded file and explores LFP data. While it doesn't exhaustively explore all asset types or deeply delve into metadata, it provides a good foundation. The notebook demonstrates loading of specific assets and metadata access, but it lacks broader exploration of other assets and more comprehensive metadata analysis.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates how to load the list of available assets, and then it loads a particular asset to examine its contents, retrieves metadata and plots/analyzes the asset. Therefore, the notebook successfully demonstrates loading specific assets, accessing their metadata, and using the data from the asset, reaching level 7 in the rubric.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from the Dandiset, accesses basic information like session description, start time and subject ID, and explores the LFP data structure including shape, unit, and electrode metadata. It also plots the beta-band LFP trace. Thus, it demonstrates accessing basic NWB components and shows some level of detail navigation.\n    It does not fully explore all the components of a typical NWB file but it sucessfully shows how to access the important data.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook demonstrates how to load an NWB file from a URL, access basic information such as session description, start time, subject ID, species, available processing modules, and explores the LFP data structure, including shape, unit, description, and electrode metadata fields. The notebook provides a good starting point for navigating and extracting data from NWB files in the Dandiset, but does not explore multiple data structures within the NWB file exhaustively. The notebook shows how to compute basic statistics as well.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from the DANDI archive, accesses basic information such as session description, start time, subject ID, and species. It further explores the LFP data structure within the ecephys processing module and plots the beta-band filtered LFP voltage trace. This demonstrates accessing basic NWB components, thus scoring a 6. It does not reach a 7 as it explores only a limited number of NWB data structures but goes beyond just accessing basic file info and shows how to get to the LFP data.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads an NWB file from the Dandiset using the DANDI API and remfile library. It accesses and prints metadata, then loads and plots LFP data from the 'ecephys' processing module. It also computes and prints the mean and standard deviation of the beta-band activity.\n\nThe notebook could be improved by demonstrating how to load more complex data structures, such as epochs or spikes, but it adequately shows loading and processing basic data arrays and metadata. It also provides a visualization of the LFP data.\nTherefore, the notebook fulfills the requirements to get a 5.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads an NWB file from the Dandiset using remfile and h5py. It then uses pynwb to read the file and accesses several pieces of metadata (session description, start time, subject ID/species). It then loads and plots the beta band LFP data and computes the mean and standard deviation. This shows how to access specific data types within an NWB file. However, it only shows loading data from one NWB file for a single session and does not demonstrate a comprehensive loading and handling of multiple data types across the whole dataset.",
+            "repnum": 1
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook demonstrates loading a specific NWB file from the Dandiset and accesses several key components: session description, start time, subject ID/species, and the 'ecephys' processing module. Inside this module, it loads and plots beta-band LFP data, and computes mean and standard deviation. Code runs successfully. Covers accessing different data types and structures. However, it primarily focuses on a single NWB file and doesn't implement chunking. The notebook could perform additional data handling techniques.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook downloads an NWB file, extracts a time series, and plots it. The plot has labels for the axes and a title. The code is functional and straightforward. Also, the notebook generates a suggestion on how to improve the plot for larger datasets by suggesting chunking.\n\nThe visualization is relatively simple with a time series. Hence, it is a 7 rather than something higher.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully visualizes beta-band LFP data from an NWB file, including appropriate axis labels and a title. The notebook produces a basic plot of voltage as a function of time. The notebook clearly demonstrates the core steps for accessing and plotting data. The notebook has axes labels and a clear title. There is some formatting producing a visualization of reasonable quality. The plot shows a clear beta band time series for an example session in the dataset.\nThe notebook could be improved by adding more visualization techniques or more sophisticated formatting.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates reading data from an NWB file and generating a time series plot of beta-band voltage. The plot has labels for the axes and a title. The figure is of adequate quality, but not publication quality. The notebook only considers one type of visualization. The notebook could be improved with interactive plots or plotting multiple data types to support a higher score.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 5.666666666666667,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook includes a plot of beta-band voltage over time. The plot has labels for the axes (Time (s) and Voltage (V)), a title (\"Beta Band Voltage Time Series (Example Session)\"), and the data is clearly visible. The formatting is adequate, but not exceptional. Therefore, a score of 6 is appropriate.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook contains one plot. It has the time on the x-axis, Voltage on the y-axis and a title. It is generally readable. The basic labels are included.\n    The code used is basic plotting code.\n    The plot could be improved with better formatting, such as better tick mark spacing.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook provides one plot visualizing the beta band voltage time series. The axes are labeled, and the plot is generally readable. The formatting is basic but sufficient. The plot could benefit from a more descriptive title and potentially grid lines for better readability,but the plot is acceptable. Therefore, I rate it a 6.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads and analyzes the Beta band electrical series data, and extracts specific parts like voltages and timestamps. Although metadata is examined, only the LFP data is loaded from the NWB file, but no `raw` or other type of data is used.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads and explores data from a Parkinson's Electrophysiological Signal Dataset (PESD). It specifically focuses on:\n1.  **Beta band average rectified voltage (ARV)** The notebook accesses the \"Beta_Band_Voltage\" time series from the \"LFP\" electrical series, plots it, and computes mean and standard deviation, representing one data stream. There aren't other fundamentally different data streams loaded other than the Beta band LFP.\n\nTherefore, only one fundamentally different data stream is used which is the beta band voltage. Additional metadata are accessed (session description, start time etc) but these are not data streams. This is a subtle distinction.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads LFP data and beta band voltage. These are fundamentally the same data stream as the beta band voltage is derived from the LFP data. The notebook also prints metadata, but that doesn't count as a fundamentally different data stream. Therefore, only one data stream is loaded.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook shows only one type of plot, a time series plot of beta band voltage over time.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook shows only one type of plot: a time series plot of beta band voltage. Therefore, the score is 1.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook shows one plot, a time series plot of the beta band voltage. There are no other types of plots in the notebook.",
+            "repnum": 2
+          }
+        ]
+      }
+    ]
+  }
+]
