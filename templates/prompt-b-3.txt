@@ -1,0 +1,128 @@
+You are going to create a Jupytext notebook called `notebook.py` that will help researchers explore and analyze a Dandiset {{ DANDISET_ID }}. After you create the notebook, convert it to `notebook.ipynb` and execute the Jupyter notebook to make sure it runs without errors. If there are errors, you will need to fix them in the original `notebook.py` file, re-convert and re-run the notebook, repeating until it runs properly.
+
+Structure of the notebook:
+
+Start with an appropriate title for the notebook, such as "Exploring Dandiset {{ DANDISET_ID }}: ..."
+
+Prominently inform the user that the notebook was AI-generated using dandi-notebook-gen and has not been fully verified, and that they should be cautious when interpreting the code or results.
+
+Provide an overview of the Dandiset.
+
+Summarize what the notebook will cover.
+
+List the packages that are required to run the notebook. Assume that these are already installed on the user's system. Do not include any pip install commands in the notebook.
+
+Show how to load the Dandiset using the DANDI API. Use code similar to:
+
+```python
+from dandi.dandiapi import DandiAPIClient
+
+# Connect to DANDI archive
+client = DandiAPIClient()
+dandiset = client.get_dandiset("001174")
+assets = list(dandiset.get_assets())
+
+print(f"Found {len(assets)} assets in the dataset")
+print("\nFirst 5 assets:")
+for asset in assets[:5]:
+    print(f"- {asset.path}")
+```
+
+Show how to load the metadata for one of the NWB files in the Dandiset.
+
+Show how to load and visualize some data from the NWB file.
+
+If appropriate, select another piece of data from the Dandiset and show how to load and visualize it.
+
+Repeat as appropriate for other data in the Dandiset.
+
+If appropriate, show how to create a more advanced visualization involving more than one piece of data.
+
+Summarize the findings and provide some possible future directions for analysis.
+
+Throughout the notebook, include explanatory markdown cells that guide the user through the analysis process
+
+Here's the plan that you should follow:
+
+1. Get the Dandiset metadata using `python tools_cli.py dandiset-info {{ DANDISET_ID }}`.
+2. Get the Dandiset assets using `python tools_cli.py dandiset-assets {{ DANDISET_ID }}`.
+3. Choose one NWB files from the assets and get its information using `python tools_cli.py nwb-file-info {{ DANDISET_ID }} <NWB_FILE_URL>`. When loading data from this NWB file you are going to conform strictly to the usage coming from this command, including hard-coding the url.
+4. Do exploratory research on the contents of the Dandiset by creating and executing python scripts in a tmp_scripts subdirectory to generate text output and plots.
+  - It's very important that the plots go to .png image files in the tmp_scripts subdirectory. Otherwise, if the plot is displayed in a window, the script will hang. So do not do a plt.show().
+  - If the script times out (use a timeout of 90 seconds for the scripts), you may be trying to load too much data. Try revising the script and rerun.
+  - After executing each script, if you created plots, always review each plot using the read_image tool to be able to gain information about them. Each call to read_image should include instructions that give context for the image and that help determine whether the plot is informative and useful (for example containing no data is not useful) and that request relevant information about the plot.
+5. Write the content of the notebook to `notebook.py`.
+6. Run `jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb` to convert the notebook to a Jupyter notebook and execute the resulting `notebook.ipynb` to make sure it runs without errors and produces output cells. Use a timeout of 600 seconds. If it times out, you should adjust the notebook and re-run.
+7. If there are errors, fix them in the Jupytext `notebook.py` file, re-run the above command to convert and execute, repeating these steps until the notebook runs properly.
+
+## Calling tools
+
+In order to get information about the Dandiset and how to load data from NWB files within the Dandiset, you will need to use the following command-line tools:
+
+```bash
+python tools_cli.py dandiset-info {{ DANDISET_ID }}
+```
+
+This will print the metadata of the Dandiset, including its name, description, and key metadata.
+
+```bash
+python tools_cli.py dandiset-assets {{ DANDISET_ID }}
+```
+
+This will print the assets (files) available in the Dandiset. For each NWB file it will include the asset ID. From the asset ID you can construct the associated URL as follows:
+
+https://api.dandiarchive.org/api/assets/<ASSET_ID>/download/
+
+```bash
+python tools_cli.py nwb-file-info {{ DANDISET_ID }} <NWB_FILE_URL>
+```
+
+This will print usage information on how to stream data from the remote NWB file.
+
+It's very important that you use all of the above tools before you start creating the notebook so you understand the Dandiset, the data it contains, and how to load that data in Python.
+
+# Exploring an NWB file
+
+Create and execute python scripts in a tmp_scripts subdirectory. The scripts can generate text output and/or plots. The plots image files should also go in the tmp_scripts subdirectory. You should always use the read_image tool to read the image files for the plots you create. This will help you know whether the graphs are informative enough to include in the notebook as well as information about the data that will help you make decisions and know how to describe things in the notebook. Both the script outputs and plots will help inform you about what to put in the notebook. Feel free to transform, process, and combine the data in common ways to make interesting, informative plots for a scientist to interpret. Feel free to run as many scripts as you need to gather the information required to make a good notebook. The more quality information you have, the better you will be able to do in making the notebook. Include comments at the top of each script explaining what information you are trying to obtain with the script.
+
+Every effective, good quality plot produced by the scripts should be included in the final notebook, but don't include the low quality plots.
+
+If you want to include a plot in the notebook, be sure to do sufficient exploration beforehand to know that the plot is going to be effective and of good quality.
+
+Do not directly reference the plot images in tmp_scripts from the notebook. All plots should be recreated when executing the notebook.
+
+# About the notebook
+
+The notebook should be well-documented, and follow best practices for neurophysiology data analysis. Include comments in code cells to explain what each step does.
+
+The notebook should not draw scientific conclusions. Instead, focus on helping the user get started in loading and viewing the data.
+
+The Jupytext should use `# %% [markdown]` for markdown cells and `# %%` delimiters for the code cells.
+
+## Some notes
+
+If you load data from only select files, then you should indicate which files you are using.
+
+Note that it doesn't work to try to index an h5py.Dataset with a numpy array of indices.
+
+Note that you cannot do operations like np.sum over a h5py.Dataset. You need to get a numpy array using something like dataset[:]
+
+If you are going to load a subset of data, it doesn't make sense to load all of the timestamps in memory and then select a subset. Instead, you should load the timestamps for the subset of data you are interested in. So we shouldn't ever see something like `dataset.timestamps[:]` unless we intend to load all the timestamps.
+
+When loading data for illustration, be careful about the size of the data, since the files are hosted remotely and datasets are streamed over the network. You may want to load subsets of data. But if you do, please be sure to indicate that you are doing so, so the reader doesn't get the wrong impression about the data.
+
+Keep in mind that through your tool calls you have been given information about what data are available in the files, whereas the reader of the notebook does not have access to that information. So in your illustration it would be helpful to show how they could get that information (e.g., columns in a table, etc).
+
+When showing unit IDs or channel IDs, be sure to use the actual IDs rather than just the indices.
+
+`plt.style.use('seaborn')` is deprecated. If you want to use seaborn styling, use:
+```
+import seaborn as sns
+sns.set_theme()
+```
+
+Do not use seaborn styling for plotting images.
+
+Image masks values range from 0 to 1. If you are plotting all image masks superimposed on each other in a single figure, use a heatmap with np.max on the image masks.
+
+For raw extracellular electrophysiology data, you shouldn't try to do spike detection, spike sorting, or anything like that in the notebook because it's too computationally intensive. Getting anything useful from extracullular electrophysiology data requires a lot of processing and is not something that can be done in a notebook. Instead, you should focus on showing how to load a reasonable amount of data and how to visualize it.
