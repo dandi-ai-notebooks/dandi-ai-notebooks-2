@@ -1,0 +1,137 @@
+.ratings-table-container {
+  padding: 20px;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin: 8px 0 24px 0;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+  color: #343a40;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #343a40;
+}
+
+th.sortable {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  padding-right: 28px;
+  transition: background-color 0.2s;
+}
+
+th.sortable:hover {
+  background-color: #e9ecef;
+}
+
+/* Add space for the sort arrow */
+th.sortable span {
+  margin-right: 4px;
+}
+
+tr:hover {
+  background-color: #f1f3f5;
+}
+
+.score-cell {
+  position: relative;
+}
+
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-wrapper:hover .tooltip-container {
+  display: block;
+}
+
+.tooltip-container {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 16px;
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  min-width: 200px;
+  white-space: normal;
+}
+
+.tooltip-content {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #343a40;
+}
+
+.tooltip-content ul {
+  margin: 4px 0;
+  padding-left: 20px;
+}
+
+.tooltip-content em {
+  color: #495057;
+  font-size: 13px;
+}
+
+a {
+  color: #1971c2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #343a40;
+}
+
+.pagination button:disabled {
+  background-color: #f1f3f5;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.pagination button:not(:disabled):hover {
+  background-color: #e9ecef;
+}
+
+.pagination span {
+  color: #495057;
+}
