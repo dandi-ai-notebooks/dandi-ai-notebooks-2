@@ -1,5 +1,211 @@
 [
   {
+    "notebook": "dandisets/001333/2025-04-02-claude-3.7-sonnet/001333.ipynb",
+    "dandiset_id": "001333",
+    "subfolder": "2025-04-02-claude-3.7-sonnet",
+    "overall_score": 62.0,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 9.0,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook gives a good overview of the Dandiset. It mentions the ID, title, and purpose and describes the contents (beta ARV, LFP signals) and data organization. It explores data from both healthy and Parkinson's subjects and explains that this is simulated data. Some key metadata is displayed (e.g. subject ID). Therefore, it reaches level 9.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "This notebook provides a good description of the Dandiset including the ID, title, purpose, contents (Beta ARV and LFP signals, simulated data from healthy and parkinsonian subjects), and data organization (different files for different subjects and LFP/Beta data). The introductory section provides a clear outline, which is then followed by detailed exploration and visualization of the data. So it gets a 9.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good description of the Dandiset including the title, purpose, contents (beta ARV and LFP signals), and data organization (healthy vs Parkinson's, multiple sessions). The notebook also touches on the metadata available in the NWB files. It gives a good overview with code examples that allow someone to start working with the Dandiset.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset, retrieves basic metadata fields like name and number of assets, and organizes assets by file path, demonstrating a good understanding of the dataset structure. Therefore the notebook loads the Dandiset correctly and loads and displays basic metadata fields.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook starts by accessing the Dandiset and printing its name and the total number of assets. Then it loads a healthy beta NWB file and prints session description, experiment description, subject ID, and keywords. Finally, it explores electrode information. I think that scores a 7.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook loads the Dandiset and displays its name and lists the number of assets in it. It also lists the keywords extracted from the NWB files. The notebook demonstrates how to load the data itself, which implies being able to resolve the location of the data via the metadata. The notebook successfully loads and explores several metadata fields including the session description, experiment description, subject ID, and keywords.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 9.0,
+        "reps": [
+          {
+            "score": 8.0,
+            "thinking": "The notebook demonstrates how to list available assets, load specific assets using their asset IDs, and access some metadata related to the NWB files. It covers multiple asset types, specifically beta and LFP data. The notebook also contains example usages of both.",
+            "repnum": 0
+          },
+          {
+            "score": 10.0,
+            "thinking": "The notebook effectively demonstrates how to load and explore assets within the Dandiset. It begins with accessing the Dandiset and listing assets, progressing to loading and examining specific NWB files. The notebook also covers accessing metadata and exploring different asset types (Beta ARV and LFP signals). There are multiple examples illustrating practical usage and analysis of loaded assets, fulfilling the comprehensive aspects outlined in the rubric.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook loads Dandiset assets. It starts by accessing the Dandiset, lists its assets, and then demonstrates how to load specific NWB files (assets) using asset IDs. It also presents examples for both Beta ARV and LFP data. The code loads basic asset information and explores multiple asset types, along with their corresponding metadata in several assets. The notebook also defines functions to load data based on asset ID making it easy to use. Therefore, the notebook provides a comprehensive demonstration of asset loading. While comprehensive, it does skip the explicit demonstration of *how* to access the raw asset's metadata (beyond the NWB file content itself) using the Dandi API (e.g., `.get_metadata()`).",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 7.666666666666667,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads NWB files from the Dandiset (score 4), examines basic file metadata (session description, subject ID, keywords) (score 5+1=6), explores electrode information and Beta band voltage data, and analyzes LFP data. It covers multiple NWB data structures by accessing and plotting both Beta ARV and LFP data (score 6+1=7). The notebook also iterates through multiple sessions. The notebook could be improved by describing the NWB data structures in more detail, but demonstrates how to load and explore NWB files with visualization and statistical evaluation.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads NWB files using the lindi library and pynwb, and then proceeds to pull basic information regarding the session, experiment, subject, and keywords. Further, it extracts electrode information, which is then represented in a pandas dataframe. The notebook effectively demonstrates accessing key NWB components and exploring several NWB data structures. All code cells ran without error.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook successfully accesses the Dandiset assets by first accessing the dandiset and its assets. Then it filters filepaths for healthy/parkinsonian beta/LFP compartments.\nThen the notebook iterates through all the files to load them to memory and read the session information, experiment information, subject ID and keywords. It also explores electrode information using pandas. For both beta and LFP nwb files, the notebook loads the data and compares between healthy vs parkinsonian configurations with plots. It also analyzes multiple sessions and compare the data.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 8.333333333333334,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads data from NWB files using the `lindi` library to access NWB files remotely. It covers loading beta band voltage data and LFP data. The notebook demonstrates loading specific data arrays, accessing multiple data elements within the NWB files, and handles data loading appropriately for both healthy and Parkinson's subjects. Electrode information is loaded and printed to the screen. Some session data is loaded. However, it does not handle many different data types, or use particularly advanced data access techniques.",
+            "repnum": 0
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook successfully loads data from NWB files, demonstrates loading specific data types like Beta Band Voltage and LFP, and shows how to access multiple data elements across files and sessions. It appropriately handles different data structures within the NWB files and visualizes the data effectively. However, it does not really show any advanced data access techniques, like filtering for different events recorded in the NWB files for example.",
+            "repnum": 1
+          },
+          {
+            "score": 10.0,
+            "thinking": "The notebook successfully loads NWB files using 'lindi' and 'pynwb' libraries, accesses metadata, electrode information, Beta Band Voltage, and LFP data. It demonstrates how to access multiple data elements and explores complex data structures such as electrodes and LFP data. The notebook also handles different data types, loads multiple sessions, and analyses them. Therefore, it does a comprehensive demonstration of loading and handling multiple data types in NWB files within the Dandiset.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 7.333333333333333,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook effectively visualizes data from NWB files within the Dandiset. It covers essential visualization techniques such as time series plots, histograms, box plots, PSD plots, bar plots, and violin plots. The notebook uses these plots to compare healthy and Parkinson's subjects. The plots are well-labeled and have titles. It loads and visualizes two data types, Beta band voltage data and LFP data.\nThe notebook can be improved by having more context on the plots.\nThe violin plot is missing axis labels and title generated by the plot() call is also missing.\nThe notebook does more than create basic plots with formatting, so a score &gt; 5 is appropriate.",
+            "repnum": 0
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook provides several examples of visualizing different data types from the NWB files, including beta band voltage and LFP data. The visualizations include line plots, histograms, box plots, PSD plots, bar plots and violin plots. The plots are adequately labeled and formatted, although some minor improvements could be made for publication quality. The notebook covers multiple sessions. Therefore, a score of 8 is appropriate.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook shows how to visualize data from the NWB files in the Dandiset. It loads Beta ARV and LFP data and plots them. It also does simple statistical visualizations like histograms and boxplots. The plots have labels and titles but could be improved for publication quality. The notebook analyzes beta band activity across multiple sessions and makes visualizations about that.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The plots are generally well-formatted with appropriate axis labels and legends. However, some plots lack specific units or could benefit from more detailed descriptions in the title or axis labels. Overall, the plots effectively convey the information and are easily readable.\n\nThe plots include: time series plots, histograms, box plots, power spectral density plots, bar plots, and violin plots. Each plot type is used appropriately. The power spectral density plot uses a log scale which is appropriate and highlights the beta band. The violin plot is also an appropraite and effective representation of the data.\n\nThe plots could be improved with some minor formatting tweaks and more informative labels, but are generally of high quality.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "All the plots are present and help better interpret the data. The plots are labeled correctly. Some plots could be a bit more detailed.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The plots are generally well-formatted and readable, with clear labels and titles. They effectively communicate the data. Some plots like the mean beta band voltage by session could be improved with error bars to indicate variability. However, overall the plots are well-executed and contribute significantly to the analysis. The usage of color helps separate healthy and parkinson's data, and the types of visualization chosen (line plots, histograms, box plots, PSD, violin plots) are appropriate. The boxplot had a deprecation warning that should be fixed. Despite the deprecation warning there is a good exploration of the visualizaitons possible and the are easily comprehensible.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 2.0,
+        "reps": [
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads two main types of data: Beta Average Rectified Voltage (ARV) and Local Field Potential (LFP). It loads these data types from both healthy and Parkinson's subjects. Therefore, there are two fundamentally different data streams. Each stream is loaded from NWB files.",
+            "repnum": 0
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads 2 fundamentally different types of data, LFP and Beta ARV. While the notebook analyzes multiple sessions, these can be seen as multiple instances of the same types of data, not separate \"streams\".",
+            "repnum": 1
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads two main data streams, Beta Band Voltage and Local Field Potential (LFP) data. There is also some electrode data loaded, but it is metadata relating to the LFP data, so it should not count as a fundamentally different data stream.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 5.0,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook shows the following types of plots:\n1. Line plot: Comparison of Beta Band Voltage and LFP Signals: Healthy vs. Parkinson's.\n2. Histogram: Histogram of Beta Band Voltage.\n3. Box plot: Box Plot of Beta Band Voltage.\n4. Power Spectral Density plot: Power Spectral Density Comparison.\n5. Bar plot: Mean Beta Band Voltage by Session\n6. Violin Plot: Beta Band Voltage Distribution: Healthy vs. Parkinson's\n\nTherefore, there are 6 fundamentally different types of plots shown.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook shows the following types of plots:\n1. Timeseries plot (comparison of beta band voltage, comparison of LFP signals)\n2. Histogram (histogram of beta band voltage)\n3. Box plot (box plot of beta band voltage)\n4. Power spectral density plot (power spectral density comparison)\n5. Bar plot (mean beta band voltage by session)\n6. Violin plot (beta band voltage distribution)\n\nThere are six fundamentally different types of plots shown in the notebook.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook displays the following types of plots:\n1. Line plots (Comparison of Beta Band Voltage, Comparison of LFP Signals, Power Spectral Density Comparison)\n2. Histograms (Histogram of Beta Band Voltage)\n3. Box plots (Box Plot of Beta Band Voltage)\n4. Bar plots (Mean Beta Band Voltage by Session)\n5. Violin plots (Beta Band Voltage Distribution: Healthy vs Parkinson's)\n\nThese are five fundamentally different types of plots.",
+            "repnum": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
     "notebook": "dandisets/001333/2025-04-04-deepseek-chat-v3-0324/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-04-deepseek-chat-v3-0324",
@@ -817,6 +1023,418 @@
           {
             "score": 1.0,
             "thinking": "The notebook shows one plot, a time series plot of the beta band voltage. There are no other types of plots in the notebook.",
+            "repnum": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "notebook": "dandisets/001333/2025-04-10-claude-3.7-sonnet-prompt-a-1/001333.ipynb",
+    "dandiset_id": "001333",
+    "subfolder": "2025-04-10-claude-3.7-sonnet-prompt-a-1",
+    "overall_score": 59.333333333333336,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 9.0,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a comprehensive description of the Dandiset. It includes the Dandiset ID, a brief overview of the dataset's purpose (exploring electrophysiological signals from simulated healthy subjects with beta oscillations, relevant to Parkinson's Disease), the contents (LFP data), and the data organization (subjects, sessions, NWB files). The notebook also explores key metadata fields such as session description, subject information, and electrode groups. The introduction explicitly states the dataset's contents and its relevance to Parkinson's Disease research. Thus, this notebook aligns well with a high score.\n\nThe notebook could be improved by including a section on the limitations of the simulated data and highlighting the need for caution when interpreting the findings in a real-world clinical context.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a comprehensive description of the Dandiset, including its ID, purpose (Parkinson's Electrophysiological Signal Dataset, PESD), contents (electrophysiological signals from simulated healthy subjects with beta oscillations), and the data organization within the NWB files. It explores the metadata, file types, and the data structure, showcasing the key metadata fields present in the NWB files, such as session description, subject information, and electrode groups. Hence it deserves a high score. The only way to improve it is to automatically download the assets instead of relying on a local assets.json file.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a comprehensive description of the Dandiset, including its ID, purpose (Parkinson's Electrophysiological Signal Dataset with simulated beta oscillations), contents (LFP data), and data organization (subjects, sessions, NWB files). It also explores key metadata fields and visualizes the data. The notebook offers a detailed overview of the dataset's characteristics and structure.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 5.666666666666667,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads the Dandiset using the DANDI API and displays the ID, version, and attempts to display other attributes like name, description, contributor, license, and keywords. However, most of these metadata fields are \"Not available\", indicating that the Dandiset metadata is incomplete or these attributes are not filled. The notebook also includes a helper function to print dictionary attributes, showing an intention to explore the available metadata thoroughly, but is partially limited by the amount of information associated to the Dandiset. Therefore, the notebook successfully loads the Dandiset and explores the metadata. The notebook also uses `assets.json`, implying that it loads assets as a postprocessing step, or from a hardcoded assets file, which is a limitation.",
+            "repnum": 0
+          },
+          {
+            "score": 4.0,
+            "thinking": "The notebook initializes the DANDI API client, retrieves the Dandiset using its ID, and displays the ID and version. It also defines a helper function aimed at printing available attributes. However, the notebook fails to load relevant Dandiset metadata such as name, description, contributor, license, and keywords, marking them as \"Not available\". It extracts basic subject and session information. Therefore, the notebook successfully loads the Dandiset ID and some basic information, but not much beyond that.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully uses the DANDI API to load the Dandiset and print its ID. It then defines helper functions to explore Dandiset metadata. Although it attempts to display name, description, contributor, license, and keywords, it states that these are \"Not available\" within the Dandiset object. Therefore, it falls short of fully exploring the Dandiset's metadata, despite defining functions to do so. It successfully loads the assets however, which can be counted as Dandiset information.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully lists available assets, demonstrates loading specific assets, and shows how to access asset metadata. It loads the metadata from a json file instead of streaming. The notebook includes loading some specific data from the NWB files.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook successfully lists available assets in the Dandiset, loads file information including the URL used to acess the files. Then, the notebook demonstrates how to load data from the files and shows how to extract subject ID and session ID. The notebook clearly demonstrates how to load assets effectively so it deserves a high score.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook starts by retrieving Dandiset metadata using the DANDI API, then lists assets from a pre-existing \"assets.json\" file. Then, it proceeds to load and explore selected NWB files, demonstrating how to work with specific assets by accessing the associated data and metadata. It does not show how to generate the assets.json file. Therefore, the notebook successfully lists available assets, demonstrating how to load specific assets, and shows how to access some asset metadata contained within the NWB file, with usage examples. While the notebook initially accesses some metadata about the dandiset through the Dandi API, it does not adequately access or explore dandiset asset metadata beyond what is contained in the NWB files themselves. It mostly focuses on NWB files.\nSo, the notebook has some limitations but it still performs pretty well.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 9.0,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook successfully loads NWB files, explores metadata, examines electrode groups, and investigates various data interfaces and electrical series within the files. It effectively demonstrates navigating the NWB hierarchy and accessing key data components like LFP data and timestamps. The notebook provides a comprehensive exploration of the NWB file contents. The analysis and visualization sections further solidify the understanding of the data structure, demonstrating how to work with the loaded NWB data effectively.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook successfully loads NWB files, accesses components like session description, subject information, electrode groups, and LFP data. It demonstrates a detailed navigation of the NWB hierarchy and displays relevant information, showing comprehensive exploration of the file's contents and key data components. However, It could be improved by exploring modalities other than LFP.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook demonstrates accessing various components of the NWB file, including session information, subject details, electrode groups, and LFP data. It explores the structure of the NWB file and navigates the NWB hierarchy to extract relevant information. It shows how to load the NWB file, lists all keys, and accesses the high-level elements such as session description, identifier, and subject data. By doing so, it provides a fairly comprehensive exploration of the NWB file's contents providing examples for most of standard NWB fields. The notebook could perhaps dive deeper into data structures like epochs, but overall covers main aspects well.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 8.0,
+        "reps": [
+          {
+            "score": 10.0,
+            "thinking": "The notebook successfully loads data from NWB files, demonstrating how to access specific data interfaces, electrical series, and LFP data, including timestamps. It handles the data types appropriately and shows how to access multiple data elements. Thus the notebook provides a comprehensive demonstration of loading data from NWB files, accessing specific data and handling data types and data explorations.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads data from NWB files, demonstrating how to access specific data types like LFP data and timestamps. It handles data appropriately and explores data structures with examples. It loads the data, and visualizes it as well, which is outside the scope of just loading. However, the notebook does not showcase a comprehensive approach to loading multiple diverse data types beyond LFP and timestamps, and advanced data access techniques. Therefore while it does a decent job, there are more ways to explore and showcase data loading from NWB files.",
+            "repnum": 1
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook successfully loads data from NWB files using remfile and h5py, accessed through DANDI API urls. The notebook successfully demonstrates loading data and timestamps. The function load_nwb_data successfully extracts LFP data, timestamps, subject ID and session ID, which is then used in visualizations and analysis. Later, the notebook loads data from multiple files. The exploration of electrode groups, processing modules and data interfaces contribute to accessing multiple data elements. Therefore, a score of 8 is appropriate.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 7.666666666666667,
+        "reps": [
+          {
+            "score": 8.0,
+            "thinking": "The notebook provides a comprehensive exploration and visualization of electrophysiological data from NWB files within the Dandiset. It covers various aspects of data visualization, including raw LFP signals, power spectral density (PSD), spectrograms, beta band filtering and envelope extraction, and comparisons across multiple sessions. The notebook effectively demonstrates how to load, process, and visualize different types of data from NWB files, with clear labels and explanations. The visualizations are generally well-formatted and suitable for understanding the data. However, it could be improved with more in-depth analysis and more sophisticated visualizations.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates multiple visualization types including time series plots, power spectral density, spectrogram, and filtered signals with envelopes. The plots are labeled and the analysis includes comparisons between sessions. However, the visualizations are relatively basic and do not reach the level of advanced or publication-quality visualizations.",
+            "repnum": 1
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook explores an NWB file from a DANDI dataset, loads LFP data, and generates visualizations including time series plots, power spectral density plots, spectrograms, and comparisons across multiple sessions. The notebook provides clear and labeled visualizations. It performs frequency analysis, beta band filtering and envelope extraction. The visualizations presented in the notebook provides insights into the recorded electrophysiological data and are relatively easy to interpret, using standardized techniques. The visualizations are well-labeled and informative, justifying a high score. However, it is not quite publication quality.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The plots are generally well-formatted, with appropriate labels and clear visualizations. The time series plots, PSD, spectrogram and envelope plots are informative and easy to understand. The comparison plots could have more detailed labels but they generally serve their purpose. The plots are well above average in quality.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The plots progress from basic to better quality with time-frequency analysis, beta comparison across sessions, and time domain plots. Formatting is generally done well, and labels are present. The final plot comparing beta envelopes is crowded but still readable. The earlier plots are simpler and more basic, but the later plots are more detailed. Overall, the plots are well-formatted and informative, with generally clear labeling and presentation, therefore the score of 7.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The plots are generally well-formatted and readable, with labels and titles. Spectrogram could be improved (e.g. better color map), but overall the plots are of good quality. The plots are not quite publication-ready, but they are beyond the simple/basic stage.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook focuses on loading and analyzing one primary data stream: the Local Field Potential (LFP) data, specifically the Beta_Band_Voltage. All the analysis and visualization revolves around this single LFP data stream. No other fundamentally different data streams are loaded from the NWB files.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook primarily focuses on loading and analyzing LFP (Local Field Potential) data, specifically the \"Beta_Band_Voltage\" electrical series available within the NWB files. Although the notebook performs transformations and calculations on this data (such as calculating Power Spectral Density and beta power), it consistently uses only the LFP \"Beta_Band_Voltage\" data stream. It also loads timestamp data for the LFP.\n\nTherefore, there is only one data stream loaded: LFP. The timestamps can be argued is part of the LFP stream, so it would be 1.\n\nThe data is the beta band voltage, and timestamps are associated with the data stream.\n\nTherefore, my answer is 1. The only datastream loaded is the beta band voltage LFP data.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads LFP data and timestamps from the NWB files. Although the electrode groups are inspected, the actual electrode data itself is not explicitly loaded as a separate stream. Therefore, only the LFP data is loaded as the main data stream, along with its associated timestamps. The plots are all based on this LFP data. Even though bandpass filtering is applied to the LFP data, it is still the same underlying stream.\n\nTherefore the number of fundamentally different data streams loaded is 1.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 5.0,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook displays the following types of plots:\n1. Time series plot of LFP data\n2. Power Spectral Density (PSD) plot\n3. Spectrogram\n4. Bar plot comparing beta power across sessions.\n5. Time series plot comparing LFP waveforms across sessions\n6. Time series plot of original signal, filtered signal, and envelope\n7. Comparison of beta envelopes across sessions\n\nThus, there are 7 distinct plot types; therefore the answer is 5 or more.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook displays the following plot types:\n\n1.  Raw signal (time domain) plot\n2.  Power Spectral Density (PSD) plot\n3.  Spectrogram (time-frequency analysis)\n4.  Bar plot (comparison of beta power)\n5.  Plots of filtered signals and envelopes of filtered signals\n6.  Plots of normalized signals with all plotted on a common y-axis and offset\n\nSo there are 6 fundamentally different types of plots. Note that 5 and 6 could arguably be combined, but even if they are, there would still be 5. The bar chart, the PSD plot, the spectrogram and the raw signal are clearly different. Even filtering and getting the envelope of the signal is fundamentally different even if they display time on the x-axis.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook shows the following different types of plots:\n1. Time series plot of LFP data.\n2. Power Spectral Density (PSD) plot.\n3. Spectrogram (time-frequency analysis).\n4. Bar plot comparing beta power across sessions.\n5. Time series plots of normalized LFP waveforms across sessions.\n6. Time series plot of original, filtered, and envelope curves.\n7. Time series plots comparing beta envelopes across sessions.\n\nThus, there are 7 different types of plots shown in the notebook. Since the highest score available is 5, the final score is 5.",
+            "repnum": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "notebook": "dandisets/001333/2025-04-10-quasar-alpha-prompt-b-1/001333.ipynb",
+    "dandiset_id": "001333",
+    "subfolder": "2025-04-10-quasar-alpha-prompt-b-1",
+    "overall_score": 52.0,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 9.0,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good description of the Dandiset. It includes the title (\"Parkinson's Electrophysiological Signal Dataset (PESD)\"), the ID (\"DANDI:001333\"), a description of the dataset's purpose (electrophysiological signals from healthy and Parkinsonian subjects), the types of signals included (Beta ARV and LFPs), contributor information, creation date, license, techniques, and citation information. It also describes the data organization, to some extent, by specifying that it includes simulated data and that data is segmented by subject type. Therefore, the notebook contains the elements required for a high score.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides the Dandiset ID, title, a brief description of the content (electrophysiological signals from healthy and Parkinsonian subjects), the purpose of the dataset (study of Parkinson's), and key metadata like contributors, creation date, license, techniques, and citation. The organization of the data (e.g., different signal types, simulated data) is briefly mentioned, leading to a score of 9.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides the Dandiset ID, title and a good overview of the Dandiset's purpose, content, and includes relevant metadata. It also mentions the structure of the data (LFP signals, Beta ARV). The notebook provides links to the DANDI archive and the related publication, which is helpful for users who want to learn more about the dataset. Therefore, a score of 9 is warranted.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, retrieves the dandiset, and lists its assets (which implicitly loads the dandiset). It then extracts and prints metadata fields like session description, subject ID, species, and session start time. It also explores electrode group information. The notebook does a reasonable job of loading and displaying key metadata fields. There is no further working with the dandiset object itself other than accessing assets, and basic metadata is printed. The notebook could have printed the dandiset metadata fetched via client.get_dandiset in a more structured format.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, retrieves the Dandiset, and lists its assets. It also extracts and prints the session description, subject ID, species, and session start time which are all metadata fields. The notebook provides a good overview of how to load and access basic metadata. It does not explore *all* key metadata fields, but it does explore several important ones, justifying a score of 6. It could go more in depth into the metadata available through the 'assets' object.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully connects to the DANDI Archive, retrieves the Dandiset, and lists its assets. It then loads an NWB file remotely and displays basic metadata fields like session description, subject ID, species, and session start time. It also explores electrode group information. The notebook effectively demonstrates how to load and access several key metadata fields, though it could benefit from descriptions of each field.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook connects to the DANDI archive, lists the assets in the Dandiset and their names. It then loads one specific asset and extracts data from it, also demonstrating how to extract basic metadata about the NWB file that is loaded. I would rate it 6.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates loading specific assets using `dandiapi`, listing assets, loading an NWB file remotely, and accessing basic metadata. It also iterates through electrode groups to access metadata such as location, description, and device. The notebook does not thoroughly explore multiple asset types or provide comprehensive asset handling but illustrates key aspects of loading and exploring Dandiset assets. Hence the score is 7.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully lists the assets in the Dandiset, loads a specific asset, and extracts basic asset information such as session description, subject ID, species, and session start time, and explores the electrode metadata. It also loads data from the asset and displays it. Therefore, it demonstrates loading a specific asset and accessing asset metadata. It does not explore multiple asset types, nor does it explore various asset metadata aspects.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, lists assets, and loads an NWB file remotely. It then demonstrates accessing basic NWB components such as session description, subject ID, species, and session start time. The notebook also explores the electrode group information and available electrode table columns. It shows how to load and visualize beta band local field potentials and plot PSD, so it's more than just opening and displaying basic info but it does not explore other modules in detail. Thus, the score is 7.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file remotely, showing how to access basic information like session description, subject ID, species, and session start time. Additionally, the notebook shows how to access and plot data from an electrical series within the NWB file, demonstrates how to compute the power spectral density, and explores electrode group metadata. This covers accessing several basic NWB components. The notebook does not show a complete demonstration of the NWB file structure but touches on the key data components. Specifically, it accesses the processing module, electrical series, and electrode groups.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file from a remote URL using `remfile` and `pynwb`. It then accesses and prints the session description, subject ID, species, and session start time, demonstrating the ability to extract basic information. The notebook also explores the electrode groups and their corresponding metadata (location, description, and device). This shows a good understanding of the NWB file structure and the ability to navigate and access key data components such as session metadata and electrode information. Additionaly the notebook extracts and plots the beta band voltage which is an important data structure. The score is 7 because it explores multiple NWB data structures, including the session metadata, subject info, electrode groups, and time series data.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 8.0,
+            "thinking": "The notebook successfully loads an NWB file from a remote source using `remfile` and `pynwb`. It then accesses and prints basic metadata, extracts and plots the 'Beta_Band_Voltage' electrical series data, calculates its power spectral density (PSD), and explores electrode group metadata. This demonstrates loading both general information and specific data types from the opened NWB file. It showcases accessing data from the 'processing' module, 'data_interfaces', and 'electrical_series'. The notebook handles numerical data (voltage, timestamps) and string data (descriptions) which constitutes demonstrating data loading and handling multiple data types from the NWB file although not comprehensively. Therefore the notebook deserves a score of 8 based on the rubric.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from a URL using `remfile` and `pynwb`. It then accesses and prints basic metadata attributes like session description, subject ID, species, and session start time. The notebook also loads a specific data type, \"Beta_Band_Voltage\" from the electrical series and plots a subset of the data, demonstrating access to both the time series data and its corresponding timestamps. Finally, it accesses electrode group information. Therefore, the notebook demonstrates loading a specific data type and accessing multiple data elements. It does not comprehensively handle multiple data types or demonstrate particularly advanced techniques, but it does more than just \"basic data arrays\".",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads the NWB file remotely using remfile and pynwb. It then demonstrates how to access specific data elements such as the session description, subject ID, species, and session start time. Furthermore, it shows how to access and plot beta band voltage data and compute the power spectral density. The notebook successfully loads data arrays and provides examples of accessing metadata and electrode information. Thus, the notebook shows loading of basic data arrays and some specific data types. Does not fully 'handle different data types appropriately' but shows electrode metadata.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook demonstrates loading an NWB file from a DANDI archive and visualizing the beta-band voltage signal and its power spectral density. Basic plotting is used with labels and titles. The notebook explores metadata and electrode information. However, it focuses on a specific data type and doesn't delve into advanced visualization techniques or multiple data types comprehensively. The visualizations are simple and could be improved for publication quality (e.g., axis range selection and legend format). The notebook also loads only 200 data points, which limits visualization quality and insight. Therefore, a score of 6 is appropriate, indicating that it demonstrates multiple visualization types (time series and PSD) with basic formatting.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook shows multiple basic visualizations of the data in the NWB file, including a time series plot and a power spectral density plot. The visualizations are properly labelled. Therefore, the notebook provides a good example of how to visualize data from an NWB file.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads data from a remote NWB file and generates visualizations. It plots a segment of the beta band voltage time series and its power spectral density. The plots include labels and titles, enhancing clarity. However, the visualizations are relatively basic and only focus on one data type (beta band voltage). The notebook could benefit from exploring visualizations of other data types within the NWB file or employing more advanced visualization techniques.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook contains two plots. The first plot displays Beta Band Voltage over Time, which is readable, has labeled axes and a title. The second plot displays the Power Spectral Density. It's also readable with labels and a title. Both plots have good formatting, making them publication quality. Since the axes are labeled and the plots convey their desired information, a score of 7 is warranted. They're not publication ready since they contain unnecessary grid lines.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook produces two plots: a beta band voltage plot and a power spectral density plot. Both plots are readable with axis labels and titles. The PSD plot uses a logarithmic scale for the y-axis, which is appropriate. The labels are complete. The plots are well-formatted and clear. I would rate them a 7.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The plots are clearly readable and have axis labels and titles which help understand the plots. The time series plot displays voltage as a function of time, and the PSD plot shows power spectral density as a function of frequency.\n    The plots are well-formatted. The PSD plot uses a log scale for the y-axis which is appropriate for visualizing power spectral density. Overall, the plots are clear and informative.\n\n    I would thus rate these plots a 7 out of 10.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 1.3333333333333333,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads one NWB file. Within that file, it loads the Beta_Band_Voltage data which is considered one data stream. No other fundamentally different streams of data are loaded from other NWB files. While electrode metadata is accessed, it doesn't constitute an independent \"data stream\" in the sense of time series data or similar. Therefore the answer is one.",
+            "repnum": 0
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads and explores two distinct data streams: \"Beta_Band_Voltage\" (beta band voltage time series) and electrode metadata. These are fundamentally different types of data. The first is a time series representing voltage fluctuations, while the second describes properties of the recording electrodes themselves. The notebook does list assets from the Dandiset but only loads data in detail from a single NWB file. The PSD data is generated on the \"Beta_Band_Voltage\" data and is not a fundamentally new stream of raw data.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads the \"Beta_Band_Voltage\" electrical series from the \"LFP\" data interface, which is one data stream. It also explores electrode group metadata, which is descriptive data about the electrodes but not a second independent data stream of electrophysiological recordings. Therefore only one fundamental electrophysiological data stream is opened.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 2.0,
+        "reps": [
+          {
+            "score": 2.0,
+            "thinking": "The notebook displays 2 plots. The first plot is a time-series plot of voltage vs time. The second plot is a power-spectral density plot showing power as a function of frequency. These are two fundamentally distinct types of plots.",
+            "repnum": 0
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook shows two plots: a time series plot of voltage vs time and a power spectral density plot which displays power vs frequency. These are fundamentally different plot types because they show different types of relationships between the data.",
+            "repnum": 1
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook shows two types of plots: a time series plot (Beta Band Voltage) and a power spectral density plot. These are fundamentally different visualization techniques.",
             "repnum": 2
           }
         ]
