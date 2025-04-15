@@ -25,3 +25,6 @@
 [submodule "dandisets/001366"]
 	path = dandisets/001366
 	url = https://github.com/dandi-ai-notebooks/001366
+[submodule "packages/get-nwbfile-info"]
+	path = packages/get-nwbfile-info
+	url = https://github.com/rly/get-nwbfile-info
