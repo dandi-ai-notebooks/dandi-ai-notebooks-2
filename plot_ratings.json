@@ -2231,6 +2231,320 @@
     }
   },
   {
+    "notebook": "dandisets/000673/2025-04-15-gemini-2.0-flash-001-prompt-b-3/000673.ipynb",
+    "dandiset_id": "000673",
+    "subfolder": "2025-04-15-gemini-2.0-flash-001-prompt-b-3",
+    "plots": [
+      {
+        "plot_id": "cell_7_output_0",
+        "cell_index": 7,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 5.0,
+                "thinking": "The plot presents LFP data over time. The axes are clearly labeled with appropriate units. The data is visible and well-scaled. While the plot doesn't have multiple traces or complex annotations, it effectively communicates the basic temporal dynamics of the LFP signal. Axis labels and title are appropriate. Overall, it's a well-made, clear plot suitable for a publication.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows LFP data over time. The axes are labeled, and the data seems reasonable for this type of measurement. The plot is clean and easy to read. There are no apparent issues that would prevent the reader from understanding the data. However, it is not especially novel. It lacks some aesthetics for publications - like removing the grid, fine-tuning labels.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot displays LFP data over time, with clear axes labels and a title. The data is visible and informative. While the y-axis label might benefit from specifying the units (e.g., mV), the plot quality is generally high. No immediate issues prevent understanding the data shown. The data and axis labels are easily readable.\nNo overlapping elements, information is clear. It could benefit from better explanation in title/axis but overall pretty good.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_7_output_1",
+        "cell_index": 7,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 5.0,
+                "thinking": "The plot is well-formatted with axis labels, title, and the data is clear. There are no immediately apparent issues that would need to be addressed. It has good information and is easy to read. The time axis is labeled in seconds and the LFP is in volts, it would be perfect if we had Volts and seconds as 's' but this is not a major issue.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled and the data is clearly visible. The plot is clear and of good quality.\n    Therefore, it could be improved to be publishable.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows LFP data for channel 1, with time on the x-axis and LFP (volts) on the y-axis. The data is clearly displayed, and the axes are properly labeled and scaled. It effectively conveys the information.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_7_output_2",
+        "cell_index": 7,
+        "output_index": 2,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled with appropriate axis labels and a title. The data is clearly visible. There are no overlapping elements. Therefore, the overall quality of the scientific figure is very good. However, it is not publication quality since it could benefit from error bands.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows LFP data over time. The axes are properly labeled, and the plot is easy to understand. The plot is of good quality, but could benefit from more context or analysis in the figure caption to reach publication quality. The plot could also benefit from error bars, or a better explanation of the spread of the data.",
+                "repnum": 1
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot presents LFP data over time. The axes are labeled, and a title is present. The data is clear and readily interpretable. No immediate improvements needed. The plot is well-suited for inclusion in a scientific publication.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_7_output_3",
+        "cell_index": 7,
+        "output_index": 3,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled, with informative axis titles and a clear title. The data is easy to view and the plot is aesthetically pleasing. Some aspects can be improved, however, the major feature is that the x axis and y axis ticks are not optimized for the data that is being shown. A wider range for y and more ticks for x axis would make the figure have higher information content. Another minor aspect that could be improved is if a legend was present in the plot.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot clearly shows LFP data over time for channel 3. Axes are labeled and the plot is easy to understand. It lacks a legend but there is only one line, so that is not an issue. The grid is helpful. Overall, it's well-presented but may need minor adjustments for formal publication.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows LFP data over time. The axes are labeled clearly. There are not any immediate issues with the plot. So I will give it a 4",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_7_output_4",
+        "cell_index": 7,
+        "output_index": 4,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled, the axes are clear, and the plot displays data. It is not publication quality because it would require a detailed caption, maybe another visualization, and possibly a better explanation of the experiment in the main text.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows LFP data from a single channel over time. The axes are labeled, and the data is clearly visible. There are no apparent issues or errors. The plot is suitable for inclusion in a scientific publication, but would benefit from having a figure caption to explain the context of the data. The plotting style and overall clarity are quite high. It could perhaps be improved by adding gridlines and minor ticks, to improve readability. But these are not essential at this stage. There could be more information provided to the reader to allow them to understand the plot fully. The plot is easy to interpret and displays the required information concisely. Overall the plot is close to achieving a publication quality standard.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled and easy to read, and the data is clearly visible. However, the plot could benefit from a more descriptive title. I will rate this as a 4.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_10_output_0",
+        "cell_index": 10,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 1.0,
+            "reps": [
+              {
+                "score": 1.0,
+                "thinking": "This is not a scientific plot, so it does not make sense to rate it on the criteria given. However, it is an image of good quality. Therefore the score is 1.",
+                "repnum": 0
+              },
+              {
+                "score": 1.0,
+                "thinking": "The image is not a plot, it is a photograph of someone speaking at a podium.",
+                "repnum": 1
+              },
+              {
+                "score": 1.0,
+                "thinking": "This is not a scientific plot; it is an image of a person. So, its quality cannot be evaluated based on the criteria used for scientific plots.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_10_output_1",
+        "cell_index": 10,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 1.6666666666666667,
+            "reps": [
+              {
+                "score": 2.0,
+                "thinking": "The image is a stimulus template which means that it is simply an image and not a scientific figure. As a result, it does not represent any data. So, the plot is of low quality. It has low information content due to the image being rotated and having no axes.",
+                "repnum": 0
+              },
+              {
+                "score": 1.0,
+                "thinking": "The image is not a scientific plot, but a photograph. It has a title, but no data. Therefore, it is missing key parameters of a plot.",
+                "repnum": 1
+              },
+              {
+                "score": 2.0,
+                "thinking": "The image shows a photograph, which is not usually a scientific figure. The contents of the image seem ok, but do not represent the typical content of a scientific plot. Therefore, the image is of low quality as a scientific figure.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_10_output_2",
+        "cell_index": 10,
+        "output_index": 2,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 1.6666666666666667,
+            "reps": [
+              {
+                "score": 1.0,
+                "thinking": "This is not a scientific figure, it is an image of a person. It therefore doesn't fit the requirements of a scientific plot.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The image is a photograph and therefore is not a scientific figure. However the image looks clear, the lightning conditions look good, and the centering of the content is well done. Therefore, the image is not terrible, but not publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 1.0,
+                "thinking": "The plot is an image of a person. While it's of good quality in a visual sense, it's not a scientific figure, implying that a figure created using data is needed. No data is present.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_10_output_3",
+        "cell_index": 10,
+        "output_index": 3,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 1.0,
+            "reps": [
+              {
+                "score": 1.0,
+                "thinking": "The image is a picture of a woman, and doesn't fit the definition of a scientific figure. Therefore, I will mark the quality to be 1.",
+                "repnum": 0
+              },
+              {
+                "score": 1.0,
+                "thinking": "The image shown is not a scientific figure, making it impossible to assess based on the rubric. Therefore, it is not a scientific plot; thus, it does not contain data.",
+                "repnum": 1
+              },
+              {
+                "score": 1.0,
+                "thinking": "The image shows a picture of high quality, but it is not a scientific plot. It does not contain any data or information you would find in a scientific publication.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_10_output_4",
+        "cell_index": 10,
+        "output_index": 4,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The image is rotated, so the figure would not be suitable for publication without re-orientation. Otherwise, the image is of good quality.",
+                "repnum": 0
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot is clear and visually appealing. It has no issues and is of publication quality. The presence of the title \"Stimulus Template - image_105\" does not affect the quality of the image itself.",
+                "repnum": 1
+              },
+              {
+                "score": 5.0,
+                "thinking": "The image quality if very good with no artifacts or other problems.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "000673",
+      "model": "google/gemini-2.0-flash-001",
+      "prompt": "prompt-b-3.txt",
+      "total_prompt_tokens": 977448,
+      "total_completion_tokens": 6423,
+      "total_vision_prompt_tokens": 14730,
+      "total_vision_completion_tokens": 504,
+      "elapsed_time_seconds": 147.1146833896637,
+      "timestamp": "2025-04-15 11:26:16",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
     "notebook": "dandisets/000945/2025-04-01-deepseek-chat-v3-0324/000945.ipynb",
     "dandiset_id": "000945",
     "subfolder": "2025-04-01-deepseek-chat-v3-0324",

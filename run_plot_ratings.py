@@ -2,6 +2,7 @@
 
 import os
 import json
+import time
 import base64
 import yaml
 from pathlib import Path
@@ -42,7 +43,12 @@ def parse_assistant_response(assistant_response: str) -> Dict[str, Any]:
     """Parse the assistant's response into thinking and score."""
     ind1 = assistant_response.find("<plot_rater>")
     ind2 = assistant_response.find("</plot_rater>")
+    if ind1 == -1 and ind2 >= 0:
+        # sometimes gemini makes a mistake and returns </plot_rater> for both the opening and closing tags
+        ind1 = ind2
+        ind2 = ind1 + len("</plot_rater>") + assistant_response[ind1 + len("</plot_rater>"):].find("</plot_rater>")
     if ind1 == -1 or ind2 == -1:
+        print(assistant_response)
         raise ValueError("Invalid assistant response format")
     ind1 += len("<plot_rater>")
     content = assistant_response[ind1:ind2]
@@ -50,14 +56,16 @@ def parse_assistant_response(assistant_response: str) -> Dict[str, Any]:
     thinking_ind1 = content.find("<thinking>")
     thinking_ind2 = content.find("</thinking>")
     if thinking_ind1 == -1 or thinking_ind2 == -1:
-        raise ValueError("Invalid assistant response format")
+        print(content)
+        raise ValueError("Invalid assistant response format for parsing thinking")
     thinking_ind1 += len("<thinking>")
     thinking = content[thinking_ind1:thinking_ind2].strip()
 
     score_ind1 = content.find("<score>")
     score_ind2 = content.find("</score>")
     if score_ind1 == -1 or score_ind2 == -1:
-        raise ValueError("Invalid assistant response format")
+        print(content)
+        raise ValueError("Invalid assistant response format for parsing score")
     score_ind1 += len("<score>")
     score = content[score_ind1:score_ind2].strip()
     try:
@@ -198,11 +206,6 @@ def rate_notebook_plots(
                 with open(png_file, "wb") as f:
                     f.write(png_bytes)
 
-            if existing_plot_ratings:
-                result["plots"].append(existing_plot_ratings)
-                print(f"Using existing ratings for plot {plot_id}")
-                continue
-
             print(f"\nRating plot {plot_count} (ID: {plot_id})")
 
             # Create the plot ratings entry
@@ -219,13 +222,23 @@ def rate_notebook_plots(
             # Rate the plot for each question
             for question in questions["questions"]:
                 print(f"Rating question: {question['name']} version {question['version']}")
-                score_result = rate_plot(
-                    image_data_url=image_data_url,
-                    question=question,
-                    model=model
-                )
-                plot_entry["scores"].append(score_result)
-                print(f"Score: {score_result['score']:.2f}")
+                if existing_plot_ratings:
+                    existing_score = next((s for s in existing_plot_ratings["scores"] if s["name"] == question["name"]), None)
+                    if existing_score:
+                        print(f"Existing score: {existing_score['score']:.2f}")
+                        plot_entry["scores"].append(existing_score)
+                        continue
+                try:
+                    score_result = rate_plot(
+                        image_data_url=image_data_url,
+                        question=question,
+                        model=model
+                    )
+                    plot_entry["scores"].append(score_result)
+                    print(f"Score: {score_result['score']:.2f}")
+                except Exception as e:
+                    print(f"Error rating plot: {e}")
+                    time.sleep(3)  # so user can see the error
 
             result["plots"].append(plot_entry)
 
