@@ -6,10 +6,13 @@ import {
   Box,
   CircularProgress,
   Container,
-  Typography
+  Typography,
+  Tabs,
+  Tab
 } from '@mui/material';
-import { Rating } from './types';
+import { Rating, PlotRating } from './types';
 import RatingsTable from './RatingsTable';
+import PlotRatingsTable from './PlotRatingsTable';
 import axios from 'axios';
 
 const darkTheme = createTheme({
@@ -20,17 +23,23 @@ const darkTheme = createTheme({
 
 function App() {
   const [ratings, setRatings] = useState<Rating[]>([]);
+  const [plotRatings, setPlotRatings] = useState<PlotRating[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [currentTab, setCurrentTab] = useState(0);
 
   useEffect(() => {
-    loadRatings();
+    loadAllRatings();
   }, []);
 
-  const loadRatings = async () => {
+  const loadAllRatings = async () => {
     try {
-      const response = await axios.get('https://raw.githubusercontent.com/dandi-ai-notebooks/dandi-ai-notebooks-2/refs/heads/main/ratings.json');
-      setRatings(response.data);
+      const [ratingsResponse, plotRatingsResponse] = await Promise.all([
+        axios.get('https://raw.githubusercontent.com/dandi-ai-notebooks/dandi-ai-notebooks-2/refs/heads/main/ratings.json'),
+        axios.get('https://raw.githubusercontent.com/dandi-ai-notebooks/dandi-ai-notebooks-2/refs/heads/main/plot_ratings.json')
+      ]);
+      setRatings(ratingsResponse.data);
+      setPlotRatings(plotRatingsResponse.data);
     } catch (err) {
       setError('Failed to load ratings data');
       console.error(err);
@@ -59,7 +68,17 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <Container maxWidth={false}>
-        <RatingsTable ratings={ratings} />
+        <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 3 }}>
+          <Tabs value={currentTab} onChange={(_, newValue) => setCurrentTab(newValue)}>
+            <Tab label="Notebooks" />
+            <Tab label="Plots" />
+          </Tabs>
+        </Box>
+        {currentTab === 0 ? (
+          <RatingsTable ratings={ratings} />
+        ) : (
+          <PlotRatingsTable plotRatings={plotRatings} />
+        )}
       </Container>
     </ThemeProvider>
   );
