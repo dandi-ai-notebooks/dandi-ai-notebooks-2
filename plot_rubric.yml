@@ -1,0 +1,15 @@
+questions:
+  - name: quality
+    version: 1
+    question: What is the overall quality of this scientific figure?
+    rubric:
+      - score: 1
+        description: The plot is empty, has no data, or has a serious problem that is likely due to an error creating it
+      - score: 2
+        description: The plot is of low quality or has very low information content
+      - score: 3
+        description: The plot is of good quality, but has some issues that could be improved
+      - score: 4
+        description: The plot is of very good quality, but not publication quality
+      - score: 5
+        description: The plot is of publication quality, with no issues
