@@ -175,6 +175,15 @@ def rate_notebook(
     total_completion_tokens = 0
     cells = notebook["cells"]
 
+    # get metadata from metadata.json
+    notebook_parent_path = os.path.dirname(notebook_path_or_url)
+    metadata_path = os.path.join(notebook_parent_path, "metadata.json")
+    if os.path.exists(metadata_path):
+        with open(metadata_path, "r") as f:
+            metadata = json.load(f)
+    else:
+        metadata = None
+
     new_result = {
         "notebook": notebook_path_or_url,
         "dandiset_id": notebook_path_or_url.split("/")[-3],
@@ -182,6 +191,8 @@ def rate_notebook(
         "overall_score": 0,
         "scores": []
     }
+    if metadata:
+        new_result["metadata"] = metadata
 
     for question in questions["questions"]:
         existing_score = None

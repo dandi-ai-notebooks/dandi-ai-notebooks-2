@@ -3,6 +3,27 @@ import './RatingsTable.css';
 import { Rating } from './types';
 import { FormControl, Select, MenuItem, InputLabel } from '@mui/material';
 
+const calculateEstimatedCost = (rating: Rating) => {
+  const getModelCost = (model: string): [number, number] => {
+    if (model === 'google/gemini-2.0-flash-001') return [0.1, 0.4];
+    else if (model === 'openai/gpt-4o') return [2.5, 10];
+    else if (model === 'anthropic/claude-3.5-sonnet') return [3, 15];
+    else if (model === 'anthropic/claude-3.7-sonnet') return [3, 15];
+    else if (model === 'anthropic/claude-3.7-sonnet:thinking') return [3, 15];
+    else if (model === 'deepseek/deepseek-r1') return [0.55, 2.19];
+    else if (model === 'deepseek/deepseek-chat-v3-0324') return [0.27, 1.1];
+    return [0, 0];
+  };
+
+  if (!rating.metadata) return 0;
+
+  const [promptCost, completionCost] = getModelCost(rating.metadata.model);
+  const totalPromptTokens = (rating.metadata.total_prompt_tokens || 0) + (rating.metadata.total_vision_prompt_tokens || 0);
+  const totalCompletionTokens = (rating.metadata.total_completion_tokens || 0) + (rating.metadata.total_vision_completion_tokens || 0);
+
+  return ((totalPromptTokens * promptCost) + (totalCompletionTokens * completionCost)) / 1000;
+};
+
 type SortConfig = {
   key: string;
   direction: 'asc' | 'desc';
@@ -51,6 +72,9 @@ export default function RatingsTable({ ratings }: Props) {
       } else if (sortConfig.key === 'overall_score') {
         aValue = a.overall_score;
         bValue = b.overall_score;
+      } else if (sortConfig.key === 'est_cost') {
+        aValue = calculateEstimatedCost(a);
+        bValue = calculateEstimatedCost(b);
       } else if (sortConfig.key.startsWith('score_')) {
         const scoreIndex = parseInt(sortConfig.key.split('_')[1]);
         aValue = a.scores[scoreIndex]?.score ?? -Infinity;
@@ -142,6 +166,12 @@ export default function RatingsTable({ ratings }: Props) {
                   )}
                 </th>
               ))}
+              <th onClick={() => handleSort('est_cost')} className="sortable">
+                <span>Est. Cost ($)</span>
+                {sortConfig.key === 'est_cost' && (
+                  <span>{sortConfig.direction === 'asc' ? '↑' : '↓'}</span>
+                )}
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -178,6 +208,9 @@ export default function RatingsTable({ ratings }: Props) {
                     </div>
                   </td>
                 ))}
+                <td className="score-cell">
+                  {calculateEstimatedCost(rating).toFixed(3)}
+                </td>
               </tr>
             ))}
           </tbody>
