@@ -4,7 +4,7 @@ import { Rating } from './types';
 import { FormControl, Select, MenuItem, InputLabel } from '@mui/material';
 
 const calculateEstimatedCost = (rating: Rating) => {
-  const getModelCost = (model: string): [number, number] => {
+  const getModelCost = (model: string): [number | undefined, number | undefined] => {
     if (model === 'google/gemini-2.0-flash-001') return [0.1, 0.4];
     else if (model === 'openai/gpt-4o') return [2.5, 10];
     else if (model === 'anthropic/claude-3.5-sonnet') return [3, 15];
@@ -12,16 +12,18 @@ const calculateEstimatedCost = (rating: Rating) => {
     else if (model === 'anthropic/claude-3.7-sonnet:thinking') return [3, 15];
     else if (model === 'deepseek/deepseek-r1') return [0.55, 2.19];
     else if (model === 'deepseek/deepseek-chat-v3-0324') return [0.27, 1.1];
-    return [0, 0];
+    return [undefined, undefined];
   };
 
   if (!rating.metadata) return 0;
 
   const [promptCost, completionCost] = getModelCost(rating.metadata.model);
+  if (promptCost === undefined || completionCost === undefined) return undefined;
+  if (!rating.metadata) return undefined;
   const totalPromptTokens = (rating.metadata.total_prompt_tokens || 0) + (rating.metadata.total_vision_prompt_tokens || 0);
   const totalCompletionTokens = (rating.metadata.total_completion_tokens || 0) + (rating.metadata.total_vision_completion_tokens || 0);
 
-  return ((totalPromptTokens * promptCost) + (totalCompletionTokens * completionCost)) / 1000;
+  return ((totalPromptTokens / 1e6 * promptCost) + (totalCompletionTokens / 1e6 * completionCost));
 };
 
 type SortConfig = {
@@ -37,7 +39,7 @@ export default function RatingsTable({ ratings }: Props) {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedDandiset, setSelectedDandiset] = useState<string>('');
   const [sortConfig, setSortConfig] = useState<SortConfig>({
-    key: 'overall_score',
+    key: 'date',
     direction: 'desc'
   });
 
@@ -67,14 +69,22 @@ export default function RatingsTable({ ratings }: Props) {
         aValue = a.dandiset_id;
         bValue = b.dandiset_id;
       } else if (sortConfig.key === 'model') {
-        aValue = a.subfolder.split('-').slice(1).join('-');
-        bValue = b.subfolder.split('-').slice(1).join('-');
-      } else if (sortConfig.key === 'overall_score') {
+        aValue = a.metadata?.model?.split('/')[1] || '';
+        bValue = b.metadata?.model?.split('/')[1] || '';
+      } else if (sortConfig.key === 'prompt') {
+        aValue = promptFromSubfolder(a.subfolder);
+        bValue = promptFromSubfolder(b.subfolder);
+      }
+      else if (sortConfig.key === 'date') {
+        aValue = dateFromSubfolder(a.subfolder);
+        bValue = dateFromSubfolder(b.subfolder);
+      }
+      else if (sortConfig.key === 'overall_score') {
         aValue = a.overall_score;
         bValue = b.overall_score;
       } else if (sortConfig.key === 'est_cost') {
-        aValue = calculateEstimatedCost(a);
-        bValue = calculateEstimatedCost(b);
+        aValue = calculateEstimatedCost(a) || 0;
+        bValue = calculateEstimatedCost(b) || 0;
       } else if (sortConfig.key.startsWith('score_')) {
         const scoreIndex = parseInt(sortConfig.key.split('_')[1]);
         aValue = a.scores[scoreIndex]?.score ?? -Infinity;
@@ -136,8 +146,11 @@ export default function RatingsTable({ ratings }: Props) {
         <table>
           <thead>
             <tr>
+              <th>
+                <span>Notebook</span>
+              </th>
               <th onClick={() => handleSort('dandiset_id')} className="sortable">
-                <span>Dandiset ID</span>
+                <span>Dandiset</span>
                 {sortConfig.key === 'dandiset_id' && (
                   <span>{sortConfig.direction === 'asc' ? '↑' : '↓'}</span>
                 )}
@@ -145,6 +158,19 @@ export default function RatingsTable({ ratings }: Props) {
               <th onClick={() => handleSort('model')} className="sortable">
                 <span>Model</span>
                 {sortConfig.key === 'model' && (
+                  <span>{sortConfig.direction === 'asc' ? '↑' : '↓'}</span>
+                )}
+              </th>
+
+              <th onClick={() => handleSort('prompt')} className="sortable">
+                <span>Prompt</span>
+                {sortConfig.key === 'prompt' && (
+                  <span>{sortConfig.direction === 'asc' ? '↑' : '↓'}</span>
+                )}
+              </th>
+              <th onClick={() => handleSort('date')} className="sortable">
+                <span>Date</span>
+                {sortConfig.key === 'date' && (
                   <span>{sortConfig.direction === 'asc' ? '↑' : '↓'}</span>
                 )}
               </th>
@@ -177,15 +203,32 @@ export default function RatingsTable({ ratings }: Props) {
           <tbody>
             {currentRatings.map((rating, index) => (
               <tr key={index}>
-                <td>{rating.dandiset_id}</td>
                 <td>
                   <a
                     href={`https://github.com/dandi-ai-notebooks/${rating.dandiset_id}/blob/main/${rating.subfolder}/${rating.dandiset_id}.ipynb`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {rating.subfolder.split('-').slice(1).join('-')}
+                    {
+                      rating.dandiset_id + ".ipynb"
+                    }
                   </a>
+                </td>
+                <td>{rating.dandiset_id}</td>
+                <td>
+                  {
+                    rating.metadata?.model?.split("/")[1] || ""
+                  }
+                </td>
+                <td>
+                  {
+                    promptFromSubfolder(rating.subfolder)
+                  }
+                </td>
+                <td>
+                  {
+                    dateFromSubfolder(rating.subfolder)
+                  }
                 </td>
                 <td className="score-cell">
                   {rating.overall_score.toFixed(1)}
@@ -209,7 +252,7 @@ export default function RatingsTable({ ratings }: Props) {
                   </td>
                 ))}
                 <td className="score-cell">
-                  {calculateEstimatedCost(rating).toFixed(3)}
+                  {calculateEstimatedCost(rating) ? calculateEstimatedCost(rating)?.toFixed(2) : '--'}
                 </td>
               </tr>
             ))}
@@ -240,4 +283,17 @@ export default function RatingsTable({ ratings }: Props) {
       </div>
     </div>
   );
+}
+
+const promptFromSubfolder = (subfolder: string) => {
+  // subfolder is going to be 2025-04-15-model-name-prompt-a-1
+  // we need to get everything after "prompt-"
+  const prompt = subfolder.split('prompt-')[1];
+  if (!prompt) return '';
+  return 'prompt-' + prompt;
+}
+
+const dateFromSubfolder = (subfolder: string) => {
+  // subfolder is going to be 2025-04-15-model-name-prompt-a-1
+  return subfolder.split('-').slice(0, 3).join('-');
 }
