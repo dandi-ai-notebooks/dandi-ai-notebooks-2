@@ -672,7 +672,7 @@
     "notebook": "dandisets/000673/2025-04-07-claude-3.5-sonnet/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-07-claude-3.5-sonnet",
-    "overall_score": 58.0,
+    "overall_score": 58.00000000000001,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -895,7 +895,7 @@
     "notebook": "dandisets/000673/2025-04-07-quasar-alpha-exp/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 55.0,
+    "overall_score": 55.00000000000001,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -1564,7 +1564,7 @@
     "notebook": "dandisets/000673/2025-04-10-quasar-alpha-prompt-a-1/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-10-quasar-alpha-prompt-a-1",
-    "overall_score": 61.0,
+    "overall_score": 60.99999999999999,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -1787,7 +1787,7 @@
     "notebook": "dandisets/000673/2025-04-14-gemini-2.0-flash-001-prompt-a-1/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-14-gemini-2.0-flash-001-prompt-a-1",
-    "overall_score": 60.333333333333336,
+    "overall_score": 60.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -2010,7 +2010,7 @@
     "notebook": "dandisets/000673/2025-04-15-claude-3.7-sonnet-prompt-a-3/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-15-claude-3.7-sonnet-prompt-a-3",
-    "overall_score": 65.66666666666667,
+    "overall_score": 65.66666666666666,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -3791,7 +3791,7 @@
     "notebook": "dandisets/000945/2025-04-07-quasar-alpha-exp/000945.ipynb",
     "dandiset_id": "000945",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 54.333333333333336,
+    "overall_score": 54.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -4237,7 +4237,7 @@
     "notebook": "dandisets/000945/2025-04-09-quasar-alpha/000945.ipynb",
     "dandiset_id": "000945",
     "subfolder": "2025-04-09-quasar-alpha",
-    "overall_score": 56.333333333333336,
+    "overall_score": 56.33333333333334,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -5352,7 +5352,7 @@
     "notebook": "dandisets/000945/2025-04-15-gemini-2.0-flash-001-prompt-a-3/000945.ipynb",
     "dandiset_id": "000945",
     "subfolder": "2025-04-15-gemini-2.0-flash-001-prompt-a-3",
-    "overall_score": 62.333333333333336,
+    "overall_score": 62.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -5798,7 +5798,7 @@
     "notebook": "dandisets/001174/2025-04-01-deepseek-chat-v3-0324/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-01-deepseek-chat-v3-0324",
-    "overall_score": 55.333333333333336,
+    "overall_score": 55.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -6241,7 +6241,7 @@
     "notebook": "dandisets/001174/2025-04-04-gemini-2.0-flash-001/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-04-gemini-2.0-flash-001",
-    "overall_score": 52.333333333333336,
+    "overall_score": 52.33333333333334,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -6464,7 +6464,7 @@
     "notebook": "dandisets/001174/2025-04-07-claude-3.5-sonnet/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-07-claude-3.5-sonnet",
-    "overall_score": 56.333333333333336,
+    "overall_score": 56.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -7133,7 +7133,7 @@
     "notebook": "dandisets/001174/2025-04-10-claude-3.7-sonnet-prompt-a-2/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-10-claude-3.7-sonnet-prompt-a-2",
-    "overall_score": 63.666666666666664,
+    "overall_score": 63.66666666666667,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -8245,6 +8245,898 @@
     }
   },
   {
+    "notebook": "dandisets/001174/2025-04-15-claude-3.7-sonnet-prompt-a-3/001174.ipynb",
+    "dandiset_id": "001174",
+    "subfolder": "2025-04-15-claude-3.7-sonnet-prompt-a-3",
+    "overall_score": 63.0,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 8.333333333333334,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a comprehensive description of the Dandiset. It includes the title, ID, the study's purpose, the contents of the NWB files, data fields, and structure. It also explores important aspects of the data, like the metadata, imaging data, ROIs, and fluorescence time series. Therefore, a score of 9 reflects the quality of the description.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides a good introduction that includes the Dandiset ID, title, a description of its purpose, the type of data it contains (calcium imaging from SMA and M1 of macaques), and the relevance of the data to understanding motor control. Therefore it deserves a score of 7.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good description of the Dandiset, including its ID, title, purpose, contents, and data organization. It also explores key metadata fields such as subject information and the NWB file structure.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset metadata, including the ID, name, description, and lists the assets. It then prints the first 5 assets with their sizes. This constitutes loading and displaying basic metadata fields. The code executes correctly and provides a useful overview of the Dandiset's contents. It iterates through the assets as well.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, retrieves the dandiset by its ID, and accesses several metadata fields, including name, description, and a list of assets. The notebook then iterates through the first few assets and displays their paths and sizes. This demonstrates a good understanding of how to load and explore the Dandiset metadata. It does not extract extensive metadata, therefore the score is not higher.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads the Dandiset by its ID, retrieves and displays key metadata fields such as name, description, and a list of assets (including their sizes). It also iterates through the assets, displaying their paths and sizes in MB. This represents a successful loading and basic exploration of multiple metadata fields. However, it doesn't delve into every possible metadata field or provide extensive descriptions for each, but it does a thorough job within its scope.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook starts by accessing the Dandiset using the DandiAPIClient and retrieves its metadata and a list of assets. It then specifically loads an NWB file from the Dandiset using remfile. This demonstrates a good ability to load and access assets and their metadata. The notebook shows how to access the Dandiset, list assets, select a specific asset, and load it for analysis. Some errors appeared during the downstream analysis. For instance, the correlation coefficient gave NaN values. Despite such errors, asset loading and metadata access are performed correctly. I am giving a score of 7.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, retrieves metadata, lists available assets, and loads a specific NWB file as an asset. It then proceeds to explore the data within the loaded NWB file. It effectively demonstrates how to load and access metadata for a specific asset (the NWB file). However, there is not much exploration of *multiple* asset types, or other assets aside from the primary loaded NWB file. Some further analysis, such as iterating though multiple NWB files could have justified a small increase.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook demonstrates how to connect to the DANDI archive, retrieve the Dandiset metadata, list available assets, select a specific NWB file and stream it. The code provides an example of loading one particular asset of the dandiset. The notebook also shows how to access basic metadata of the NWB file. The notebook could be improved by exploring multiple asset types, and by showing more comprehensive asset handling techniques. However, the notebook sufficiently demonstrates asset loading, metadata access, and usage examples and receives a score of 6.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 8.333333333333334,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook demonstrates how to access the DANDI archive, select and load an NWB file using remfile, and explore the basic metadata and structure of the file. It shows how to examine both acquisition and processing modules, and it accesses different data interfaces within the NWB file like OnePhotonSeries, ImageSegmentation, and Fluorescence. It navigates the NWB hierarchy to extract information such as imaging plane parameters, ROI information, and fluorescence data, indicating a detailed exploration of NWB file contents. Includes a good overview, motivation, and future steps.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, retrieves metadata, loads a specific NWB file using remfile and pynwb, and explores the file's structure including acquisition and processing modules. It also prints basic NWB components like session description, subject ID, and start time. It further accesses and prints properties of OnePhotonSeries, ImageSegmentation, Fluorescence, and EventAmplitude, and navigates the NWB hierarchy effectively, achieving a comprehensive exploration of the NWB file contents. The heatmap has white lines visible, making it difficult to see the activity of neurons. Also, the code produces nans in the correlation matrix, but this does not detract from the loading of NWB files, thus the score remains high.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file using remfile and pynwb. It explores the dandiset metadata, lists the assets, and opens a specific NWB file. The notebook prints basic metadata from the NWB file, such as session description, start time, subject ID, species, age, and sex and also examines the acquisition data and processing modules. The notebook accesses and prints key data components like `OnePhotonSeries`, fluorescence, and event amplitude. Therefore, notebook demonstrates the exploration of multiple NWB structures through code and by printing properties. However, the exploration is not comprehensive, especially regarding some more complex hierarchical aspects that might exist. Some errors are present in the analysis of correlated neurons, indicated by NaN values, which suggest issues in the implementation or data handling but does not severely impact loading of the data.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 8.666666666666666,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook demonstrates loading and exploring an NWB file from DANDI, accessing different data interfaces (OnePhotonSeries, ImageSegmentation, Fluorescence, EventAmplitude), handling different data types (images, time series), and exploring complex data structures (ROIs). The notebook effectively showcases loading specific data types relevant to calcium imaging and accessing multiple data elements. However, the correlation analysis results in `nan` values, indicating a potential error or issue with the data or the implementation in that specific section. Despite this issue, the notebook provides a reasonable demonstration of loading and handling multiple data types from an NWB file. The notebook could have been improved by discussing more edge cases or by including error handling in the access of some of the optional data.\n\nThe notebook shows how to access metadata, raw imaging data, segmented neurons (ROIs), fluorescence time series, event amplitude data, and how to analyze neuronal coactivation. It also creates visualizations by Combining Spatial and Temporal Information which indicates advanced data access techniques. The main issue is that the plots of most correlated and anticorrelated neurons display `nan`.",
+            "repnum": 0
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook demonstrates how to load an NWB file from DANDI, explores the file structure, including acquisition and processing modules, and successfully loads several key data elements, such as one-photon imaging data, ROI masks, fluorescence time series, and event amplitudes. It appropriately handles different data types and explores reasonably complex data structures, providing a good demonstration of how to access and handle multiple data types within the NWB file. Advanced data access techniques aren't extensively showcased, and there is an issue with some later calculations (correlation coefficients returning NaN), but the data loading aspect is well demonstrated. It utilizes the pynwb and h5py libraries to accomplish this, and remfile to stream the content. The code runs without significant errors up until the correlation calculations, and the visualization shows the data access worked as intended.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook effectively demonstrates how to load and explore data from an NWB file in the DANDI archive. It covers various aspects, including accessing metadata, raw imaging data, segmented neurons (ROIs), fluorescence time series, and event amplitude data. The notebook iterates through the data interfaces, and also access individual parts within each interface.\nHowever, the correlation calculation yields nan values and could have been better handled. Therefore, the score should be slightly lower than perfect.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 8.0,
+        "reps": [
+          {
+            "score": 8.0,
+            "thinking": "The notebook provides a guided exploration of an NWB file from DANDI, showcasing a range of visualizations. It progresses from raw calcium imaging data to ROI analysis, fluorescence time series, and finally combines spatial and temporal information. Labels are used. Correlation analysis is included. Despite some issues with the correlation calculation because of many zero values, and the final visualization being not as striking as it could be, the variety and clarity of the visualizations warrant a score of 8. The notebook would however not meet publication standards at the moment.",
+            "repnum": 0
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook effectively visualizes multiple aspects of the calcium imaging data from the NWB file. It includes raw data visualization, ROI masks, fluorescence time series, event amplitudes, heatmaps, correlation matrices, and combined spatial/temporal activity plots. There are some small issues with correlation coefficient, but overall, the visualizations are clear, labeled, and reasonably well-formatted, demonstrating good understanding of NWB file structure and visualization methods.",
+            "repnum": 1
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook provides a good overview of how to visualize various aspects of data stored in an NWB file. It covers raw calcium imaging data, ROI masks, fluorescence time series, event amplitudes, neural activity heatmaps, and correlation matrices. It includes proper labeling and formatting. It also includes advanced visualization that combines spatial and temporal information by plotting ROI locations on the background image with color indicating normalized activity. However, some plots are not perfectly formatted or publication-ready and there may be minor issues such as occasional nan values when computing correlations due to the nature of data. Thus, a score of 8 seems appropriate.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 7.333333333333333,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The plots are generally well-formatted and informative, containing labels and titles. However, some plots, like the correlation matrix and activity plots have some formatting issues that could be improved. Specifically, the correlation plots show 'nan' values. Overall the plots are well formatted and complete, which makes the analysis relatively easy to understand.",
+            "repnum": 0
+          },
+          {
+            "score": 8.0,
+            "thinking": "The plots are overall well-formatted with clear labels and colorbars where appropriate. Some plots, like the correlation matrix, lack any apparent data, suggesting an issue with the data itself rather than the plot formatting but the plots are still generated. The final plot combining spatial and temporal information looks good. The fluorescence plots are also clear and readable. Generally professional with minor issues, so a score of 8 is appropriate.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook contains several well-presented plots, including calcium imaging frames, ROI maps, fluorescence and event amplitude time series, a neural activity heatmap, a correlation matrix, and a spatial activity distribution map. The plots are generally readable, with appropriate labels, colorbars, and titles. However, some plots, such as the correlation plots, show 'nan' values, indicating a potential issue in the analysis that affects the plot's interpretability. The spatial activity distribution plot also lacks clear spatial context. While most plots are well-formatted, a few have minor issues that prevent them from being publication-ready. Considering the overall quality and completeness of the plots, a score of 7 is appropriate.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 4.0,
+        "reps": [
+          {
+            "score": 4.0,
+            "thinking": "The notebook loads the following streams:\n1. OnePhotonSeries (raw calcium imaging data)\n2. ImageSegmentation (ROIs)\n3. Fluorescence (time series data for the ROIs)\n4. EventAmplitude (calcium events)\n\nThese are fundamentally different and are used for distinct analyses. Hence the score is 4.",
+            "repnum": 0
+          },
+          {
+            "score": 4.0,
+            "thinking": "The notebook loads and explores several different data streams from the NWB file:\n1. Raw one-photon calcium imaging data (from `one_photon_series.data`)\n2. ROI masks for segmented neurons (from `plane_segmentation.image_mask`)\n3. Fluorescence time series data for each ROI (from `roi_response_series.data`)\n4. Calcium event amplitude data (from `event_amplitude.data`)\nBecause it loads 4 very different data streams, the score is 4.",
+            "repnum": 1
+          },
+          {
+            "score": 4.0,
+            "thinking": "The notebook loads the following data streams:\n1. OnePhotonSeries (raw calcium imaging data)\n2. ImageSegmentation (ROIs)\n3. Fluorescence (time series)\n4. EventAmplitude.\n\nTherefore, four fundamentally different data streams are loaded.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 5.0,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook shows the following types of plots:\n1. Raw calcium imaging frames (imshow)\n2. ROI masks (imshow with a colormap)\n3. Fluorescence time series (line plot)\n4. Event amplitude time series (line plot)\n5. Neural activity heatmap (imshow)\n6. Correlation matrix (imshow)\n7. Activity for most/least correlated pairs (line plot)\n8. Spatial distribution of neural activity (scatter plot on imshow)\n\nThere is therefore at least 5 different fundamental types of plot shown in the notebook.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook shows examples of:\n1. Raw calcium imaging data frames (imshow)\n2. ROI masks (imshow and scatter)\n3. Fluorescence time series (plot)\n4. Event amplitudes (plot)\n5. Neural activity heatmap (imshow)\n6. Correlation matrix (imshow)\n\nThese are fundamentally different ways of visualizing data, so the answer is at least 5. Considering scatter plot for spatial distribution, the number becomes 6. However, since the question asks for fundamentally different types, I will consider event amplitude and fluorescence time series the same, with minor differences.\n\nThus, the different types of plots are raw calcium imaging data, ROI masks, fluorescence time series data, activity heatmap and correlation visualisation adding up to 5 plot types, and spatial pattern plot.\n\nThe notebook visualizes the data using raw movies, segmented regions of interest (ROIs), activity traces of individual cells over time, the dynamics of neuronal populations with heatmaps, correlations between different neurons and a final advanced combined spatial and temporal pattern visualization. Therefore, there are at least 5 fundamentally different types of plots. The ROI masks are visualized in different way.\n\nMore specifically, the types are:\n1. Images of raw Ca2+ activity\n2. Overlays of ROIs\n3. Time series of activity\n4. Heatmaps\n5. Correlation Matrix\n6. Spatial scatter\n\nConsidering these types, I believe the number of plot types exceeds 5. They are fundametally different since they are trying to answer different questions and providing unique insights and interpretations for further experiments.\n\nThe different types of plot are:\n1) Example frames from the movie\n2) Masks showing where neurons are\n3) Traces showing how activity changes over time\n4) Heatmaps of many traces to show population activity\n5) The spatial representation of activity on the brain region.\n\nThe matrix showing correlations between neurons can be interpreted from a functional relationship perspective and does not equal the individual trace view.\n\nThe different plots are: Time series of fluorescence, images of sections from the brain recordings, the spatial location of ROIs, the correlation between ROIs, and the heatmap. So, since more than 5, the notebook satisfies the final case.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook displays the following types of plots:\n1. Raw calcium imaging data (imshow)\n2. ROI masks (imshow)\n3. Fluorescence time series (plot)\n4. Event amplitudes (plot)\n5. Neural activity heatmap (imshow)\n6. Correlation matrix (imshow)\n7. Correlated and Anti-correlated pairs (plot)\n8. Spatial distribution of activity (scatter plot on imshow background).\n\nThese are eight fundamentally different types of plots.",
+            "repnum": 2
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001174",
+      "model": "anthropic/claude-3.7-sonnet",
+      "prompt": "prompt-a-3.txt",
+      "total_prompt_tokens": 436076,
+      "total_completion_tokens": 11269,
+      "total_vision_prompt_tokens": 0,
+      "total_vision_completion_tokens": 0,
+      "elapsed_time_seconds": 263.28782868385315,
+      "timestamp": "2025-04-15 14:45:46",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/001174/2025-04-15-claude-3.7-sonnet-prompt-b-3/001174.ipynb",
+    "dandiset_id": "001174",
+    "subfolder": "2025-04-15-claude-3.7-sonnet-prompt-b-3",
+    "overall_score": 62.00000000000001,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 9.0,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good description of the Dandiset, including its ID, title, purpose, contents, and key metadata fields. It also outlines the experimental setup and the type of data contained within the NWB files. It also explored the structure of the files and their content.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good description of the Dandiset, including its purpose, contents, and some basic metadata such as subject ID, species, sex, and age. It explores the structure of the NWB file and visualizes the calcium imaging data and ROIs. It also analyzes fluorescence signals and event amplitudes, and explores the temporal patterns of neural activity. The introduction clearly states the purpose and gives the DANDI ID. The overview of the Dandiset at the beginning is very helpful in understanding the context of the data. Provides a comprehensive and detailed look including the Dandiset ID, title, purpose, contents, and some data organization.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good, comprehensive description of the dandiset. It starts with an overview, including the purpose of the study, the type of data collected (calcium imaging), the brain regions studied (SMA and M1), and the species used (macaques). It includes the dandiset ID (\"001174\") and provides information about the contents, such as the presence of NWB files and the type of data they contain (calcium imaging data, ROIs, fluorescence signals). It also mentions key metadata fields like session description, subject ID, species, sex, age, and session start time. The data organization within the NWB file (e.g., OnePhotonSeries, PlaneSegmentation) is also described, which aligns with a score of 9.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads the Dandiset and explores several key metadata fields. It connects to the DANDI API, retrieves the Dandiset and lists its assets as well as displays basic metadata like session description, subject ID, species, sex, age, session start time, available processing modules, and available acquisition data. Therefore, notebook scores a 7.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads the dandiset and explores multiple metadata fields such as session description, subject ID, species, sex, age, session start time, available processing modules, and available acquisition data. It also displays the first 5 assets. It could be improved by including more field descriptions but given there is a good exploration it meets the criteria for a score of 7.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads the Dandiset and retrieves a decent amount of metadata regarding the session, subject, and available processing/acquisition data. It doesn't explain all the metadata fields but provides a good overview.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset, lists the available assets, and proceeds to load a specific asset (NWB file) for further analysis. It also demonstrates how to access basic metadata associated with the NWB file. Thus, the notebook receives score 6.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the dandiset, lists the assets, and downloads/opens a specific NWB file for analysis, accessing its metadata. Thus the notebook demonstrates loading specific assets, but not exploring multiple asset types.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook begins by using the DANDI API to connect to the specified Dandiset and list its assets. It then proceeds to load a specific NWB file for further exploration, demonstrating how to access and utilize a particular asset. The loading process is successful, and the notebook explores the contents and metadata of the loaded NWB file. This covers loading assets by listing available assets and loading specific assets. There isnt an explicit exploration of multiple asset types. But overall it covers loading, and some metadata extraction of the asset.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 8.333333333333334,
+        "reps": [
+          {
+            "score": 8.0,
+            "thinking": "The notebook demonstrates loading an NWB file from a DANDI archive, accesses basic metadata such as session descriptions and subject information, as well as imaging data. It also succesfully explores the ROI structure and fluorescence data demonstrating a good understanding and demonstration of how to access NWB data. There is a detailed navigation of hierarchy in the notebook; however, a more comprehensive exploration could include examining the epochs or stimulus structure to further showcase the versatility of NWB. The notebook also ends prematurely due to some issues with plotting the top most active ROIs, this lowers the score slightly.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook successfully loads an NWB file from a Dandiset, extracts basic metadata, explores calcium imaging data, ROIs, fluorescence signals, and event amplitudes. It visualizes the data and calculates basic statistics. The notebook also calculates correlations, identifies active ROIs and explores their patterns of activity. Therefore, it demonstrates a comprehensive exploration of the NWB file contents.",
+            "repnum": 1
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook successfully loads an NWB file from the DANDI archive and then proceeds to demonstrate accessing different components within the NWB file, such as acquisition, processing modules, and ROI data. Basic information like the rate of the imaging series and shape of data is also accessed. The notebook explores multiple aspects of the NWB hierarchy, making the content accessible. However, the last plot \"Top 5 Most Active ROIs\" is empty, lowering the score.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 8.0,
+        "reps": [
+          {
+            "score": 8.0,
+            "thinking": "The notebook successfully loads an NWB file from a DANDI archive and accesses various data elements, including the OnePhotonSeries, PlaneSegmentation, Fluorescence, and EventAmplitude data structures. It shows how to access this data and explores the shapes and data types and visualizes the data. It demonstrates handling different data types appropriately but focuses mostly on data access. Therefore, the notebook demonstrates a score of 8.",
+            "repnum": 0
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook successfully loads and explores various data types from an NWB file within the specified Dandiset. It accesses the calcium imaging data, including `OnePhotonSeries`, ROIs, fluorescence signals, and event amplitudes. It visualizes sample frames, ROI masks, fluorescence traces, event amplitude traces, heatmaps and raster plots; computes basic statistics and correlations. All this demonstrates how to load and handle multiple data types. The notebook could be improved with some more context about where these data resides inside the hdf5 format, but this detail is not required.",
+            "repnum": 1
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook demonstrates the process of loading an NWB file from a DANDI archive and accessing different data types within it. It loads the calcium imaging data ('OnePhotonSeries'), ROI data ('PlaneSegmentation'), fluorescence data ('Fluorescence'), and event amplitude data ('EventAmplitude'). It effectively shows how to access specific data elements such as the imaging rate, data shape, ROI masks, and fluorescence traces. It iterates through ROIs and accesses image masks. It reads and processes fluorescence data and event amplitudes appropriately. It partially explores more complex data structures. Hence the notebook deserves a score of 8.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 7.333333333333333,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook demonstrates multiple visualization techniques applicable to calcium imaging data stored in NWB files. It covers raw frames, ROI masks, fluorescence traces, event amplitudes, heatmaps, raster plots, and correlation matrices. The visualizations are generally well-labeled and informative, and the notebook provides explanations for each plot. One section of the code has an issue where the plot of the top 5 most active ROIs is blank. Overall the notebook shows multiple visualization types with good labeling.",
+            "repnum": 0
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook successfully loads and visualizes multiple data types from the NWB file, including raw calcium imaging frames, ROI masks, fluorescence traces, event amplitudes, and correlation matrices. The notebook includes appropriate labeling and descriptions for these visualizations. The later part of the notebook plots mean fluorescence, heatmap, raster plot and population activity. Good use of multiple visualization approaches. Last plot not showing anything. Overall the visualizations are well done.",
+            "repnum": 1
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook demonstrates several visualization techniques, including displaying a sample frame, ROI masks, fluorescence traces, event amplitudes, heatmaps, raster plots, and correlation matrices. These visualizations are generally clearly labeled. However, some aspects could be improved for clarity and comprehensiveness. For instance, the ROI masks visualization could benefit from overlaying the masks on the original frame. The labeling and context could be slightly enhanced to meet publication quality standards. The notebook visualizes most of the key data types available in the NWB file. The notebook shows a comprehensive set of visualizations and covers multiple data types, although the aesthetic quality of the graphs could be improved.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 7.333333333333333,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides a variety of plots that are generally well-formatted and informative. The plots have labels, titles, and colorbars where appropriate. The heatmap and correlation matrix are also well-presented. However:\n\n1.  The y axis of the plot \"Top 5 Most Active ROIs\" is not scaled properly and no information is visible in the plot.\n2.  Some plots lack some context (the neural event raster plot does not have a time x axis label. The heatmap x axis is the index of the time bin and not time.)\n\nGiven the rubric, while many of the plots are high quality, the presence of a broken plot and missing context in some plots pulls down the score. A score of 7 is appropriate because the plots, while not perfect, are generally well-formatted and provide useful information, but the missing plot makes it difficult to score it higher and is not really publication ready.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides several plots visualizing the calcium imaging data, ROIs, fluorescence signals, event amplitudes, and correlations between ROIs. The plots are generally readable and have basic labels, such as axes labels and titles. The plots are not particularly complex, but effectively communicate the data. Most plots have gridlines to make reading off values easier. The heatmap and correlation matrix visualizations are well-chosen for the data being displayed. The time-series plots are clear and informative. Some axes labels are missing units.\n\nThe last plot is empty: Top 5 Most Active ROIs is not properly displaying any data.\n\nOverall, the plots are well-formatted and provide sufficient information to understand the data, with the exception of the missing data in the last plot.",
+            "repnum": 1
+          },
+          {
+            "score": 8.0,
+            "thinking": "The plots are readable, well-formatted, and have appropriate labels and titles. Therefore, I will give this notebook an 8.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 4.0,
+        "reps": [
+          {
+            "score": 4.0,
+            "thinking": "The notebook loads the following data streams:\n1. OnePhotonSeries (raw calcium imaging data)\n2. PlaneSegmentation (ROI masks)\n3. RoiResponseSeries (fluorescence data)\n4. EventAmplitude (event amplitude data)\n\nThese represent distinct aspects of the calcium imaging experiment and neural activity. Since there are at least four fundamentally different data streams, the score is 4.",
+            "repnum": 0
+          },
+          {
+            "score": 4.0,
+            "thinking": "The notebook loads the following data streams:\n1. OnePhotonSeries (raw calcium imaging data)\n2. PlaneSegmentation (ROI masks)\n3. RoiResponseSeries (fluorescence data)\n4. EventAmplitude (event amplitudes)\n\nTherefore, there are 4 fundamentally different data streams loaded.",
+            "repnum": 1
+          },
+          {
+            "score": 4.0,
+            "thinking": "The notebook loads the following data streams from the NWB file:\n1. OnePhotonSeries (calcium imaging data)\n2. ImageSegmentation (ROI masks)\n3. Fluorescence (ROI response series)\n4. EventAmplitude (calcium events or spikes in neural activity)\n\nTherefore, four fundamentally different data streams are loaded. Although 1. and (3 and 4.) are related, they represent different data streams and are from different parts of the NWB file.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 5.0,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "I have identified the following distinct plot types:\n\n1.  **Grayscale image:** Visualization of a single frame from the calcium imaging data.\n2.  **ROI Masks:** The regions of interest plot displaying masks\n3.  **Bar plot:** Mean fluorescence per ROI.\n4.  **Line plot:** Fluorescence traces over time.\n5.  **Event Amplitude Traces:** Line plots representing event amplitudes over time.\n6.  **Heatmap:** Activity levels of ROIs over time.\n7.  **Raster Plot:** Binary representation of neural events.\n8. Total activity across all ROIs as a line plot\n9.  **Correlation matrix heatmap:** Correlation between ROIs.\n10. Line Plot of top 5 most active ROIs over a longer period of time.\n\nThus, there are several fundamentally different types of plots, and it exceeds 5 plot types.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook displays several different types of plots:\n\n1.  **Calcium Imaging Frame:** A grayscale image showing the raw calcium imaging data.\n2.  **ROI Masks:** Images showing regions of interest (ROIs).\n3.  **Mean Fluorescence Bar Plot:** A bar plot showing the mean fluorescence for each ROI.\n4.  **Fluorescence Traces:** Line plots showing fluorescence intensity over time for several ROIs.\n5.  **Event Amplitude Traces:** Line plots showing event amplitude over time for several ROIs.\n6.  **Fluorescence Activity Heatmap:** A heatmap showing the fluorescence activity of all ROIs over time.\n7.  **Neural Event Raster Plot:** A raster plot showing when each neuron (ROI) is active.\n8.  **Total Population Activity:** A line plot showing the sum of fluorescence across all ROIs over time.\n9.  **Number of Active ROIs:** A line plot of the number of simultaneously active neurons over time.\n10. **Correlation Matrix Heatmap:** A heatmap showing the correlation between ROI fluorescence signals.\n11. **Normalized Fluorescence of Top ROIs**: Showing the normalized fluorescence of the top 5 ROIs, although the plot is empty.\n\nThus, at least 5 fundamentally different plot types are shown. Note: Even though the last plot is empty, it is a different kind of plot.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook contains several fundamentally different types of plots:\n\n1.  **Image Plot:** Showing a single frame from the calcium imaging data using `plt.imshow` to visualize the raw fluorescence intensity.\n2.  **ROI Masks:** Shows the locations (image masks) of the ROIs which are the segmented neurons. Masks are image plots.\n3.  **Bar Plot:** Representing mean fluorescence intensity for each ROI.\n4.  **Line Plots:** Displaying fluorescence traces for selected ROIs over time and showing event amplitude traces for selected ROIs over time and plots of population activity and number of active ROIs over time.\n5.  **Heatmap:** Visualizing the fluorescence activity of all ROIs over time.\n6.  **Raster Plot:** Visualizing the timing of neural events for each ROI.\n7. Correlation matrix heatmap.\n\nTherefore, there are more than 5 different types of plots.",
+            "repnum": 2
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001174",
+      "model": "anthropic/claude-3.7-sonnet",
+      "prompt": "prompt-b-3.txt",
+      "total_prompt_tokens": 1293214,
+      "total_completion_tokens": 18151,
+      "total_vision_prompt_tokens": 14970,
+      "total_vision_completion_tokens": 2491,
+      "elapsed_time_seconds": 585.4311256408691,
+      "timestamp": "2025-04-15 14:55:32",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/001174/2025-04-15-gemini-2.0-flash-001-prompt-a-3/001174.ipynb",
+    "dandiset_id": "001174",
+    "subfolder": "2025-04-15-gemini-2.0-flash-001-prompt-a-3",
+    "overall_score": 52.99999999999999,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 7.333333333333333,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides the Dandiset ID, title, and a good overview of the data it contains, including the type of data (calcium imaging), the brain regions (SMA and M1), the subjects (macaques), and the experimental paradigm (rest and arm reaching). Therefore, it earns a score of 7.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook includes the Dandiset's title and ID. It also gives a brief overview of the contents, specifically calcium imaging data from SMA/M1 and the purpose (studying activity patterns during rest and arm reaching). It also talks about number of assets in the dataset. Therefore, the notebook provides enough information to justify a score of 6.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides the Dandiset title and ID. It also provides a good description which includes the purpose of the dandiset, the contents (calcium imaging data from SMA and M1 of macaques), and metadata (information about the experimental setup). The overall organization of the data withing the NWB file is also hinted at, but could be more explicit. Thus, the notebook merited a high score of 9.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset and displays several basic metadata fields, including session description, identifier, and session start time. It also retrieves and lists the assets within the Dandiset.  The code executes without errors. But it does not deeply explore the metadata or provide in-depth explanations of each field. Therefore, a score of 6 is appropriate here.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset and displays the first 5 assets, along with basic metadata fields such as session description, identifier, and session start time. It demonstrates how to connect to the DANDI archive and retrieve the Dandiset using its ID. However it only displays a relatively small number of metadata sections. The metadata displayed is somewhat limited. Therefore, the score should be a 6.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads the Dandiset and displays several metadata fields such as session description, identifier, and session start time. The notebook lists all the assets and loads an NWB file. It provides a reasonable demonstration of accessing several key metadata fields. Therefore, the notebook merits a score of 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads a Dandiset using the DANDI API, lists the first few assets, loads a specific NWB file asset,and shows how to access asset metadata such as session description, identifier, and session start time. The notebook does not explore multiple asset types but focuses on a single NWB file. Other assets such as .csv files could potentially exist. It also provides usage examples. This aligns well with a score of 7. it doesn't show exploration of multiple assets, or comprehensive handling like 8-10 would, but is substantially better than just listing assets.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, retrieves the Dandiset, lists the first few assets, and loads the metadata and data from a specific NWB file. The code runs without significant errors and demonstrates how to access asset metadata such as session description, identifier and session start time, as well as how to load the calcium imaging `OnePhotonSeries` data. Thus, the notebook demonstrates loading specific assets and shows how to access asset metadata. A next step would be exploring multiple asset types, or thoroughly demonstrating asset loading, metadata access, and usage examples. Considering the steps taken, the notebook merits a score of 7.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, retrieves a specific Dandiset (\"001174\"), and lists the available assets. It then proceeds to load and inspect data from a specific NWB file within the Dandiset, including metadata and calcium imaging data. There is a demonstration loading specific asset, accessing asset metadata and provides usage examples. Therefore, the notebook adequately shows how to load assets of the Dandiset. It does not go far enough to demonstrate multiple asset types and comprehensive handling of them.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file from a DANDI archive given its ID. It shows how to access basic metadata such as session description, identifier and start time. It retrieves and visualizes the calcium imaging data using 'OnePhotonSeries' object. It also displays the image masks which are a part of 'PlaneSegmentation'. The code successfully demonstrates how to access and visualize key data components within the NWB file. Considering the notebook covers essential aspects of loading, exploring visualizing data from an NWB file, a score of 7 is appropriate. The notebook explores multiple NWB data structures, e.g., acquisition and processing.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file from a DANDI archive using the provided link. It demonstrates accessing basic NWB file components such as session description, identifier, session start time, and mean calcium imaging intensity by accessing the \"OnePhotonSeries\" object.. It also plots the mean intensity over time (including for a single trial) and visualizes the spatial masks. It touches on multiple NWB data structures. Therefore, the notebook explores data loaded from the NWB file and demonstrates how to access basic data and metadata. The notebook could be improved by showing more detailed navigation of NWB hierarchy (e.g. how to access more specific data fields or how the different components are connected). Because it does not show in detail the NWB hierarchy, and it does demonstrate extraction of a variety of data, an 8 is not appropriate. Likewise, a 6 is too low, because the notebook demonstrates more than just \"accessing\" basic components. Therefore, a score of 7 is appropriate.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook:\n- Loads an NWB file from a DANDI asset using a URL and remfile.\n- Opens the NWB file using pynwb.\n- Accesses basic metadata (`session_description`, `identifier`, `session_start_time`, `timestamps_reference_time`).\n- Loads and visualizes `OnePhotonSeries` data.\n- Loads and visualizes `ImageSegmentation` data.\n\nTherefore, the notebook successfully demonstrates accessing basic NWB components, explores multiple NWB data structures, and shows some navigation of the NWB hierarchy. It does not show a complete or comprehensive exploration, but it goes beyond simply opening the file and reading basic metadata, and it visualizes the data. Thus, a score of 7 is appropriate. The notebook could be improved by printing the names of the data structures, explicitly showing more of the NWB hierarchy, and exploring more of the contents of each of the data structures that are loaded to provide a more comprehensive exploration.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 8.0,
+            "thinking": "The notebook successfully loads an NWB file from a DANDI archive using the DANDI API, remfile, h5py, and pynwb libraries. The code retrieves the calcium imaging data (OnePhotonSeries) and metadata. It visualizes the mean calcium imaging intensity over time. The notebook then accesses the \"ImageSegmentation\" and visualize the image masks. The notebook does not handle multiple different data types comprehensively, focusing primarly on the calcium imaging data, and therefore it scores an 8 rather than a 10.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads data from an NWB file, including metadata (session description, identifier, start time) and calcium imaging data (OnePhotonSeries). It then visualizes the mean intensity over time and for a single trial; also provides a visualization of image masks. It effectively demonstrates how to access and load basic data arrays and demonstrates loading specific data types. It doesn't explore complex nested structures but does provide basic access and visualization which meets the criteria for a score of 5. It shows how to access multiple data elements. There's no explicit mention of handling different data types appropriately, but the data is loaded and used without errors, implying a correct handling of the specific data types used. No advanced techiques are used.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads data from a DANDI archive using the DANDI API and demonstrates loading various data types such as session descriptions, identifiers, timestamps, and calcium imaging data (OnePhotonSeries). It also shows how to access image masks from the plane segmentation. Given that it successfully demonstrated how to access multiple data elements and handle different data types appropriately, it earns a score of 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates multiple visualization types including mean intensity over time, trial data, and image masks. The figures have proper axes labels and titles. Therefore, a score of 7 is appropriate.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads data from an NWB file and generates visualizations of the calcium imaging data, including plotting the mean intensity over time for both the entire dataset and a single trial. The visualizations are labeled. It also visualizes the spatial masks. However, the visualizations are relatively basic and lack advanced features or customization. Therefore, a score of 7 is appropriate.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides code for visualizing calcium imaging data from an NWB file, including plots of mean intensity over time and spatial masks. The visualization includes labels. There are multiple visualization types.\n    The plots are not publication-quality, and the visualizations are reasonably basic.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook generates three plots. The notebook generates 2 plots showing the calcium imaging intensity over time. Both axes are labelled. The notebook generates an image mask plot using plt.imshow(), which visually represents the spatial distribution of imaged cells, and the plot has a title. The plots are clear and readable, with appropriate labels, but are not of publication quality. There may be elements that could be improved to consider it publication-ready.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook contains three plots. The plots have readable labels, titles, and axes.\nThe plots are well-formatted and easy to understand.\nThe first two plots show mean calcium imaging intensity over time, while the third plot displays the image masks, providing insights into the spatial distribution of the imaged cells.\nThe plots are good, but not publication-ready quality. Proper labels are provided.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The plots are readable, and they have basic labels for the x and y axes, as well as titles. The plots are well-sized and easy to interpret. Therefore the plots are of good quality.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 2.0,
+        "reps": [
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads the OnePhotonSeries data and the PlaneSegmentation data including image masks. These appear to be two distinct data streams within the NWB file. Therefore, the total number of different datastreams loaded is two.",
+            "repnum": 0
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads calcium imaging data (`OnePhotonSeries`) which represents one data stream. It also loads the `image_mask` from the `plane_segmentations`, and this is different data acquired in the same sessions. The metadata does not count as a fundamentally different data stream.\n\n    Therefore 2 streams are loaded",
+            "repnum": 1
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads the OnePhotonSeries data, which represents the raw Calcium imaging data. It also loads plane_segmentation data to show the location of spatial masks. These are very different and fundamental aspects of the data.\n    The notebook does refer to \"trials\", but that is just a slice of the OnePhotonSeries data, so not a new data stream. The metadata loaded at the beginning also does not represent a new data stream.\n    Therefore, the answer is that only two different data streams are loaded from the NWB file in this notebook.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 3.0,
+        "reps": [
+          {
+            "score": 3.0,
+            "thinking": "The notebook shows three types of plots:\n1. Timeseries of mean intensity over the entire session\n2. Timeseries of mean intensity over a single trial\n3. Spatial plot of image masks\n\nTherefore, three fundamentally different types of plots are shown.",
+            "repnum": 0
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook shows 3 types of plots\n1. Mean Calcium Imaging intensity over time (single trial and multiple trials)\n2. Image Masks\nThese are fundamentally different visualizations of the data.\nAnother way to view the data could be to examine the underlying data in a table perhaps, but this wasn't done in the notebook.",
+            "repnum": 1
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook shows three different plot types:\n1. Line plot of mean intensity over time for the entire dataset.\n2. Line plot of mean intensity over time for a single trial.\n3. Image plot of spatial masks.\n\nThus, there are 3 fundamentally different types of plots.",
+            "repnum": 2
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001174",
+      "model": "google/gemini-2.0-flash-001",
+      "prompt": "prompt-a-3.txt",
+      "total_prompt_tokens": 85531,
+      "total_completion_tokens": 3914,
+      "total_vision_prompt_tokens": 0,
+      "total_vision_completion_tokens": 0,
+      "elapsed_time_seconds": 49.130298376083374,
+      "timestamp": "2025-04-15 14:38:29",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/001174/2025-04-15-gemini-2.0-flash-001-prompt-b-3/001174.ipynb",
+    "dandiset_id": "001174",
+    "subfolder": "2025-04-15-gemini-2.0-flash-001-prompt-b-3",
+    "overall_score": 55.0,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 9.0,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides the Dandiset ID, title, a clear overview of the contents (calcium imaging data from macaque motor cortices), the experimental setup, and the type of task performed during data acquisition. It also describes the structure of the NWB file, including the presence of fluorescence data and image masks. Key metadata like session description and start time are also extracted and shown, and finally it suggests more sophisticated analysis. Therefore, the notebook offers a strong description of the dataset.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides the Dandiset ID (001174) and title (Calcium Imaging in Macaque Motor Cortices). It also describes the purpose of the Dandiset (calcium imaging data from macaque motor cortices during rest and an arm reaching task) together with what areas the data was acquired from (SMA and M1). Some basic metadata, such as the experimental setup and subject information, are also included in the notebook, mainly through the printout of the nwb file. The notebook, therefore, meets the requirements for a score of 9.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good description of the Dandiset. It introduces the Dandiset ID, explains the type of data it contains (calcium imaging from macaque motor cortices), its purpose (examining activity patterns during rest and an arm reaching task), and mentions specific areas (SMA and M1). It also outlines the structure by indicating it contains NWB files and provides information on how to load metadata and data. It also mentions the Dandiset title at the end in the summary section.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 7.333333333333333,
+        "reps": [
+          {
+            "score": 8.0,
+            "thinking": "The notebook successfully loads the Dandiset and explores several metadata fields, including the Dandiset ID, asset paths, session description, a subject's sex, species, and age. It doesn't explicitly iterate through *all* available metadata but showcases the core functionalities of accessing and displaying relevant information. Minimal field descriptions are provided. Thus, it demonstrates thorough metadata exploration with explanations.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, retrieves the Dandiset using its ID (\"001174\"), and lists the assets within the Dandiset. It further extracts and displays specific metadata fields such as session description, identifier, and session start time from an NWB file within the Dandiset. The notebook also prints the first 5 assets with their paths. This constitutes a solid exploration of multiple metadata fields with clear display and some explanation. Therefore, a score of 7 is appropriate. It could be higher with more explicit field descriptions.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook connects to the DANDI archive and loads the Dandiset, accessing metadata fields like session description, identifier, and session start time. The code executes without errors, and the notebook presents the first few assets along with the total number of assets. The notebook demonstrates the loading of sufficient metadata fields with explanations, meriting a score of 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, lists available assets, loads a specific NWB file, and accesses its metadata. It demonstrates loading and visualizing raw fluorescence data and image masks from the loaded NWB file. Therefore it goes beyond just listing assets and loads specific assets with some basic exploration",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, lists the available assets, loads a specific NWB file from the Dandiset, and accesses its metadata (session description, identifier, session start time). It also visualizes data contained within the loaded NWB file. The notebook demonstrates loading specific assets and accessing asset metadata. It does not, however, explore multiple asset types.\n\nTherefore, the notebook demonstrates loading specific assets (6), and shows how to access asset metadata (7). The demonstration of these aspects is clear and functional. Given the prompt's request for the extent to which assets have been loaded, the notebook does this well.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook effectively demonstrates how to load assets from a DANDI archive. It connects to the archive, lists available assets, loads a specific NWB file (an asset), and accesses its metadata (session description, identifier, start time). It also visualizes data (fluorescence and image masks) contained within the loaded NWB file, demonstrating usage of the loaded asset. The notebook shows how to load specifically an NWB file, not multiple asset types, but it does show how to use the loaded NWB file for visualization purposes. Therefore, it deserves a score of 7 (Shows how to access asset metadata). Loading multiple assets is not demonstrated.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from the DANDI archive and explores some of its basic components. It shows how to access the session description, identifier, and session start time. It also visualizes the raw fluorescence data and the spatial distribution of ROIs. However, it only scratches the surface of the NWB file structure and does not delve into more complex data structures or navigation. Therefore, a score of 6 is appropriate. It successfully demonstrates accessing basic NWB components.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file, accesses and prints the session description, identifier, and session start time. It visualizes fluorescence data and image masks. It shows how to load basic information from an NWB file in the DANDIset and explores multiple NWB data structures. It does not, however, show truly detailed navigation of the NWB hierarchy. The exploration is beyond just opening and peeking at one or two components, but is not truly comprehensively exploring the file. It could do more to navigate the structure and show relationships between elements.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from the DANDI archive and demonstrates accessing basic components such as session description, identifier, and start time. Additionally, it visualizes fluorescence data and image masks, indicating exploration of relevant data structures within the NWB file. It shows how to download an NWB file from DANDI, how to load it using pynwb and remfile and then shows accessing some specific data entries. The notebook demonstrates accessing basic NWB components. It however does not explore complex associations between the different entries.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 7.666666666666667,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file from a DANDI dataset and demonstrates how to access various data elements within the file, including session description, identifier, start time, fluorescence data, and image masks. It handles data types appropriately and visualizes the loaded data. It does not however go very deep into accessing complex data.",
+            "repnum": 0
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook successfully loads an NWB file from a DANDI archive using `pynwb` and `remfile`. It accesses several attributes like session description, identifier, and session start time. The notebook also loads and visualizes fluorescence data (a key data type in calcium imaging) and image masks. The notebook handles different data types, like strings (session description) and numpy arrays (fluorescence data). It could be improved by showing more complex data structures and manipulations\n    and data exploration which would warrant a 9 or 10. For instance, working with epochs or trials data would be an example for increased score.",
+            "repnum": 1
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook successfully loads an NWB file from the DANDI archive using a URL. It then accesses various data elements within the NWB file, such as the session description, identifier, session start time, fluorescence data, and image masks. It correctly generates timestamps, plots these data, and displays superimposed image masks, effectively demonstrating the process of loading and accessing multiple data types within the NWB file. However, the notebook could be improved by demonstrating more advanced data access techniques and exploring more complex data structures within the NWB file to receive a higher score (9-10). Given the notebook's ability to access and visualize fluorescence data and image masks, along with other metadata, a score of 8 is appropriate because it explores complex data structures with examples, even with minor limitations. The loading and handling aspects justify the score.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates how to visualize raw fluorescence data and image masks from an NWB file. The fluorescence data visualization includes generating timestamps due to their absence and plotting the data for multiple ROIs, with appropriate labeling. The image mask visualization involves superimposing multiple masks and displaying them with a colorbar. While the visualizations are basic, they are functional and labeled adequately. The use of `remfile` to access the data is also a plus. The notebook could be improved by including other visualization techniques or plotting other kinds of important data from the nwb file, thus it is not publication quality. Therefore, a score of 7 seems appropriate.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully demonstrates loading an NWB file from a DANDI dataset and visualizing two types of data: raw fluorescence traces for selected ROIs and superimposed image masks representing the spatial distribution of ROIs. The fluorescence plots have labeled axes and titles. The image mask visualization includes a colorbar for interpretation. The code runs without errors and generates informative visualizations that are relevant to the dataset. The notebook could be improved by visualizing even more data types contained within the NWB file. Also, the timestamp generation is a workaround; it could be improved if the actual timestamp data was visualized and a check was done to confirm that it was missing. The image mask visualization is reasonable but could be improved by visualizing the location and shape of each ROI in a distinct manner rather than superimposing them. However, the notebook achieves a level of \"clear visualizations with proper labeling\" for multiple data types providing sufficient code and explanation for the user to explore visualization of this Dandiset. This makes the notebook a relatively good guide. Code for generating the timestamps was added, which increased the score relative to what would be expected without this workaround.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates how to connect to the DANDI archive, load an NWB file, visualize raw fluorescence data for selected ROIs, and visualize the spatial distribution of ROIs using image masks. It uses matplotlib to generate plots of the fluorescence data over time and a heatmap of the ROI locations. While the visualizations are clear and properly labeled, they are relatively basic. The plotting can be improved by adding titles to the subplots when visualizing image masks. It covers 2 visualization types. Thus, I rate it a 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook produces two sets of plots: fluorescence traces for ROIs and superimposed image masks. The fluorescence plots have clear x and y axis labels (\"Time (s)\" and \"Fluorescence\"), titles for each ROI, and visually distinct traces. The image mask plot displays the spatial distribution of ROIs with a colorbar indicating the \"Max Mask Value.\" The axes are not labeled, which is a minor issue. The formatting, labels, and clarity of the plots meet the criteria for a score of 7.",
+            "repnum": 0
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook provides two distinct types of plots: raw fluorescence data over time for selected ROIs, and superimposed image masks showing spatial ROI distribution. Both sets of plots are readable and appropriately labeled, including axis labels, titles, and colorbars where applicable. The fluorescence plots have dynamic y-axis ranges based on the fluorescence values of each ROI. The final image mask plot includes a colorbar labeled with 'Max Mask Value', which is descriptive. There are no significant formatting issues. The code generates timestamps since they're not directly provided in the NWB file, which is great.\n\nThe only potential improvement would relate to figure aesthetics, like font sizes, linewidths, or the use of more advanced plotting features to visualize data more effectively (e.g., smoothing the fluorescence data or adding contour lines to image masks). However, for the purpose of this notebook, the plot quality is quite satisfactory and helpful for understanding the data. Therefore it is 8.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The plots are readable and properly labeled with axes labels and titles. The fluorescence plot has dynamic y axis labels, while the spatial distribution plot contains a colorbar. The formatting is overall clear improving readability.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 2.0,
+        "reps": [
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads:\n1. Fluorescence data (RoiResponseSeries)\n2. Image masks (PlaneSegmentation).\n\nThese are fundamentally different data streams. Therefore, the notebook loads two fundamentally different data streams.",
+            "repnum": 0
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads \"Fluorescence\" data which is a `roi_response_series` representing the raw fluorescence and \"ImageSegmentation\", which represents the spatial distribution of the ROIs using image masks. These represent two fundamentally different data streams. Although timestamps are generated, these aren't loaded from the NWB file. The first data stream represents the changes in fluorescence over time for some regions of interest, while the second data stream represents spatial masks of the neurons. They are distinct types of data included in NWB files.",
+            "repnum": 1
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads the following data streams from the NWB file:\n    1. Fluorescence data: `roi_response_series.data` from Fluorescence module.\n    2. Image masks: `image_masks` from PlaneSegmentation.\n\n    These are two fundamentally different data streams related to calcium imaging, one representing the temporal fluorescence activity and the other representing the spatial layout of the ROIs. Thus the score is 2.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 2.0,
+        "reps": [
+          {
+            "score": 2.0,
+            "thinking": "The notebook shows one type of plot with raw fluorescence data for different regions of interest (ROI) over time and another plot showing the superimposed image masks. These are fundamentally different types showing fluorescence intensity and spatial distribution of masks, respectively. Therefore, there are two fundamentally different plot types.\n\nTherefore the answer is 2.",
+            "repnum": 0
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook shows two fundamentally different types of plots:\n1. Raw fluorescence data for a few ROIs (line plots of fluorescence vs. time).\n2. Spatial distribution of the ROIs using image masks (heatmap-like image showing the superimposed masks).\n\nTherefore, the score should be 2.",
+            "repnum": 1
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook displays two distinct types of plots. The first is a time series plot visualizing fluorescence data for different ROIs. The second plot is an image showing the superimposed image masks, which represents the spatial distribution of the ROIs. Therefore, there are two fundamentally different plot types. The plot in the prompt confirms the existence of these two plot types.",
+            "repnum": 2
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001174",
+      "model": "google/gemini-2.0-flash-001",
+      "prompt": "prompt-b-3.txt",
+      "total_prompt_tokens": 278879,
+      "total_completion_tokens": 5521,
+      "total_vision_prompt_tokens": 3272,
+      "total_vision_completion_tokens": 210,
+      "elapsed_time_seconds": 73.10929107666016,
+      "timestamp": "2025-04-15 14:39:42",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
     "notebook": "dandisets/001275/2025-04-02-claude-3.7-sonnet/001275.ipynb",
     "dandiset_id": "001275",
     "subfolder": "2025-04-02-claude-3.7-sonnet",
@@ -8694,7 +9586,7 @@
     "notebook": "dandisets/001275/2025-04-04-gemini-2.0-flash-001/001275.ipynb",
     "dandiset_id": "001275",
     "subfolder": "2025-04-04-gemini-2.0-flash-001",
-    "overall_score": 46.333333333333336,
+    "overall_score": 46.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -8917,7 +9809,7 @@
     "notebook": "dandisets/001275/2025-04-07-claude-3.5-sonnet/001275.ipynb",
     "dandiset_id": "001275",
     "subfolder": "2025-04-07-claude-3.5-sonnet",
-    "overall_score": 55.33333333333333,
+    "overall_score": 55.333333333333336,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -9140,7 +10032,7 @@
     "notebook": "dandisets/001275/2025-04-07-quasar-alpha-exp/001275.ipynb",
     "dandiset_id": "001275",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 56.0,
+    "overall_score": 55.99999999999999,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -11816,7 +12708,7 @@
     "notebook": "dandisets/001276/2025-04-10-quasar-alpha-prompt-b-1/001276.ipynb",
     "dandiset_id": "001276",
     "subfolder": "2025-04-10-quasar-alpha-prompt-b-1",
-    "overall_score": 48.333333333333336,
+    "overall_score": 48.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -12039,7 +12931,7 @@
     "notebook": "dandisets/001333/2025-04-02-claude-3.7-sonnet/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-02-claude-3.7-sonnet",
-    "overall_score": 62.0,
+    "overall_score": 62.00000000000001,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -12931,7 +13823,7 @@
     "notebook": "dandisets/001333/2025-04-07-quasar-alpha-exp/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 46.333333333333336,
+    "overall_score": 46.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -13154,7 +14046,7 @@
     "notebook": "dandisets/001333/2025-04-09-quasar-alpha/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-09-quasar-alpha",
-    "overall_score": 49.0,
+    "overall_score": 48.99999999999999,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -13600,7 +14492,7 @@
     "notebook": "dandisets/001333/2025-04-10-claude-3.7-sonnet-prompt-b-1/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-10-claude-3.7-sonnet-prompt-b-1",
-    "overall_score": 43.333333333333336,
+    "overall_score": 43.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -14715,7 +15607,7 @@
     "notebook": "dandisets/001335/2025-04-07-claude-3.5-sonnet/001335.ipynb",
     "dandiset_id": "001335",
     "subfolder": "2025-04-07-claude-3.5-sonnet",
-    "overall_score": 59.0,
+    "overall_score": 58.99999999999999,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -14938,7 +15830,7 @@
     "notebook": "dandisets/001335/2025-04-07-quasar-alpha-exp/001335.ipynb",
     "dandiset_id": "001335",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 60.333333333333336,
+    "overall_score": 60.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -15384,7 +16276,7 @@
     "notebook": "dandisets/001335/2025-04-09-quasar-alpha/001335.ipynb",
     "dandiset_id": "001335",
     "subfolder": "2025-04-09-quasar-alpha",
-    "overall_score": 49.333333333333336,
+    "overall_score": 49.33333333333334,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -17614,7 +18506,7 @@
     "notebook": "dandisets/001363/2025-04-10-quasar-alpha-prompt-b-1/001363.ipynb",
     "dandiset_id": "001363",
     "subfolder": "2025-04-10-quasar-alpha-prompt-b-1",
-    "overall_score": 49.0,
+    "overall_score": 49.00000000000001,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -17837,7 +18729,7 @@
     "notebook": "dandisets/001366/2025-04-04-claude-3.7-sonnet/001366.ipynb",
     "dandiset_id": "001366",
     "subfolder": "2025-04-04-claude-3.7-sonnet",
-    "overall_score": 62.66666666666667,
+    "overall_score": 62.666666666666664,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -18729,7 +19621,7 @@
     "notebook": "dandisets/001366/2025-04-07-quasar-alpha-exp/001366.ipynb",
     "dandiset_id": "001366",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 51.0,
+    "overall_score": 51.00000000000001,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -19175,7 +20067,7 @@
     "notebook": "dandisets/001366/2025-04-09-quasar-alpha/001366.ipynb",
     "dandiset_id": "001366",
     "subfolder": "2025-04-09-quasar-alpha",
-    "overall_score": 53.666666666666664,
+    "overall_score": 53.66666666666667,
     "scores": [
       {
         "name": "describe-dandiset",
