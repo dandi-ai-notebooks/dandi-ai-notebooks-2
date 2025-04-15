@@ -672,7 +672,7 @@
     "notebook": "dandisets/000673/2025-04-07-claude-3.5-sonnet/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-07-claude-3.5-sonnet",
-    "overall_score": 58.00000000000001,
+    "overall_score": 58.0,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -895,7 +895,7 @@
     "notebook": "dandisets/000673/2025-04-07-quasar-alpha-exp/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 55.00000000000001,
+    "overall_score": 55.0,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -1564,7 +1564,7 @@
     "notebook": "dandisets/000673/2025-04-10-quasar-alpha-prompt-a-1/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-10-quasar-alpha-prompt-a-1",
-    "overall_score": 60.99999999999999,
+    "overall_score": 61.0,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -1787,7 +1787,7 @@
     "notebook": "dandisets/000673/2025-04-14-gemini-2.0-flash-001-prompt-a-1/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-14-gemini-2.0-flash-001-prompt-a-1",
-    "overall_score": 60.33333333333333,
+    "overall_score": 60.333333333333336,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -2010,7 +2010,7 @@
     "notebook": "dandisets/000673/2025-04-15-claude-3.7-sonnet-prompt-a-3/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-15-claude-3.7-sonnet-prompt-a-3",
-    "overall_score": 65.66666666666666,
+    "overall_score": 65.66666666666667,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -3791,7 +3791,7 @@
     "notebook": "dandisets/000945/2025-04-07-quasar-alpha-exp/000945.ipynb",
     "dandiset_id": "000945",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 54.33333333333333,
+    "overall_score": 54.333333333333336,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -4237,7 +4237,7 @@
     "notebook": "dandisets/000945/2025-04-09-quasar-alpha/000945.ipynb",
     "dandiset_id": "000945",
     "subfolder": "2025-04-09-quasar-alpha",
-    "overall_score": 56.33333333333334,
+    "overall_score": 56.333333333333336,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -5352,7 +5352,7 @@
     "notebook": "dandisets/000945/2025-04-15-gemini-2.0-flash-001-prompt-a-3/000945.ipynb",
     "dandiset_id": "000945",
     "subfolder": "2025-04-15-gemini-2.0-flash-001-prompt-a-3",
-    "overall_score": 62.33333333333333,
+    "overall_score": 62.333333333333336,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -5798,7 +5798,7 @@
     "notebook": "dandisets/001174/2025-04-01-deepseek-chat-v3-0324/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-01-deepseek-chat-v3-0324",
-    "overall_score": 55.33333333333333,
+    "overall_score": 55.333333333333336,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -6241,7 +6241,7 @@
     "notebook": "dandisets/001174/2025-04-04-gemini-2.0-flash-001/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-04-gemini-2.0-flash-001",
-    "overall_score": 52.33333333333334,
+    "overall_score": 52.333333333333336,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -6464,7 +6464,7 @@
     "notebook": "dandisets/001174/2025-04-07-claude-3.5-sonnet/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-07-claude-3.5-sonnet",
-    "overall_score": 56.33333333333333,
+    "overall_score": 56.333333333333336,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -7133,7 +7133,7 @@
     "notebook": "dandisets/001174/2025-04-10-claude-3.7-sonnet-prompt-a-2/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-10-claude-3.7-sonnet-prompt-a-2",
-    "overall_score": 63.66666666666667,
+    "overall_score": 63.666666666666664,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -8471,7 +8471,7 @@
     "notebook": "dandisets/001174/2025-04-15-claude-3.7-sonnet-prompt-b-3/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-15-claude-3.7-sonnet-prompt-b-3",
-    "overall_score": 62.00000000000001,
+    "overall_score": 62.0,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -8694,7 +8694,7 @@
     "notebook": "dandisets/001174/2025-04-15-gemini-2.0-flash-001-prompt-a-3/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-15-gemini-2.0-flash-001-prompt-a-3",
-    "overall_score": 52.99999999999999,
+    "overall_score": 53.0,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -9586,7 +9586,7 @@
     "notebook": "dandisets/001275/2025-04-04-gemini-2.0-flash-001/001275.ipynb",
     "dandiset_id": "001275",
     "subfolder": "2025-04-04-gemini-2.0-flash-001",
-    "overall_score": 46.33333333333333,
+    "overall_score": 46.333333333333336,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -9809,7 +9809,7 @@
     "notebook": "dandisets/001275/2025-04-07-claude-3.5-sonnet/001275.ipynb",
     "dandiset_id": "001275",
     "subfolder": "2025-04-07-claude-3.5-sonnet",
-    "overall_score": 55.333333333333336,
+    "overall_score": 55.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -10032,7 +10032,7 @@
     "notebook": "dandisets/001275/2025-04-07-quasar-alpha-exp/001275.ipynb",
     "dandiset_id": "001275",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 55.99999999999999,
+    "overall_score": 56.0,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -12708,7 +12708,7 @@
     "notebook": "dandisets/001276/2025-04-10-quasar-alpha-prompt-b-1/001276.ipynb",
     "dandiset_id": "001276",
     "subfolder": "2025-04-10-quasar-alpha-prompt-b-1",
-    "overall_score": 48.33333333333333,
+    "overall_score": 48.333333333333336,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -12931,7 +12931,7 @@
     "notebook": "dandisets/001333/2025-04-02-claude-3.7-sonnet/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-02-claude-3.7-sonnet",
-    "overall_score": 62.00000000000001,
+    "overall_score": 62.0,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -13823,7 +13823,7 @@
     "notebook": "dandisets/001333/2025-04-07-quasar-alpha-exp/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 46.33333333333333,
+    "overall_score": 46.333333333333336,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -14046,7 +14046,7 @@
     "notebook": "dandisets/001333/2025-04-09-quasar-alpha/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-09-quasar-alpha",
-    "overall_score": 48.99999999999999,
+    "overall_score": 49.0,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -14492,7 +14492,7 @@
     "notebook": "dandisets/001333/2025-04-10-claude-3.7-sonnet-prompt-b-1/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-10-claude-3.7-sonnet-prompt-b-1",
-    "overall_score": 43.33333333333333,
+    "overall_score": 43.333333333333336,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -15607,7 +15607,7 @@
     "notebook": "dandisets/001335/2025-04-07-claude-3.5-sonnet/001335.ipynb",
     "dandiset_id": "001335",
     "subfolder": "2025-04-07-claude-3.5-sonnet",
-    "overall_score": 58.99999999999999,
+    "overall_score": 59.0,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -15830,7 +15830,7 @@
     "notebook": "dandisets/001335/2025-04-07-quasar-alpha-exp/001335.ipynb",
     "dandiset_id": "001335",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 60.33333333333333,
+    "overall_score": 60.333333333333336,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -16276,7 +16276,7 @@
     "notebook": "dandisets/001335/2025-04-09-quasar-alpha/001335.ipynb",
     "dandiset_id": "001335",
     "subfolder": "2025-04-09-quasar-alpha",
-    "overall_score": 49.33333333333334,
+    "overall_score": 49.333333333333336,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -18506,7 +18506,7 @@
     "notebook": "dandisets/001363/2025-04-10-quasar-alpha-prompt-b-1/001363.ipynb",
     "dandiset_id": "001363",
     "subfolder": "2025-04-10-quasar-alpha-prompt-b-1",
-    "overall_score": 49.00000000000001,
+    "overall_score": 49.0,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -18729,7 +18729,7 @@
     "notebook": "dandisets/001366/2025-04-04-claude-3.7-sonnet/001366.ipynb",
     "dandiset_id": "001366",
     "subfolder": "2025-04-04-claude-3.7-sonnet",
-    "overall_score": 62.666666666666664,
+    "overall_score": 62.66666666666667,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -19621,7 +19621,7 @@
     "notebook": "dandisets/001366/2025-04-07-quasar-alpha-exp/001366.ipynb",
     "dandiset_id": "001366",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 51.00000000000001,
+    "overall_score": 51.0,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -20067,7 +20067,7 @@
     "notebook": "dandisets/001366/2025-04-09-quasar-alpha/001366.ipynb",
     "dandiset_id": "001366",
     "subfolder": "2025-04-09-quasar-alpha",
-    "overall_score": 53.66666666666667,
+    "overall_score": 53.666666666666664,
     "scores": [
       {
         "name": "describe-dandiset",

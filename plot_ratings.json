@@ -1270,6 +1270,146 @@
     }
   },
   {
+    "notebook": "dandisets/000673/2025-04-10-quasar-alpha-prompt-a-1/000673.ipynb",
+    "dandiset_id": "000673",
+    "subfolder": "2025-04-10-quasar-alpha-prompt-a-1",
+    "plots": [
+      {
+        "plot_id": "cell_15_output_0",
+        "cell_index": 15,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.3333333333333335,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The images are all rotated versions of famous faces. The quality of images is high and they are easily identifiable. The layout is also nicely done.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot contains 8 image and each of them seems to have a different orientation. With some data processing, the images can be aligned and have a better quality to be analyzed for other tasks.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot contains images of faces, all of which are readable and reasonable. Therefore, it is of good quality with no real issues. The images are rotated to about the same degree.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_17_output_1",
+        "cell_index": 17,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.3333333333333335,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is of good quality. The axes are labelled and the plot is titled. The data is clearly visible and there are no overlapping points. The only thing I would change is maybe making the marker size a bit smaller as there is a high density of overlapping points.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot displays the TTL code value over time, showing multiple clusters of data points. The axes are labeled, and the plot has a title. However, the data points are somewhat dense, and the plot could benefit from more clarity, such as a clearer representation of the data distribution or using a more visually distinct representation for different TTL codes (if applicable).\nThe plot is informative but not quite publication quality. There is a large unpopulated section of the plot. This would be better achieved by adjustment of the y axis bounds. But it is worth seeing the full range of the TTL codes as there are 2 which are near the top of the range.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is of good quality and presents relevant information about event TTL markers over time. The axes are clearly labeled, and the data points are easily distinguishable. The plot could benefit from additional analysis or context to enhance its interpretability. Namely, the points at the top and the gap in the middle are a bit unexplained. However, for the state given, the plot is of good quality, but has some issues that could be improved (e.g., a legend and description of these event codes). Thus, a score of 3 is appropriate.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_19_output_1",
+        "cell_index": 19,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows LFP traces from 8 electrodes over time, with clear axes labels and a title. Some traces overlap each other, but overall the plot is easy to understand and has high information content. The plot is of very good quality, but not publication quality as it would benefit from some additional labeling or highlighting of one the electrodes for demonstration purposes.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot displays LFP traces from 8 electrodes over time. The axes are labeled, and the title explains the content. However, there is no specific information on what offset has been added (as indicated on the y axis label) and is not clear what the data represents.\n\nThe plot is not particularly visually appealing as all the traces overlap. A better plot would represent each trace independently, possibly with z offset, to allow better visualization.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a clear representation of the LFP traces from 8 electrodes over time. The axes are labeled, and the title describes the data. The plot could be improved by adding a legend to distinguish the different electrodes.\n    I give it a 4 since it is not entirely publication quality but it is very close.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_21_output_2",
+        "cell_index": 21,
+        "output_index": 2,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 5.0,
+                "thinking": "The plot is a simple bar plot showing spike counts for different units. The axes are clearly labeled, and the title is descriptive. There are no apparent errors, and the figure provides a clear representation of the data. Thus, the plot is publication quality.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is a bar plot with counts for different units. The x-axis (Unit index) and y-axis (# Spikes) are labeled, and the title \"Spike count for first 10 units\" is informative. Overall, the plot is well-presented and easy to understand. Some minor enhancements could include adding error bars if available but overall is a good quality plot. Plot is not empty and all labels makes sense.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot has labeled axes and a title. The data is clearly presented in a bar plot, making it easy to compare spike counts across different units. The overall quality is fine but some improvements can be made (e.g. legend or more informative title). Hence I'm scoring it 3.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "000673",
+      "model": "openrouter/quasar-alpha",
+      "prompt": "prompt-a-1.txt",
+      "total_prompt_tokens": 131764,
+      "total_completion_tokens": 3154,
+      "total_vision_prompt_tokens": 0,
+      "total_vision_completion_tokens": 0,
+      "elapsed_time_seconds": 238.486962556839,
+      "timestamp": "2025-04-10 13:51:43",
+      "system_info": {
+        "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+        "hostname": "system76-pc",
+        "processor": "x86_64",
+        "python_version": "3.12.2"
+      }
+    }
+  },
+  {
     "notebook": "dandisets/000673/2025-04-14-gemini-2.0-flash-001-prompt-a-1/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-14-gemini-2.0-flash-001-prompt-a-1",
@@ -1980,6 +2120,117 @@
     }
   },
   {
+    "notebook": "dandisets/000673/2025-04-15-gemini-2.0-flash-001-prompt-a-3/000673.ipynb",
+    "dandiset_id": "000673",
+    "subfolder": "2025-04-15-gemini-2.0-flash-001-prompt-a-3",
+    "plots": [
+      {
+        "plot_id": "cell_15_output_0",
+        "cell_index": 15,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot shows data for 10 channels, title and axis labels are present. However, there is no key to distinguish between the channels. The plot is good but not publication quality. Thus it could be improved.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-formatted with clear axis labels and a title. The data appears to be appropriately scaled and displayed. While it's not groundbreaking, it's a solid and informative visualization. There is no legend for different channels so it is not publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows LFP data for 10 channels over time, with labeled axes and a title. The plot is generally well-formatted. However, a legend would be helpful to distinguish the different channels. The lines are somewhat jagged, suggesting there may be room to improve the smoothing of the data. These are fairly minor issues, but prevent it from being truly publication quality. Thus, a score of 4 is appropriate. The text is complete and legible, which increases the overall quality. Given that the OCR process captured all the labels, title, it shows that the axes labels are clear and readable, thus increasing the overall score to above average.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_17_output_1",
+        "cell_index": 17,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.3333333333333335,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled and the data is clearly displayed. The plot style is clean and professional. The plot shows stimulus events over time. There are no immediately obvious problems.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is generally of good quality. It includes a title and axis labels indicating what the data represents. The data is clearly shown as a function of time (x-axis) with a clear y-axis. However, there is no indication of standard error or measure of variance, which it could have benefitted from.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot has a clear title, axis labels and data is appropriately presented as a function of time. However the information content is relatively low, as the data could be displayed in a more informative style that doesn't directly connect the data points with straight line segments. Perhaps a bar plot would be a good alternative.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_19_output_1",
+        "cell_index": 19,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 1.0,
+            "reps": [
+              {
+                "score": 1.0,
+                "thinking": "This is a picture of a person, not a scientific plot. Therefore, it has no data or information content as a scientific figure.",
+                "repnum": 0
+              },
+              {
+                "score": 1.0,
+                "thinking": "The image does not represent a scientific plot, but rather is a photograph of a person. Therefore, it is not possible to evaluate its quality as a scientific figure.",
+                "repnum": 1
+              },
+              {
+                "score": 1.0,
+                "thinking": "This is not a scientific figure. It is a photo of a man speaking.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "000673",
+      "model": "google/gemini-2.0-flash-001",
+      "prompt": "prompt-a-3.txt",
+      "total_prompt_tokens": 147997,
+      "total_completion_tokens": 2953,
+      "total_vision_prompt_tokens": 0,
+      "total_vision_completion_tokens": 0,
+      "elapsed_time_seconds": 41.69268822669983,
+      "timestamp": "2025-04-15 11:19:39",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
     "notebook": "dandisets/000945/2025-04-01-deepseek-chat-v3-0324/000945.ipynb",
     "dandiset_id": "000945",
     "subfolder": "2025-04-01-deepseek-chat-v3-0324",
@@ -2114,6 +2365,349 @@
       "total_completion_tokens": 11406,
       "timestamp": "2025-04-01 09:03:57",
       "elapsed_time_seconds": 1090.6974401474
+    }
+  },
+  {
+    "notebook": "dandisets/000945/2025-04-02-claude-3.7-sonnet/000945.ipynb",
+    "dandiset_id": "000945",
+    "subfolder": "2025-04-02-claude-3.7-sonnet",
+    "plots": [
+      {
+        "plot_id": "cell_8_output_0",
+        "cell_index": 8,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.3333333333333335,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is generally informative, showing the number of files per subject using a bar plot. The axes are labeled, and the title is clear. There's room for improvement in terms of visual appeal (e.g., bar colors, gridlines style) and perhaps ordering the bars by height for better readability. It doesn't quite meet publication standards as is.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is a bar graph, which is appropriate for the data. The axes are labeled, and the title is descriptive. However, the figure could be improved. The x-axis labels are overlapping, indicating too many data points are show for the figure size. Furthermore, the \"number of files\" y-axis could be more descriptive (e.g. \"number of diffusion MRI files\").",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is a bar chart that displays the number of files per subject. The axes are labeled, and the title is descriptive. The subject IDs are a bit cramped and rotated, but overall, the plot is informative.\nThe main issue is that the number of files appears to be discrete integers, so rounding to the nearest integer in the y-axis is expected.\n\nI consider this plot to be of good quality, but not publication quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_14_output_1",
+        "cell_index": 14,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot displays electrode array positions with color-coded depth information. The axes are labeled, and a colorbar provides a key for interpreting the depth values. The plot is clear and informative. However, \"depth\" feels like a questionable word choice but \"z position\" does a decent job of alleviating that confusion. The plot is very good quality and is close to publication quality. The plot has no errors in its creation or has any significant problems.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-structured with clear axes labels and a colorbar that explains the color mapping of the data points. The data points are clearly visible, and the grid provides context without being distracting. It looks like a nicely done scientific plot. Some very minor points could include a figure caption, but that's not always strictly needed. Overall a very good plot.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-formatted. The axes are labelled. The title is descriptive. The colourbar is informative. There are no apparent issues with the plot's content. Axes are labelled. A small improvement would be to provide the electrode separation distance (e.g. mm). The gridlines are also a nice touch that do not detract. The points are clearly and crisply displayed. Overall, it's nearly publication quality. I am rating this 4 instead of 5 simply because I want to reserve '5' for plots that are exceedingly intricate, complex, and well-designed. This plot is more straightforward and clear.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_16_output_1",
+        "cell_index": 16,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 1.3333333333333333,
+            "reps": [
+              {
+                "score": 2.0,
+                "thinking": "The plot is showing the distribution of trial durations, but there is no actual distribution plotted. Instead, there is just a mean line. The x-axis also has an odd formatting issue with scientific notation not displaying correctly. Because there is no real data being represented, the plot is poor in quality. A histogram or kernel density estimate over the trial durations could improve this quality.",
+                "repnum": 0
+              },
+              {
+                "score": 1.0,
+                "thinking": "The x-axis has a weird scale, and there is no distribution visible. All the information is just a vertical line showing the mean. No useful information can be extracted. Further, the count axis suggests there should be datapoints, but here there are none.",
+                "repnum": 1
+              },
+              {
+                "score": 1.0,
+                "thinking": "The plot intends to show the distribution of trial durations but it is essentially empty. There are no bars or data points representing the counts for different durations. There is only a vertical line indicating the mean, but without the actual distribution, the plot is not informative. Furthermore, the x-axis is labeled with exponent, this is not right thing to do for the plot unless the axis represent some transformation of data. The scientific figure thus has a serious problem due to an error creating it.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_16_output_2",
+        "cell_index": 16,
+        "output_index": 2,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is generally well-made. The axes are labeled and the title is clear. A vertical line indicating the mean is also present and the mean value is indicated in the legend. The x-axis could be improved to show more precise values.",
+                "repnum": 0
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot is a histogram showing the distribution of inter-trial intervals. The axes are labeled, and there is a title. A vertical line indicates the mean, and the value of the mean is provided in the legend. The plot is clear and informative, with no apparent errors.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled and the data is clearly presented. It is easy to understand the information being conveyed. However, it is not necessarily publication quality. The vertical axis label has a non-capital first letter.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_19_output_1",
+        "cell_index": 19,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is properly labeled with a useful title. The slices are labeled and the percentages are correctly displayed. This is a simple pie chart done mostly well. However, the 3D effect obscures and slightly distorts the slices, which is not ideal.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is clear and easy to understand. It shows the distribution of two cell types. The percentages are clearly labeled. However it is not publication quality. It seems that the numbers in the parenthesis in the title can be included within text in the labeling of the different slices of the pie that indicate the name and the percentage. Also, a pie plot is not always the best choice for representing distributions like this, as it can be hard to compare the sizes of the slices accurately especially when there are more slices. It has a 3D effect which can distort the percieved surface area sizes.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is a simple pie chart showing the distribution of two cell types. It's well-labeled and easy to interpret. \nThe only minor issue is the 3D perspective, which is generally discouraged in scientific figures as it can slightly distort the perception of relative sizes. That said, the effect here is negligible and the pie chart accurately reflects that the two parts of the pie are equal.\nGiven the overall clarity and readability, I would say the plot is of very good, but not quite publication, quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_21_output_0",
+        "cell_index": 21,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is well labeled, organized and easy to understand. It shows distributions for two different cell types and their spike rates. However, this plot is informative, but it should be improved by normalizing these distributions in order to become a better means for comparison.",
+                "repnum": 0
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot is well-formatted, with appropriate labels and a clear legend. The overlapping histograms allow for direct comparison of the distributions of spike counts for the two cell types. It is suitable for publication and easy to interpret.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled and shows the distribution of data for two conditions. It is clear and provides useful information. Minor improvements could be made to improve the visual aspects or add statistical analysis (e.g. reporting mean or median), but overall the quality is high. The main features of the plot are that the two cell types have clear distributions of average number of spikes, with FSU being centered on a higher value. The plot is easily interpreted and the information is properly conveyed.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_21_output_1",
+        "cell_index": 21,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot displays a clear histogram of firing rates for two cell types. The axes are labeled, and there's a title and legend. The plot could be slightly improved with error bars or more in-depth statistical comparison between the cell types, but it is still effective in conveying the basic information.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled, and the overlapping histograms are easily distinguishable. The plot could be improved to publication by normalizing it to density instead of raw counts, although the current count histogram is still of high quality.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The histogram presents a clear distribution of firing rates for two cell types (RSU and FSU). The axes are labeled, and a legend distinguishes between the cell types. The plot is well-formatted and conveys the data effectively. Overlapping bars are visible but it does not impede interpretation of the plot. There is nothing to drastically improve this plot.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_27_output_0",
+        "cell_index": 27,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot combines a raster plot and a PSTH, both commonly used figures to represent neural firing activity across trials. The labels are informative. The PSTH uses a reasonable bin size. Both plots align with the trial onset. The color schemes are clear, and the axes are well-labeled, with trials and firing rate clearly marked. However, the figure could be improved by indicating the number of trials used to create the PSTH, and clarifying how the PSTH was calculated. The legend in the raster plot is not ideal located.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The raster plot and peri-stimulus time histogram (PSTH) are well-presented. The axes are clearly labeled and easy to understand. The inclusion of the trial onset and stimulation end reference lines are useful for interpreting the data. The alignment of the raster plot and PSTH provide a good visualization of the temporal firing patterns of the neuron. The quality is high, with potential for publication after polishing figure details like axis labels or font size.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows both a raster plot and a PSTH, which are appropriate for visualizing neural spiking activity. The axes are clearly labeled, and important events (trial onset and stimulation end) are indicated with vertical lines. The plot is easy to interpret and understand, and the information content is high. However, the colors are somewhat bland. The choice of two different colors for the two events depicted in both plots is good, making the plot easier to understand.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_27_output_1",
+        "cell_index": 27,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows both a raster plot and a PSTH. Both seem appropriate for the data being presented. All axes are labeled and the figure has a title, as well as a legend. The resolution is good. There is perhaps a small potential issue - the raster plot has quite a lot of \"empty\" space, which could either reflect the nature of the data or could indicate that the trials could be sorted or re-arranged in some manner to show more of a pattern. However, without knowing the nature of the data, it is hard to know whether that is possible. The PSTH is a reasonable summary of the full trial.\n\nBecause of the potential issue above, I cannot rate this as publication quality and rate it as a 4.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot combines a raster plot and a PSTH, which are appropriate visualizations for spike train data. The axes are labeled, and the important events (trial onset, stimulation end) are indicated with vertical lines and legends. The plots are clear and easy to understand. While the PSTH could have a slightly different binning strategy to better represent the data, the overall quality is very good.\n\nHowever, the \"Stimulation End (67ms)\" is shown using two different colors in the two subplots. It would be better to stick to the same color. Also, I would change the bin width of the PSTH such that the stimulation end aligns better with the bin edges. So, I will give it a rating of 4.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-formatted and provides useful information. The PSTH uses bars that have a reasonable width, and the axes are well-labeled. The raster plot is clear and the vertical lines indicating onset and stimulation end are helpful. The legend in the PSTH plot incorrectly labels the stimulation end. It should be blue and it is green.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_29_output_0",
+        "cell_index": 29,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot displays the average response by cell type against time relative to trial onset and stimulation end. It's well-labelled, and the different cell types are easily distinguishable. The axes are properly labelled and the title clearly describes the content. The shading of the variation makes the data and its uncertainties clear. Overall, the plot is well made. It could be improved by adding units to the axes and maybe increasing the font size, and also adding a description of what RSU and FSU stand for, but overall this is a great quality and informative scientific plot.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is of good quality. The plot displays the average response by cell type. The information is clearly plotted with appropriate labels and a legend. The title is informative. Shaded error bars are present. There are some minor issues, such as no error bar for the vertical lines but overall the plot is of good quality. Some extra detail could improve the quality, for example making axis labels bigger and/or more descriptive.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot displays the average response by cell type, RSU and FSU, over time relative to trial onset. It includes shaded error regions to indicate variability. The axes are clearly labeled, and there's a legend explaining the lines and markers. The inclusion of vertical lines for \"Trial Onset\" and \"Stimulation End\" helps add important context. The visual presentation is clear and well-organized. This plot is well-constructed and informative.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_31_output_0",
+        "cell_index": 31,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.666666666666667,
+            "reps": [
+              {
+                "score": 5.0,
+                "thinking": "The plot is well-labeled, has a clear legend, and easy to read. The information is clearly presented, and the plot is visually appealing. I would consider this to be of publication quality. There are no apparent issues.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-formatted bar plot with error bars, clear labels and discernible information. Therefore, a score of 4 seems appropriate.",
+                "repnum": 1
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot is a bar graph that shows the \"Average Firing Rates By Cell Type\" over three time windows \"Pre-Stim\", \"During-Stim\", and \"Post-Stim\". The plot is well-labeled, with clear x and y axis labels and a title. The legend is also clear and easy to understand. Includes error bars. It is publication-ready.\nI'm confident in this assessment.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandi_notebook_gen_version": "0.1.0",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.910.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      },
+      "model": "anthropic/claude-3.7-sonnet",
+      "vision_model": "anthropic/claude-3.7-sonnet",
+      "total_prompt_tokens": 738730,
+      "total_completion_tokens": 23144,
+      "total_vision_prompt_tokens": 9765,
+      "total_vision_completion_tokens": 2224,
+      "timestamp": "2025-04-02 17:00:27",
+      "elapsed_time_seconds": 740.4258232116699
     }
   },
   {
@@ -2307,6 +2901,117 @@
       "total_vision_completion_tokens": 599,
       "timestamp": "2025-04-07 14:50:38",
       "elapsed_time_seconds": 256.2779276371002
+    }
+  },
+  {
+    "notebook": "dandisets/000945/2025-04-07-quasar-alpha-exp/000945.ipynb",
+    "dandiset_id": "000945",
+    "subfolder": "2025-04-07-quasar-alpha-exp",
+    "plots": [
+      {
+        "plot_id": "cell_10_output_0",
+        "cell_index": 10,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.3333333333333335,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot is a histogram that shows the distribution of spike counts across units. The axes are labeled, and the title is descriptive. However, the plot is not of publication quality. The labels could be more precise, and it may benefit from having more information about the type of unit presented and the number of units. The visual presentation could also be improved by removing the space around the plot. There are no error bars to indicate uncertainty in the spike counts. The plot does show the data in a clear manner, the distribution is evident, and all of the necessary elements are included. Given these considerations, the plot is rated as good quality, but can be improved.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is a histogram showing the distribution of spike counts across units. The axes are labeled, and the title is present. The plot is generally well-formatted. However, the number of bins could be improved for better visualization of the data. Therefore the plot could be improved, but is still informative.&#x20;",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is a histogram showing the distribution of spike counts across units. The axes are labeled, and the title is descriptive. The data is clearly presented. Although the histogram could potentially use some minor aesthetic enhancement, it is of sufficient quality with the essential information present. The plot has no apparent errors.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_13_output_0",
+        "cell_index": 13,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is generally well-made. It is clear and the axes are labeled. However, the title \"Mean Firing Rate Per Unit\" is not very descriptive, but that\u00b4s a minor issue. All the information is available on the plot, making it a very good quality plot.\nI dont consider this plot a of \"publication quality\" meaning it is extremely polished and suitable for direct inclusion in a scientific publication without any further modifications, since the title could be improved.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is a bar chart showing mean firing rate per unit ID. The axes are labeled, and the title is present. The data seems to be displayed correctly, and there are no immediately obvious issues. Overall, the plot is good and the data is clearly displayed. I would not hesitate to put this in a publication.\n\n* The plot is a bit simplistic.\n\nTherefore, The plot is of very good quality, but not publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a bar graph of mean firing rate per unit. The axes are labeled including units, and the title is clear. There is nothing obviously wrong with the data, so this is likely scientific data with some usefulness. Overall, it is a plot of good quality. However, this plot is not publication quality. A publication ready plot would have a more detailed caption and a better color scheme along with error bars. It could also include statistical significance markers if important. Therefore, this plot falls into the 'good' to 'very good' category.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_16_output_0",
+        "cell_index": 16,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.3333333333333335,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is a histogram which appears to be showing a roughly uniform distribution of the \"Trial Start Time\" data. The axes are properly labelled and the title is descriptive, and the data is clearly presented and easy to read. However, the y-axis could've used a better range so that the bins would occupy more space in the plot to enhance visualization and convey relevant insights more prominently. All things considered the plot is of good quality with potential for a few improvements. Therefore, the quality is between good and very good.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot shows a clear distribution of trial start times. The axes are labeled, and the title is appropriate. However, The data displays a uniform distribution, which might indicate a problem in the experimental design or in the data recording. Further information regarding this would be useful, but considering the plot alone, I think it is of good quality, but could be improved by adding further commentary.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot seems to be of good quality, displaying a histogram with properly labeled axes and a title. However, the data within the plot looks very uniform and the plot is not very informative. There are no error bars and the bar width is too wide. The only reason to not give this a 3 is that the plot is not technically wrong, it's just not very useful and has some minor visual issues.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandi_notebook_gen_version": "0.1.0",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      },
+      "model": "openrouter/quasar-alpha",
+      "vision_model": "openrouter/quasar-alpha",
+      "total_prompt_tokens": 211258,
+      "total_completion_tokens": 5510,
+      "total_vision_prompt_tokens": 2574,
+      "total_vision_completion_tokens": 310,
+      "timestamp": "2025-04-07 13:13:16",
+      "elapsed_time_seconds": 252.12013697624207
     }
   },
   {
@@ -4575,6 +5280,117 @@
     }
   },
   {
+    "notebook": "dandisets/001174/2025-04-10-gemini-2.5-pro-preview-prompt-b-3/001174.ipynb",
+    "dandiset_id": "001174",
+    "subfolder": "2025-04-10-gemini-2.5-pro-preview-prompt-b-3",
+    "plots": [
+      {
+        "plot_id": "cell_13_output_1",
+        "cell_index": 13,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows fluorescence traces for ROIs 0, 1, and 2 over time, displaying useful information about the changes in fluorescence of these regions. The plot also includes labels, legends, and axes labels. However, the x-axis label does not include the units (seconds). The plot is generally of good quality, but could be improved to reach publication quality. For example, the title is quite verbose. Overall, the plot is of very good quality.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows fluorescence traces for three ROIs over time. The axes are labeled and the legend is present, making it easy to understand. There are no apparent errors in creating the plot. However, the plot lacks in-depth analysis or complex data representation necessary for publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled and conveys information effectively, but it could be improved for publication by including a scale bar, error bars, or some measure of statistical significance. Also, the plot utilizes a good range of fluorescence and the ROIs are distinguishable.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_15_output_2",
+        "cell_index": 15,
+        "output_index": 2,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot shows the maximum projection of 6 ROI masks. The axes are labeled, and the colorbar indicates the max mask weight. The plot is clear but it does not provide further scientific insights. However, the visualization is effective, so the plot is of good quality but not ready for publication as is.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot displays relevant data with clear presentation of axes and labels. The colorbar is well-defined, making it relatively easy to interpret the data. There might be some aesthetic improvements that could be made before being publication ready such as resolution, font size, etc, but the issues are minor.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows the max projection of 6 ROI masks. The axes are labeled, and a colorbar provides the weights. The title is descriptive. Overall, the figure is well-made, but could be improved with a more detailed title and a more descriptive colorbar label. I think it is not quite publication quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_17_output_2",
+        "cell_index": 17,
+        "output_index": 2,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.3333333333333335,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The image clearly displays raw imaging data with labeled axes and a colorbar indicating pixel intensity. The data is non-uniform, suggesting it's capturing some real phenomena, which is encouraging, but it's very unclear if it is publication ready without context. The plot is well-labeled.\nI'm rating the image quality itself, which is good, but it is far from publication quality out-of-the-box.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows raw imaging data with labeled axes and a colorbar. While informative, it represents the raw output and isn't processed for publication. There are intensity variations across the image, which may be expected but not necessarily aesthetically pleasing for a publication-quality figure. Also, there is some moire pattern, which could be minimized.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is of good quality. The axes are labeled including the unit (uint16). The title is descriptive. The colorbar is present and labeled as well. There is a good contrast on the image itself, allowing the feature to be discerned. Overall, the plot is of good overall quality, but it is not publication quality because it displays raw data without any processing. Some processing might be required before publication.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001174",
+      "model": "google/gemini-2.5-pro-preview-03-25",
+      "prompt": "prompt-b-3.txt",
+      "total_prompt_tokens": 450171,
+      "total_completion_tokens": 12258,
+      "total_vision_prompt_tokens": 1157,
+      "total_vision_completion_tokens": 730,
+      "elapsed_time_seconds": 234.24689054489136,
+      "timestamp": "2025-04-11 18:03:19",
+      "system_info": {
+        "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+        "hostname": "system76-pc",
+        "processor": "x86_64",
+        "python_version": "3.12.2"
+      }
+    }
+  },
+  {
     "notebook": "dandisets/001174/2025-04-10-quasar-alpha-prompt-a-1/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-10-quasar-alpha-prompt-a-1",
@@ -4712,6 +5528,885 @@
         "processor": "x86_64",
         "python_version": "3.12.2"
       }
+    }
+  },
+  {
+    "notebook": "dandisets/001174/2025-04-15-claude-3.7-sonnet-prompt-b-3/001174.ipynb",
+    "dandiset_id": "001174",
+    "subfolder": "2025-04-15-claude-3.7-sonnet-prompt-b-3",
+    "plots": [
+      {
+        "plot_id": "cell_14_output_1",
+        "cell_index": 14,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.0,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot displays a raw image frame. While it serves its purpose of showing the data, it lacks detailed analysis or specific findings. It conveys relevant information but isn't of publication quality, as is stands. Therefore I rate it as 3.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot shows a raw frame, so it's expected to be somewhat noisy and possibly not perfectly uniform. The colorbar provides context for the intensity values. Overall, the quality is good, but it's not really publication-ready in its current state, more like a preliminary visualization. There are some spots and an overall gradient in intensity which might obscure finer features. The contrast is adequate. The plot is not empty of data, and does convey the info it is plotting. As as result I think it meets a \"good quality\" rating. Further processing (e.g noise filtering or gradient removal) may make it closer to publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The image is a raw frame and seems to properly display the data contained within. The colormap and title are a good start. The figure itself is not especially informative as a standalone figure however, as it lacks any notion of the experimental setup.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_18_output_2",
+        "cell_index": 18,
+        "output_index": 2,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.3333333333333335,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot shows density plots for different ROIs, and they look fine. The plots convey information, and there is an inherent issue. However, it is not of publication quality because the data is not clearly explained.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot shows heatmaps for different regions of interest (ROIs). The heatmaps appear to be properly generated and show some signal. The ROIs are clearly labeled. Overall, the plot is of good quality with some minor issues. More information could be added, such the scale of the data, but it is clearly presenting a visual trend. Nothing is so bad that compromises the interpretability, thus it should be rated favorably.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a grid of heatmaps of regions of interest. Each heatmap itself is clear, and axes are not necessary (since ROI names give the positions). I am unsure about the quality of the data itself since I lack context, but as a visualization it is good. The labels are fairly clear at the top of each subplot. Not publication quality, but very good quality for a heatmap.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_23_output_0",
+        "cell_index": 23,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot displays the mean fluorescence by ROI as a bar chart. The axes are labeled and the title is appropriate. However, it is not publication quality because the title and axis labels do not conform to standard font sizes. A figure caption is also needed for publication quality.",
+                "repnum": 0
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot has a title, axis labels, and clearly shows the data. Nothing is missing, or obviously wrong, and the plot is properly formatted. The plot presents a bar chart for mean fluorescence as a function of ROI index. The axes are clearly labeled, and the title informs the reader what is being shown. I don't see any problems that need to be resolved. However, it would be better if the ROI Index labels were integers, but it isn't that big of an issue and it does not detract from the data being presented. Overall, the plot is of high quality and has no issues. Therefore, the figure is publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot presents data clearly as a bar plot with labeled axes and a title. It is easy to understand and conveys the information effectively. While it's not pushing any boundaries in terms of visual appeal, it is functional and serves its purpose well. It is of very good quality but not truly of publication quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_25_output_0",
+        "cell_index": 25,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot displays fluorescence traces for different regions of interest (ROIs) over time. The axes are labeled, and there's a legend to distinguish the ROIs. While generally well-presented, I would need to know more about the specifics of the experiment to confirm that this is publication ready. The plot includes a title, the axes are labeled and the legend is clear. More info would have been good such as the number of replicates, but the overall quality is very good. Therefore, I believe the plot can be improved to be of publication quality with minor adjustments.",
+                "repnum": 0
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot is well-labeled and shows clear data corresponding to the ROIs. While the plot is not extremely complex, it has good information content. The axes are well-labeled and the legend is clear. This plot could be directly used in a publication. The plot is well-formatted and easy to read.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot displays fluorescence traces for different ROIs over time. The axes are labeled, and there is a legend. The plot is easily readable and informative, and could be considered publication quality. However, the plot contains a sawtooth pattern, which it's unclear if it's an artifact of the data or the actual signal, so, I cannot be sure if it is flawless for a publication. Thus, the plot has good overall quality, but has some minor issues that should be investigated.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_27_output_1",
+        "cell_index": 27,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows clear traces with labels and axes, making it easy to understand the information presented. While not groundbreaking, it's well-executed.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-formatted and labeled with a legend. There is no overlap of the labels or data and it is easily interpretable. However, it is not quite publication quality, as there is still additional information that could be included to improve the plot.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows event amplitude traces for different ROIs over time. The axes are labeled, and there is a legend to distinguish the ROIs, giving it a clear and easy-to-understand visualization of the data. There aren't any immediately obvious issues. It could be improved with some formatting changes for publications (e.g., font size, legend location). The traces appear to be mostly at zero except at the spikes. Since most of the time the data is on the x axis, perhaps a better presentation would be as a raster plot or something else. However, this plot as it is does visualize the data. In conclusion, the plot is of very good quality, but could be improved; hence, the score is 4.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_30_output_0",
+        "cell_index": 30,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is a good quality heatmap, with a clear title, axis labels, and colorbar. It is easy to identify ROIs with high activity at different time points. I would score it as very good but not perfect. The axis labels are quite small and the font could be slightly different for a publication. The data is shown clearly and effectively.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-formatted, with readable labels and a clear colorbar legend. The data is presented in a way that is easy to interpret. It provides a good overview of fluorescence activity across different regions of interest (ROIs) over time. However, \"Fluorescence Activity Heatmap\" is not self-explanatory, therefore some caption information or more intuitive title would be necessary to make it publication ready. Thus it is very good quality but not publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is a good quality heatmap, as it conveys the data well and includes labels and a color bar. However, there is considerable empty space above the title and to the right of the color bar. The labels on the x axis are a bit too bunched up. Therefore, the plot can be improved, but it is already of good quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_32_output_0",
+        "cell_index": 32,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot displays a neural event raster, showing the timing of events across different ROIs. The axes are labeled and the data is clearly presented, which provides good information content. However, the plot has a very basic presentation and could benefit from enhancements to improve clarity and visual appeal. For example, adding more descriptive labels or improving the aesthetic appeal of the plot could enhance its overall quality. Therefore, it is of good quality but could be improved.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled and easy to interpret, displaying neural events across time and different ROIs. However, the plot is very sparse, showing not many activation events. This affects the information content, but in itself is not a negative thing.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The raster plot shows the timing of neural events across different ROIs (regions of interest) over time. The density and pattern of events are visible. Although this plot is clear and informative. There are only the necessary components. There are not issues for interpretability.\n\nThe events in the plot are clear, but the font in the plot is small, and could also contain labels describing what each roi is.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_34_output_0",
+        "cell_index": 34,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot has clear labels, axis titles, and discernible data, presenting the information understandably. However, it lacks information about the experimental setup or number of samples used.\n    The plot quality is high, displaying fluorescence activity over time with clear axes labels and a descriptive title. The data is easily interpretable, which facilitates understanding of population activity trends. Gridlines allow to read the y values easier. However, some information is lacking (number of samples?) that would further increase the quality of the figure.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot displays fluorescence data over time, it is well labeled and has recognizable data. Some improvement could be made but is good.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows fluorescence over time. The axes are labeled and the title is clear. The plot is well-formatted and easy to read. Good quality plot, but could be improved for publication quality. For instance, adding error bars would improve the quality of the plot.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_36_output_0",
+        "cell_index": 36,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled, easy to read, and contains relevant information. There are no immediately obvious flaws that detract from its quality, although there is room for improvement to reach the level of publication quality.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is generally well-labeled and easy to understand and contains information. I would qualify it as very good, but not quite publication quality. It could use some additional polish.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot presents data clearly and has appropriate axis labels and a title. The plot does not have any errors, but may require some additional statistical results to better show significant data (such as p-values). Therefore, the plot is of very good quality, but not publication quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_38_output_0",
+        "cell_index": 38,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a standard correlation plot, where the values and colorbar are clearly visible enabling proper interpretation, even though some elements are a bit small. The color scheme is also useful.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a correlation matrix of ROI fluorescence signals. From a data visualization perspective, the plot is good. The axes are labelled, there is a colorbar, and the correlation values are annotated. From a design perspective, the quality is high, but for the aspect to be publication quality the resolution could be better.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is a correlation matrix, which is a good way to visualize relationships between variables. The color scheme is appropriate and the values are displayed on the plot. The axis labels are clear. The figure is well presented and easy to understand. However, an improvement would be to render the matrix in a way that only the bottom left triangle is shown (or alternatively the top right) so that the redundant information is removed.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_42_output_1",
+        "cell_index": 42,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 1.0,
+            "reps": [
+              {
+                "score": 1.0,
+                "thinking": "The plot is completely empty, without any data shown.",
+                "repnum": 0
+              },
+              {
+                "score": 1.0,
+                "thinking": "The plot is empty. There is no data plotted. The axes are labeled and the title is present, but there's nothing visual on the plot itself.",
+                "repnum": 1
+              },
+              {
+                "score": 1.0,
+                "thinking": "The plot is empty. There is no data being displayed in the axes.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001174",
+      "model": "anthropic/claude-3.7-sonnet",
+      "prompt": "prompt-b-3.txt",
+      "total_prompt_tokens": 1293214,
+      "total_completion_tokens": 18151,
+      "total_vision_prompt_tokens": 14970,
+      "total_vision_completion_tokens": 2491,
+      "elapsed_time_seconds": 585.4311256408691,
+      "timestamp": "2025-04-15 14:55:32",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/001174/2025-04-15-gemini-2.0-flash-001-prompt-a-3/001174.ipynb",
+    "dandiset_id": "001174",
+    "subfolder": "2025-04-15-gemini-2.0-flash-001-prompt-a-3",
+    "plots": [
+      {
+        "plot_id": "cell_21_output_0",
+        "cell_index": 21,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot appears to be a standard time series plot showing the mean calcium imaging intensity over time. There are clear axis labels and a descriptive title. The data appears reasonable for the experiment being presented. Overall it is well presented, although not perfect. Therefore, it seems to be of very good quality, but not publication quality.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled and has a clear title. The data is displayed appropriately. While the large dropouts in intensity may warrant further explanation, they are represented accurately in the plot. Therefore, the plot is of very good quality. With additional context, it could be publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot shows calcium imaging intensity over time, with clear axis labels and a title. The data is visible and interpretable, but there are large spikes downward to zero, which seems strange and could perhaps use some error bars or additional marking. Overall the plot is good. Thus, the score is 3",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_23_output_0",
+        "cell_index": 23,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a clear trend of calcium intensity over time. The axes are labeled and the title is well described.\nHowever, it lacks error bars or any indication of the statistical significance of the observed changes in intensity.\nAlso, the axes labels are of a smaller font size.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is well-formatted and well-labeled, but it lacks error bars or any indication of the variability of the measurement. The plot shows that calcium imaging intensity varies over time. This is very useful but some type of error estimate is necessary to determine the robustness of this intensity measure.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot has a clear title, axis labels, and data is plotted correctly. The plot can be slightly improved by adjusting the y axis to better fit the data but the plot is still of very good quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_25_output_0",
+        "cell_index": 25,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.3333333333333335,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot shows image masks with clear distinction of objects/cells, and is informative, but lacks axis labels or a scale. The color map is appropriate. Some masks seem to overlap, and it is not clear if that is intentional. Overall, it is good but needs more information to be publication quality.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The image shows mask detections. The quality is good. It may not be publication quality due to the lack of a scale bar and the presence of text in the plot, but overall it is very good. The data is clear and the image is not empty.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The image masks show various cells, with well-defined boundaries and varying intensities. The image is not empty, and the data is shown correctly. However, without any other information on what the image wants to show, it is of good quality. So, some improvements could be done.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001174",
+      "model": "google/gemini-2.0-flash-001",
+      "prompt": "prompt-a-3.txt",
+      "total_prompt_tokens": 85531,
+      "total_completion_tokens": 3914,
+      "total_vision_prompt_tokens": 0,
+      "total_vision_completion_tokens": 0,
+      "elapsed_time_seconds": 49.130298376083374,
+      "timestamp": "2025-04-15 14:38:29",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/001174/2025-04-15-gemini-2.0-flash-001-prompt-b-3/001174.ipynb",
+    "dandiset_id": "001174",
+    "subfolder": "2025-04-15-gemini-2.0-flash-001-prompt-b-3",
+    "plots": [
+      {
+        "plot_id": "cell_13_output_0",
+        "cell_index": 13,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot shows fluorescence vs time for three different regions of interest. The axes are labeled, and the plots are clear. The plot is well-formatted and easily understood. There is nothing specifically wrong with the plot, but it is not particularly exciting and could be improved perhaps with some statistical summaries. Hence, the plot is of good quality, but has some issues that could be improved.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot displays fluorescence over time for three regions of interest (ROIs). All axes are clearly labeled, and the data is presented clearly. The general plot qualities are good. However, the plot is a bit basic and does not provide any deeper analysis or more advanced visualization. Additionally, \"ROI 0\", \"ROI 1\", and \"ROI 2\" are not descriptive enough for publication-quality data. I also would've like to see standard error plotted. Thus, I rate it as very good but not publication-ready.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot has axes labeled and data displayed. The plot is clear and easy to understand. However, there is no specific information in the plot about the units, or any other experimental specifics. The lack of these features keeps the plot from being publication quality. Also the title of each subplot is too concise. It would be better to describe what ROI represents.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_16_output_0",
+        "cell_index": 16,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows the superposition of image masks, which is a valid way to visualize the density of something. The color bar is well-formatted. The gridlines make it easy to follow the relative positions of the different objects. I think it is good quality and the title is self-explanatory. However, the plot could be publication quality if the axes were labeled. Hence, I would rate it as 4 since it can be improved to be considered of publication quality.",
+                "repnum": 0
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot shows superimposed image masks, and the data is clearly visible through a heatmap. The colorbar makes it easy to interpret the values. The gridlines help with locating positions. Overall, this is a high quality image. The visual is clear and aesthetically pleasing, and its purpose is easily understandable.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-formatted, with a descriptive title (\"Superimposed Image Masks\") and clear axis labels. The colorbar provides a good visualization of the mask values. The gridlines aid in estimating values from the plot. Overall, it effectively conveys the data.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001174",
+      "model": "google/gemini-2.0-flash-001",
+      "prompt": "prompt-b-3.txt",
+      "total_prompt_tokens": 278879,
+      "total_completion_tokens": 5521,
+      "total_vision_prompt_tokens": 3272,
+      "total_vision_completion_tokens": 210,
+      "elapsed_time_seconds": 73.10929107666016,
+      "timestamp": "2025-04-15 14:39:42",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/001275/2025-04-02-claude-3.7-sonnet/001275.ipynb",
+    "dandiset_id": "001275",
+    "subfolder": "2025-04-02-claude-3.7-sonnet",
+    "plots": [
+      {
+        "plot_id": "cell_12_output_1",
+        "cell_index": 12,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.3333333333333335,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot is a simple bar graph showing the success rate of two trial types. The axes are labelled, and the plot is titled. The plot could be improved by including error bars to indicate the uncertainty in the success rates and adding the count above the bar for number completed for each trial type.\nThe figure is generally good but lacks some information (number of trials, error bars) that would be expected for a research journal publication.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is clear and easy to understand. The axes are labeled and the title is informative. However, the spacing between the bars could be increased to improve readability. Also, there could be more trial types to demonstrate usefulness, but for the one shown here it is still useful. Without seeing other trial types it is impossible to improve the rating.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot displays the success rate by trial type, plotting two different types. The axis labels are clear, and the title is informative. The plot is easy to comprehend, but the information density is low and could be improved with more data. Given the elements present, it is of good quality, but further embellishments would improve it further.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_14_output_1",
+        "cell_index": 14,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is visually clear, with labeled axes and a colorbar to represent the number of trials. It clearly represents the distribution of start-target landmark combinations. The grid lines slightly detract from the figure given they are not essential for interpretation. Overall it could use small improvements but still is of high quality.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is a heatmap showing the distribution of start-target landmark combinations. It's well-labeled and easy to understand. The colorbar provides a clear mapping from color to the number of trials. However, it isn't fully publication quality as the information conveyed isn't exceptionally novel or detailed. The figure is easy to understand and well explained, so receives a high rating. However, it has no real \"wow\" factor or high level of detailed data representation to push it beyond 4.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot clearly displays the distribution of start-target landmark combinations using a heatmap. The axes are labeled, and the colorbar provides a clear mapping from color to the number of trials. While the figure is clear and easy to interpret, it lacks the sophistication of a publication-ready figure.\nThe plot could benefit from additional analysis and discussion in the figure caption to fully enhance its quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_16_output_2",
+        "cell_index": 16,
+        "output_index": 2,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is a bar chart showing the success rate by landmark distance. The axes are clearly labeled, and the title conveys the information. The data is clearly presented. No problems detected. The presentation/design is good, although more advanced stats such as error bars are not presented. Hence, the plot is just short of publication quality.",
+                "repnum": 0
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot is well-labeled. Both axes are labeled and the title is informative. The bar plot is a fine choice for this type of data. Good visual quality. It is clear that increasing distance decreases success rate. Overall the plot has no real issues.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is a bar plot that visualizes the success rate based on landmark distance. The plot is well-labeled, has reasonable axis titles, and the data is clearly presented. No immediate errors are apparent. The plot could benefit from error bars to show the variance.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_20_output_1",
+        "cell_index": 20,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a clear distribution of joystick movement durations with appropriate labels and axes. I can read the axes labels. The title is descriptive. Overall the plot is well-made but may require some polishing for publication.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot displays a histogram which is appropriate for the data. The axes are labelled and the title is informative. The plot uses appropriate colours and has gridlines to increase readability. Overall, the plot is well constructed. Some aesthetics could be adjusted, such as the colours, but this is satisfactory.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-formatted with clear labels, a title, and a reasonable aesthetic. The histogram effectively displays the distribution of joystick movement durations. However, to be truly publication-quality, some additional analysis or context might be beneficial (e.g., overlaying a fitted distribution or discussing the implications of the observed distribution). I would rate this as very good but not perfect. The axis labels and title are descriptive and the axes have reasonable ranges.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_22_output_0",
+        "cell_index": 22,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-formatted with clear labels and axes. It effectively presents the movement duration for two trial types using box plots. While it lacks statistical significance indicators and could benefit from specifying the sample size, it's generally of high quality. Some could argue about the color settings used (personal preference), but the plot makes sense and is easy to read.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is informative and well-labelled, making it easy to understand. However, it is not quite publication quality. It could benefit from a more descriptive title and potentially a discussion of the statistical significance of any observed differences. The presence of outliers is clearly visible due to the chosen boxplot representation. The boxplots are a good choice given the data.. The data ranges are appropriate. Overall, the plot is well presented and fulfills its purpose. The x-axis labels are descriptive. The OCR has been reviewed to make sure the interpretation is correct, and no information has been dropped.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot axes are labeled, there's a title, and the figure type is appropriate to show the difference in distributions between the two groups. The plot is easy to read and interpret, however it is missing information about the sample size for each group.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_24_output_0",
+        "cell_index": 24,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 5.0,
+                "thinking": "The plot presents data clearly, with labeled axes, a title, and a legend. The data is easy to read with appropriate visual cues. The plot is well-formatted and visually appealing. No issues.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is of very good quality, clearly showing the relationship between average movement duration and distance between landmarks for two different trial types. The axes are clearly labeled, and a legend is provided. It could only be improved by adding error bars to the data points and a more descriptive title.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled, with clear axes and a descriptive title. The legend is informative, and the data is presented in a clear and understandable manner. There are no immediately obvious issues. I am going to rate it as very good quality, but not quite publication quality as the plot could benefit for additional information about how the data was gathered.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_27_output_1",
+        "cell_index": 27,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot has a title, x and y axis labels, and the axes are scaled appropriately. The histogram effectively shows the distribution of unit firing rates. The y-axis label is count. No overlapping labels, which is good. However, the plot is not particularly insightful and there are no statistical analyses. The bins are little wide and thus hide some potential fine structures in the data. I would rate it as good but with room for improvement.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is a histogram visualizing the distribution of unit firing rates. Axes are appropriately labeled with informative titles and units. The histogram itself clearly shows the distribution, although the bin sizes could be adjusted for better visualization. Overall, the quality is good with minor areas of improvement. Considering it is fairly simple, it is possible to improve it to publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is generally good. The axes are labeled, and the title is clear. The choice of a histogram is appropriate for the data. The x-axis ticks could be adjusted for better readability, but overall the quality is very good. If this were publication quality, I'd add some discussion about the significance/reasoning behind the distribution, however the plot itself is fine from a technical perspective.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_29_output_1",
+        "cell_index": 29,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.3333333333333335,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot has labeled axes and title. The plot isn't particularly informative, but there isn't anything wrong with it.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The axes are labeled, and the plot is titled. The data is visible and there are no immediately obvious issues with the data itself that would indicate an error in creating the plot. The plot is somewhat simple, but this is ok as it accurately represents the data. There are no scale bars or other advanced features, so it is not quite ready for publication as is. The plot is a good quality representation of the data. With some modifications to the design it could be brought to to publication-ready level.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot shows the firing rate vs depth, the axes are correctly labeled, as well as the title. The data is clearly presented. However, the overall look of the plot is not the most aesthetic and some points are overlapping. Thus, it is of good quality, but there are some issues that could be improved.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_31_output_1",
+        "cell_index": 31,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The raster plot is clearly well-presented with axis labels and title. The data appears well-organized, and the plot is easy to read. While further analysis would require a deeper understanding, based on the provided criteria, the plot appears to be of high quality, but perhaps not quite publication quality. Some improvements could be made to the visual appearance, but that would require more specific knowledge of the target publication format. I think the overall quality is very good, but maybe not publication quality. The data is easy to visualize and read, and all axes are labeled correctly. The ticks and grid help see the data. The plot is of very good quality, but not publication quality. I am reducing the score slightly because the ticks on the axes are quite small and could be easier to read.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot displays a raster plot of spike times for different trials. The plot is well-labeled, and the data is clearly visible and informative. However, there are no indications of the units of each trial or what each trial means. More information would be helpful, but otherwise, it is relatively well-done. Thus, it is very good but not necessarily publishable as is.\n\nTherefore, I assigned a score of 4.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot clearly shows a spike raster plot, with axes that are labeled correctly and with visible data. It is of a good acceptable quality but not amazing so a score between 3 and 4 is appropriate. The title is descriptive. The plot is not especially beautiful and could be more easily interpretable, so I'll give this a 3.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_34_output_0",
+        "cell_index": 34,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.3333333333333335,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows the comparison of neural firing rates during successful and failed trials. The axes are labeled, and the title is clear. A diagonal line is included for reference. However, the data points are clustered near zero, and there's no indication of the sample size or statistical significance. Therefore, while the plot is well-labeled, the information content is somewhat limited, and it's not quite at publication quality. The axes ranges include values outside the experimental data. This make the plot not fully optimized. However, the information it contains is clear-cut and easily readable. Therefore is close to publication quality, but not there yet.\nTherefore, I rate this plot a 4.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is has labeled axes, units, a title, and includes a line y=x to help in the comparision. The points are very close to zero and might need zooming in. I consider this plot to be of good quality, but with some issues that could be improved.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot shows a comparison of neural firing rates during successful and failed trials. The axes are clearly labeled, and the title is informative. The 1:1 line helps visualize the relationship. However, the data points are clustered near zero, which makes it difficult to discern any meaningful pattern. More information might be needed to fully understand the reasons for the very low activities. The plot could benefit from additional analyses.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_37_output_1",
+        "cell_index": 37,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot displays eye movement data, with clear axes labels and a title. The data points are visible, although there's significant overlap in certain regions. This plot effectively conveys the distribution of eye positions. Some data points are on top of each other and difficult to distinguish, but overall quality is very good. This could be used for publication.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is generally well-made; the axes are clearly labeled, and the data is presented in a way that is easy to understand. However, there are a couple of minor issues that could be improved. The title is not very informative and the plot could benefit from a legend. These issues are not serious enough to detract from the overall quality of the plot, but they do prevent it from being publication quality. The x-axis is \"Horizontal Eye Position\" and the y-axis is \"Vertical Eye Position\".",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot displays eye movement data in a scatter plot, showing horizontal and vertical eye positions. The axes are clearly labeled, and the title is descriptive. The plot is not empty, and it conveys information about the distribution of eye movements. However, the data points are quite dense in some regions, causing overplotting and making it difficult to discern the density of points in those regions. The use of transparency helps somewhat, but it's not entirely effective in resolving the overplotting issue. Overall, the plot is informative, but it could benefit from adjustments to reduce overplotting for better clarity. Given these considerations, a score of 3 seems appropriate.\nThe plot looks fine overall. It could be improved if overplotting was reduced.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandi_notebook_gen_version": "0.1.0",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.910.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      },
+      "model": "anthropic/claude-3.7-sonnet",
+      "vision_model": "anthropic/claude-3.7-sonnet",
+      "total_prompt_tokens": 1003055,
+      "total_completion_tokens": 22099,
+      "total_vision_prompt_tokens": 10921,
+      "total_vision_completion_tokens": 2157,
+      "timestamp": "2025-04-02 19:31:07",
+      "elapsed_time_seconds": 1976.5128185749054
     }
   },
   {
@@ -6228,6 +7923,233 @@
     }
   },
   {
+    "notebook": "dandisets/001333/2025-04-02-claude-3.7-sonnet/001333.ipynb",
+    "dandiset_id": "001333",
+    "subfolder": "2025-04-02-claude-3.7-sonnet",
+    "plots": [
+      {
+        "plot_id": "cell_14_output_0",
+        "cell_index": 14,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a clear comparison of Beta Band Voltage for healthy vs Parkinson's subjects over time. The axes are labeled, and a legend is included. The plot could be improved by adding units to the axis labels. Overall, the plot is of very good quality.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a comparison of beta band voltage over time for a healthy subject and a Parkinson's subject. The axes are labeled, and there is a clear legend. The information is clearly presented, but could ben improved with error bars or more statistical information about the data.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a comparison of beta band voltage for healthy versus Parkinson's subjects, presenting the data clearly and labeling all components. The resolution is high. There are not modifications I would recommend to consider it publication quality. However, there is no information about the number of subjects considered for each population, so it's hard to gauge the significance of the difference shown. For this, I consider this of very good quality, but not publication quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_18_output_0",
+        "cell_index": 18,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-formatted with labeled axes, a title, and a legend. The histograms are clear and the overlap is visualized using transparency.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows two distributions of data, with labels, title, x and y axes labels. It can be rated as of very good quality, with a few minor issues (axis labels need some work). I would not consider this plot ideally of \"publication quality\" because the binning on the histogram makes it a little difficult to directly compare the data, and the axis labels could be improved. However its quite high quality.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-formatted and contains relevant information with labeled axes and a clear title. The legend is also provided for different categories. However, the overlapping histograms make it difficult to discern the exact distributions, and the visualization lacks detailed statistical information like mean or standard deviation, which could enhance comparison.\nNevertheless, its very good quality although not perfect.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_19_output_1",
+        "cell_index": 19,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is a standard box plot comparing beta band voltage between healthy individuals and those with Parkinson's. The axes are clearly labeled, and the plot shows relevant information. Some improvement could be achieved by showing the number of samples in each group.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is a standard box plot comparing beta band voltage between healthy individuals and those with Parkinson's. The axes are labeled, and the title is clear. The plot effectively shows the distribution and outliers of the data for each group which makes it a good visualization, minor visual tweaks could make this publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is a standard boxplot comparing beta band voltage between healthy and Parkinson's patients. the axes are labeled, and the title is descriptive. However, more could be done; specifically, the number of data points should be included somewhere, and the presence and number of outliers should be discussed in the figure caption, not just shown as floating points. The plot is very good, but not quite publication quality due to the lack of error bars/number of data points or other information related to the data.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_24_output_0",
+        "cell_index": 24,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot displays LFP voltage over time for healthy and Parkinson's subjects. The axes are labeled clearly. However, the healthy subject data is almost completely obscured by the Parkinson's subject data, making it difficult to compare the two. The plot would benefit from better visualization by improving the opacity or displaying error regions. Overall, the visual impact is limited by the overlapping data. I would rate this as a 3, since the figure itself is not empty, but is hard to read.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot presents two time series on the same axis, which allows for direct comparison. The axes are labeled, and there is a legend. However, the lines are somewhat overlapping and make it difficult to clearly distinguish differences between the two plotted series except that the \"parkinson's subject\" data occupies a larger y-range. Additionally, the specific differences or takeaways that need to be noted could be described in the caption of the plot.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot displays data for two conditions, with clear labels and a title. The axes are labeled appropriately, and the data are displayed effectively. Minor improvements could include increasing the visible separation between the lines. Overall the plot is very good. The plot clarity would benefit if the two colors were more easily discernible. This is compounded by the signals being close to each other.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_26_output_0",
+        "cell_index": 26,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot has a clear title, axis labels including units, and a legend. It presents a comparison of power spectral density between healthy and Parkinson's subjects, highlighting the beta band range. The data is clearly displayed, and the use of a logarithmic scale for the y-axis is appropriate for this type of data. However, the x-axis range isn't specified, which could be improved.\n    The figure is of high quality and visually clear, suitable for inclusion in scientific publications or presentations.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot has a clear title, axis labels, and legend. The data is clearly displayed, and the shaded region representing the beta band is a nice touch. The plot uses a logarithmic scale for the y-axis while it is most appropriate in this case to visualize power spectral densities and highlight differences across frequency ranges. Overall the plot is well-constructed and informative and could appear in a publication with perhaps a little more refinement in visual aesthetics. Given that, I would rate this a 4.\nThe only real issue is potentially the meaning and utility of the plot as it is not clear whether the depicted Power Spectral Density (PSD) is obtained from averaging several PSDs from different trials or channels (or both), or from a single trial. In addition, although the abscissa is labeled as frequency, it is not fully clear whether Welch's method or the FFT was used as a starting point for calculating the PSD. As these aspects concern the scientific interpretation and the methodology for presenting the PSD, they are therefore outside the rating of this plot, which is rated as a figure. In any case, one would need additional information to make a PSD more informative, such as adding information on the data collection process.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-formatted with clear labels, a legend, and a title. The data is clearly presented for two cohorts. This plot can benefit from descriptions of the study cohort sizes within the legend",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_34_output_2",
+        "cell_index": 34,
+        "output_index": 2,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is mostly well-made. The X and Y axes are clearly labelled, and a legend is included, but there are no error bars. The plot clearly shows voltage (V) on the Y axis as a function of Session ID. The labels on the x-axis overlap a little, but still remain legible. Overall, the quality of the plot is very good. Adding error bars, and fixing the X-axis labels might bring it up to publication quality.",
+                "repnum": 0
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot is clear and easy to understand. The axes are labeled appropriately, and the data is presented in a way that is easy to interpret. It effectively displays the mean beta band voltage for different sessions using a bar chart. There are no apparent issues that would prevent the plot from being used in a publication.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled with a clear title and axis labels. The data is clearly represented as bars and the legend is present. The session IDs, though not very informative, are readable. However, the plot could benefit from a more informative x-axis label and perhaps a better color scheme, as the colors are arbitrary.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_36_output_0",
+        "cell_index": 36,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot displays a violin plot of beta band voltage distribution for healthy vs. Parkinson's patients. The axes are labeled, and the title is informative. The data are clearly presented, and the plot type is appropriate for the data. There are no immediately obvious issues. The plot would benefit from a discussion of statistical significance in the values between the two distributions.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows the distribution of beta band voltage for healthy and Parkinson's patients. The violin plots are well-labeled, and the figure is easy to understand. The choice of a violin plot is appropiate for comparing the distribution of these two groups. The plot is high quality, but perhaps not perfectly publication quality (minor visual details, such as font size consistency for publication purposes, might need adjustment). The plot would benefit from an indication of sample size, however that information may be purposefully skipped for simpler and more accesible visualizations.",
+                "repnum": 1
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot is a violin plot of the beta band voltage distribution for healthy and Parkinson's patients. The plot is well-labeled and easy to understand. The plot effectively shows the difference in the distribution of beta band voltage between the two groups and is able to be easily interpreted. The title is informative. Good quality plot. No immediately apparent issues for a publication. Thus, it could be publication quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandi_notebook_gen_version": "0.1.0",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.910.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      },
+      "model": "anthropic/claude-3.7-sonnet",
+      "vision_model": "anthropic/claude-3.7-sonnet",
+      "total_prompt_tokens": 1043368,
+      "total_completion_tokens": 17625,
+      "total_vision_prompt_tokens": 7406,
+      "total_vision_completion_tokens": 1856,
+      "timestamp": "2025-04-02 20:43:44",
+      "elapsed_time_seconds": 646.7888135910034
+    }
+  },
+  {
     "notebook": "dandisets/001333/2025-04-04-deepseek-chat-v3-0324/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-04-deepseek-chat-v3-0324",
@@ -6609,6 +8531,233 @@
     }
   },
   {
+    "notebook": "dandisets/001333/2025-04-10-claude-3.7-sonnet-prompt-a-1/001333.ipynb",
+    "dandiset_id": "001333",
+    "subfolder": "2025-04-10-claude-3.7-sonnet-prompt-a-1",
+    "plots": [
+      {
+        "plot_id": "cell_21_output_0",
+        "cell_index": 21,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.3333333333333335,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled and has a clear title. The axes are labeled and use appropriate scales. Gridlines aid in reading the data. The data appears to have no error in the plotting so it is not a 1 or 2. The axes labels and units are clear so it can be higher than 3. I think the plot could be improved with a higher resolution or more descriptive title, but it is of high quality, so I give it 4.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot shows voltage vs time. The axes are labelled, there is a title, a grid is included, and the data seems reasonable. I would classify this as a good plot, but could be improved with more clear labels or more info in the title or caption.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is of good quality: axes are properly labeled, and a title is provided. The gridlines enhance readability. However, font sizes would be better if larger for better readability of the labels. Overall, the quality is good, but it is not quite publication-ready.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_23_output_1",
+        "cell_index": 23,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot has axes labeled, a title, caption details, a legend (Beta Band). The power spectral density vs frequency is plotted with a reasonable range on both axes. The gridlines help for visualizing the data points. Overall I think the plot is of very good quality. It could be improved with better coloring of the shaded areas and perhaps a discussion of variance.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is generally well-made and informative. The axes are labeled, a grid is present, and the data is displayed clearly. The use of a logarithmic scale for the y-axis is appropriate for power spectral density data. A shaded region indicates the beta band, which is helpful. Overall the plot is of high quality, with minimal improvements needed.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot displays the spectral density as a function of frequency and the axes are properly labeled. Superimposing a shade representing the beta band frequency range is a nice addition. Some issues that could be improved are (1) adding the units to the y-axis label. (2) Making the labels a bit more readable (larger font). These would make it publication-ready. Overall, the quality is pretty good.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_26_output_0",
+        "cell_index": 26,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a spectrogram with labeled axes and a colorbar. The title provides context, and the data appears to be appropriately represented. However, the red shaded area is not explained, and the resolution could be improved for publication. The data contains two distinct frequency bands centered roughly around 5 and 23 Hz.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a spectrogram, which is a standard way to visualize LFP data. The axes are labeled, and a colorbar provides the mapping between color and power/frequency in dB/Hz. The title is descriptive. The red area is not described. Overall the plot it is fine, but not publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a spectrogram with clearly labeled axes (\"Frequency (Hz)\" and \"Time (s)\") and a colorbar indicating \"Power/Frequency (dB/Hz)\".  There is a red shaded region. The plot has reasonable information content, showing the power spectral density over time, though the pink box obscures visualization. The plot is not quite ready for publication but is of very good quality. The plot can be interpretable and the values are also labeled appropriately.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_31_output_0",
+        "cell_index": 31,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot is easy to read and has appropriate labels as well as title. However, the data is almost the same for all the three sessions. This suggests that the information contained in the plot is very low and the plot looks like it may be due to some problem in the data itself or the creation. The plot clearly shows the data but does not provide much information.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The bar plot looks fine, it includes clear labels and axes. The only thing that could be improved is that the values of the different bars are near identical, and so the plot does no convey additional information. However, the plot itself is correctly made.",
+                "repnum": 1
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot is well-labelled, clearly presents the data, and is easy to read. There are no apparent issues that detract from its overall quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_33_output_0",
+        "cell_index": 33,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is clear, shows relevant information and is well-labeled. The gridlines facilitates the reading of the data values. The multiple subplots are well aligned. It could pass as a publication quality plot. However, the session IDs are not that helpful for quick reasoning, so they could be improved with more simple numbers.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot clearly presents the data. The axes are labeled. It could be improved by adding units to `Normalized Amplitude` and explaining what this normalization is in the caption, but by itself, it's a very good plot. The time axis ticks are reasonable. There is a title and each subplot has its own title with the session ID. The data looks to be correctly represented. The grid enhances readability.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot contains a reasonable amount of information. It is well-labeled, the axes are clear, and overall is well-formatted without any serious issues. However, the plots don't provide much insight without further explanation in the body of the paper, so I would say it is very good but not publication quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_37_output_0",
+        "cell_index": 37,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot displays three related time series, allowing for easy comparison. The axes are labeled, and grids are present, improving readability. However, the y-axis label \"Amplitude (V)\" lacks precision regarding the exponent, which is only shown once on the left side. The font-size is reasonable and the plots are not crammed. Overall the plot is very good. Some minor adjustments could bring it to publication quality.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-organized with clear titles and axis labels. All three subplots are easy to interpret and display relevant information. The gridlines improve readability as well. The different scales on the y-axis for each plot is appropriate. The use of scientific notation in the y axis labels of the lower two subplots is appropriate as well. Overall, it's a very good figure that could be publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows three related signals: the original signal, the filtered signal, and the envelope. The axes are labeled, and the titles tell viewers what each of the graphs shows. The gridlines also make it easier to compare points in the graph, and the units are specified in the axis labels. I would rate this as a very good plot, though not necessarily publication quality as that hinges on any specific journal requirements that are unknown.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_39_output_0",
+        "cell_index": 39,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot has a clear title, axis labels, and legend. The gridlines make it easier to read the values. The data is clearly represented and the plot is well-formatted. Overall, it can be improved by adding uncertainty to the data (if there are) since only the mean/median is displayed here which can be misleading.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled in terms of axis, the title explains well the purpose and the different sessions are identified in the legend. The grid helps to evaluate the values, but is not strictly necessary which would increase the esthetics. Also, two of the three lines are nearly overlapping, therefore it is not ideal. The information content is good, and the plot is easily readable. Overall, the plot is of very good quality but not fully ready for publication.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is well-formatted and easy to understand. The axes are labeled clearly, and a legend is provided. Gridlines and title are shown. It's hard to see Session 1 and 2.\nAll in all, it is a good plot, but with a few minor improvements will be even better.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001333",
+      "model": "anthropic/claude-3.7-sonnet",
+      "prompt": "prompt-a-1.txt",
+      "total_prompt_tokens": 475612,
+      "total_completion_tokens": 11900,
+      "total_vision_prompt_tokens": 0,
+      "total_vision_completion_tokens": 0,
+      "elapsed_time_seconds": 294.81849098205566,
+      "timestamp": "2025-04-10 17:24:28",
+      "system_info": {
+        "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+        "hostname": "system76-pc",
+        "processor": "x86_64",
+        "python_version": "3.12.2"
+      }
+    }
+  },
+  {
     "notebook": "dandisets/001333/2025-04-10-claude-3.7-sonnet-prompt-b-1/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-10-claude-3.7-sonnet-prompt-b-1",
@@ -6910,6 +9059,523 @@
         "processor": "x86_64",
         "python_version": "3.12.2"
       }
+    }
+  },
+  {
+    "notebook": "dandisets/001335/2025-04-02-claude-3.7-sonnet/001335.ipynb",
+    "dandiset_id": "001335",
+    "subfolder": "2025-04-02-claude-3.7-sonnet",
+    "plots": [
+      {
+        "plot_id": "cell_8_output_0",
+        "cell_index": 8,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot presents a well-organized timeline of odor presentations. The title and axis labels are clear. The use of color to distinguish different odors is effective. However, the y-axis label increments are not equal. Odors are not labeled and placed with equal spacing on the line. Therefore, the plot is not publication quality. A better representation may include equal distance among the names of the odors.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot effectively conveys the odor presentation timeline for the first 120 seconds, which is the main goal. There are some minor issues (e.g. the gridlines are a bit too prominent) but they don't detract substantially from its overall quality.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot displays the timing of odor presentations over a 120-second period. The x-axis is clearly labeled and spans the entire block duration. The y-axis separates different odors. The timeline presentation is easy to understand. The plot serves its purpose well but could stand to be improved by having an 'odor off' switch and clarifying presentation duration.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_8_output_1",
+        "cell_index": 8,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a timeline of odor presentations. The axes are labeled and the different odors are clearly indicated. The gridlines are not too strong and help to read the timing of the events. Overall the plot can be understood without any additional effort from the reader. The plot is missing a legend in case the colors have a special meaning. It is not publication quality but is high quality. It would be close to publication quality if the colors were also explained.",
+                "repnum": 0
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot visualizes the time intervals during which different odors were presented. The information is clearly presented, the axes are labeled and the plot is titled. I don't see any issues with the quality of this plot.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows the presentation timeline of different odors. The title and axis labels are informative, and the data is clearly presented. I think is of very good quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_8_output_2",
+        "cell_index": 8,
+        "output_index": 2,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot is easy to read and conveys the intended information, hence it is of good quality. The formatting is clean and the data is presented clearly. It can be improved, but the plot is of good quality overall. The Odor labels on the y axis are close to each other. The title is slightly uninformative. Some additional details for each of the odor blocks could be added",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The figure displays a timeline of odor presentations. The axis labels are clear and easy to read. The plot is neatly composed, and gridlines are present. Some improvements could include adding more precise information or using a more visually appealing color scheme for the odor stimuli. However, the plot effectively conveys its intended message. There are no overlapping elements, and the data is clearly represented.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled and titled. The data is clearly displayed. It could possibly benefit from a legend explaining what each color represents, but it is not necessary as it is a simple plot. It is mostly publication quality but requires some minor modifications.\nThe axes are labeled, and the grid aids in the visualization of the timing of events. No major errors are observed, and the information presented is clear.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_11_output_1",
+        "cell_index": 11,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.666666666666667,
+            "reps": [
+              {
+                "score": 5.0,
+                "thinking": "The plot is clear and well-labeled, showing the relationship between electrode depth, position, and number. Grid lines are present making easy to compare the data. No clear flaws and figure can be used in publication with little to no modifications.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot looks quite good. Axis labels are present, the data is clearly visualized with a colorbar for electrode number, and there are no apparent errors. However, the plot lacks error bars and has no specific details described in the caption, therefore, while it's good, it\u2019s not up to publication standards.",
+                "repnum": 1
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot is very well organized and easy to understand. The axes are labeled, the title is present; and the colorbar helps in easily identifying with the Electrode Number. Overall, it is publication quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_13_output_1",
+        "cell_index": 13,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows LFP traces at a specific time (1380.0s) for selected channels. The plot includes labels on both axes (\"Time (s)\" and \"Channel\"). The plot has a title (\"LFP Traces at 1380.0s (Selected Channels)\"), and the individual traces are clearly separated and colored differently making it easy to distinguish between the different channels despite no scale is provided. The gridlines help in visualizing the data points relative to the axes. Overall, the plot is of good quality, but there are some issues. Firstly, the amplitude scale is missing. Secondly, there is no information on what the channels represent, which would greatly improve this figure.\n\nTherefore, the plot needs some more refining to be publication quality.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-formatted and shows the LFP traces for different channels over time. The axes are labeled, and the title is informative. The traces are easily distinguishable due to different colors and spacing. While not a complex plot, it effectively displays the data. The only thing that could be added is a unit for the y axis. Overall the plot displays the data well and effectively. Therefore, it deserves a score of 4.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot displays LFP traces from multiple channels over time. The axes are clearly labeled, and the traces are distinct and easy to follow. The title is informative. The gridlines, while subtle, aid in reading values. Overall, the plot is well-presented and informative. It could slightly be improved for publication quality, however, such as using standardized colors and potentially adding statistical significance, but that is content specific. Because it is more a lack of a few small parts rather than a major problem the plot is rated as a 4 instead of a perfect 5.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_13_output_3",
+        "cell_index": 13,
+        "output_index": 3,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows LFP traces for multiple channels over time. All components are labeled, and the plot is well-structured, so it is of overall good quality. The gridlines are a bit too prominent, and make the data slightly difficult to read. The spacing between the labels on the y-axis and the actual lines representing the channels is uneven. Small details like this prevent publication quality, but it's very good. Hence the score 4/5.",
+                "repnum": 0
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot shows LFP traces for selected channels, clearly displaying the data with labeled axes and a descriptive title. The gridlines are subtle but useful, and the different channels are easily distinguishable with different colors and offsets. Overall it is easy to read and understand the data. I find no issues with this plot.\n\nTherefore, I will give a score of 5.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows clear and well-separated LFP traces for multiple channels. It includes axes labels, a title, and a grid to aid in reading it.  The use of distinct colors for each trace is also helpful. Overall, the plot is well-constructed and informative.\n    However, the y-axis labels are a little too close to the traces and could be a source of clutter. Also, the grid lines are too thick and interfere with reading the traces. Therefore, the plot is not publication quality.\n    In comparison with similar plots of local field potential (LFP) data, this visualization presents the traces offset from one another, which is a standard and effective method. Given that the plot is clear, well-labeled, and informative, the plot is rated as very good, but could benefit from some minor improvements for publication quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_13_output_5",
+        "cell_index": 13,
+        "output_index": 5,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot displaying LFP traces from multiple channels seems well-organized and informative. There aren't any apparent issues that suggest data corruption or errors in visualization. Labels and axes are clear making it easy to understand, and the layout is effective for comparing different channels.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows LFP traces from multiple channels over time. The plot is clear, well-labeled, and easy to understand. The traces are separated vertically, making it easy to compare activity across channels. The gridlines are subtle and don't interfere with the data. No obvious issues that prevent understanding the data are identified. Very slight improvement could be achieved in labeling and possibly by normalizing the data traces on vertical axes, if desired. The label spacing is also slightly too wide, and the Y-axis labeling (e.g, \"Channel\") is not useful, and it would be better to have channel IDs on the right as well.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows LFP traces at a specific time point for selected channels. The axes are clearly labeled, and the plot is generally well-organized. However, the plot does not provide any information about the y-axis scale or units, which is essential for interpreting the magnitude of the LFP signals. The traces are also vertically offset without a clear indication of the scale between the channels. Some minor improvements could include specifying the vertical scale and units. Overall, though, it's a high-quality plot, just lacking a few key features.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_15_output_0",
+        "cell_index": 15,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The spectrogram is well-presented with clear axes labels, a descriptive title, and a colorbar indicating power/frequency values. The color scheme is effective, aiding in visual interpretation. Overall, the plot communicates the information effectively and efficiently. There are no obvious errors, so I would rate this as very good, but not quite publication quality.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is well-labeled and contains a colorbar to indicate power/frequency. The spectrogram itself provides useful information. However, the resolution is a bit low, so it looks blurry. The plot also only shows one channel (channel 0) which makes it less informative. Overall, the quality is good, but there is some room for improvement. Therefore, a score of 3 is appropriate.",
+                "repnum": 1
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot is a spectrogram showing power/frequency over time. The axes are labeled, and a colorbar is included for the power/frequency. The title is descriptive. There are no immediate issues. This spectrogram is of excellent quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_17_output_2",
+        "cell_index": 17,
+        "output_index": 2,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a distribution, and is clear and easy to understand. The axes are labeled and the title is appropriate. Minor improvements could be made, but it's already of good quality. Given the data, a log scale could be beneficial.\n    It is easy to grasp the information presented in the plot.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is well-formatted with clear axes labels and a descriptive title. The data is presented in a way that is easy to understand. However, the x axis scale results in poor resolution of spike counts in the higher end. Log scaling the x axis could solve this. Overall, the quality is good, but not publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled and easy to understand. The issue is that it plots a histogram of spike counts in absolute values, but the data seems to be very skewed, so it could have been more informative if it was plotted in a log scale for the x axis.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_19_output_0",
+        "cell_index": 19,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 5.0,
+            "reps": [
+              {
+                "score": 5.0,
+                "thinking": "The plot is well-formatted. It has a clear title, axis labels, and a legend that describes the different lines present. The gridlines make it easy to read off values, and the data are presented clearly. The units are specified on the y-axis. Therefore, I'd rate this plot as publication quality. The spike numbers in the legend is nice. Also the different lines don't overlap making it readable.",
+                "repnum": 0
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot clearly visualizes the average spike waveforms for different units, including the number of spikes for each unit in the legend. The axes are labeled. There is a grid to help with value estimation. The plot is overall well-made. I don't see immediate issues that would prevent it from being used in a publication.",
+                "repnum": 1
+              },
+              {
+                "score": 5.0,
+                "thinking": "Plot is well-formatted and contains clear information. Aesthetically pleasing.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_23_output_1",
+        "cell_index": 23,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot displays a raster plot and a peri-stimulus time histogram (PSTH). The labels for the axes are clearly defined, and the title accurately describes the data presented. The PSTH includes visual cues for odor onset and offset. While the figure is not groundbreaking, it is well-presented and easily understandable. Therefore, the plot is of very good quality but may require slight adjustments for journal publication. A possible improvement could be adding a scale bar on the raster plot.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot contains a raster plot on top of a peri-stimulus time histogram (PSTH). The raster plot shows the timing of individual spikes for multiple trials, while the PSTH shows the average firing rate over time. Both plots are aligned to the odor onset, allowing to analyze the neuronal response to the stimulus. The plot is well-labeled, and the relevant features like odor onset and offset are indicated. The overall quality is good, but it is not necessarily publication quality as some minor improvements could be beneficial.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows raster plots and firing rate histograms, which are commonly used visualizations in neuroscience experiments and provides a good overview of the data. The axes are labeled, and the plot is well-organized with reasonable formatting. However, the plot lacks error bars on the firing rate histogram, which makes it difficult to assess the reliability and variability of the firing rate.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_23_output_3",
+        "cell_index": 23,
+        "output_index": 3,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows the neural response to odor E. The raster plot on top shows the spike times for each trial, and the histogram below shows the firing rate over time. The plot is well-labeled and clear, and it provides useful information about the neural response. While the layout isn't the most aesthetically pleasing, it is functional and informative. The plot is of good quality and could be publication quality with some adjustments.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is clearly labeled, with informative axes and legends. The raster plot and histogram provide complementary information about the neural response. There is some room for improvement, e.g., by smoothing the PSTH.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a raster plot of neural activity in response to an odor, along with the corresponding firing rate histogram. The visualizations are clear and informative. The axes are labeled, and the plot includes important information for interpretation, such as the odor onset and offset. While solid, it could be enhanced with error bars on the firing rate and potentially more explanation in caption.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_25_output_1",
+        "cell_index": 25,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is really good. It has a raster plot on top, and peri-stimulus time histogram (PSTH) on the bottom to represent the firing rate. The axes labels are well labeled and the title is appropriate. The raster plot's y axis is labeled \"Trial #\" which represents the number of trials. In the PSTH, the x-axis is labeled as \"Time from Odor Onset (s)\" which represents time relative to the odor onset. The y axis is labeled as \"Firing Rate (Hz)\". The odor onset and offset are marked using dashed lines. Overall it is of very good quality, but not publication quality. The PSTH could have been smoother.",
+                "repnum": 0
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot is well-labeled and formatted. It presents a raster plot alongside a firing rate histogram. The axes are appropriately labeled, and important events are indicated with vertical lines and a legend. Overall a well made plot appropriate for publication. The small peak around 0.3 seconds and again at 2.4 seconds is clearly resolved in the histogram. The raster plot helps visualize trial-to-trial variability as well. The combination provides an ideal picture of what's happening.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot displays a raster plot and a peri-stimulus time histogram (PSTH), which are standard ways of visualizing neural activity related to an event (odor onset). The axes are labeled clearly. The figure title is descriptive. The raster plot shows individual trials, with each tick representing a spike. This allows for the visualization of trial-to-trial variability. The PSTH provides an aggregate view of the firing rate over time. The \"Odor Onset\" and \"Approx. Odor Offset\" are marked. The major improvement could be clearly indicating in the figure that these plots are temporal and their relationship to the experiment events. Overall the quality is a 4, very good but not quite publication quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_25_output_3",
+        "cell_index": 25,
+        "output_index": 3,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot contains a raster plot of neural activity and a peri-stimulus time histogram (PSTH). Both plots are well-labeled (titles, axis labels). The plots are also aligned properly along the x-axis making it easier to compare neural activity with stimulus presentation times. Therefore, the plot is of very good quality but it's not quite publication quality probably as the two subplots' y axes are on different scales (trial number vs firing rate) and there may be more sophisticated ways to present such data.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a raster plot visualization of neural activity in response to an odor, with an accompanying firing rate histogram. The title is informative, axes are labeled, and the key elements like odor onset and offset are clearly indicated. Minor improvements could include smoothing the firing rate plot and potentially adding error bars. Overall, the plot is of very good quality, informative and easy to interpret, with all necessary information correctly displayed. I don't think this is quite publication quality as is, but it is close and very good nonetheless.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a raster plot and a peri-stimulus time histogram (PSTH) which are standard ways to visualize neuronal firing patterns in response to a stimulus. The axes are labeled and the plot has a descriptive title. The odor onset and offset are also indicated. The raster plot is a bit dense and could be improved by increasing the spacing between trials, but overall it is a good plot. However, the y axis in the raster plots is unlabeled, and the y-axis in the PSTH does not have a unit. Also, the number of bins in the histogram can be fine-tuned. Overall, this plot is of good quality but not publication quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_25_output_5",
+        "cell_index": 25,
+        "output_index": 5,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a raster plot and a peri-stimulus time histogram (PSTH), which is a common and effective way to visualize neuronal responses to stimuli. The axes are clearly labeled, and relevant events (odor onset/offset) are indicated. It's a well-structured and informative figure. The quality is high, close to publication quality but could benefit from minor adjustments for visual appeal or clarity, like potentially smoothing the PSTH or adjusting the color scheme.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a raster plot and a peri-stimulus time histogram (PSTH). All axes are labelled, and Odor onset and offset are indicated. The plot is of good quality. Some of the ticks are overlapping on the y axis, but not a major issue. The spacing of the histograms could be finer for increased resolution.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows neural activity in response to an odor. The top panel is raster plot which shows individual trials, and the bottom panel is a histogram of the overall firing rate. The figure is well-labeled and the axes are clear. There are some minor issues such as the choice of colour and the bin size of the histogram. Overall the quality is high.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_25_output_6",
+        "cell_index": 25,
+        "output_index": 6,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 5.0,
+                "thinking": "The plot shows the firing rate of a unit in response to different odors over time. The plot has a clear title, labeled axes, a legend, and vertical lines indicating the odor onset and offset. The different odor responses are also easily distinguishable. The plot is suitable for inclusion in a scientific publication.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot has several positive aspects: it displays data from a unit's responses to odors over time and the visual presentation is clear (different colors for each odor, vertical lines to indicate odor onset/offset). The axes are labeled with units. The title tells us what the plot is showing. Gridlines help read the data.\n\nHowever, there are several potential improvements which keep it from publication quality:\n\n1.  No error bars: It would be helpful to see some measurement of spread (even standard deviation, or 95% confidence intervals) so one can see which differences in firing rates would be significant.\n2.  Raw Data: The plot shows what appear to be raw values, with many sharp jumps from one value to the next. It would be helpful for the data to be smoothed, which would make overall trends easier to see.\n3.  More Info on the Unit: A reader would like to some information on what unit 137 measures. Is it from an animal brain? Is it a human cell?\n\nIn summary, the plot contains solid information, is readable, but can be improved for a publication. I rate it as a \"4.\"",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows the firing rate of a neuron in response to different odors. The plot is well-labeled, and the data is clearly displayed. The plot includes vertical lines indicating the odor onset and offset. The plotting style is simple and readable. No immediate errors are apparent. Overall, the plot is of very good quality and could be suitable for publication with further refinement.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_27_output_0",
+        "cell_index": 27,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-formatted and contains all necessary information, including axis labels, a title, and a legend. The data is clearly presented and easy to interpret. However, there are small visual imperfections. The gridlines are a little too pronounced, which slightly distracts from the data itself. Also, there are some inconsistencies with the legend, where only dotted lines are used for \"odor offset\" instead of solid and dotted lines, and some of the labels and texts are not very clean. Overall, the plot is well-made but could benefit from minor aesthetic adjustments to make it publication-ready. The quality of the data is good, so it shouldn't be set to much lower than 4.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot visualizes population response to a stimulus (odor), showing firing rate of different units over time. The presence of a title, labeled axes, a legend, and visual cues for stimulus onset/offset contribute to its clarity. The plot could be improved by including information such as the number of trials averaged. While the visual style is effective and clear, some minor formatting changes might be needed to obtain publication quality figures.",
+                "repnum": 1
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot is well-formatted, contains informative labels, and has a clear legend. The choice of colors aids in distinguishing the different units, and the added vertical lines indicating odor onset and offset are useful for interpretation. Some might argue about whether a line plot is the most appropriate for firing rates in this context, but given the specific shape of the rates, is acceptable. Overall, the plot is publication quality. So, it gets a high rating.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandi_notebook_gen_version": "0.1.0",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.910.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      },
+      "model": "anthropic/claude-3.7-sonnet",
+      "vision_model": "anthropic/claude-3.7-sonnet",
+      "total_prompt_tokens": 1231421,
+      "total_completion_tokens": 34374,
+      "total_vision_prompt_tokens": 19491,
+      "total_vision_completion_tokens": 2609,
+      "timestamp": "2025-04-02 21:13:15",
+      "elapsed_time_seconds": 1119.7872364521027
     }
   },
   {
