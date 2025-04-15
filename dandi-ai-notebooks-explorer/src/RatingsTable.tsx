@@ -221,9 +221,13 @@ export default function RatingsTable({ ratings }: Props) {
                   }
                 </td>
                 <td>
-                  {
-                    promptFromSubfolder(rating.subfolder)
-                  }
+                  <a
+                    href={`https://github.com/dandi-ai-notebooks/dandi-ai-notebooks-2/blob/main/templates/${promptFromSubfolder(rating.subfolder)}.txt`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {promptFromSubfolder(rating.subfolder)}
+                  </a>
                 </td>
                 <td>
                   {
