@@ -2,3 +2,4 @@
 *.nwb
 .ipynb_checkpoints
 __pycache__
+tmp*
