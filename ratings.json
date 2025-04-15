@@ -412,10 +412,216 @@
     ]
   },
   {
+    "notebook": "dandisets/000673/2025-04-04-gemini-2.0-flash-001/000673.ipynb",
+    "dandiset_id": "000673",
+    "subfolder": "2025-04-04-gemini-2.0-flash-001",
+    "overall_score": 53.333333333333336,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 9.0,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook starts with a brief description of the Dandiset, including its purpose and the type of data it contains (electrophysiological recordings and behavior from the Sternberg task). It also mentions the title and the dandiset ID. The notebook also lists the files in the Dandiset. So, the notebook provides a good overview of the Dandiset's purpose, contents, and key metadata. The included plots also visualize some of the data stored in the Dandiset NWB files. Overall, the notebook does a good job of describing the dandiset. Code is present to do the analysis.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides the Dandiset ID (000673), title (\"Control of working memory by phase\u2013amplitude coupling of human hippocampal neurons\"), the purpose of the Dandiset (electrophysiological recordings and behavior from the Sternberg task performed in patients with intractable epilepsy implanted with depth electrodes and Behnke-Fried microwires in the human medial temporal lobe and medial frontal cortex), and a basic description of the contents (electrophysiological recordings and behavior data). It also shows some metadata fields, extracting the institution and lab. The initial markdown cell gives basic information about the dandiset, the code downloads metadata about assets. Therefore it gets rated an 9.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides the Dandiset ID and includes the title of the dataset in the introductory markdown cell. It also provides a description of the dataset purpose, and the type of data contained within it. The notebook shows how to access the NWB files and extracts the session description, identifier, session start time, experiment description, institution, and lab. The notebook provides a good overview of the Dandiset and its contents.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the dandiset and prints the number of assets, as well as their paths. It then loads a single NWB file and prints several metadata fields (session description, identifier, session start time, experiment description, institution, and lab). The notebook demonstrates accessing and exploring the dandiset and its metadata fields. Thus, notebook achieved the metadata exploration. The exploration can be improved by including the dandiset description and the total number of subjects present in the dandiset.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads the Dandiset and then prints the list of assets (filenames) within the Dandiset. Beyond that, it loads an NWB file from the dandiset and prints metadata fields such as session description, identifier, session start time, experiment description, institution, and lab, showing that it is exploring multiple metadata fields. Therefore, the notebook demonstrates a good degree of loading, accessing, and displaying dandiset information.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook loads the Dandiset ID, the assets, the description, start time, experiment description, Institution and lab. The notebook successfully explores multiple metadata fields. Therefore, the score is 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook first initializes a DandiAPIClient and gets a specific dandiset (\"000673\"). It then retrieves a list of assets associated with the dandiset and prints their paths. This demonstrates how to access and list available assets. The notebook goes on to load a specific asset and performs some analysis on it.\n    Thus the notebook successfully lists available assets and loads a specific one along with its metadata.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook begins by loading the Dandiset and listing the available assets, effectively demonstrating how to access its contents. It then proceeds to load a specific NWB file (an asset), showcasing how to work with individual assets within the Dandiset. It extracts and displays basic session information from the NWB file. However, it does not go into detail about asset metadata beyond the listed session information and doesn't explore multiple asset types. The notebook provides a foundational example of how to load and interact with assets within a Dandiset. It does the basics. However, not all assets are NWB files so it would be nice to see other examples of how assets can be loaded.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook begins by successfully connecting to the Dandi API, retrieving the Dandiset with the specified ID (\"000673\"), and listing all available assets. It then loads data from a specific asset (sub-1/sub-1_ses-1_ecephys+image.nwb) and retrieves basic session information such as description, identifier, start time, experiment details, etc. It further explores LFP data as well as trial structures and their loads. Thus, the notebook demonstrates loading specific assets and accessing some of their data.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file using lindi and pynwb. It then accesses and prints basic information such as session description, identifier, start time, experiment description, institution and lab. It also demonstrates accessing LFP data, trial start/stop times, and trial loads, visualizing them with plots. Therefore, it demonstrates accessing basic NWB components and exploring different data structure of the NWB file. However it does not explore the NWB file contents comprehensively, nor provides detailed navigation of its hierarchy. It would benefit from showing how to discover what's available in the nwbfile (e.g. with keys()).",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file using lindi and pynwb. It then proceeds to explore basic file properties like session description, identifier, session start time, experiment description, institution, and lab. It goes on to explore LFP data, trial structure, and trial loads, extracting the data and plotting relevant information. Therefore, the notebook demonstrates accessing basic NWB components and exploring multiple data structures.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads data from an NWB file in the Dandiset using lindi and pynwb. It then demonstrates how to access basic components such as session description, identifier, start time, experiment description, institution and lab. The notebook proceeds to explore LFP data, trial structure and trial loads - indicating exploration of multiple NWB data structures. Further, it visualizes these data structures, providing a good overview of the file's contents. Thus it deserves a score of 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads the NWB file using lindi and pynwb. It then proceeds to access and display session descriptions, LFP data, trial start/stop times and trial loads. It extracts specific attributes and generates plots to visualize the loaded data. It handles different data types appropriately within the NWB file structure. Given loading of data, basic exploration of LFP, trial data and trial loads I am rating it at 7.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads data from an NWB file using `lindi` and `pynwb`. It loads basic data arrays such as session description, identifier, session start time, experiment description, institution, and lab. It also loads and visualizes LFP data, trial start and stop times and trial loads. It demonstrates loading specific data types like LFPs and trials, and shows how to access multiple data elements within these data types. Therefore, the notebook gets a score of 6.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads an NWB file from a DANDI dataset using `lindi` and `pynwb`. It then proceeds to load and visualize various data types from the file, including session information, LFP data, trial structure, and trial loads. It demonstrates accessing multiple data elements. Therefore, the notebook successfully demonstrated loading specific data types from the NWB file, and how to access the data. Thus, it deserves a score of 5.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides clear and functional code for visualizing LFP data, trial structure (start/stop times), and trial loads from an NWB file. The visualizations have titles, axis labels, and legends, contributing to clarity. However, the visualizations are relatively simple and do not employ advanced techniques. While it visualizes multiple data types from the NWB file, the plots are not necessarily of publication quality, and the formatting could be improved further. It also does not comprehensively visualize all possible data types in the NWB file. It could provide better documentation, such as a description of the axes. Therefore, it does a good job of demonstrating multiple visualization types with appropriate labeling.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook provides code to visualize electrophysiological data (LFP), trial structure, and trial loads. The plots are labeled, and the code executes correctly. The visualizations are not particularly sophisticated, but they are clear and informative. Therefore, the notebook effectively demonstrates multiple visualization types from the NWB file.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully demonstrates how to access and visualize LFP data, Trial start/stop times, and Trial loads from an NWB file in the Dandiset. Basic, but clear plots are generated from each of these datatypes. The plots are properly labeled. So, this is more than just plotting one data type.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides three plots: LFP data, trial start/stop times, and trial loads vs. start time. The plots have axes labels, titles, and legends where appropriate. The LFP plot includes a descriptive y-axis label (\"LFP (uV) + offset\"). The plots are readable and well-formatted but not of a publication-ready quality (e.g., lack figure captions, no error bars, etc.). Therefore, a score of 7 is appropriate. The plots are clear and formatted with complete labels.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook includes three plots: LFP data, trial start and stop times, and trial loads vs start time. All plots are readable and have axis labels. However, they lack detailed descriptions and could benefit from more comprehensive formatting for a professional quality. The LFP plot is well labeled. The trials plots could use minor improvements and more description. They are simple plots with basic labels. The trial loads plot is similar. These are readable plots with basic labels.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook contains three plots: LFP data, Trial Start and Stop Times, and Trial Loads vs Start Time. All plots are readable and have basic labels such as axis titles and legends. The formatting is acceptable. The plots aren't particularly detailed, but they're functional and communicate the intended information reasonably well, and the inclusion of .savefig suggests an awareness of potential future publication.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 3.0,
+        "reps": [
+          {
+            "score": 3.0,
+            "thinking": "The notebook loads LFP data, trial start/stop times, and trial loads. These are three fundamentally different data streams. The notebook also loads basic info like session description etc, but I am interpreting the question based on what is explored in depth (plotted). Therefore, the notebook explores 3 fundamentally different aspects of the NWB data.",
+            "repnum": 0
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook accesses and visualizes LFP data, trial start/stop times, and trial loads from the specified NWB file. These represent three fundamentally different data streams. The notebook also shows how to access basic information about the NWB file, but this is metadata rather than a data stream. Finally, the notebook also lists all the assets (NWB files) in the Dandiset, but this is a list of files, not data loaded *from* the NWB files.",
+            "repnum": 1
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook accesses three different data streams from NWB files: LFP data, trial start/stop times, and trial loads. Thus, three fundamentally different data streams are loaded into the notebook from NWB files.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 3.0,
+        "reps": [
+          {
+            "score": 3.0,
+            "thinking": "The notebook displays three fundamentally different types of plots: a line plot of LFP data, an event plot of trial start and stop times, and a line plot of trial loads versus start time. The LFP plot visualizes continuous signal data; the trial start/stop plot visualizes event times; and the loads plot visualizes load against time, which represents experimental parameters. There are no other plots. Therefore the answer is 3. The given example images corroborate this.",
+            "repnum": 0
+          },
+          {
+            "score": 3.0,
+            "thinking": "There are three fundamentally different types of plots:\n\n1.  LFP data as a function of time\n2.  Trial start/stop times as event plots\n3.  Trial loads as a function of trial start time",
+            "repnum": 1
+          },
+          {
+            "score": 3.0,
+            "thinking": "There are three fundamentally different types of plots: LFP data as a function of time, trial start and stop times as events plotted on a timeline, and trial loads as a function of trial start time.",
+            "repnum": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
     "notebook": "dandisets/000673/2025-04-07-claude-3.5-sonnet/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-07-claude-3.5-sonnet",
-    "overall_score": 58.0,
+    "overall_score": 58.00000000000001,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -611,6 +817,212 @@
           {
             "score": 4.0,
             "thinking": "The notebook shows bar plots (distribution of memory loads, accuracy by memory load), spike raster plots (example neural activity), raw LFP traces, and spectrograms (time-frequency analysis of LFP). These are four fundamentally different types of plots.",
+            "repnum": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "notebook": "dandisets/000673/2025-04-07-quasar-alpha-exp/000673.ipynb",
+    "dandiset_id": "000673",
+    "subfolder": "2025-04-07-quasar-alpha-exp",
+    "overall_score": 55.00000000000001,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 8.333333333333334,
+        "reps": [
+          {
+            "score": 8.0,
+            "thinking": "The notebook provides the Dandiset ID (000673) and title (\"Data for: Control of working memory by phase\u2013amplitude coupling of human hippocampal neurons\"). The first markdown cells provides a concise description of the data, including the type of recordings, the task, and number of units, electrodes and trials. It also directs the user to the repository with more code. The 'Dandiset Metadata' section summarizes further aspects such as keywords and measurement types. Thus, the notebook is at least a 7 but it also comments on the structure of the dataset listing the assets (NWB files), giving a score of 8.",
+            "repnum": 0
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook provides a good description of the Dandiset. It includes the Dandiset ID, title, keywords, measurement types, and some key metadata (number of units, electrodes, trials). It also describes the purpose of the Dandiset (working memory tasks) and the type of data it contains (single-unit and LFP recordings). The notebook gives a brief overview of the contents and demonstrates how to access some key data fields like trial information, event codes, LFP data, and spike times.\n    While the description is informative, it could be more detailed in terms of data organization and specific experimental procedures. The notebook could benefit from a more structured explanation of the different data modalities, their relationships, and the structure of the NWB files.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good description of the Dandiset. It includes the title, ID, purpose, contents, and key metadata fields like keywords, measurement types, sighted units, electrodes, trials, and links to relevant code. It also shows example analysis of the data within the Dandiset, such as behavioral event TTL markers, LFP data, spike rasters and trial table info. It also warns the user that the analysis is not a substitute for indepth analysis.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook begins by loading the Dandiset and then displays basic information about it such as keywords, measurement types, the number of units, trials, and electrodes. It also loads information about the trials and the columns they contain. I am giving it a score of 7 because it successfully loads and explores multiple metadata fields, such as the number of trials, units, and some behavioral responses. However, it doesn't provide comprehensive field descriptions or explore all key metadata fields in detail.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook loads the dandiset id, lists all assets in the dandiset via dandiapi. It shows fields such as keywords, measurement types, sighted units, electrodes. Thus the notebook demonstrates how to load and display various metadata fields.\nIt also explores the trial table and associated metadata fields. Overall, the notebook demonstrates loading of metadata fields and exploring some aspects of it. However, the notebook focuses more on data loading and visualization rather than an exhaustive metadata exploration. It lacks specific field descriptions. Therefore, the score is 7.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates loading Dandiset information with the DandiAPIClient, retrieves and prints basic Dandiset metadata(asset paths). Furthermore, it load nwb file which contain more detailed metadata. It shows trials and units. The notebook has minimal errors. Therefore, the score is 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully lists the assets available in the Dandiset and provides code to load a specific asset (NWB file). It then goes on to explore some basic asset information. It does not explore multiple asset types, nor does it explore metadata associated with the assets in great detail.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook begins by listing all assets (NWB files) in the Dandiset using the DandiAPIClient. It then provides an example of loading and exploring a specific asset (subject 1, session 2). The code successfully lists the available assets and demonstrates loading basic asset information, such as session description, number of trials, and number of units. Therefore, the notebook demonstrates loading assets of the Dandiset and retrieving basic information. However the notebook does not show how to comprehensively explore metadata or deeply analyze multiple asset types, corresponding to a 6.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully lists the available assets in the Dandiset using the DandiAPIClient, then loads a specific asset using a URL and the lindi library (which seems more to download without downloading the whole file), showcasing loading specific assets. The notebook also accesses basic asset information such as the session description, trial counts, and unit counts. Therefore, the notebook demonstrates loading specific assets and also some basic information associated with them. It does not delve into extensive metadata exploration or handle multiple asset types in detail but does use a few different types of data from an asset such as spike times, LFP data, and trial data.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file and accesses multiple data structures within it, including trials, LFP data, and spike times. It iterates through unit IDs and reads columns from the trial table. The inclusion of histograms and rasters further demonstrates exploration of the data.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook loads an NWB file, prints session description, number of trials and units. It accesses and plots TTL event codes, LFP data and spike raster of 5 units. Further, it loads trial table info and behavioral responses. The notebook demonstrates accessing basic NWB components and explores multiple NWB data structures.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully opens an NWB file and demonstrates accessing basic components like trials, units, LFP data, and event markers. It provides example visualizations of these components and lists trial columns. The notebook explores multiple data structures within the NWB file, showcasing how to extract relevant information. It does not show *detailed* navigation of the NWB hierarchy, but successfully goes beyond the basics.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 7.333333333333333,
+        "reps": [
+          {
+            "score": 8.0,
+            "thinking": "Multiple cells in the notebook contain code to load data from the NWB file '000673'. The notebook begins by loading the NWB file using pynwb and lindi, and successfully extracts session descriptions, trial counts, and unit counts. Furthermore, the notebook proceeds to load and visualize behavioral event TTL markers, example LFP data segments, and spike rasters, demonstrating the loading of different data types from the NWB file. Finally, it loads trial table data, further supporting the successful loading and handling of complex data. Hence, the notebook successfully loads and handles multiple data types with examples. Therefore, a relatively high score is warranted. I would not give it a 10 since the handling of the different data types is more of an organized access with plotting than a more general approach useful for other datasets.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file from a URL using `lindi` and `pynwb`. It then accesses several data elements like `session_description`, `trials`, `units`, `LFPs`, and `events`. It demonstrates how to load basic data arrays (e.g., `events.data[:]`, `trials[k][:]`) and specific data types (e.g., LFP data, spike times, trial information). It shows how to access multiple data elements within these structures. The notebook effectively demonstrates loading and handling different types of data available in the NWB file. This aligns well with level 7 of the rubric. It loads trial information which contains strings, integers and floats so that different data types are handled appropriately. Level 8 is not fully met as there is no deep exploration of any complex data structure. It does read the list of trial columns but it doesn't go to any depth within them.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads and accesses data from an NWB file. It loads metadata, behavioral events, LFP data, spike times, and trial table information. It demonstrates accessing multiple data elements and handles different data types. It also shows a basic analysis for each data type to demonstrate the kind of data being loaded. Therefore, the score is 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook demonstrates basic data visualization from an NWB file. It includes examples of visualizing TTL events, LFP data, and spike rasters. The plots are reasonably clear and have appropriate labels, though not publication quality. It covers multiple data types, but the visualization techniques are fairly simple. The notebook could be improved with more advanced visualization or richer context. The plots also need to be saved to a directory the notebook has access to, to avoid exceptions.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook effectively demonstrates basic data visualization techniques for NWB files within the Dandiset. It visualizes behavioral event TTL markers as a histogram, LFP data as a time series, and spike raster plots for multiple units. The plots are labeled, and relevant information such as the number of trials, units, and sampling rates are displayed, with some interpretations provided alongside each plot. While the plots are simple, they are clear and informative. The notebook demonstrates multiple visualization types (histogram, time series, raster plot) making it higher than a 4. There are some minor issues, but overall the notebook provides pretty clear visualizations with proper labeling, bringing it to 7. It is not at a level of advanced visualization techniques. It is also not really well-documented.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook provides code for visualizing TTL event codes (histogram), average LFP data (time series plot), and spike rasters for multiple units. The plots are labeled with axis labels and titles. It also shows how to load trial table information. The notebook therefore demonstrates multiple visualization types with reasonable labeling. Thus the notebook deserves a score of 6 based on the rubric.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook contains three plots: a histogram of TTL event codes, an average LFP trace over time, and a spike raster plot for 5 units. The plots are all readable and have labels. The raster plots has neuron IDs included, which is good. There doesn't appear to be any overlapping text or major issues with the plots. The plots are not publication quality but are well-formatted and easy to understand. Therefore, a score of 7 is appropriate.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook generates three plots: a histogram of TTL event codes, a line plot of average LFP, and a spike raster plot. The plots are readable with basic labels, making them of decent quality. The plots aren't perfectly formatted, but do have x and y axis labels and titles.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook contains three plots: a TTL event code histogram, an average LFP trace, and a spike raster plot. All plots are readable and have basic labels (axis labels and titles). The plots are not publication quality, but are well-formatted and serve their intended purpose of visualizing the data. Therefore, a rating of 6 is appropriate.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 4.0,
+        "reps": [
+          {
+            "score": 4.0,
+            "thinking": "The notebook loads several fundamentally different data streams.\n1. TTL events, which mark behavioral events.\n2. LFP data, which is continuous voltage data.\n3. Spike times of individual units.\n4. Trial information, including behavioral responses and stimulus information.\nThese represent different types of data, leading to a score of 4.",
+            "repnum": 0
+          },
+          {
+            "score": 4.0,
+            "thinking": "The notebook loads several fundamentally different data streams from the NWB file:\n1. TTL event markers for behavioral events.\n2. Local field potential (LFP) data.\n3. Spike times for individual units.\n4. Trial information including 'loads', 'probe_in_out', and 'response_accuracy'\nThese represent distinct types of neural and behavioral data stored within the NWB file and accessed/visualized in the notebook.\n\nTherefore, the notebook loads at least four fundamentally different data streams. Even the trial data itself could possibly be split into multiple types of data streams.",
+            "repnum": 1
+          },
+          {
+            "score": 4.0,
+            "thinking": "The notebook loads the following data streams:\n1. TTL event markers\n2. LFP data\n3. Spike times\n4. Trial data (loads, probe_in_out, response_accuracy)\n\nThese are four fundamentally different data streams. There could also be more data streams in the raw NWB file given that just a subset is loaded and presented.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 3.0,
+        "reps": [
+          {
+            "score": 3.0,
+            "thinking": "The notebook displays three fundamentally different types of plots:\n\n1.  **Histogram:**  for TTL event codes.\n2.  **Line Plot:**  for the average LFP data segment.\n3.  **Raster Plot:** for visualizing the spike times of multiple units.\n\nTherefore, the notebook shows three fundamentally different types of plots.",
+            "repnum": 0
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook displays three distinct plot types: a histogram of TTL event codes, an average LFP trace over time, and a spike raster plot showing spike times for different neurons. I would consider raster plots and time series plots as different plot types. So there are 3 types of plots.",
+            "repnum": 1
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook shows three different types of plots:\n1. Histogram of TTL event codes.\n2. Average LFP trace over time.\n3. Spike raster plot.\n\nThus, there are three fundamentally different types of plots.",
             "repnum": 2
           }
         ]
@@ -1033,7 +1445,7 @@
     "notebook": "dandisets/000673/2025-04-10-quasar-alpha-prompt-a-1/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-10-quasar-alpha-prompt-a-1",
-    "overall_score": 61.0,
+    "overall_score": 60.99999999999999,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -1239,7 +1651,7 @@
     "notebook": "dandisets/000673/2025-04-14-gemini-2.0-flash-001-prompt-a-1/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-14-gemini-2.0-flash-001-prompt-a-1",
-    "overall_score": 60.333333333333336,
+    "overall_score": 60.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -1435,6 +1847,624 @@
           {
             "score": 4.0,
             "thinking": "The notebook shows 4 different types of plots: LFP data as a function of time, Event \"type\" as a function of time, stimulus index as a function of time, and finally the stimulus templates represented as an image.",
+            "repnum": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "notebook": "dandisets/000673/2025-04-15-claude-3.7-sonnet-prompt-a-3/000673.ipynb",
+    "dandiset_id": "000673",
+    "subfolder": "2025-04-15-claude-3.7-sonnet-prompt-a-3",
+    "overall_score": 65.66666666666666,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 9.333333333333334,
+        "reps": [
+          {
+            "score": 10.0,
+            "thinking": "The notebook provides a comprehensive description of the Dandiset. It includes the title, ID, purpose, content including LFP recordings, single unit activity, stimulus images, trial information, and behavioral data. The notebook also describes the data organization.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook includes the Dandiset ID and title and provides a good overview of the contents and purpose of the Dandiset. There is a section dedicated at the beginning with a description to the Dandiset. The notebook also explores data organization, by showing the structure of the NWB files and displaying information from sub dataframes, which is useful. Therefore, the score will be 9.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good description of the Dandiset, including the Dandiset ID, title, purpose, contents, and some information about the data organization. The initial overview and the summary at the end both contribute to a good understanding of the Dandiset. Therefore, a score of 9 is appropriate.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook loads the Dandiset ID and name and prints some basic information which constitutes loading basic metadata. Thus it deserves a 6.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook loads and displays the Dandiset ID, Name, and session description upon connecting to the Dandiset. It also loads subject-specific metadata. However, more comprehensive metadata exploration is limited. Therefore, the notebook loads and displays basic metadata fields (6).",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads and displays basic metadata fields such as session description, subject ID, age, sex, lab, and institution. It also shows Dandiset ID and Name. This corresponds to level 6 in the rubric.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 7.666666666666667,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook starts by mentioning the Dandiset ID and name but then explicitly says it will work with one specific NWB file directly instead of fetching all assets. It downloads the single NWB file and shows how to access its metadata (session description, subject ID, etc.) and explore different data modalities within that file (LFP, single units, stimulus images, trials). It explores the electrode configuration, LFP data, unit data, stimulus images and trial information.\nEven though it only loads one specific NWB file, the code demonstrates how to access several forms of information within it. Therefore, I think a score of 6 is justified.",
+            "repnum": 0
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook demonstrates loading specific NWB files. It also displays relevant metadata such as session description, subject ID, age, sex, lab, and institution. It also successfully explores multiple asset types, including LFP, single unit activity, stimulus images, and trial information, providing examples for each one. Overall, the notebook adequately shows how to load assets of the Dandiset.\n\nThe cell that counts units by brain region produces a bar plot that counts all electrodes as region 'unknown'. This is probably due to the error handling.\nThe last two plots related to Firing Rate vs Trial Performance were never produced.\n\nThese small errors impact the quality of the notebook but the loading of assets is properly shown.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook demonstrates loading a specific NWB file from the Dandiset using a URL. It then explores various aspects of the NWB file, effectively showcasing how to access and use different assets within it, such as LFP data, electrode information, trial data, stimulus information, and single-unit activity. While it mainly focuses on a single NWB file, it comprehensively handles loading and accessing various data types and metadata within that asset. It could be better if it showed how to list available assets first before picking one.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 9.0,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook successfully loads an NWB file, displays its basic information, and explores various data structures such as electrodes, LFP data, events, trials, and units. It shows how to access and visualize data within these structures. The notebook also demonstrates more advanced analysis of the data such as spectral analysis and phase-amplitude coupling as well as firing rates and PSTH of individual units.\nHowever, the \"Number of units by Brain Region\" plot is only able to classify 80 electrodes as 'unknown' in brain region, suggesting a failure for the code to generalize across brain regions. This is a minor detail within a robust notebook overall.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook successfully loads an NWB file from a DANDI archive URL. It then proceeds to explore various components of the NWB file, including session description, subject information, electrode locations, LFP data, event data, trials data, unit (neuron) spiking data, and stimulus images. It visualizes key aspects such as electrode distribution, LFP traces, spectrograms, spike trains, and PSTHs. Therefore, notebook demonstrates accessing basic NWB components and explores multiple data structures while also providing detailed navigation of NWB hierarchy.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook successfully opens, explores, and navigates through many components of the NWB file. It shows basic information, explores electrode configuration, LFP data and performs spectral analysis, examines event data, explores trial information, explores single unit activity, explores stimulus images and computes PSTH. Overall, the notebook effectively demonstrates how to load basic information from the NWB file and access different NWB data structures making use of pynwb library and functionalities.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 9.0,
+        "reps": [
+          {
+            "score": 10.0,
+            "thinking": "The notebook successfully loads and explores a variety of data types from the NWB file. It demonstrates how to access LFP data, electrode information, event data, trial information, single unit activity, and stimulus images. It handles different data types appropriately, such as converting data to pandas DataFrames for easier analysis, and provides examples for visualizing and analyzing the loaded data. Therefore, it showcases the comprehensive loading and handling ofmultiple data types in the NWB format. The notebook provides URL access and remfile streaming for accessing the data. It access events, trials, units. And also perform time frequency anlaysis, spike train plotting, and explore image stimuli.",
+            "repnum": 0
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook demonstrates how to load data from an NWB file using `pynwb`. It shows how to access various data elements like session description, subject information, electrode configurations, LFP data, event data, trial information, unit data, and stimulus images. It appropriately handles different data types like numerical data, strings, dataframes, and images. The loading and handling of LFP and single-unit data, along with trial and stimulus information, suggests complex data structure exploration with examples, including the analysis of relationships between neural activity and behavior.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook successfully loads data from an NWB file and explores various data types including electrode information, local field potentials (LFPs), event data, trial information, single unit activity, and stimulus images. It appropriately handles different data types and explores complex data structures. It demonstrates advanced data access techniques such as computing firing rates, creating PSTHs, and analyzing theta-gamma phase-amplitude coupling. Therefore, it deserves a high score. Specifically, the loading of the NWB file and the subsequent extraction and visualization of different data types, such as LFP, events, trials and single unit activity is well demonstrated.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 7.666666666666667,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates a good range of visualization techniques for various data types available in the NWB file. It includes visualizations of electrode locations, LFP traces, spectral analysis, event timelines, trial information, single-unit activity (spike trains and firing rates), stimulus images, and even an attempt at visualizing theta-gamma phase-amplitude coupling. Most figures have labels and titles. However, some plots are incomplete and could be improved regarding clarity and interpretability such as spike trains and firing rate plots which produced empty plots and the PSTH graphs. The PAC figure looks very noisy. The visualization of the modulation index looks off as well. Overall, it provides a good, but not perfect, overview of visualizing different data aspects from the NWB file.",
+            "repnum": 0
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook demonstrates various visualization techniques on different data types within the NWB file. It includes visualizations of electrode locations, LFP signals, spectral analysis (PSD and spectrogram), event data, trial information, single unit activity, stimulus images, PSTHs, and even advanced analysis like theta-gamma phase-amplitude coupling including plotting the filtered signals, and computing and plotting the modulation index. The visualizations are mostly clear, and well-labeled although formatting in a few plots is not optimized. The notebook is generally comprehensive regarding data visualization within the NWB file, but it could be improved regarding the firing rates, I had to remove the execution of code that generated empty Matplotlib plots.",
+            "repnum": 1
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook effectively demonstrates how to visualize a variety of data types from the NWB file including electrode locations, LFP data in time and frequency domains, event data, trial information, single unit activity, stimulus images and the relationship between firing rate and trial performance. The plotting code is generally correct and produces labeled and appropriate visualizations using matplotlib. The plots are not necessarily of publication quality, but are very informative.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook contains a variety of plots, including distribution plots, LFP traces, spectrograms, event timelines, spike trains, firing rate plots, images, and phase-amplitude coupling visualizations. Most plots have titles, axis labels, and legends. The formatting is generally good, with Seaborn styles applied for enhanced aesthetics. However, there are some issues. In particular, the spike train plot has a missing plot, and two plots are empty. The y-axis label is missing in the \"Number of Units by Brain Region\" plot. Some plots have overlapping labels or text. Overall, the plots are good but not perfect. Therefore, a publication-ready quality is not reached.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook presents a variety of plots, including bar plots, line plots, spectrograms, and images. Many plots are well-labeled and formatted, like the \"Number of Electrodes by Brain Region,\" LFP traces from different regions, PSD, Spectrogram, and PAC plots. Others, particularly towards the end, such as the spike trains and firing rates, are missing titles and labels, especially axis labels. The PSTH plot is also missing titles and axis labels, impacting readability. The unit distribution plot shows nearly all units as \"unknown\", suggesting a potential issue in the analysis pipeline. The stimulus images appear to be rotated inadvertently. Considering the mix of good and poorly formatted or potentially problematic figures, the overall plotting quality is good but not excellent. Therefore it earns a score of 7.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The plots are well-formatted, with clear labels and titles and most of them are easy to read. Some plots are a little more difficult to grasp the meaning but overall the quality is good.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 5.0,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook covers LFP data, single unit activity (spike times), stimulus image data, event data and trial data. These are five fundamentally different data streams. Some streams include further data such as response accuracy in trials, or location for LFP signals.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook loads the following data streams:\n1. **Electrodes**: Loaded to determine the location of electrodes.\n2. **LFP Data**: Local Field Potentials from electrodes, used for spectral analysis and time-frequency analysis\n3. **Event Data**: This reflects events that occur during a trial, captured by TTL markers.\n4. **Trial Information**: The behavioral task structure and variables.\n5. **Single Unit Activity**: Spike times and waveforms of individual neurons.\n6. **Stimulus Images**: Images are loaded and explored.\n\nThese represent fundamentally different types of data streams within the NWB file. The notebook appears to load and analyze at least 6 fundamentally distinct NWB data streams.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook loads and explores several distinct data streams from the NWB file. These include:\n\n1.  **Electrode Information:** Loaded from `nwb.electrodes` into a Pandas DataFrame.\n2.  **Local Field Potentials (LFP):** Loaded from `nwb.acquisition[\"LFPs\"]`.\n3.  **Event Data:** Loaded from `nwb.acquisition[\"events\"]`.\n4.  **Trial Information:** Loaded from `nwb.trials`.\n5.  **Single Unit Activity (Spike Times):** Loaded from `nwb.units`.\n6.  **Stimulus Images:** Loaded from `nwb.stimulus` and `nwb.stimulus_template`.\n\nThus, there are six fundamentally different data streams loaded from the NWB file.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 5.0,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook shows the following plot types:\n1. Bar plot (number of electrodes by brain region, number of units by brain region, trial performance, theta-gamma phase amplitude coupling)\n2. Line plot (LFP traces, Power Spectral Density, firing rate patterns, theta and gamma filtered signals)\n3. Spectrogram (Time-frequency analysis)\n4. Scatter plot (Event Timeline)\n5. Image plot (Stimulus images)\n6. PSTH (Peri-stimulus time histogram)\n7. Boxplot (Firing Rate vs Trial Performance)\n\nThere are at least 7 fundamentally different types of plots. Since the maximum score according to the rubric is 5, I will assign the highest score.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "There are multiple types of plots in the notebook:\nBar plots: Used in \"Number of Electrodes by Brain Region\", \"Trial Performance\", \"Number of Units by Brain Region\"\nTime series plots: LFP traces from different brain regions, Theta and Gamma band filtered signals\nSpectrogram: \"Spectrogram - Left Hippocampus\"\nScatter plots: \"Event Timeline\"\nImage plots: Showing the stimulus images\nPSTH plots: Showing firing rate vs time for specific units.\nBox plots: Used to visualise results of t-test\n\nThere are at least 6 fundamentally different types of plots. Note that the modulation index plot might be considered a subtype of barplot.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook contains the following plot types:\n1. Bar plot (Number of Electrodes by Brain Region, Number of Units by Brain Region, Trial Performance).\n2. Line plot (LFP traces, Power Spectral Density, Firing Rate).\n3. Spectrogram (Time-frequency analysis of LFP).\n4. Scatter plot (Event Timeline)\n5. Image plot (Stimulus Images).\n6. Bar plot (Theta-Gamma Phase Amplitude Coupling, can be thought as histogram).\n7. Box plot (firing rate vs trial performance).\n\nThere are at least five fundamentally different types of plots. Note that histogram is included in the \"bar plot\" category.",
+            "repnum": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "notebook": "dandisets/000673/2025-04-15-gemini-2.0-flash-001-prompt-a-3/000673.ipynb",
+    "dandiset_id": "000673",
+    "subfolder": "2025-04-15-gemini-2.0-flash-001-prompt-a-3",
+    "overall_score": 56.0,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 9.0,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good description of the Dandiset. It includes the title, ID, purpose, contents, and data organization. The overview at the beginning summarizes the Dandiset content. The description of the Dandiset's purpose and content is sufficient and is augmented by examples of data loading and visualization.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "This notebook provides a good description of the Dandiset. It includes the title, ID, describes the experiment, lists key metadata fields, and explains how the data is organized into NWB files containing electrophysiology, event, and image data. The introductory section already provides most of the key information, so I will rate it highly.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good description of the Dandiset. It includes the title, ID, and a brief overview of the dataset's purpose and contents. It also details the types of data included (electrophysiology, stimulus events, images) and provides examples of how to access and visualize this data. The notebook also contains some metadata about the authors of the dataset and the experimental setting. It also explains how to connect to the Dandi archive to access the dandiset. There is a clear and concise description of why the notebook was created. The sections are also well-organized and make sense. So a score of 9 suits this notebook.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates loading the Dandiset using the DANDI API, retrieves the Dandiset ID, and displays some of the basic metadata, such as session description, the identifier and the session start time.\nIt stops short of exploring all key meta data fields within the dandiset.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, retrieves the Dandiset 000673, and lists the assets, demonstrating the basic loading of Dandiset information from the DANDI API. It then loads metadata from a selected NWB file. After loading it explores several metadata fields such as `session_description`, `identifier`, and `session_start_time`. It could demonstrate a more thorough exploration, providing explanations of those fields but it still shows a good amount of metadata loading.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset using the DANDI API, retrieves a list of assets, and then loads and displays basic metadata fields such as session description, identifier, and start time. Therefore, the notebook scores a 6.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 8.333333333333334,
+        "reps": [
+          {
+            "score": 8.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, lists the available assets, loads basic metadata from an NWB file, and demonstrates loading and visualizing different types of assets (LFP data, stimulus event data, and stimulus template images). It also previews basic metadata for one NWB file. However, it could benefit from a deeper dive into the metadata of the various assets and further examples of data usage and exploration. The notebook also does not account for potential loading errors or provide more comprehensive error handling, which would improve its robustness and user-friendliness. This notebook provides sufficient steps, so there is no partial credit given. Therefore, the score is an 8.",
+            "repnum": 0
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook successfully lists available assets, loads basic asset information, demonstrates loading specific assets (NWB file), shows how to access asset metadata, and explores multiple asset types (LFP data, stimulus event data, stimulus template images) with examples. It could be more comprehensive by showing how to iterate through different subjects and sessions, accessing specific trials and their associated data, and exploring all available metadata fields more systematically. However, it provides a solid foundation for asset loading and exploration.\n\nTherefore, I give a score of 8.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook demonstrates how to connect to the DANDI archive, load the Dandiset metadata, and list available assets. It continues by showing how to load specific assets (NWB files), access the metadata associated with these files, and visualize different types of data within the NWB files such as LFP data, stimulus event data, and stimulus template images. The notebook explores multiple asset types with visualization examples. Thus, it shows loading dandiset assets comprehensively and handling metadata.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file from the DANDI archive. It then proceeds to explore key structures within the NWB file:\n    - The notebook loads the complete NWB file using the DANDI API and pynwb library, equivalent to a score of 4\n    - The notebook prints the nwb object showing the basic NWB file structure, equivalent to a score of 5\n    - The notebook examines the session description, session id, and session start time, equivalent to a score of 6\n    - Finally the notebook accesses LFP data, event data and stimulus template images which gives it a score of 7\n    The notebook therefore deserves a score of 7.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file from the DANDI archive. It displays the file structure and accesses components such as acquisition data (LFPs and events), stimulus templates, and metadata fields like 'session_description', 'identifier', and 'session_start_time'. The notebook also visualizes the LFP data, stimulus event data, and stimulus template images. The navigation of the NWB file is demonstrated using several data structures.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset, selects and opens an NWB file within it. It demonstrates how to access basic metadata components like session description, identifier, and start time. Additionally, it loads and visualizes LFP data, stimulus event data, and stimulus template images, showcasing exploration of data structures in the NWB file. However, it doesn't show a comprehensive exploration of NWB files. Therefore, the score is suitable for demonstrating accessing basic NWB components.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads the dandiset, connects to the DANDI archive, and loads an NWB file. It then proceeds to load and visualize three different data types from the NWB file: LFP data, stimulus event data, and stimulus template images. The notebook demonstrates extracting the data and the corresponding timestamps for stimulus events, and it displays one of the template images. The errors associated with loading and plotting the data are not related to loading the data. They are visualization artifacts. The notebook does not explore advanced data access techniques, but shows how to access multiple data elements of different data types. Therefore, the notebook deserves a score of 7.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads data from an NWB file, including LFP data, stimulus event data, and stimulus template images. It demonstrates how to access and visualize these data types. It does more than just load basic arrays, but doesn't show advance access techniques, so it isn't quite comprehensive.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads and visualizes several key data types from the NWB file: LFP data, stimulus event data, and stimulus template images. It demonstrates how to access these different data elements and plot them. While this is a good initial exploration, the notebook could go further in showing more advanced data access techniques or exploring more complex relationships within the data. It appropriately handles different data types (electrophysiological, event, and image data), but a more comprehensive demonstration of handling multiple data types would involve more complex analysis or integration of these data streams.\n\nThe code executes without significant errors and loads the specified data, so it's far above a score of 3. It demonstrates loading of LFP, event and image data, which places it above a 5 in terms of data types. However, it does not perform \"advanced data access techniques\" so a 9 or 10 would be inappropriate.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook demonstrates how to load an NWB file from a DANDI dataset and visualize several data types. It visualizes LFP data, stimulus event data, and stimulus template images. The plots include labels and titles, although the stimulus event data plot only shows the first 100 events. It could be improved by showing more advanced visualization techniques, such as histograms or spectrograms for the LFP data. Also, the notebook only visualizes one NWB file from the Dandiset. Despite these limitations, the notebook provides a reasonable introduction and multiple simple visualization types.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates loading and visualizing three datatypes: LFP data, stimulus event data, and stimulus template images. The plots are labeled and have titles, and the code is functional. However, the plots are simple, and there isn't any advanced visualization or analysis. A small issue is that the stimulus event data seems truncated arbitrarily to 100 points. The plot of the LFP data could have been improved, for example by showing a time axis in seconds rather than timepoints, which would have required using the timestamps related to the LFP signal. More sophisticated plotting, or interactive plotting, would increase the score.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook loads and visualizes LFP data, stimulus event data, and stimulus template images from the NWB file. The plots have labels, and the code is functional. However, the visualizations are fairly basic. It would be better if there were more ways to customize plots (e.g., subplotting, colormaps, etc.), and more explanation/discussion of the visualizations themselves.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 5.666666666666667,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook contains plots that are readable and have basic labels. The plots lack detailed formatting, so they are better than simple plots with minimal formatting, but not at the level of well-formatted plots with complete labels or more professional plots. The plots have titles and axis labels. The stimulus event data plots only the first 100 events, which improves readability. The image quality of the stimulus template is good. Thus, the plots are readable with basic labels.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The plots are readable with basic labels (x,y). Plots have titles. Axes are labeled and appropriate data is plotted. The plots are good for exploratory data analysis but lack detail. The plots are not publication-ready. I would rate these plots a 6.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook generates three plots: LFP data, stimulus event data, and a stimulus template image. The plots are readable and have basic labels (axis labels and titles). The formatting is relatively simple (seaborn theme applied), but the plots serve their purpose well. Plot of stimulus event data only shows the first 100 events but mentions that the shape of events data is 982, this is slightly misleading. Overall the plots are fine, but could be improved with better formatting and labels.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 3.0,
+        "reps": [
+          {
+            "score": 3.0,
+            "thinking": "The notebook loads the following data streams from the NWB file:\n1. LFP data\n2. Stimulus event data\n3. Stimulus template images\n\nThus, there are three fundamentally different data streams loaded.",
+            "repnum": 0
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook loads LFP data, stimulus event data, and stimulus template images from the NWB file. These represent three distinct data streams from the NWB file. Therefore, the score should be 3.",
+            "repnum": 1
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook loads and visualizes: LFPs, stimulus event data, and stimulus template images. These are three distinct data streams. The metadata could also be considered, which would make the count 4.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 3.0,
+        "reps": [
+          {
+            "score": 3.0,
+            "thinking": "The notebook displays three types of plots: a line plot of LFP data, a line plot of event data, and an image plot of a stimulus template. While both LFP and event plots are line plots, the data they present are fundamentally different (continuous voltage vs discrete event values). Therefore, there are three distinct types of plots. Note i am ignoring the implicit plot of assets, since that's only text.",
+            "repnum": 0
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook displays three fundamentally different types of plots:\n1. LFP data plot (line plot of LFP over time)\n2. Stimulus event data plot (scatter plot connected by lines of event values over time)\n3. Stimulus template image plot (imshow of an image)",
+            "repnum": 1
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook shows three distinct types of plots: a line plot of LFP data, a line plot of stimulus event data, and an image plot of stimulus templates. Therefore, there are three fundamentally different types of plots. Images are fundamentally different plots than line plots.",
+            "repnum": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "notebook": "dandisets/000673/2025-04-15-gemini-2.0-flash-001-prompt-b-3/000673.ipynb",
+    "dandiset_id": "000673",
+    "subfolder": "2025-04-15-gemini-2.0-flash-001-prompt-b-3",
+    "overall_score": 55.33333333333333,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 9.0,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides the Dandiset ID, title, a brief overview of the contents (electrophysiological recordings and behavioral data from a Sternberg task), and a description of the study's purpose relating to working memory and phase-amplitude coupling. It also touches on metadata like experimenters and session descriptions. It provides a comprehensive description, including the purpose, contents, and data organization.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook includes the Dandiset ID, title, purpose, and a good description of the contents. Also, the notebook lists key metadata fields that can be retrieved from the files. It also includes some details about the structure by noting that it contains electrophysiological data and images. Therefore, the score is 9.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook includes the Dandiset ID, title, purpose, contents, and basic metadata like the subjects participating and the tasks performed. It introduces the type of data available and the potential analyses that could be performed. The notebook does a very good job of describing it.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset using the DANDI API and displays basic information such as the number of assets and the first 5 asset paths. It shows how to load the Dandiset and access its assets' information. However, it could be more thorough in exploring and displaying other metadata fields directly related to the Dandiset itself, such as its version, name, or description, and explaining their structure. The 'Loading Metadata for an NWB File' section explores metadata of individual files within the Dandiset, but the question specifically assesses metadata related to the Dandiset object itself, not the individual NWB files within it. Thus the code is successful, and displays basic metadata but does not display all key metadata fields.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, retrieves the dandiset by its ID, and lists the assets within the dandiset. The notebook then loads metadata from one of the NWB files including session descriptions, identifier, and session start time providing a good starting point for Dandiset exploration making the score a 7.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the dandiset, prints the number of assets, and lists the first five assets with their paths. This demonstrates loading and displaying some basic metadata fields. The code executes without significant errors. It would be even better with some explanation of the shown paths.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 8.666666666666666,
+        "reps": [
+          {
+            "score": 8.0,
+            "thinking": "The notebook demonstrates how to load the dandiset, lists assets, and loads specific assets, including NWB files. It shows how to access the metadata within the NWB file and visualizes LFP data and stimulus template images contained within the NWB file. It explores multiple asset types within the NWB file and gives examples of using the data.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook successfully lists the available assets of the Dandiset, demonstrates how to load a specific NWB file asset, and accesses metadata from this asset. It then loads and visualizes LFP data and stimulus template images from the NWB file, showcasing how to explore multiple asset types. The code runs without significant errors. The notebook provides a good overview of how to load and use Dandiset assets, but could benefit from more in depth examples of asset metadata exploration to reach score of 10.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook demonstrates how to connect to the DANDI archive, list the assets, load an NWB file (an asset), and access its metadata. It also shows how to load and visualize data from specific parts of the NWB file (LFP data and stimulus templates). Therefore, the notebook shows how to load assets of the Dandiset and how to access metadata. It covers multiple asset types (LFP and stimulus templates) and provides concrete examples. It could be improved by showing how to access more types of metadata, but it's already quite comprehensive. The notebook does a good job of demonstrating how to load different components related to neural electrophysiology and stimulus presentation in the context of a task related to working memory and phase-amplitude coupling using an NWB file located within the DANDI archive. Loading the example nwb file and visualizing LFP data and extracting stimulus templates are complex steps, placing its score in the upper range..",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from the DANDI archive using `pynwb`, `h5py`, and `remfile`. It then prints the NWB file object, which implicitly shows its structure. The code then shows how to access specific metadata fields such as `session_description`, `identifier`, and `session_start_time`, and demonstrates loading LFP data and stimulus template images. It does not deeply explore the NWB file structure in a formal way. The notebook demonstrates accessing basic NWB components fairly well. Thus, a score of 6 is appropriate.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from the DANDI archive and demonstrates accessing some of its basic components like session description, identifier, and session start time. It also shows how to access and visualize LFP data and stimulus template images, providing a good starting point for exploring the NWB file's contents. Therefore, the notebook demonstrates how to access basic NWB components well.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file from the DANDI archive and demonstrates how to access basic components like session description, identifier and start time. Example LFP data and stimulus template images are loaded and plotted, further illustrating how to access data within the NWB structure. The notebook provides a good introduction to exploring an NWB file although further expansion on NWB data structures is required, such as trials, units, electrodes, etc, to achieve higher score.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides code for loading NWB files from the DANDI archive, successfully accessing LFP data, and extracting stimulus template images. It demonstrates how to access basic metadata, numerical data (LFP), and image data. While it provides a good foundation, it does not delve into advanced data access techniques or handle a wide variety of potential data structures in the NWB file, sticking primarily to LFP and Images. It does handle the different data types adequately. Therefore, a score of 7 is appropriate.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully demonstrates loading the NWB file from a remote source using remfile and h5py. It demonstrates accessing and visualizing LFP data and stimulus template images. The notebook shows how to access different data elements within the NWB file (LFP data, sampling rate, stimulus templates). It handles different data types appropriately (numerical data for LFP, images for stimuli). Therefore, a score of 7 is reasonable.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides code to load an NWB file from a DANDI archive using pynwb and remfile. After loading the file, it demonstrates how to access and visualize LFP data, and also how to display stimulus template images, covering different data types present in the NWB file. The loading and displaying of two fundamentally different data types allows for justification of a higher score.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates how to load and visualize LFP data and stimulus template images from an NWB file. The plots are simple but appropriately labeled. It shows a basic line plot for LFP and imshow for images. It covers two different data types and future analysis directions.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides code for loading data from an NWB file and generating visualizations, specifically LFP plots and stimulus template images. The LFP plots are generated for the first 5 channels, with appropriate labels for the axes and title. The stimulus templates are also displayed as images. The visualizations don't seem extraordinarily advanced, but they are adequate with labels. Therefore this is more than just one basic visualization, it is multiple visualization types with proper labeling.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides code to load LFP data and stimulus template images from a specified NWB file within the Dandiset. It then generates plots of the LFP data for the first 5 channels and displays the first 5 stimulus template images. The axes are properly labeled, and titles are included. The notebook clearly demonstrates visualization of these two datatypes. While the visualizations are not particularly advanced, they effectively show how to access and plot data from the NWB file. Saving the plots to files is commented out, only showing the plots inline.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The LFP plots are readable and have labels for the axes and title. The stimulus template plots are also readable and the axes are turned off. The labels are complete. The plots are of reasonable quality. Therefore, I think that this notebook should get a 7.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The plots for LFP data and stimulus templates are readable and have basic labels (Time, LFP(volts), title for LFP plots and Stimulus Template and title for stimulus plots). The plots are clearly showing the data, making it easy to understand the basic temporal characteristics of the LFP and image contents of the stimulus templates. Therefore, the plots are of fair quality but lack more detailed formatting. The plots aren't quite ready for publication, but they're more than just simple with some labels.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook produces readable plots for both LFP data and stimulus templates. The LFP plots have time on the x-axis and LFP in volts on the y-axis, with titles indicating the channel number. The stimulus template plots display images with titles indicating stimulus key, without axis labels. The plots are basic but fulfill the criteria for clear plots with adequate formatting. The x and y axis labels on the LFP plots are correct. The stimulus plots do not need axis labels, as the data is visual.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 2.6666666666666665,
+        "reps": [
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads and visualizes LFP data and stimulus template images from the NWB file. These are two fundamentally different types of data. The notebook also lists events, but does not load the actual data. Therefore, the notebook loads two data streams, namely LFP data and stimulus template images.",
+            "repnum": 0
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads LFP data and stimulus template images. These are from different groups inside the NWB file ('acquisition' and 'stimulus_template'). Thus, two fundamentally different data streams are loaded.",
+            "repnum": 1
+          },
+          {
+            "score": 4.0,
+            "thinking": "The notebook loads both LFP data (electrophysiological recordings) and stimulus template images. These are fundamentally different types of data. Additionaly data about events is also loaded as indicated by the line `nwb.acquisition[\"events\"]` and also trial based data `nwb.intervals[\"trials\"]`. Therefore 4 types of data stream are loaded.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 2.0,
+        "reps": [
+          {
+            "score": 2.0,
+            "thinking": "The notebook shows two fundamental types of plots: line plots of LFP data and images of stimulus templates. Although multiple channels of LFP data are shown, they are all line plots of the same data type. Similarly, multiple stimulus templates are images, so they are the same plot type. Thus there are two fundamentally different types of plots.",
+            "repnum": 0
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook shows two distinct types of plots: LFP data as line plots and stimulus template images as images. There are 5 line plots (one for each LFP channel) and 5 images (one for each stimulus template). Therefore there are two fundamentally different types of plots shown in the notebook.",
+            "repnum": 1
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook shows two fundamentally different types of plots: LFP data plots (time series) and stimulus template images (imshow). Therefore the answer is 2.",
             "repnum": 2
           }
         ]
@@ -2269,7 +3299,7 @@
     "notebook": "dandisets/000945/2025-04-07-quasar-alpha-exp/000945.ipynb",
     "dandiset_id": "000945",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 54.333333333333336,
+    "overall_score": 54.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -2681,7 +3711,7 @@
     "notebook": "dandisets/000945/2025-04-09-quasar-alpha/000945.ipynb",
     "dandiset_id": "000945",
     "subfolder": "2025-04-09-quasar-alpha",
-    "overall_score": 56.333333333333336,
+    "overall_score": 56.33333333333334,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -3299,7 +4329,7 @@
     "notebook": "dandisets/001174/2025-04-01-deepseek-chat-v3-0324/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-01-deepseek-chat-v3-0324",
-    "overall_score": 55.333333333333336,
+    "overall_score": 55.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -3701,6 +4731,212 @@
           {
             "score": 5.0,
             "thinking": "The notebook displays several different types of plots. These include:\n1.  Color-coded ROI plot\n2.  ROI Density heatmap\n3.  Single ROI mask\n4.  Raw calcium imaging frames\n5.  Raw frame with overlaid ROI centers\n6.  Fluorescence traces\n7.  Fluorescence traces compared to event amplitudes\n8.  Raster plot of neural activity\n9.  Cross-correlation between ROI pairs\n\nThese are all fundamentally different ways of visualizing the data therefore the score is 5.",
+            "repnum": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "notebook": "dandisets/001174/2025-04-07-claude-3.5-sonnet/001174.ipynb",
+    "dandiset_id": "001174",
+    "subfolder": "2025-04-07-claude-3.5-sonnet",
+    "overall_score": 56.33333333333333,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 9.0,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook includes the Dandiset ID, title, a brief description of its purpose, contents (calcium imaging data, ROI masks, fluorescence traces), and relevant metadata such as species, brain regions, and experimental context. It also mentions the data organization by subject and session.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a clear description of the Dandiset, including its ID (001174), title (\"Calcium imaging in SMA and M1 of macaques\"), purpose (calcium imaging data from macaque SMA during reaching), contents (one-photon calcium imaging recordings, ROI masks, fluorescence traces), metadata (species, brain regions, experimental context), and a brief overview of the data organization (subjects, sessions). It's well-structured and provides enough information to understand the dataset's context and contents even before delving into the code. Also, it includes a summary of the contents like \"calcium imaging recordings from deep layers of the supplementary motor (SMA) and primary motor areas (M1) in rhesus macaques. The recordings were performed while the animals were at rest or engaged in an arm reaching task.\" Finally, it lists key metadata fields like 'Session description', 'Subject ID', 'Species', 'Recording rate', 'Number of frames', 'Image dimensions', 'Number of ROIs' when loading and exploring an example recording.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook includes the Dandiset ID, title, species, brain regions, technique, experimental context, and a brief description of the data. The overview section provides a reasonable introduction to the dataset, covering key aspects. The analysis focuses on calcium imaging data from macaque SMA during reaching tasks, in line with the dataset's contents.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, lists all available assets including their paths and displays the Dandiset ID (implicitly). The notebook does not comprehensively explore all key metadata fields, but it does load and display some basic metadata such as session description, subject ID, species, recording rate, number of frames and image dimension.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads the Dandiset using the DandiAPIClient and retrieves basic metadata such as the session description, subject ID, species, recording rate, number of frames, image dimensions and number of ROIs. The code executes without errors and the metadata fields are clearly displayed. The loading of the Dandiset is successful, and exploration of multiple relevant metadata fields present and displayed. Therefore the notebook has thoroughly shown loading of metadata from the dandiset.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook connects to the DANDI archive, retrieves a Dandiset by its ID (\"001174\"), and lists the assets within that Dandiset. It then loads a specific asset, an NWB file, via a URL linked to the Dandiset. It extracts and displays metadata from the NWB file regarding the session, subject, recording rate, data dimensions, and number of ROIs. It displays several basic fields, but not a comprehensive set of metadata. Therefore, it succesfully loads and explores multiple metadata fields.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook connects to the DANDI archive, lists available assets, and loads an NWB file from a specific asset. It then extracts and displays basic session information, including subject ID, species, recording rate, and number of ROIs. This demonstrates the loading of specific assets and access to basic metadata (session information). Therefore, the notebook satisfies levels 4, 5, and 6, but does not show how to access all available metadata or explore multiple assets.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, lists the assets in the specified Dandiset, and loads a specific NWB file as an asset. It also shows how to access basic session information from the loaded NWB file. Therefore, it demonstrates loading specific assets and accessing basic asset information. It does not explicitly show how to access other asset metadata beyond basic session info, nor does it explore multiple asset types systematically. Hence a score of 6 is appropriate.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, lists the assets in the specified Dandiset, and then loads a specific asset (an NWB file). It then proceeds to read and display information from this loaded asset. Thus, the notebook fulfills the requirement of loading basic asset information and demonstrates how to load specific assets from the Dandiset. The notebook does not, however, explicitly show how to access asset metadata beyond what is contained within the NWB file itself.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file from DANDI using lindi and pynwb. It then proceeds to access and display basic information such as session description, subject ID, species, recording rate, number of frames, image dimensions, and the number of ROIs. The notebook demonstrates accessing key components like acquisition data (OnePhotonSeries) and processing data (ImageSegmentation, Fluorescence). The information accessed is relevant and helpful for understanding the basic structure of the NWB file. However, the notebook does not delve into a comprehensive exploration of all potential data structures or a detailed navigation of the NWB hierarchy. Therefore, it falls short of a complete demonstration but adequately covers key data components. The notebook does well in steps such as retrieving metadata, image data, and ROI data and visualizes these in meaningful ways. The visualization steps show some of the data structures.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file, displays session information, extracts one-photon imaging data, visualizes ROI masks, plots fluorescence traces, and performs basic event detection. It effectively demonstrates how to access and explore various NWB data structures related to calcium imaging data. Hence, it explores multiple NWB data structures.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file from DANDI using lindi and pynwb (score 4). It then accesses and prints basic session information such as session description, subject ID, species, recording rate, number of frames, image dimensions, and number of ROIs (score 6). The notebook also visualizes the calcium imaging data, ROI masks, and fluorescence traces, demonstrating access to different NWB data structures (score 7). However, it does not explore the NWB hierarchy in great detail (score less than 8). Thus, the final score is 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 8.0,
+            "thinking": "The notebook successfully loads an NWB file from the DANDI archive and accesses various data elements, including session information, imaging data, ROI masks, and fluorescence traces. It demonstrates how to access multiple data elements such as OnePhotonSeries and PlaneSegmentation. However, more data types could have been explored. It handles different data types appropriately by loading the data into numpy arrays and plotting it. The notebook effectively demonstrates how to load and explore calcium imaging data from an NWB file within the Dandiset. Some, but not comprehensive, aspects of the data loading and handling are covered. There is exploration of complex data structures such as the segmentation data in particular.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads the NWB file, accesses the OnePhotonSeries data (image data), and extracts ROI masks and fluorescence traces. It demonstrates how to access multiple data elements and handles different data types, such as image data and time series, appropriately. The notebook thus does more than just load basic data arrays. It does use two libraries (`lindi`, `pynwb`) to load the data and also has an initial cell to find the dataset. It handles the data well also.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from a DANDI archive using 'lindi' and 'pynwb'. It reads basic information like session description, subject ID, species, recording rate, and the number of frames. It also shows how to access specific data elements like the 'OnePhotonSeries' data and ROI masks, and fluorescence data. It handles numerical data types appropriately for plotting and event detection. While it demonstrates multiple data elements, it does not explore very complex data structures or advanced data access techniques, but it goes beyond loading only basic arrays. Therefore, a score of 6 is appropriate.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads data from an NWB file in the DANDI archive and generates several visualizations, including a sample frame from the one-photon series, ROI masks, and fluorescence traces. The plots are reasonably well-labeled with titles and axis labels. The event detection plot shows a simple visualization but effectively illustrates the detected events. The notebook could be improved with more advanced visualization techniques but provides a good foundation. The visualizations cover multiple data types within the NWB file (imaging data, ROI locations, fluorescence signals). Therefore, it provides clear visualizations with proper labeling but does not have advanced techniques or publication quality visualizations.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file from the DANDI archive and visualizes different aspects of the calcium imaging data. It demonstrates plotting a sample frame, ROI masks, and fluorescence traces. The plots have titles and labels, making them relatively clear. The notebook shows multiple visualization types. The code executes without errors and the visualizations are informative, showcasing different aspects of the calcium imaging data. The labeling is sufficient but could be improved for publication quality. Event detection is shown via visualization on a single ROI.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook loads calcium imaging data from an NWB file and generates several visualizations. It shows a sample frame, ROI masks, and fluorescence traces. The plots include labels and titles. The notebook demonstrates multiple visualization types, contributing to a higher score. However, it does not reach the level of advanced visualization techniques or publication-quality figures, nor does it explore all data types. Therefore, a score of 7 is appropriate.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook contains four plots. The plots are generally clear and readable with labeled axes, titles, and legends where appropriate. The formatting is reasonable and uses a consistent style (seaborn). Some minor improvements could be made, such as increasing font sizes or adjusting color schemes for better contrast, but overall the plots are of good quality. Therefore, the quality of the plots is 7.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The plots are readable, have labels for axes, titles and legends, and colorbars where appropiate. The formatting is good due to the seaborn style. However, they are not publication-ready and could be improved.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook provides several plots that are readable and have basic labels, including titles, x and y axes labels, and legends where appropriate. The plots are well-formatted and clear, and the color choices are not distracting. Therefore, the plots are of good quality.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 3.0,
+        "reps": [
+          {
+            "score": 3.0,
+            "thinking": "The notebook loads the following data streams from the NWB file:\n1. OnePhotonSeries (calcium imaging data) - accessed via nwb.acquisition[\"OnePhotonSeries\"].data\n2. PlaneSegmentation/image_mask (ROI masks) - accessed via nwb.processing[\"ophys\"][\"ImageSegmentation\"][\"PlaneSegmentation\"][\"image_mask\"].data\n3. RoiResponseSeries (fluorescence traces) - accessed via nwb.processing[\"ophys\"][\"Fluorescence\"][\"RoiResponseSeries\"].data\n\nThese represent three distinct data streams: raw imaging data, segmentation information, and extracted fluorescence.\n\nTherefore, the notebook loads three fundamentally different data streams. Note that the Dandiset contains more NWB files, but the notebook explores only one such file.",
+            "repnum": 0
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook loads the following data streams from the NWB file:\n1. OnePhotonSeries (image data) accessed via nwb.acquisition['OnePhotonSeries'].data.\n2. PlaneSegmentation (ROI masks) accessed via nwb.processing['ophys']['ImageSegmentation']['PlaneSegmentation']['image_mask'].data.\n3. RoiResponseSeries (fluorescence traces) accessed via nwb.processing['ophys']['Fluorescence']['RoiResponseSeries'].data.\n\nTherefore, there are three fundamentally different data streams loaded. The LindiH5pyFile loading and NWBHDF5IO objects are mechanisms for accessing NWB data, but not data objects themselves. The Dandiset and Asset objects are also metadata, but not the data streams themselves. The 'events' traces are calculations performed on the RoiResponseSeries (fluorescence traces) so that data is not counted as a separate stream.",
+            "repnum": 1
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook loads the following distinct data streams from the NWB file:\n1. OnePhotonSeries data (calcium imaging frames).\n2. PlaneSegmentation/image_mask data (ROI masks/locations).\n3. RoiResponseSeries data (fluorescence traces).\n\nThus, the notebook loads three fundamentally different data streams.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 3.6666666666666665,
+        "reps": [
+          {
+            "score": 3.0,
+            "thinking": "The notebook shows the following types of plots:\n1. Sample frame from the one-photon series (image plot).\n2. Combined ROI masks (image plot).\n3. Fluorescence traces for first 5 ROIs (line plot).\n4. Calcium events detection for ROI 5 (line plot with scatter).\n\nThe scatter plot in the last figure does not introduce a fundamentally different plot since it it plotted alongside a line plot on the same axes. So only three fundamentally different plot types are present.",
+            "repnum": 0
+          },
+          {
+            "score": 4.0,
+            "thinking": "The notebook shows four different types of plots:\n1. A grayscale image showing a sample frame from the one-photon imaging.\n2. A heatmap showing the combined ROI masks.\n3. Line plots showing the fluorescence traces for the first 5 ROIs.\n4. A line plot with overlaid scatter dots showing detected calcium events for a single ROI.\n\nThus, there are four fundamentally different types of plots shown in the notebook.",
+            "repnum": 1
+          },
+          {
+            "score": 4.0,
+            "thinking": "The notebook contains the following types of plots:\n1. Grayscale intensity image, showing a sample frame.\n2. Heatmap showing the combined ROI masks.\n3. Line plots showing fluorescence traces for multiple ROIs.\n4. Line plot with overlaid points showing event detection.\nThe plots are fundamentally different in the type of data representation employed. Therefore, the notebook shows four fundamentally different types of plots.",
             "repnum": 2
           }
         ]
@@ -4123,7 +5359,7 @@
     "notebook": "dandisets/001174/2025-04-10-claude-3.7-sonnet-prompt-a-2/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-10-claude-3.7-sonnet-prompt-a-2",
-    "overall_score": 63.666666666666664,
+    "overall_score": 63.66666666666667,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -8240,10 +9476,216 @@
     ]
   },
   {
+    "notebook": "dandisets/001276/2025-04-10-quasar-alpha-prompt-b-1/001276.ipynb",
+    "dandiset_id": "001276",
+    "subfolder": "2025-04-10-quasar-alpha-prompt-b-1",
+    "overall_score": 48.33333333333333,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 9.0,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good description of the Dandiset. Includes the title, ID, contributors, license, and a basic overview of its content. It describes the experiments and the type of data included. It also specifies how the data is acquired (imaging) and gives an overview of how to access and visualize the data. It also uses the image and histogram plots to describe how the data looks. Given this, the notebook contains most of the key fields.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good description of the Dandiset. It gives the title, ID, description regarding the experimental setup and staining techniques, and includes metadata like contributors, license, and version. It also explains the Dandiset contents, especially focusing on the image data (size, how to access a crop, and signal-to-noise ratio). The Notebook includes sufficient purpose, contents, and data organization information. It provides a reasonable overview of what to expect from the dandiset by presenting some NWB files and processing the data.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a clear description of the Dandiset, including its title, ID and purpose. It also details the types of data contained within it and how it is structured (e.g., NWB files). The overview outlines the experimental context (electroporation, cell monolayers, staining) and mentions contributors. While it doesn't exhaustively list every field, it sufficiently covers essential aspects for understanding the dataset. The notebook successfully communicates the essential features of the Dandiset.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook uses the DandiAPIClient to load a dandiset by its ID and then displays the number of assets and paths of the first five. So it loads and displays basic metadata.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully connects to the DANDI Archive using `DandiAPIClient`, retrieves the Dandiset with its ID (\"001276\") and version (\"draft\"), and then lists the assets within the Dandiset. The notebook also prints the number of assets and the paths of the first five assets.\nThus, the code successfully loads and presents basic metadata fields.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook loads the dandiset id and lists the assets in the dandiset. It also extracts some image data from one of the assets, and shows some basic analysis. The notebook sucessfully loads and explores multiple metadata fields. Therefore, the score is 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads a Dandiset, lists the available assets, and demonstrates how to load a specific NWB file asset. The code works and displays the shape of the image data. Furthermore, it even extracts a crop and displays data from it. Therefore, the notebook demonstrates loading specific assets.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully lists available assets and demonstrates loading specific asset (NWB file), including how to access the image data. It thus achieves a score of 6 according to the rubric.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook starts by connecting to the DANDI Archive and listing the assets. It then proceeds to load a specific NWB file and extract a crop of the image data. Therefore, the notebook successfully lists available assets and demonstrates loading specific assets. It also shows how to use the loaded asset (plotting a subsection of the image and creating a histogram of pixel intensities). However, it doesn't extensively explore asset metadata or multiple asset types. Given these considerations, a score of 6 seems appropriate. It clearly demonstrates how to load and use asset data. The notebook introduces key aspects of asset retrieval and manipulation but does not delve into advanced metadata exploration or handling multiple asset types, limiting it from scoring higher.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from a URL and accesses the image data. It then extracts a crop and plots the image, also displaying a histogram of pixel intensities. This demonstrates accessing basic NWB components. The notebook provides a good starting point for exploring NWB files, so I would rate it as a 6.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook presents a method to load a specific NWB file from a Dandiset, reads its image data, and plots both a cropped view of the image and the pixel intensity distribution. The code successfully opens the NWB file, accesses the image acquisition data, and demonstrates loading only a small center crop to enable quick exploration due to the large image size. The notebook therefore demonstrates accessing basic NWB components.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully opens an NWB file from a URL and extracts image data including its shape. It then extracts and plots a central crop of the image from the NWB file and creates a pixel intensity histogram. This demonstrates successfully accessing and visualizing data from an NWB file, corresponding to a score of 6.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 4.0,
+        "reps": [
+          {
+            "score": 4.0,
+            "thinking": "The notebook successfully loads data from an NWB file, specifically the image data. It accesses the 'SingleTimePointImaging' data array and extracts a center crop. It also generates a histogram of the pixel intensities. Thus, it successfully loads basic image data arrays from the NWB file. It does not explore or handle multiple data types, but does successfully load and extract the image data array and plot a histogram.\n\nThe notebook could be improved by accessing additional data elements and handling different data types, but the current implementation sufficiently demonstrates loading and visualizing one specific data type.",
+            "repnum": 0
+          },
+          {
+            "score": 4.0,
+            "thinking": "The notebook successfully loads a single NWB file from the Dandiset, extracts the image data, and displays a crop of the image. It also shows how to analyze the pixel intensity distribution. The notebook loads a basic data array and plots it. Therefore, the notebook demonstrates loading basic data arrays.",
+            "repnum": 1
+          },
+          {
+            "score": 4.0,
+            "thinking": "The notebook successfully loads an NWB file from a URL using remfile and h5py. It uses the NWBHDF5IO to read the file and access the 'SingleTimePointImaging' data array. A center crop of the image is extracted and displayed, and a histogram of pixel intensities is plotted. This demonstrates loading a basic data array from the NWB file. Therefore, the code successfully loads basic data arrays from an NWB file. It would benefit from accessing more different data elements, but this is a good start.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully visualizes a center crop of a large fluorescence image from an NWB file and also generates a pixel intensity histogram, which is a good start. The visualizations are properly labeled, enhancing clarity. However, it only shows one data type (image data) and does not use advanced techniques. Therefore, it deserves a 7.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully demonstrates how to visualize data from an NWB file in the Dandiset. It loads data from a remote NWB file, extracts a center crop of a large fluorescence image, and plots both the image crop and a histogram of pixel intensities. The code is functional and the visualizations are clearly labeled, although relatively basic. There is only one example included, rather than multiple different visualizations. The visualizations are clear and serve their purpose, but are not of \"publication quality\".",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully accesses an NWB file from a DANDI archive, extracts image data, and visualizes a center crop of the image. It includes basic formatting, such as a title and axis labels. The notebook also generates a histogram of pixel intensity values within the crop, which helps to interpret the image data. The notebook demonstrates techniques for loading specific regions of interest, which could be useful when dealing with large datasets.\n    However, the visualizations are fairly basic; it shows visualizations of a single data type only (images). Advanced visualization, such as spatial filtering or interactive visualizations, not are not included. Considering these points, the notebook provides good but not excellent visualizations of a specific data type. The single data type and basic visualization are the primary limitations.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook contains two plots: an image of a center crop of a fluorescence image, and a histogram of pixel intensities in the center crop. Both plots are readable, have titles, axes labels, and are generally well-formatted, justifying a score of 7.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook includes two plots: a center crop of a fluorescence image and a histogram of pixel intensities. Both plots are generally well-formatted. The fluorescence image has a title and the axes are turned off for better clarity. The histogram includes a title, axis labels, and makes use of a log scale to properly show the distribution, which is appropriate for this data.\n\nWhile not overly complex, the plots are appropriate for an initial exploration of the data, making them clear and easily understandable. The labels are complete and the plots adequately convey the data. The quality certainly surpasses 'basic labels' and enters into the range of 'proper formatting'. Therefore, I would rate this as a 7.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook contains two plots. The first shows a center crop of a fluorescence image with appropriate labeling. The second shows a pixel intensity histogram with labelled axes and a title. The plots are readable and informative, but lack more detailed formatting such as units. The plots provide a reasonable level of detail and clarity for the demonstrated analysis steps.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads data from one data stream, specifically the `SingleTimePointImaging` data. While the notebook mentions the possibility of other channels, it only extracts and analyzes a single channel or image data from NWB files.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook focuses on loading and visualizing a single imaging data stream from an NWB file. Although metadata is obtained, to get shape, this counts as accessing a larger part of one dataset.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads data from NWB files. It focuses on loading and displaying a single image from the 'SingleTimePointImaging' acquisition. There is only one data stream loaded.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 2.0,
+        "reps": [
+          {
+            "score": 2.0,
+            "thinking": "The notebook shows two types of plots: images and histograms. The image shows the cropped fluorescence image, and the histogram shows the distribution of pixel intensities.",
+            "repnum": 0
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook displays two distinct plot types: an image and a histogram. The image visualizes the spatial distribution of fluorescence intensity, while the histogram shows the distribution of pixel intensities. These are distinct ways of visualizing the data.",
+            "repnum": 1
+          },
+          {
+            "score": 2.0,
+            "thinking": "There is an image plot (imshow) and a histogram plot. These are fundamentally different plots, thus the score should be 2.",
+            "repnum": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
     "notebook": "dandisets/001333/2025-04-02-claude-3.7-sonnet/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-02-claude-3.7-sonnet",
-    "overall_score": 62.0,
+    "overall_score": 62.00000000000001,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -9067,7 +10509,7 @@
     "notebook": "dandisets/001333/2025-04-07-quasar-alpha-exp/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 46.333333333333336,
+    "overall_score": 46.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -9273,7 +10715,7 @@
     "notebook": "dandisets/001333/2025-04-09-quasar-alpha/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-09-quasar-alpha",
-    "overall_score": 49.0,
+    "overall_score": 48.99999999999999,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -9685,7 +11127,7 @@
     "notebook": "dandisets/001333/2025-04-10-claude-3.7-sonnet-prompt-b-1/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-10-claude-3.7-sonnet-prompt-b-1",
-    "overall_score": 43.333333333333336,
+    "overall_score": 43.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -10509,7 +11951,7 @@
     "notebook": "dandisets/001335/2025-04-07-claude-3.5-sonnet/001335.ipynb",
     "dandiset_id": "001335",
     "subfolder": "2025-04-07-claude-3.5-sonnet",
-    "overall_score": 59.0,
+    "overall_score": 58.99999999999999,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -10705,6 +12147,212 @@
           {
             "score": 4.0,
             "thinking": "The notebook displays the following types of plots:\n1. Histogram of electrode depths.\n2. Bar plot of block durations.\n3. LFP traces over time.\n4. Histogram of unit depths.\n\nTherefore, there are four fundamentally different types of plots shown in the notebook.",
+            "repnum": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "notebook": "dandisets/001335/2025-04-07-quasar-alpha-exp/001335.ipynb",
+    "dandiset_id": "001335",
+    "subfolder": "2025-04-07-quasar-alpha-exp",
+    "overall_score": 60.33333333333333,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 9.666666666666666,
+        "reps": [
+          {
+            "score": 10.0,
+            "thinking": "The notebook provides a comprehensive description of the Dandiset, including its title, ID, purpose, contents, and key metadata fields, such as contributors, institution, creation date, license, and citation. The initial markdown cell, along with the code cells that explore the data, contribute to a clear understanding of the Dandiset's contents and organization.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good description of the Dandiset, including the title, ID, purpose, contents, and some key metadata. The initial markdown cell gives the name, description, contributors, institution, creation date, license, and citation information which is exactly as asked for in the higher end of the rubric. The notebook also details, with code examples, how to access the data within the Dandiset. Therefore, this notebook deserves a high score.",
+            "repnum": 1
+          },
+          {
+            "score": 10.0,
+            "thinking": "The notebook provides a thorough description of the Dandiset. It includes the Dandiset ID, title, a summary of the data, the contributors, the institution involved, the creation date, the license, and a citation link. Furthermore, it describes the contents of the NWB file including experimental intervals, electrode metadata, LFP data, spike waveforms, and the structure and organization of the data in the NWB file. Therefore, the notebook meets all the criteria for a score of 10.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads the Dandiset using the DANDI API and retrieves several metadata fields, including session description, identifier, start time, and experimenter(s). It also lists available intervals and examines electrode metadata, demonstrating exploration of multiple metadata fields. Therefore, a score of 7 is appropriate. The notebook does not load descriptions of all metadata fields, nor comprehensively explore every available metadata element (details of all fields are not displayed). It loads information about the Dandiset ID, Contributor, Institution, creation date, License, and Citation in the general markdown discussion, and in the load and print statements demonstrates success in loading the dandiset. However, it also lacks explanations of the fields, keeping it from a higher score. Although, it does print out the keys for the intervals providing some minimal explanation which is enough to grant it this level.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook begins by loading the Dandiset using the Dandi API, then retrieves the assets associated with the Dandiset. This is followed by extracting and printing specific metadata fields such as session description, identifier, start time, and experimenters. It further explores experimental intervals (blocks and odor presentation times) and electrode metadata. Thus loading and exploring multiple metadata fields. Hence the score should be 7.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads the Dandiset using the DANDI API, retrieves basic information such as the Dandiset's name, description, contributors, institution, creation date, license, and citation. It then accesses and displays key metadata fields available within the NWB file, including session description, identifier, start time, and experimenters. Additionally, it explores experimental intervals (blocks and odor annotations) and electrode metadata (number of electrodes, electrode columns, and example locations). Therefore I think it deserves a score of 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 5.0,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully lists the available assets using the DANDI API, loads the main NWB file using lindi and pynwb, and provides information on the session description, ID, start time, and experimenters. The code runs without significant errors. This demonstrates loading and accessing basic asset information, including metadata of the NWB file which itself can be considered as the primary asset. It doesn't delve deeply into other asset types beyond the NWB file. Therefore, the notebook provides useful functionality for loading assets, but it has more potential for demonstrating advanced features.\n\nThe notebook loads and displays the NWB file, which is the main asset in this Dandiset. Therefore it loads an \"asset\".",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully lists the available assets using the DANDI API in the second cell of the notebook. After that, the notebook proceeds to load the main NWB file using `lindi` and `pynwb` without downloading the entire file first. Thus, the overall score is 5.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook begins by using the DandiAPIClient to get the dandiset and then iterates through the assets, printing the path of each asset. This demonstrates how to access and list available assets in the Dandiset. It then loads the main NWB file using lindi and pynwb.\nThe notebook loads the main NWB file and prints basic info such as session description, identifier, start time, and experimenters.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 7.666666666666667,
+        "reps": [
+          {
+            "score": 8.0,
+            "thinking": "The notebook successfully loads an NWB file using lindi and pynwb. It also demonstrates accessing basic NWB components such as session description, identifier, start time and experimenters. It also explores multiple NWB data structures such as intervals, electrodes, LFP data and spike waveforms. Therefore, it deserves a score greater than 6. The notebook also shows how to navigate the NWB hierarchy to access specific data components such as LFP and spike times associated with odor presentation events. It does not provide a comprehensive exploration of every aspect of the NWB file, but it covers key data components and provides a good starting point for further analysis.\n\nScore breakdown:\n- Loads NWB file: +1 (Score = 1)\n- Accesses basic components: +1 (Score = 2)\n- Explores multiple data structures: +2 (Score = 4)\n- Shows navigation of NWB hierarchy: +3 (Score = 7)\n- Demonstrates loading of common data such as LFP, spike times: +1 (Score = 8)\n\nI feel like the notebook is showing the basic NWB file structure as well, so the final score is 8.",
+            "repnum": 0
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook successfully loads an NWB file using lindi and pynwb. It prints the session description, identifier, start time, and experimenters, demonstrating access to basic NWB components. It lists the available intervals, showing how to access interval information and explores electrodes metadata. It also visualizes LFP data and spike waveforms, demonstrating access to LFP signals and sorted units. The notebook is well-structured and provides a good overview of how to access and explore NWB data. The notebook explores multiple NWB data structures such as intervals, electrodes, LFP and units. But it could be more comprehensive for a score of 9.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads the NWB file using lindi and pynwb. It prints the session description, identifier, start time, and experimenters, demonstrating access to basic NWB components. Additionally, it iterates through the intervals and examines electrode metadata, showing exploration of multiple NWB data structures. The loading is successful, and the notebook shows how to access relatively basic information, but does not show a comprehensive exploration of the files contents. Does not, for example, show how to look at trials, or raw behavioral data, etc.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 9.0,
+        "reps": [
+          {
+            "score": 10.0,
+            "thinking": "The notebook successfully loads the NWB file using `lindi` and `pynwb` without downloading the entire file. It then accesses and explores several data elements within the file, including `session_description`, `identifier`, `start_time`, `experimenter`, intervals, electrode metadata, LFP, spike waveforms, and spike times. All these are different datatypes that are handled appropriately. Thus, the notebook comprehensively demonstrates loading and handling multiple data types within the NWB file, showing how to access metadata, LFP signals, intervals, spike waveforms, and spike times, which are different and nested datatypes. Some could consider raster plots or spike waveforms as an \"advanced data access technique\", but I will just put it as comprehensive. The loading of complex data structures and types seems comprehensive and well-handled. It does a great job overall. The notebook loads basic data arrays, demonstrates loading specific data types, shows how to access multiple data elements, handles different data types appropriately, explores complex data structures with examples, and could arguably demonstrate advanced data access techniques.",
+            "repnum": 0
+          },
+          {
+            "score": 8.0,
+            "thinking": "The notebook successfully loads the NWB file using lindi and pynwb. It then proceeds to access and explore various data elements within the file, including session description, intervals, electrodes, LFP data, and spike waveforms. The notebook appropriately handles different data types and provides example visualizations. Therefore, it shows how to load data from an NWB file in the Dandiset and access multiple data elements. It could benefit from showcasing more advanced data access techniques and complex data exploration, but given the breadth of elements accessed it deserves a high score. It also demonstrates how to load the file remotely without downloading the entire thing which is a useful strategy.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook demonstrates loading an NWB file using lindi and pynwb without downloading the entire file. It accesses and explores different data elements within the file, such as session description, identifier, start time, experimenters, intervals, electrode metadata, LFP data, and spike waveforms. It also appropriately handles different data types and explores complex data structures within the NWB file and visualizes them, so it deserves a score of 9. It does not achieve level 10 because it does not comprehensively cover all data types or offer advanced manipulation, focusing instead on a selection useful for initial exploration.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides several examples of visualizing data from the NWB file, including LFP snippets, spike waveforms, and a raster plot aligned to odor presentation events. The plots are labeled, and the code is functional. However, I wouldn't consider them publication quality. The visualizations cover multiple data types. Therefore, a score of 7 appears to be appropriate.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates how to visualize multiple aspects of the NWB file. It successfully plots LFP snippets, spike waveforms, and a raster plot which showcases different data modalities. The plots have basic labeling and are generally clear, though not publication-quality. The notebook clearly demonstrates visualizations of several data types from the NWB file format.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates several ways to visualize different data types within the NWB file. It displays LFP snippets, spike waveforms, and a raster plot of spike times aligned to odor presentation. Basic formatting and labeling are present, but the visualizations are not publication-quality. The notebook effectively demonstrates the process of extracting and visualizing key data aspects from the NWB file format. Specifically, the use of lindi to load the NWB file and the extraction of data for plots (LFP, spike waveforms, raster plots) are well shown. Axes labels and titles are adequately included.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook contains three plots: LFP snippet, Mean spike waveforms, and a raster plot. All of the plots are readable with appropriate labeling and formatting. The labels are present and understandable, making the plots easily interpretable. The overall quality is good, but there is room for improvement to reach true publication quality (e.g., more customized appearance). Therefore, a score of 7 seems appropriate.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides three plots: LFP snippets, spike waveforms, and a raster plot. The plots are readable and have basic labels (axes, titles, legends). The plots are formatted well, with appropriate axis labels, titles, and legends. The code generates the plots, but there is room for improvement to enhance clarity, such as adding units to the axes labels (especially for spike waveforms) and improving the consistency of the raster plot's y-axis label (it currently only shows unit indices, not actual unit IDs). Overall, the plot quality is good but not exceptional. Therefore, a score of 7 is appropriate.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook contains 3 plots: LFP snippet, mean spike waveforms, and a raster plot. The plots are readable, have labels, and are generally well-formatted. The LFP plot has channel labels, time, and amplitude scales. The spike waveform plot has unit IDs, and axes are labeled. The raster plot has clearly labeled axes. Overall the plots are of good quality but not publication-ready. Therefore, the score is 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 5.0,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook loads multiple data streams from the NWB file:\n1. LFP data (`nwb.processing['ecephys']['LFP']`)\n2. Electrode metadata (`nwb.electrodes`)\n3. Spike times (`units['spike_times']`)\n4. Mean spike waveforms (`units['waveform_mean']`)\n5. Experimental intervals (`nwb.intervals`)\n\nThus, there are five fundamentally different data streams loaded. The intervals could be a sixth depending how we define a stream.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook loads multiple data streams from the NWB file.\n\n1.  Electrode locations and metadata.\n2.  Local Field Potential (LFP) data.\n3.  Spike waveforms from sorted units.\n4.  Spike times for raster plots aligned to odor presentation events.\n5.  Intervals representing blocks and odor presentation times.\n\nThese represent fundamentally different aspects of the recorded neural activity and experimental design. Therefore, at least 5 data streams are accessed and utilized.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook loads and explores the following data streams from the NWB file:\n        1. LFP data\n        2. Spike waveforms\n        3. Spike times (for raster plots)\n        4. Intervals (specifically for odor presentation)\n        5. Electrode locations\n\n        Therefore, there are five fundamentally different data streams loaded and examined. Note that session metadata is also read, but it is not counted as a fundamentally different data stream of neural activity. Electrode metadata is more directly linked to the neural recordings.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 3.0,
+        "reps": [
+          {
+            "score": 3.0,
+            "thinking": "The notebook shows three different types of plots:\n1. LFP snippet: shows time series of LFP data for different channels\n2. Spike waveforms: shows average spike waveform shape for different units\n3. Raster plot: shows spike times of different units aligned to odor A onset \n\nThus, there are three fundamentally different types of plots.",
+            "repnum": 0
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook creates and shows three different types of plots: a line plot of LFP traces, a line plot of mean spike waveforms, and a raster plot. Hence the number of fundamentally different types of plots shown is 3.\nAlso the notebook confirms the existence of all the 3 images within its markdown descriptions.",
+            "repnum": 1
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook shows three distinct types of plots: LFP snippets plot, mean spike waveforms plot, and raster plot. Therefore the answer is 3.",
             "repnum": 2
           }
         ]
@@ -10921,7 +12569,7 @@
     "notebook": "dandisets/001335/2025-04-09-quasar-alpha/001335.ipynb",
     "dandiset_id": "001335",
     "subfolder": "2025-04-09-quasar-alpha",
-    "overall_score": 49.333333333333336,
+    "overall_score": 49.33333333333334,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -11529,6 +13177,212 @@
           {
             "score": 1.0,
             "thinking": "The notebook only shows one type of plot, a spike raster plot.",
+            "repnum": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "notebook": "dandisets/001363/2025-04-01-deepseek-chat-v3-0324/001363.ipynb",
+    "dandiset_id": "001363",
+    "subfolder": "2025-04-01-deepseek-chat-v3-0324",
+    "overall_score": 43.0,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 8.333333333333334,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good description of the Dandiset, including the title, ID, purpose, contents, and some metadata (subjects, recording details). It loads an example NWB file and explores the trial information and electrical recordings. The description is quite comprehensive. However, since the plots are displaying some issues, and the notebook indicates it hasn't been fully verified, I'll deduct a point. The plotting issues may be due to numerical overflow. The raw data is also not described in full detail in terms of its organization or structure.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good description of the Dandiset. It includes the Dandiset ID, title, a summary of the experiment's purpose (investigation of neuronal response to tFUS), details about the subjects (rats), recording details, and the nature of the trials. This covers the purpose, contents, and some key metadata. Therefore, a score of 9 is appropriate. The description could include the exact number of files within the Dandiset, and an overview of the data organization to achieve a perfect score.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides a Dandiset ID (\"001363\") and title (\"Neural Spiking Data in the Rat Somatosensory Cortex Using a Flexible Electrode Responding to Transcranial Focused Ultrasound\"). It also includes a dataset description, subject information, recording details, and the number of trials with different ultrasound parameters. This is a detailed description including purpose, contents, and key metadata fields. The notebook also mentions that this is data from rat somatosensory cortex. Therefore, the notebook describes the Dandiset well. However, the plots of \"Trial Durations\" and \"Example Waveforms (First Trial)\" seem to be incorrect. The trial durations appear to be zero for a substantial number of trials, and the example waveforms are flat lines. This indicates a potential issue with the visualization of the acquired data. Despite these technical difficulties, the notebook provides sufficient background information. I'm adjusting the score to reflect these visualization flaws while recognizing the comprehensive nature of the description of the dandiset. The negative values in the y axis of the trial duration plot indicate either a bug, or incorrect calculation, or that the start times are after stop times, but regardless, there's some issue. The flat waveforms also indicate some sort of data issue. I initially considered an 8, but because of the visuals I will lower it.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads the dandiset and extracts several metadata fields, including the session ID, recording start time, and subject ID. It prints these values, demonstrating a basic level of metadata exploration. It also shows how to extract information about the trials and electrical recordings, further demonstrating the loading and exploration of several metadata fields.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the dandiset by its ID and displays basic metadata fields such as session ID, recording start time, and subject ID. It also explores trial information, including the number of trials and their durations. Therefore, the notebook effectively demonstrates loading and working with key metadata fields. The plots are incorrect though and show a sign it did not execute correctly, so I will deduct a point for this issue.\n    \nThe trial duration plot and example waveforms plot have issues that would have to be addressed.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook first loads the Dandiset ID using the dandiapi library. It then retrieves a list of assets within the dandiset. The notebook loads the dandiset and retrieves some basic information such as the session ID, recording start time, and subject ID. It also reads the trials information and plots the duration. The amount of metadata explored is limited however and so I think the score is 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully uses the DandiAPIClient to load the Dandiset and list the available assets. Then, loads an NWB file for further exploration. After that, the code extracts and presents basic information like session ID, recording start time, and subject ID from a single asset which is an NWB file. Therefore, the notebook demonstrates loading specific asset and loading basic asset information.\n\nThe plots are wrong with flat lines. The error may be from `nwb_url = \"https://lindi.neurosift.org/dandi/dandisets/001363/assets/5fe5283e-d987-4fad-bf65-ca1045b5bb51/nwb.lindi.json\"` which is a link to lindi.neurosift.org, so it is a transformed version of the true raw data from DANDI. The notebook should have directly used the asset from DANDI.\n\nOverall, the score should be 6.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook begins by loading the Dandiset using the DandiAPIClient and successfully lists the available assets. It then proceeds to load a specific NWB file (asset) and extract information from it, such as session ID, recording start time, and subject ID. It also explores trial information and electrical recordings. The notebook demonstrates loading a specific asset and accessing basic metadata. There is no attempt to explore more than one asset type or do in-depth metadata exploration. The notebook loads one particular asset (NWB file) for further analysis, so loading a specific asset is sufficiently demonstrated.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully uses the DandiAPIClient to retrieve assets from the Dandiset '001363'. It lists the number of assets found and then proceeds to load and explore a specific NWB file asset. It further extracts basic information like session ID, start time, and subject ID. Therefore, it goes beyond simply listing the available assets.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from a URL, prints the session ID, start time, and subject ID, retrieves trial information (number of trials, average duration, and a plot of trial durations), and accesses electrical recordings (recording rate, number of electrodes, first few electrode IDs, and a plot of example waveforms). The notebook shows access to crucial components of the NWB file like trials and electrical series, demonstrating how to navigate the NWB structure. However, the code to plot graphs do have some issues. The \"trial durations\" plot has a bad y-axis scaling. The \"example waveforms\" is also not what one would expect from electrical recording. Given this, the notebook successfully accesses some components but the quality in the display is somewhat lacking. Therefore, a score of 6 is appropriate.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from a DANDI dataset. It then proceeds to extract and display key information such as session ID, recording start time, subject ID, trial information (number of trials, average duration, trial durations plot), and electrical recordings data (recording rate, number of electrodes, example waveforms plot). It demonstrates accessing basic NWB components and explores multiple NWB data structures, such as trials and electrical series. However, the plots look wrong, the scale on the y-axis is off suggesting possible issues with the data itself. It doesn't show detailed navigation of NWB hierarchy in general. But it loads the basic NWB file and show most important parts of the NWB file, so it is between 6 and 7. Given the plots are incorrect I will deduct one point",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file using lindi and pynwb. It prints the session ID, recording start time, and subject ID, demonstrating the ability to access basic NWB components. It then proceeds to access trial information and electrical recordings, plotting trial durations and example waveforms from the electrical series, showcasing exploration of multiple NWB data structures, particularly trials and electrical series data. However, the plots are not informative.\n\nThe notebook could have been improved if it had shown more detailed exploration of NWB hierarchy or provided information about coordinate systems, electrode groups or other important aspects. Given the content, I will deduct one point for uninformative plots.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 5.333333333333333,
+        "reps": [
+          {
+            "score": 4.0,
+            "thinking": "The notebook loads data from an NWB file, accesses several key data elements like trials, start times, stop times, electrical series, and electrode IDs. It plots trial durations and example waveforms. While it covers several data types, it doesn't delve into advanced data access techniques or comprehensively demonstrate handling multiple complex data types. The plots look incorrect, potentially missing a scaling factor for the y-axis. However, the basic data loading is demonstrated. Given the errors in plots, some of the code runs with errors, but data loading is achieved. Therefore, a score of 4 is the highest applicable score.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads data from an NWB file, including trial start/stop times and electrical series data. The code runs without errors and prints basic information about the recording session, subject ID, and data characteristics such as sampling rate and number of electrodes. It also plots trial durations and example waveforms, demonstrating data access and visualization. However, it only scratches the surface of the complexity within the NWB file. The notebook focuses on basic loading and plotting, rather than delving into advanced data types or hierarchical structures. Given the prompt's rubric for handling different/multiple datatypes and complex data structures, I am reducing the score by 1.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads data from the NWB file. It retrieves session information, trial data (start/stop times and durations), and electrical recordings (sample rate, electrode IDs, and example waveforms). The notebook accesses multiple data elements within the NWB file, such as trials and electrical series. However, there appear to be some issues with the data or plotting (as seen in the plots of trial durations and waveforms), suggesting either data errors or incorrect plotting. Given that the notebook successfully: accesses data and handles different data types, but contains significant data errors, its score would be less than perfect. Adjustments will likely need to be made to data handling and plotting to make sense of the neural activity.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 3.0,
+        "reps": [
+          {
+            "score": 3.0,
+            "thinking": "The notebook loads an NWB file from a DANDI dataset and provides some basic visualizations of trial durations and example waveforms from electrical recordings. There are clear issues with produced plots given the straight horizontal lines instead of waveforms, and very odd y axis scaling for the trial duration plot. The visualizations are simple and have proper labels, but due to the visualization issues, the score cannot exceed 3.",
+            "repnum": 0
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook loads an NWB file from a Dandiset and visualizes two types of data: trial durations and example waveforms from electrical recordings. The visualizations include labels, titles, and legends. However, the plots appear to have some issues. The trial duration plot has large values on the y-axis, which seems incorrect and hides the actual data. Similarly, the example waveforms plot appears to show constant values, maybe due to scaling problems, which doesn't represent the expected neural activity. So, while the notebook attempts to visualize data, the visualizations have significant issues. Additionally, although it shows basic visualizations of trial durations and waveforms, it doesn't cover multiple data types comprehensively. Considering these points, a score of 3 is appropriate.",
+            "repnum": 1
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook demonstrates how to load an NWB file from a DANDI dataset and visualizes some basic information. It plots trial durations and example waveforms from some electrodes. The axes labels are correct. However, the plots produced are unusual as the trial durations are near zero despite the print statment showing the average duration as 1.5s, and the electrode voltage seems to be constant over time which is unusual for neural recordings. This indicates a problem with loading the data and therefore reduces the quality of the visualizations. Given these problems, I believe a score of 3 is appropriate. The notebook attempts visualization, but there are significant issues with the results.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 3.6666666666666665,
+        "reps": [
+          {
+            "score": 3.0,
+            "thinking": "The plots have a few key issues. The y-axis for the \"Trial Durations\" plot is formatted poorly with scientific notation and useless values, rendering the plot largely unreadable even though the x and y axis are labeled,. The \"Example Waveforms\" plot, axes are labeled. Overall the plots are present but have issues.\n    The waveforms plot has an odd offset. The data appears to all be zeros\n    Taking into account the formatting issues in the trial durations plot that make it basically useless. The waveforms plot is also not great. The plots have major formatting issues. Other than that, axis labels are shown.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The plots are present and somewhat readable but have formatting issues. The trial duration plot has an extremely large y-axis scale that makes it difficult to discern the actual trial durations. The waveforms have labels and axes are labeled, but x-axis scale and y-axis values are confusing and unclear.",
+            "repnum": 1
+          },
+          {
+            "score": 3.0,
+            "thinking": "The notebook contains two plots. The first plot, displaying trial durations, has a y-axis that is scaled extremely poorly, making the data unreadable. The second plot, displaying waveforms, shows flat lines instead of meaningful data. Basic labels are present, but due to the scaling/data issues, the plots are not clear, therefore I will give a score of 3 for basic plots with major formatting issues.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 2.0,
+        "reps": [
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads trial information (start/stop times) and electrical recordings. These are fundementally different data streams. Thus the score is 2.",
+            "repnum": 0
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads trial information (start/stop times) and electrical recordings (voltage data from electrodes). These are fundamentally different data streams. Therefore, the notebook accesses two fundamentally different data streams.",
+            "repnum": 1
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads trial data (start/stop times) and electrical recordings. Thus, two fundamentally different data streams are loaded.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 2.0,
+        "reps": [
+          {
+            "score": 2.0,
+            "thinking": "Two different types of plots are shown: a scatter plot of trial durations versus trial ID and a line plot of voltage versus time for different electrodes. Therefore, the notebook shows two fundamentally different types of plots.",
+            "repnum": 0
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook displays two plots. The first one is a scatter plot of trial durations vs. trial ID. The second is a line plot showing waveforms from different electrodes over time. These plots depict fundamentally different relationships, so the answer is 2.",
+            "repnum": 1
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook displays two fundamentally different types of plots: a scatter plot of trial durations versus trial ID, and a line plot of example waveforms over time. The y-axis scaling is not appropriate, which make interpretability difficult.",
             "repnum": 2
           }
         ]
@@ -12569,7 +14423,7 @@
     "notebook": "dandisets/001366/2025-04-04-claude-3.7-sonnet/001366.ipynb",
     "dandiset_id": "001366",
     "subfolder": "2025-04-04-claude-3.7-sonnet",
-    "overall_score": 62.66666666666667,
+    "overall_score": 62.666666666666664,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -12765,6 +14619,212 @@
           {
             "score": 5.0,
             "thinking": "Let's enumerate the plot types:\n    1. Images (heatmaps): several examples like \"First Frame\", \"Middle Frame\", \"Difference Between Consecutive Frames\", \"Radon Transform (Sinogram)\", etc.\n    2. Intensity Profiles: e.g. \"Intensity Profile Across Vessel\" - 1D line plots.\n    3. Time series: e.g. \"Vessel Diameter Over Time\".\n    4. Power spectral density: \"Power Spectral Density of Vessel Diameter Variations\".\n    5. Variance vs. Angle: \"Projection Variance vs. Angle\".\n    Therefore there are 5 types of plots.",
+            "repnum": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "notebook": "dandisets/001366/2025-04-04-deepseek-chat-v3-0324/001366.ipynb",
+    "dandiset_id": "001366",
+    "subfolder": "2025-04-04-deepseek-chat-v3-0324",
+    "overall_score": 45.333333333333336,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 9.333333333333334,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good description of the Dandiset. It includes the Dandiset ID, title, purpose (vessel diameter and pulsatility quantification), the species used (Mus musculus), institution, license, and a description of the NWB files. It also describes the data organization, mentioning the presence of movies. Therefore, it merits a score of 9.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good description of the Dandiset, including the ID, title, purpose, contents (movies of pial vessels, vessel diameter and pulsatility quantification), and key metadata (species, experiment, institution, license). It also mentions the NWB file structure and the frame rate of the movies. The introductory markdown provides a sufficient overview.",
+            "repnum": 1
+          },
+          {
+            "score": 10.0,
+            "thinking": "The notebook includes the Dandiset ID (\"001366\"), title (\"Comparison of Approaches for Surface Vessel Diameter and Pulsatility Quantification\"), purpose (vessel diameter and pulsatility quantification), contents (movies of pial vessels in mice), and key metadata (species, experiment, institution, license, frame rate). The introductory markdown also includes relevant details that further describe the contents. Thus, the notebook provides a clear and comprehensive description.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset and extracts information such as session description, subject ID, and frame rate. It demonstrates loading and displaying basic metadata fields, which are essential for understanding the dataset. Therefore, the notebook achieves a score of 6.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the dandiset, retrieves asset information, and displays paths and sizes. It also loads an NWB file and displays session description, subject ID, and frame rate. Thus, it loads and displays several basic metadata fields.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook loads the Dandiset using the DandiAPIClient and retrieves the Dandiset ID. It then retrieves and prints the session description, subject ID, and frame rate. This shows successful loading and exploration of basic metadata fields. No explanations were given for the fields but still I believe it's a six.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 5.333333333333333,
+        "reps": [
+          {
+            "score": 4.0,
+            "thinking": "The notebook successfully lists the available assets in the Dandiset. The first code cell specifically loads information from DandiAPIClient relating to the assets in the Dandiset. The notebook then iterates through these assets and prints their paths and sizes, which is basic asset information. Although it doesn't load the actual assets into memory (that happens in a later cell), it demonstrates how to enumerate them.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads the dandiset and lists the two assets with their sizes. Next, it loads one of the assets and accesses metadata such as the session description, subject ID, and the frame rate of the video. Therefore, the notebook demonstrates loading specific assets and showing how to access asset metadata.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully lists the assets available in the Dandiset using the Dandi API client. It iterates through the assets and prints their paths and sizes. After doing this, it loads in one of the assets to show and explore the data.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook demonstrates accessing basic components of the NWB file such as session description, subject ID, and frame rate. The code successfully opens and navigates the NWB file to extract these key pieces of information. It also accesses and displays the movie data. Thus, it fulfills the requirements of level 6.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file, prints some basic information about the file, and displays sample movie frames. It demostrates how to access basic NWB components. Therefore the score is 6.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file, accesses basic information such as session description, subject ID, and frame rate. It also explores the \"Movies\" acquisition data structure, obtains the shape of the movie data, and displays sample frames. Thus, it meets the criteria for demonstrating accessing basic NWB components. It does demonstrate navigating the NWB file, explores the movies datastructure, and can thus be considered more than just showing basic NWB file structure. It does not deeply explore multiple data structures, and only touches the movie aquisition.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 5.0,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The code successfully loads an NWB file from the Dandiset and accesses some basic information such as session description, subject ID and frame rate. It also loads and visualizes the movie data, demonstrating the ability to access specific datasets within the NWB file. While it doesn't showcase advanced data access techniques, it does demonstrate the basics of loading and exploring the data. Therefore a score of 5 seems appropriate.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads an NWB file using lindi and pynwb. It then accesses and prints the session description, subject ID, and frame rate. Finally, it accesses the movie data (movies.data), prints its shape and total duration, and plots sample frames from the movie. This demonstrates loading and visualizing a specific data type (video). This is a level 5 as the notebook only shows how to load one specific data type (movies). It doesn't handle multiple data types or explore more complex structures extensively to reach a higher score. It would get a 6, but it doesn't show how to access multiple data elements other than showing the shape of the data and also plotting different frames from the data. Therefore, it is more accurate to categorize it as 5.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads an NWB file from the Dandiset using a provided link, accesses basic metadata (session description, subject ID, frame rate), and loads and visualizes sample frames from the movie acquisition. This demonstrates loading and accessing basic data arrays and specific data types within the NWB file. It does not, however, fully delve into handling multiple data types with appropriate methods or exploring complex data structures beyond the 'Movies' acquisition. Thus, the notebook effectively loads and retrieves movie data, but falls short of comprehensive data handling techniques within the NWB file. There is no sign of converting data or any complex handling techniques and so a score of 5 is appropriate.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 5.666666666666667,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file from the Dandiset, extracts movie data, and visualizes sample frames as grayscale images. The plot includes titles for each frame and removes the axis ticks using `axes[i].axis('off')`, improving readability. Based on this, it provides clear visualizations with proper labeling. It only covers one data type so more advanced techniques are not covered.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook loads an NWB file, extracts movie data, and plots sample frames. The plots are labeled with frame numbers. It does not have comprehensive documentation or advanced visualization techniques. Some basic details are missing from the visualization such as axis information and title with units.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads an NWB file from the Dandiset and visualizes frames from the movie acquisition. The plot includes labeled axes and a clear presentation of the data. However, it only visualizes one type of data (movie frames) and doesn't explore other potential data within the NWB file. Considering that it creates simple visualizations with some formatting, the score is 5.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "There is one plot showing 5 frames from the NWB file. The plot is readable, has frame numbers as titles for each subplot, and axes are turned off. The layout is tight.\nI think the formatting is generally good. However, adding titles to y-axis or x-axis would be helpful and improve the plot, but it's still perfectly adequate without them.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook includes a figure showing 5 sample frames from the movie. The plots have titles indicating the frame number, and use a gray colormap which is appropriate for grayscale images. However, the axes are not labeled with units. The plots are readable but could be improved. Therefore, a score of 6 is appropriate.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook contains a figure displaying 5 frames from the movie acquisition. The images are displayed in grayscale which is appropriate for the data. Each frame is labeled with its index, and the axes are turned off for better visualization. The plot as a whole is clearly readable and well formatted including titles and appropriate spacing.\nThe axes labels are missing (e.g., pixel indices), but this makes sense since the images are for visualization purposes. Considering the purpose of the plot, the formatting is well done but lacks more refined formatting such as axis labels.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads a single data stream from one NWB file 'Movies' containing, I believe, image data. The notebook does not load other streams from other NWB files within the Dandiset. Therefore, the answer is 1.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The code loads one NWB file and extracts data from the \"Movies\" acquisition, which represents a single, fundamentally different data stream (the movie itself).  No other distinct data streams are loaded or explored.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook only loads and explores the 'Movies' acquisition data from the NWB file, which constitutes one data stream. It visualizes sample frames from this movie acquisition. There's no evidence of other fundamentally different data streams being loaded.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook displays five frames from the video and presents it as an image. This constitutes one type of plot. There are no other plots in the notebook.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook shows one type of plot: a series of images from the video.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook shows one type of plot - a series of images representing frames of a movie as subplots within a single figure.",
             "repnum": 2
           }
         ]
@@ -13187,7 +15247,7 @@
     "notebook": "dandisets/001366/2025-04-07-quasar-alpha-exp/001366.ipynb",
     "dandiset_id": "001366",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 51.0,
+    "overall_score": 51.00000000000001,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -13599,7 +15659,7 @@
     "notebook": "dandisets/001366/2025-04-09-quasar-alpha/001366.ipynb",
     "dandiset_id": "001366",
     "subfolder": "2025-04-09-quasar-alpha",
-    "overall_score": 53.666666666666664,
+    "overall_score": 53.66666666666667,
     "scores": [
       {
         "name": "describe-dandiset",

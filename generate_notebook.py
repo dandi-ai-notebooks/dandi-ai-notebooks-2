@@ -7,6 +7,9 @@ from datetime import datetime
 import yaml
 import subprocess
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def create_config(output_dir: str, model: str, prompt: str, dandiset_id: str):
     """Create the config.yaml file in the output directory."""
