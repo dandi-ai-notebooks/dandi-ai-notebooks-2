@@ -9144,6 +9144,460 @@
     }
   },
   {
+    "notebook": "dandisets/001174/2025-04-16-claude-3.7-sonnet-prompt-a-5/001174.ipynb",
+    "dandiset_id": "001174",
+    "subfolder": "2025-04-16-claude-3.7-sonnet-prompt-a-5",
+    "plots": [
+      {
+        "plot_id": "cell_19_output_1",
+        "cell_index": 19,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The axes are labelled and include units and the data has clear error bars. The labels are easy to read and the data easy to interpret. The one minor complaint is the title, which is somewhat redundant with the axis label and doesn't convey much new information.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is generally well-made, as the axes are labeled with proper units and the data is clear. However, the y axis label has inconsistent capitalization, and the axis labels could be larger. The data oscillates quite a bit, and it's hard to see any overall trend, so this could perhaps be smoothed a bit. Ultimately, though, these are fairly minor issues that make it just shy of publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot has reasonable labels and information. It could be improved by adding units to the axes and perhaps providing more descriptive and less verbose captions.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_23_output_1",
+        "cell_index": 23,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is generally well-presented with clear axes labels and a legend. The data points are also reasonably distinct. However, the figure is still basic in terms of its presentation and the actual information it conveys. More information about the context and potential statistical measures on the data (e.g., error bars, significance) would improve it further. Thus, while good, it's not quite publication quality as is.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot has labeled axes, a legend, and displays data that illustrates a trend. However, there are no units given for the axes. There are overlapping data points at some x-values and it is difficult to tell if the shaded region conveys error or spread of data. The font sizes are a bit small. These issues prevent it from being publication quality but the plot is still of very good quality.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot has labeled axes, a clear title, and a legend. The data is clearly visible and not obscured. However, the error bars are missing, which makes it difficult to assess the significance of the differences between the data. Also, there is no information provided about how many data points were used to create this plot which is a significant problem. This plot also uses a barplot, when a scatterplot would be more informative (it's a small number of measurements), or including a boxplot alongside the scatterplot. Considering this information, the plot is of good quality, but has issues that could be improved.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_27_output_0",
+        "cell_index": 27,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot has labeled axes with units, a legend, and a clear title. The data is clearly visible and the error bars are also shown. Also there are no overlapping labels or data. However, the legend could be more descriptive about the meaning of D1 and D2 and the y axis label is a bit small.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled, the axes are clear, and the error bars are visible. However, I would like to know what the error bars represent (SEM or SD). Also, more information about the experiment should be provided in the caption. A reader external to the study would not know what is being studied here, and would rely on the caption to decipher the figure. For these reasons, I rate the plot a 4 - very good but not quite publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled with informative axes labels including units, and the data is clearly presented. The figure includes a descriptive title and a legend that clearly identifies each curve. There is plenty of information in the figure, so the overall quality is high. A few small improvements could include: making the font size slightly larger, defining the 'Input' variable in the title, and maybe adding a sentence or two describing the data. For this reason, it is very good quality and with a few small edits could be publication quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_31_output_1",
+        "cell_index": 31,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The axes are labeled. The curves are labeled, and the plot is easy to interpret. However, there is no description of the raw data (i.e. number of samples, error bars) or the method of smoothing (i.e. moving average). Therefore, it is of very good quality, but not publication quality. The shaded regions are a bit too dark and make it difficult to distinguish overlapping curves. Thus, the plot is not perfect and should be improved before publication.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot has labeled axes, a legend, and displays the information clearly. However, the quality of the text is not the best and could be improved for publication.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows data with standard errors, clear labels and a figure caption. The only potential improvement would be some additional explanation in the caption of what the data represents.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_33_output_0",
+        "cell_index": 33,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot contains information on all axes and has labels. The plot could include error bars. The background is a distracting color.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled and easy to understand. It presents clear data and uses appropriate visualizations. However, minor improvements could be made to enhance its quality for publication, such as increasing the font size, adding a figure description and defining the colour code of the histograms.",
+                "repnum": 1
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot is well-labeled and shows the data clearly. There are no immediately obvious visual defects (e.g. overlapping labels, poor resolution) that would preclude publication. The choice of a line plot appears appropriate for the data being displayed. One minor note is that the figure lacks a caption, but this is not part of the rubric question.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001174",
+      "model": "anthropic/claude-3.7-sonnet",
+      "prompt": "prompt-a-5.txt",
+      "total_prompt_tokens": 910522,
+      "total_completion_tokens": 20048,
+      "total_vision_prompt_tokens": 0,
+      "total_vision_completion_tokens": 0,
+      "elapsed_time_seconds": 478.92465448379517,
+      "timestamp": "2025-04-16 17:12:22",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/001174/2025-04-16-claude-3.7-sonnet-prompt-b-5/001174.ipynb",
+    "dandiset_id": "001174",
+    "subfolder": "2025-04-16-claude-3.7-sonnet-prompt-b-5",
+    "plots": [
+      {
+        "plot_id": "cell_16_output_0",
+        "cell_index": 16,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 5.0,
+                "thinking": "The plot is well-formatted. The axes are labeled, the legend is in a good location, and the data is clear. There are really no issues with it. It may need a more complete caption in a publication, but the plot is fine.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot has labeled x and y axes, includes a legend, and has data. However, it is difficult to read the x-axis labels, and the different colored lines are not explained, so it is hard to understand what is being shown. The presentation could be improved.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The axes are labeled, and the data appears to be properly represented. The plot is easy to interpret, but the presentation is rather basic and could be improved (e.g., adding a more descriptive caption, error bars or a measure of uncertainty in the data) to bring it up to publication quality. The presentation is acceptable as is, so the plot is of \"good\" quality but can be improved. Also, the x-axis label is incomplete. The plot has two curves but no legends or labels explaining what they are.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_18_output_0",
+        "cell_index": 18,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled and easy to read, containing all necessary information. The data is clearly displayed and important features are easily identifiable. However, there are no error bars or an indication of the sample size (N), which are important for assessing the statistical significance and reliability of the results. These additions would elevate the plot to publication quality. Thus the plot lacks some information, which limits the conclusions that can be made. It is of very good, but not publication quality.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot displays data (Mean Squared Error vs. iteration). The axes are labeled, but the font size is a bit small. The plot could benefit from a title. Overall, it's good but could be improved for publication.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is generally well-made. Both axes are labelled and have appropriate units. The legend is clear. Error bars are included. However, the color scheme could be improved and grid lines could be added. So it is of very good quality but not quite publication quality",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_22_output_0",
+        "cell_index": 22,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows experimental data for different time ranges with clear axis labels and a legend. The data is easy to interpret, and the overall presentation is good. However, some aspects could be improved for publication, such as error bars or a more detailed description of how the data was collected and processed. Also a more descriptive caption could improve the quality of the plot.",
+                "repnum": 0
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot is well-labeled, and the data is clearly displayed using appropriate colors and formatting. The relevant information is displayed and easy to read. Therefore, the plot is of publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled, clear, and easy to read. It shows a clear trend and uses appropriate axis labels and a legend. There are no immediately obvious errors. The quality is high, without being of publication quality. I'd rate it as very good. A few minor adjustments in font size, or the axes labels could improve the quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_24_output_0",
+        "cell_index": 24,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot has labeled axes, a legend, and clear data. However, there is some overlap of data points, and error bars are not present. The labels could be larger. The plot is not quite publication quality. Overall it is very good but has room for improvement.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot shows data, has labeled axes, and a legend. However, the legend overlaps the data, and some points overlap, which reduces the overall quality. Also, it would be better to add some information about how the shaded region was calculated (e.g., standard deviation, confidence interval). Finally, using different markers for the curves would improve readability. Therefore, the plot is of good quality but has some issues that could be improved.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled and easy to understand. The data points are clearly visible, and the axes are properly scaled. However, the error bars are missing, which makes it difficult to assess the statistical significance of the results. Adding error bars would significantly improve the plot. The layout and font size choices are reasonable.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_36_output_0",
+        "cell_index": 36,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot has labeled axes, a title, and a legend. The data is clearly visible and the error bars are included. However, the axis labels could be more descriptive. The font size is also a bit small. Therefore, the plot is of very good quality, but not quite publication quality.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is generally well-made: the axes are labeled, curves are labeled with a legend, and there are no obvious errors. It could be improved by adding units to the axes and making the labels a bit larger. The large empty space on the axes also indicates that the axes minima and maxima could be adjusted to display the region of the plot where the data lies.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot has labeled axes and legends, and displays the data clearly. It would benefit from a bit more information in the axis labels (e.g. units for time) and a more informative caption summarizing the result. Overall, the plot is of very good quality, but not quite publication quality (at least not for all journals). However, it is close.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_39_output_0",
+        "cell_index": 39,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 4.333333333333333,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The figure is generally well-made, with labeled axes and a legend. The data is clearly presented, and the axes are scaled appropriately. However, some minor improvements could be made to enhance the plot's publication quality: the legend could be more descriptive (e.g., specifying the gas), and a more detailed caption could be included to describe the experimental setup and data analysis methods, or an explicit statistical analysis, such as error bars indicating standard deviation of the results. The range is only 2 orders of magnitude. These changes would further enhance the clarity and information content of the figure. However, the plot is good enough to convey the primary findings effectively as it is.",
+                "repnum": 0
+              },
+              {
+                "score": 5.0,
+                "thinking": "The plot shows clear labeling, axes are well-defined, and the data is easily interpretable. It appears to be complete and accurately represents the intended information, thus is of publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled and easy to understand, with sufficient information. The axes are clear and the data is presented in an accessible format. However, the number of significant digits could be reduced. Error bars could be added to better represent the data's uncertainty. Therefore, this plot is of very good quality but not quite publication quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_39_output_1",
+        "cell_index": 39,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot has labeled axes, a legend, and data. It is missing a title. The presentation and information content is good, but could be improved with a title.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot shows a reasonable amount of information. The axes are properly labeled and the data are clearly visible. However, error bars, or some indication of the uncertainty, are missing. Also, the font size should be increased for readability.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The axes are labeled and have units. There is a legend. The data is clear and not overlapping. However, the figure is slightly bland, and could include additional information such as a discussion of error or a more in-depth discussion. The figure is very good quality, but not publication quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_42_output_1",
+        "cell_index": 42,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 2.6666666666666665,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot is missing axis labels, units, and a title or caption that explains what the plot is showing. However, the data is clearly presented. The formatting is clean and readable, and there isn't any extraneous information.",
+                "repnum": 0
+              },
+              {
+                "score": 2.0,
+                "thinking": "The plot contains information, but it is not very clear what the figure is trying to convey. The x-axis is not labelled, and although the y-axis is labelled, the y-axis label is not descriptive (\"Value\"). The figure caption is also missing, making interpretation difficult. Overall, the overall quality of the plot is low. Also, the aspect ratio of this plot is weird, which makes it look unprofessional.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is of good quality. All axes are labeled, the data is properly displayed. It could be improved with a more descriptive caption or more context related to the quality metric.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_45_output_0",
+        "cell_index": 45,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.3333333333333335,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled, has a clear legend, and the data is clearly visible. The arrangement of subplots is logical. However, the axis labels could include units, and the font size is a little small. Overall a very good plot, but not quite publication quality.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot has labeled axes and a legend, making it easy to understand. However, it could be improved by adding error bars and clarifying the sample sizes or number of replicates for each group. The data appears to be well-presented, but these additions would increase the information content and overall quality. Also, some more information on the data collection (relevant methods or apparatus) would dramatically improve the quality of the plot.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot has axes labels, a legend, and data. However, the axes labels are not descriptive, and the font size is small. The legend also obscures part of the data.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001174",
+      "model": "anthropic/claude-3.7-sonnet",
+      "prompt": "prompt-b-5.txt",
+      "total_prompt_tokens": 1377819,
+      "total_completion_tokens": 20164,
+      "total_vision_prompt_tokens": 16500,
+      "total_vision_completion_tokens": 2285,
+      "elapsed_time_seconds": 650.8005118370056,
+      "timestamp": "2025-04-16 17:23:14",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
     "notebook": "dandisets/001275/2025-04-02-claude-3.7-sonnet/001275.ipynb",
     "dandiset_id": "001275",
     "subfolder": "2025-04-02-claude-3.7-sonnet",
