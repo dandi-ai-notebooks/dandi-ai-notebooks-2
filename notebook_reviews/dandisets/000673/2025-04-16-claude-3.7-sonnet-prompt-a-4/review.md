@@ -4,7 +4,7 @@ https://github.com/dandi-ai-notebooks/000673/blob/main/2025-04-16-claude-3.7-son
 
 GRADE:
 
-⚠️ Title is not formatted as a heading
+✅ Appropriate title
 
 ✅ Caution statement about AI
 
