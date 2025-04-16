@@ -28,8 +28,6 @@ for asset in assets[:5]:
     print(f"- {asset.path}")
 ```
 
-While you are doing that, you should also show how to load some metadata from the dandiset such as dandiset.identifier, dandiset.session_description, and dandiset.session_start_time. Although if the session_description is very long you may not want to print the whole thing.
-
 Show how to load one of the NWB files in the Dandiset and show some metadata. Do not display the nwb object in an output cell because it could be an excessive amount of output.
 
 When you select an NWB file to view, explain which file path you are loading. Also show how you are getting the URL for the asset.
@@ -131,3 +129,5 @@ Do not use seaborn styling for plotting images.
 Image masks values range from 0 to 1. If you are plotting all image masks superimposed on each other in a single figure, use a heatmap with np.max on the image masks.
 
 For raw extracellular electrophysiology data, you shouldn't try to do spike detection, spike sorting, or anything like that in the notebook because it's too computationally intensive. Getting anything useful from extracullular electrophysiology data requires a lot of processing and is not something that can be done in a notebook. Instead, you should focus on showing how to load a reasonable amount of data and how to visualize it.
+
+In the notebook you should NEVER make system calls to external tools such as tools_cli.
