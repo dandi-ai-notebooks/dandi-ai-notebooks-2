@@ -48,7 +48,7 @@ GRADE:
 
 ❌ Overanalysis of the spectrogram - drawing unwarranted conclusions
 
-✅ Show stimulus images (note: wrong orientation
+✅ Show stimulus images (note: wrong orientation)
 
 ⚠️ too verbose on the description
 
