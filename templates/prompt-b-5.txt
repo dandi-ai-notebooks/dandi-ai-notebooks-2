@@ -6,7 +6,7 @@ Start with an appropriate title for the notebook, such as "Exploring Dandiset {{
 
 Prominently inform the user that the notebook was AI-generated using dandi-notebook-gen and has not been fully verified, and that they should be cautious when interpreting the code or results.
 
-Provide an overview of the Dandiset. Include a neurosift link of the form https://neurosift.app/dandiset/001176/{{ DANDISET_ID }}
+Provide an overview of the Dandiset. Include a neurosift link of the form https://neurosift.app/dandiset/{{ DANDISET_ID }}
 
 Summarize what the notebook will cover.
 
