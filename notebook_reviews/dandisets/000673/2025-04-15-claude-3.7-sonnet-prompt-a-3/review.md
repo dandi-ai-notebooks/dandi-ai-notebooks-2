@@ -1,6 +1,6 @@
 # Notebook review 000673/2025-04-15-claude-3.7-sonnet-prompt-a-3
 
-https://neurosift.app/nwb?url=https://api.dandiarchive.org/api/assets/65a7e913-45c7-48db-bf19-b9f5e910110a/download/&dandisetId=000673&dandisetVersion=draft
+https://github.com/dandi-ai-notebooks/000673/blob/main/2025-04-15-claude-3.7-sonnet-prompt-a-3/000673.ipynb
 
 GRADE: FAIL
 
