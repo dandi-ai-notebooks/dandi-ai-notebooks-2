@@ -11,8 +11,8 @@ from helpers.run_completion import run_completion
 
 prompt_version = '1'
 
-model = None
-# model = "anthropic/claude-3.7-sonnet"
+model_for_cells = "google/gemini-2.0-flash-001"
+model_for_summary = "anthropic/claude-3.7-sonnet"
 
 def find_notebooks(base_dir: str, *, prefix: str) -> List[Tuple[str, str]]:
     """Find notebooks matching the pattern dandisets/<DANDISET_ID>/subfolder/<DANDISET_ID>.ipynb."""
@@ -45,6 +45,13 @@ def find_notebooks(base_dir: str, *, prefix: str) -> List[Tuple[str, str]]:
 def read_notebook_critic_system_prompt() -> str:
     """Read and process the system prompt template."""
     template_path = Path(__file__).parent / "templates" / "notebook_critic_system_prompt.txt"
+    with open(template_path, "r") as f:
+        content = f.read()
+    return content
+
+def read_notebook_critic_summary_system_prompt() -> str:
+    """Read and process the summary system prompt template."""
+    template_path = Path(__file__).parent / "templates" / "notebook_critic_summary_system_prompt.txt"
     with open(template_path, "r") as f:
         content = f.read()
     return content
@@ -99,12 +106,8 @@ def create_user_message_content_for_cell(cell: Dict[str, Any]) -> List[Dict[str,
     return content
 
 def critique_notebook(*,
-    notebook_path_or_url: str,
-    model: str | None = None
+    notebook_path_or_url: str
 ):
-    if not model:
-        model = "google/gemini-2.0-flash-001"
-
     # If it's a notebook in a GitHub repo then translate the notebook URL to raw URL
     if notebook_path_or_url.startswith("https://github.com/"):
         notebook_path_or_url = notebook_path_or_url.replace(
@@ -171,7 +174,7 @@ def critique_notebook(*,
             }
         )
         assistant_response, new_messagse, prompt_tokens, completion_tokens = run_completion(
-            messages=messages, model=model
+            messages=messages, model=model_for_cells
         )
 
         result["cell_critiques"].append(assistant_response)
@@ -184,7 +187,34 @@ def critique_notebook(*,
 
     return result, total_prompt_tokens, total_completion_tokens
 
-def main():
+def get_summary_critique(cell_critiques: List[Dict[str, Any]]) -> Tuple[str, int, int]:
+    """Get summary critique for the notebook."""
+    system_prompt = read_notebook_critic_summary_system_prompt()
+    messages: List[Dict[str, Any]] = [
+        {
+            "role": "system",
+            "content": system_prompt,
+        }
+    ]
+    user_message = 'Here are the cell critiques for the notebook:\n\n'
+    for i, cell_critique in enumerate(cell_critiques):
+        user_message += f'Cell {i + 1}:\n\n'
+        user_message += f'{cell_critique}\n\n'
+    user_message += 'Please summarize the critiques as you were instructed.\n\n'
+    messages.append(
+        {
+            "role": "user",
+            "content": user_message
+        }
+    )
+    assistant_response, _, prompt_tokens, completion_tokens = run_completion(
+        messages=messages, model=model_for_summary
+    )
+    print(assistant_response)
+    print("")
+    return assistant_response, prompt_tokens, completion_tokens
+
+def do_cell_critiques():
     notebooks = find_notebooks("dandisets", prefix="2025-04-16")
     print(f"Found {len(notebooks)} notebooks to process")
 
@@ -198,6 +228,7 @@ def main():
     total_prompt_tokens = 0
     total_completion_tokens = 0
 
+    # Do the cell critiques
     for i, (dandiset_id, notebook_path) in enumerate(notebooks, 1):
         print(f"\nProcessing notebook {i}/{len(notebooks)}")
         print(f"Dandiset: {dandiset_id}")
@@ -215,8 +246,7 @@ def main():
             continue
 
         new_critique, prompt_tokens, completion_tokens = critique_notebook(
-            notebook_path_or_url=notebook_path,
-            model=model
+            notebook_path_or_url=notebook_path
         )
         total_prompt_tokens += prompt_tokens
         total_completion_tokens += completion_tokens
@@ -228,7 +258,62 @@ def main():
         print(f"Critiques saved to {critiques_fname}")
         print(f"Total prompt tokens: {total_prompt_tokens}")
         print(f"Total completion tokens: {total_completion_tokens}")
-        break
+
+
+def do_summary_critiques():
+    notebooks = find_notebooks("dandisets", prefix="2025-04-16")
+    print(f"Found {len(notebooks)} notebooks to process")
+
+    critiques_fname = Path(__file__).parent / "notebook_critiques.json"
+    if os.path.exists(critiques_fname):
+        with open(critiques_fname, "r") as f:
+            critiques = json.load(f)
+    else:
+        critiques = []
+
+    total_prompt_tokens = 0
+    total_completion_tokens = 0
+
+    # do the summary critiques
+    for i, (dandiset_id, notebook_path) in enumerate(notebooks, 1):
+        print(f"\nProcessing notebook {i}/{len(notebooks)}")
+        print(f"Dandiset: {dandiset_id}")
+        print(f"Path: {notebook_path}")
+
+        existing_notebook_critique = None
+        for critique in critiques:
+            if critique["notebook"] == notebook_path:
+                if critique["prompt_version"] == prompt_version:
+                    existing_notebook_critique = critique
+                    break
+
+        if not existing_notebook_critique:
+            print("Notebook not critiqued, skipping...")
+            continue
+
+        if not existing_notebook_critique.get("summary_critique"):
+            summary_critique, prompt_tokens, completion_tokens = get_summary_critique(
+                existing_notebook_critique.get("cell_critiques")
+            )
+            total_prompt_tokens += prompt_tokens
+            total_completion_tokens += completion_tokens
+            existing_notebook_critique["summary_critique"] = summary_critique
+            with open(critiques_fname, "w") as f:
+                json.dump(critiques, f, indent=2)
+            print(f"Critiques saved to {critiques_fname}")
+            print(f"Total prompt tokens: {total_prompt_tokens}")
+            print(f"Total completion tokens: {total_completion_tokens}")
+
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    if len(sys.argv) != 2 or sys.argv[1] not in ["cells", "summaries"]:
+        print("Usage: python critique_notebooks.py <cells|summaries>")
+        sys.exit(1)
+
+    mode = sys.argv[1]
+    if mode == "cells":
+        do_cell_critiques()
+    else:
+        do_summary_critiques()
