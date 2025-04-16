@@ -2545,6 +2545,111 @@
     }
   },
   {
+    "notebook": "dandisets/000673/2025-04-15-gpt-4o-prompt-a-3/000673.ipynb",
+    "dandiset_id": "000673",
+    "subfolder": "2025-04-15-gpt-4o-prompt-a-3",
+    "plots": [
+      {
+        "plot_id": "cell_8_output_1",
+        "cell_index": 8,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.3333333333333335,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot shows multiple time series of LFP data. The axes are clearly labeled and the data is visible. However, the multiple overlapping lines makes it difficult to distinguish individual traces. A legend would be very useful for interpreting what each line represents. Without a legend there is a lack of information. The traces are not very smooth and have sharp changes, which is expected. The plot has room for improvement but can be used as is. Some more care would be expected in a final publication.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows LFP data with labeled axes and a title. While the plot doesn't have a legend to identify each line, it represents the data in a clear way. The presentation is good but not quite publication quality.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot shows LFP data as a function of time. The axes are labeled, and the plot is clear, but it is not publication-ready. The y-axis label could be improved by adding units and better explanation of the plotted data and it does not have a legend for the multiple lines. It may also need some additional statistical information such as error bars. Furthermore, the title is not particularly informative (just repeats the y axis label). Thus, the overall quality is between a good and very good plot. I am opting for good quality.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_10_output_1",
+        "cell_index": 10,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.3333333333333335,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot is generally well-formatted and presents the data clearly. However, the title \"Events Data (subset)\" is not very informative. A more descriptive title would improve the plot. Therefore, it is of good quality but has some issues that can be improved. It is not publication quality due to the title.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is generally well-made, but lacks axis labels with units, so the plot is good but not perfect.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot is clear and shows a trend. It is easy to understand and well-labelled. However, the title \"Events Data (subset)\" is not particularly informative. The y axis label 'Event Type' is also a bit vague and could be improved. I would rate this a 4 rather than a 5 because it isn't quite publication quality due to the labeling concerns.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "000673",
+      "model": "openai/gpt-4o",
+      "prompt": "prompt-a-3.txt",
+      "total_prompt_tokens": 130941,
+      "total_completion_tokens": 2003,
+      "total_vision_prompt_tokens": 0,
+      "total_vision_completion_tokens": 0,
+      "elapsed_time_seconds": 64.22817707061768,
+      "timestamp": "2025-04-15 18:54:27",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/000673/2025-04-15-gpt-4o-prompt-b-3/000673.ipynb",
+    "dandiset_id": "000673",
+    "subfolder": "2025-04-15-gpt-4o-prompt-b-3",
+    "plots": [],
+    "metadata": {
+      "dandiset_id": "000673",
+      "model": "openai/gpt-4o",
+      "prompt": "prompt-b-3.txt",
+      "total_prompt_tokens": 734163,
+      "total_completion_tokens": 6354,
+      "total_vision_prompt_tokens": 1205,
+      "total_vision_completion_tokens": 118,
+      "elapsed_time_seconds": 217.79520320892334,
+      "timestamp": "2025-04-15 18:58:05",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
     "notebook": "dandisets/000945/2025-04-01-deepseek-chat-v3-0324/000945.ipynb",
     "dandiset_id": "000945",
     "subfolder": "2025-04-01-deepseek-chat-v3-0324",
@@ -6884,6 +6989,141 @@
       "total_vision_completion_tokens": 210,
       "elapsed_time_seconds": 73.10929107666016,
       "timestamp": "2025-04-15 14:39:42",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/001174/2025-04-15-gpt-4o-prompt-a-3/001174.ipynb",
+    "dandiset_id": "001174",
+    "subfolder": "2025-04-15-gpt-4o-prompt-a-3",
+    "plots": [
+      {
+        "plot_id": "cell_10_output_0",
+        "cell_index": 10,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot displays a fluorescence intensity heatmap with labeled axes and a colorbar, making it easy to interpret. The grid lines, while not strictly necessary, don't detract significantly. The plot effectively visualizes the spatial distribution of fluorescence intensity, providing clear information about the data.\nHowever, the axis formatting could be improved with better ticks on the axis (e.g. from 0 to 800 with step 200) instead of 0 to 1200 with a step of 200 on y axis and 0 to 700 with step of 100 on x axis. The title \"OnePhotonSeries Data Visualization\" could also be omitted since the information is contained in the plot and labels. Overall, the plot is high-quality and informative. The only problem is the axis ticks. Thus, the plot is of very good quality, but not publication quality.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is generally well-composed, and its various elements such as the colorbar and axes are clearly labeled. The data is represented using fluorescence intensity. There is no glaring issue that requires the plot to be of low quality. However, this plot does not have the full information that would be expected of a plot in a scientific publication, such as indicating the scale of the axes and the specific experimental parameters used to produce the data. Thus, this is not of publication quality, but still a good plot.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot axes are clearly labeled, and there is a color bar that correlates the colors in the plot with fluorescence intensity. There are no overlapping labels. Therefore, the plot is well-made.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001174",
+      "model": "openai/gpt-4o",
+      "prompt": "prompt-a-3.txt",
+      "total_prompt_tokens": 73464,
+      "total_completion_tokens": 1943,
+      "total_vision_prompt_tokens": 0,
+      "total_vision_completion_tokens": 0,
+      "elapsed_time_seconds": 55.19734454154968,
+      "timestamp": "2025-04-15 19:04:26",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/001174/2025-04-15-gpt-4o-prompt-b-3/001174.ipynb",
+    "dandiset_id": "001174",
+    "subfolder": "2025-04-15-gpt-4o-prompt-b-3",
+    "plots": [
+      {
+        "plot_id": "cell_8_output_1",
+        "cell_index": 8,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.0,
+            "reps": [
+              {
+                "score": 3.0,
+                "thinking": "The plot shows the first frame of a one-photon series. It is a grayscale image, so not much can be wrong on it other than errors in the image itself. The image itself seems ok, but the overall contrast and brightness could be improved. This makes the image good but not publication quality. Since it is the first frame of the series (presumably a microscopy or similar dataset), it is appropriate.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The image appears to show a single frame from a one-photon series. The image is somewhat blurry and lacks sharp features, but it's likely a representation of the data as intended, i.e. a representation of photon counts. It doesn't appear to have any immediately obvious errors in its creation. The quality is good enough to understand what the plot is meant to show, but it's not of high quality overall, since there are no sharp features.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot shows a grayscale image with some blurry features. It seems like the first frame of a series of images from a one-photon experiment. It has a title and axes labeled but it isn't perfect. It's decent quality but not amazing or publication quality because of some blurryness and artifacts. Also, there may be heterogeneities in the image intensity that are not explained.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "plot_id": "cell_10_output_1",
+        "cell_index": 10,
+        "output_index": 1,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot shows a clear trend of the mean event amplitude over different units. The axes are properly labeled and the title is appropriate. There is nothing obviously wrong with the plot other than that it is a simple line plot. Overall a good plot. One might want to indicate the standard deviation of the signal to show the statistical significance. The axis are using the correct ranges.",
+                "repnum": 0
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot has labeled axes and a title, making it easy to understand. The data is clearly displayed. Therefore, I rate this as very good quality. No error bars, legends or extra information is missing.",
+                "repnum": 1
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot is a simple line plot with axes labels and a title. The data is clearly visible and the plot is well-formatted. The quality is good but not suited for direct publication without additional context/figure description.",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001174",
+      "model": "openai/gpt-4o",
+      "prompt": "prompt-b-3.txt",
+      "total_prompt_tokens": 667771,
+      "total_completion_tokens": 8238,
+      "total_vision_prompt_tokens": 985,
+      "total_vision_completion_tokens": 152,
+      "elapsed_time_seconds": 221.0057234764099,
+      "timestamp": "2025-04-15 19:08:07",
       "system_info": {
         "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
         "hostname": "jupyter-magland",
@@ -11410,6 +11650,82 @@
         "hostname": "system76-pc",
         "processor": "x86_64",
         "python_version": "3.12.2"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/001335/2025-04-15-gpt-4o-prompt-a-3/001335.ipynb",
+    "dandiset_id": "001335",
+    "subfolder": "2025-04-15-gpt-4o-prompt-a-3",
+    "plots": [],
+    "metadata": {
+      "dandiset_id": "001335",
+      "model": "openai/gpt-4o",
+      "prompt": "prompt-a-3.txt",
+      "total_prompt_tokens": 65260,
+      "total_completion_tokens": 2116,
+      "total_vision_prompt_tokens": 0,
+      "total_vision_completion_tokens": 0,
+      "elapsed_time_seconds": 61.49361538887024,
+      "timestamp": "2025-04-15 19:00:56",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/001335/2025-04-15-gpt-4o-prompt-b-3/001335.ipynb",
+    "dandiset_id": "001335",
+    "subfolder": "2025-04-15-gpt-4o-prompt-b-3",
+    "plots": [
+      {
+        "plot_id": "cell_7_output_0",
+        "cell_index": 7,
+        "output_index": 0,
+        "scores": [
+          {
+            "name": "quality",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+              {
+                "score": 4.0,
+                "thinking": "The plot is well-labeled and the relevant data is clearly shown. The figure also has a title and a legend. It is only a single plot but overall it has almost all the characteristics of publication quality plots. The only issue might be the \"stair-like\" behavior of the line which might be due an undersampling of the data.",
+                "repnum": 0
+              },
+              {
+                "score": 3.0,
+                "thinking": "The plot presents data, with axes labeled and a title. While visually simple, it effectively conveys a decreasing trend in voltage over sample number. Some minor improvements could be made to enhance the figure (e.g., appropriate font sizes), but the plot is already of good quality.",
+                "repnum": 1
+              },
+              {
+                "score": 4.0,
+                "thinking": "The plot shows data, the axes are correctly labeled with the appropriate units. It has a title and a legend. However, the plot does have room for further improvement and is not of publication quality. The default colors are used, and there is only one data series. The plot could benefit from more visual appeal and insight. Therefore, a score of 4 seems appropriate",
+                "repnum": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001335",
+      "model": "openai/gpt-4o",
+      "prompt": "prompt-b-3.txt",
+      "total_prompt_tokens": 126013,
+      "total_completion_tokens": 2134,
+      "total_vision_prompt_tokens": 515,
+      "total_vision_completion_tokens": 90,
+      "elapsed_time_seconds": 77.27641129493713,
+      "timestamp": "2025-04-15 19:02:14",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
       }
     }
   },

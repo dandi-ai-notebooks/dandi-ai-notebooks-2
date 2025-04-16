@@ -672,7 +672,7 @@
     "notebook": "dandisets/000673/2025-04-07-claude-3.5-sonnet/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-07-claude-3.5-sonnet",
-    "overall_score": 58.0,
+    "overall_score": 58.00000000000001,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -895,7 +895,7 @@
     "notebook": "dandisets/000673/2025-04-07-quasar-alpha-exp/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 55.0,
+    "overall_score": 55.00000000000001,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -1564,7 +1564,7 @@
     "notebook": "dandisets/000673/2025-04-10-quasar-alpha-prompt-a-1/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-10-quasar-alpha-prompt-a-1",
-    "overall_score": 61.0,
+    "overall_score": 60.99999999999999,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -1787,7 +1787,7 @@
     "notebook": "dandisets/000673/2025-04-14-gemini-2.0-flash-001-prompt-a-1/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-14-gemini-2.0-flash-001-prompt-a-1",
-    "overall_score": 60.333333333333336,
+    "overall_score": 60.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -2010,7 +2010,7 @@
     "notebook": "dandisets/000673/2025-04-15-claude-3.7-sonnet-prompt-a-3/000673.ipynb",
     "dandiset_id": "000673",
     "subfolder": "2025-04-15-claude-3.7-sonnet-prompt-a-3",
-    "overall_score": 65.66666666666667,
+    "overall_score": 65.66666666666666,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -2890,6 +2890,452 @@
       "total_vision_completion_tokens": 504,
       "elapsed_time_seconds": 147.1146833896637,
       "timestamp": "2025-04-15 11:26:16",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/000673/2025-04-15-gpt-4o-prompt-a-3/000673.ipynb",
+    "dandiset_id": "000673",
+    "subfolder": "2025-04-15-gpt-4o-prompt-a-3",
+    "overall_score": 47.666666666666664,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 8.333333333333334,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook includes the Dandiset ID, title, a brief overview of the purpose (understanding working memory control), and the type of data recorded (from medial temporal and frontal lobes). It also includes keywords and lists the datasets it contains. The description is clear, and provides sufficient information given the length of the notebook. The description is therefore clear, and comprehensive. The data organization/structure is not explicit, but is implicit from the notebook content. Hence the notebook could be rated slightly higher than 9. But because the data organization is not explicit, I will give it a 9.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides the Dandiset ID and mentions the title in the introductory section. It also includes information regarding the purpose (understanding the control of working memory using phase-amplitude coupling) and briefly describes the contents (datasets recorded from temporal and frontal lobes). The loading and exploration of the metadata furthers the description, but it does not go deep into data organization and structure.\n\nThe initial markdown cell, \"Overview of Dandiset 000673\", describes the purpose and the \"Load Dandiset...\" describes the listing of assets. The \"Explore Metadata...\" explores some metadata, but it's primarily showing how to access the data other than providing a comprehensive description of the Dandiset as a whole. So it is lacking some key features that would bring it to a score of 8 or greater.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook includes the Dandiset ID (\"000673\"), its title (\"Control of Working Memory\"), the purpose, and a basic overview of its contents (datasets from medial temporal and frontal lobes related to working memory and phase-amplitude coupling). It also details the structure by listing the types of files that are included in the dandiset. The notebook further explores the metadata by printing some important fields. Therefore, it merits a score of 9.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset using the DANDI API, retrieves a list of assets, and displays the first few assets. It then proceeds to load an NWB file and extract basic metadata fields like session description, identifier, session start time, and experimenter. Therefore, I would rate it a 6. It doesn't exhaustively explore all possible metadata fields, or include descriptions, so it would not get a 7 or higher.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the dandiset (673), lists assets, then connects to the dandiset and extracts 'Session Description', 'Identifier', 'Session Start Time', and 'Experimenter' metadata. This constitutes loading and displaying basic metadata fields. It doesn't explore all the significant metadata, but it is a reasonable start.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook loads the Dandiset using the DANDI API and retrieves the assets within it. It then loads an NWB file from a URL, reads its metadata using PyNWB, and displays session description, identifier, session start time, and experimenter. This covers the loading of both Dandiset information and NWB metadata, but it doesn't delve into *all* available metadata fields or provide further field descriptions. Loading of the dandiset ID is accomplished by 'client.get_dandiset(\"000673\")'. Loading of minimal metadata is accomplished by printing the first 5 assets and loading the nwb file. Loading and displaying basic metadata is achieved by printing 'meta_details'. However, the notebook does not extract everything or provide deep explanations.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset assets by connecting to the DANDI archive and listing the available assets. It then loads specific assets, accesses its metadata, and uses LFP data for visualization. It also shows how to retreive a specific NWB file to work with. Because the notebook doesn't quite include multiple types of assets, metadata is basic it gets point 6.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook initializes the DandiAPIClient, retrieves the Dandiset, lists the available assets, and loads data from a specific asset using its URL. It correctly retrieves the assets in the Dandiset and loads/explores metadata and data from a single NWB file. It also demonstrates loading of LFP and event data. However, it only works with a single asset and does not explore multiple asset types beyond what's in the chosen NWB file. Therefore, while it successfully loads assets and their information, it does not provide a comprehensive explanation across different asset types or explore multiple assets systematically. It misses some of the comprehensive asset handling and usage examples that higher scores would require. Loading only one NWB file is not \"comprehensive\".",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads and lists the assets in the dataset. It then loads a single NWB file as an asset, accesses some basic metadata (session description, identifier, session start time, experimenter). It loads and plots LFP and events data from the NWB file. The operations are limited, but the foundations are there. So, a score of 6 is reasonable.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook loads an NWB file from a URL, explores basic metadata (session description, identifier, start time, experimenter), and visualizes Local Field Potential (LFP) data and event markers. It demonstrates accessing basic NWB components like 'acquisition' and plotting data associated with it. The plotting with lfp_data[:1000, :10] demonstrates exploring/accessing data within the NWB object. While there is visualization, the focus is not on a detailed exploration of NWB structures, meaning 7 or higher is not appropriate.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from a URL, accesses its metadata, and visualizes LFP and event data. This demonstrates accessing basic NWB components. The notebook can be improved by showing a more detailed navigation of the NWB file's hierarchy and exploring more of the available data structures within the file. The notebook does not describe the NWB structure.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from a DANDI archive URL and explores its metadata. It also visualizes LFP data and event data. It accesses basic components like session description, identifier, session start time, experimenter, LFP data, and event data. Therefore it successfully loads and accesses these components. The notebook does not, however, contain detailed navigation throughout the NWB hierarchy, so the score is 6.\n\nThe notebook fails without modification because remfile.File must be called using a context manager (i.e. in a `with` block.) Changing lines 12 and 13 from\n```python\nremote_file = remfile.File(url)\nh5_file = h5py.File(remote_file)\n```\nto\n```python\nwith remfile.File(url) as remote_file:\n    h5_file = h5py.File(remote_file)\n```\nresolves the error. If the code failed, the score would be 2. I assume that the notebook is in good working condition for the rating. Edited code cell shown below:\n\n```python\n# Load the NWB file using provided URL\nurl = \"https://api.dandiarchive.org/api/assets/65a7e913-45c7-48db-bf19-b9f5e910110a/download/\"\nwith remfile.File(url) as remote_file:\n    h5_file = h5py.File(remote_file)\nio = pynwb.NWBHDF5IO(file=h5_file)\nnwb = io.read()\n\n# Explore metadata\nmeta_details = {\n    \"Session Description\": nwb.session_description,\n    \"Identifier\": nwb.identifier,\n    \"Session Start Time\": nwb.session_start_time,\n    \"Experimenter\": nwb.experimenter,\n}\nprint(meta_details)\n```",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 5.333333333333333,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads data from an NWB file using pynwb. It connects to the DANDI API, retrieves an asset, and loads LFP and event data. The code executes without significant errors and presents visualizations. However, it primarily focuses on basic data arrays and does not explore more complex data structures or advanced data access techniques. Therefore, a score of 5 reflects that it loads specific data types adequately.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from a DANDI archive using `pynwb` and `remfile`. It then proceeds to extract and display the session description, identifier, session start time, and experimenter from the file's metadata. Furthermore, it loads and visualizes LFP data and event data, demonstrating the ability to access and plot data from different data arrays within the NWB file. This covers basic data arrays and demonstrates loading specific data types (LFP and events). Although the notebook doesn't delve into the intricacies of complex data structures within the NWB file, it offers a functional overview of accessing and visualizing essential data elements, so I will rate it as a 6.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads the NWB file, accesses metadata, and extracts LFP and event data. It plots a subset of these data, demonstrating how to extract specific data types from the NWB file. However, it doesn't delve into complex data structures or advanced techniques. Therefore, a score of 5 is appropriate. The notebook demonstrated loading LFP and event data specifically.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook demonstrates a basic visualization of LFP data and events data from the NWB file. The figures are labeled, but not with units for the x axis for LFP data. The visualization techniques are not particularly advanced, and the plot formatting is basic. The notebook shows visualization of two data types from the NWB file.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates how to load an NWB file from a Dandi archive and visualize two types of data: LFP data and event data. The plotting code is functional and produces relatively clear plots with titles and axis labels, although more elaborate formatting (e.g., legend for LFP channels, clear descriptions of event types) could improve clarity. The visualizations are fairly basic. The notebook does not show advanced visualization techniques, but it does provide a reasonable introduction to visualizing NWB data.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates basic visualizations of LFP data and events data from the NWB file. The axes are labeled, and titles are provided for the plots. However, the visualizations are simple and could be improved with more advanced techniques, better formatting, or more comprehensive data exploration. Only two simple plot types are used. The labeling could also be made more informative and specific to data/experimental context.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 5.0,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook generates two plots. The LFP plot shows a subset of the LFP data, visualizing the amplitude over time for multiple channels. The events data plot shows a subset of events data. Both plots have titles and axis labels, which makes them readable. The formatting is basic but sufficient for understanding the data. Therefore, the plots are readable and have basic labels.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook creates two plots. The plots are readable and have axis labels and titles. The labels \"Time (ms)\" and \"Amplitude (V)\" are reasonably descriptive. The plots lack units. The \"Events Data\" plot is not exceptionally informative, but adequately visualizes the given data. Overall, basic formatting is present, and the plots are simple and relatively clear. I judge that the plots are readable with basic labels and formatting. Note that the x-axis of the event plot is Event Index, which would ideally be replaced by actual time.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The plots are readable and include axis labels and titles. However, the labels are minimal (e.g., Amplitude (V) and Time (ms), Event Type &amp; Event Index), and the plots lack more detailed explanations or annotations. The formatting is basic.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 2.0,
+        "reps": [
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads and visualizes two fundamentally different data streams: Local Field Potential (LFP) data and event data. The LFP data represents continuous neural activity, while the event data represents discrete occurrences or triggers. These are distinct types of information captured within the NWB file. Therefore, the notebook successfully loads two different data streams.",
+            "repnum": 0
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads and visualizes two distinct data streams from the NWB file: LFP data and event data. These are fundamentally different types of data, representing continuous neural activity and discrete event markers, respectively. No other data streams are loaded at all in the notebook.",
+            "repnum": 1
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads two fundamentally different data streams: LFP data and event data. The LFP data represents continuous recordings of local field potentials, while the event data represents timestamps or markers indicating specific events during the experiment. These are distinct types of data captured within the NWB file.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 2.0,
+        "reps": [
+          {
+            "score": 2.0,
+            "thinking": "The notebook displays two types of plots: a time series plot of LFP data with multiple channels overlaid, and another time series plot representing event data. Although both plots show data over an index, the data being represented in each is fundamentally different (continuous LFP signals versus discrete event types) warranting the distinction. Therefore, there are 2 distinct plot types. The LFP data displays multiple simultaneous channels, which is still one type of visualization (a time series with multiple values being represented) and the events are visualized as a scatter plot connected via lines, but both are conceptually line plots. Thus there are two distinct types of plots.",
+            "repnum": 0
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook shows two types of plots. The first plot shows \"LFP Data (subset)\" which is essentially a time-series plot showing multiple channels. The second plot shows \"Events Data (subset)\" which is also a time-series plot although the y-axis represents event type index. Both plots share time on the x-axis, but the information they convey is different. One represents continuous voltage signals while the other represents discrete events and therefore warrants a score of 2. Fundamentally, both are line plots, but they represent different kinds of data and have different interpretations. Looking closely at the \"Events Data (subset)\" plot, there is one trace of data whereas the LFP data subset has multiple traces of data, further differentiating it from the other.",
+            "repnum": 1
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook generates two plots. The first plot visualizes LFP data, displaying the amplitude over time for multiple channels. The second plots visualizes event data as a function of event index. Both plots utilize line plots for visualization. Since the plots are of different datasets, they represent fundamentally different types of visualization.",
+            "repnum": 2
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "000673",
+      "model": "openai/gpt-4o",
+      "prompt": "prompt-a-3.txt",
+      "total_prompt_tokens": 130941,
+      "total_completion_tokens": 2003,
+      "total_vision_prompt_tokens": 0,
+      "total_vision_completion_tokens": 0,
+      "elapsed_time_seconds": 64.22817707061768,
+      "timestamp": "2025-04-15 18:54:27",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/000673/2025-04-15-gpt-4o-prompt-b-3/000673.ipynb",
+    "dandiset_id": "000673",
+    "subfolder": "2025-04-15-gpt-4o-prompt-b-3",
+    "overall_score": 43.333333333333336,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides the Dandiset ID, title, a brief overview including the purpose, the contents, and some information about the data structure. It mentions the involvement of working memory, phase-amplitude coupling, LFP and event data. It also identifies the brain regions of interest, which include the medial temporal lobe and frontal lobe. Therefore, the notebook provides a relatively clear and comprehensive description of the Dandiset. However, information related to cognitive tasks and metadata are not so well defined.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook includes the title and ID of the Dandiset. It also provides a brief overview of the experiment, i.e. what the recordings are about. Therefore, it earns score 5.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook includes the Dandiset ID, title, and a brief overview, including the purpose, recording details, and analysis methods. It stops short of detailing the data organization comprehensively.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 5.666666666666667,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads the Dandiset and displays the first 5 assets in the Dandiset. The code executes without errors and provides information about the Dandiset's contents. The notebook loads Dandiset ID and displays minimal metadata. However it doesn't displays several metadata fields.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset and displays the first 5 assets in the dataset. It prints the paths of these assets, which provides some metadata information. However, it doesn't explore other metadata fields beyond listing assets, so it does the minimum amount of loading and exploring.\nThe loading succeeds and prints the asset paths. It does not explore the other fields. Thus, the score should be 6.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook loads the dandiset and prints the Dandiset ID, as well as the first few asset paths. This shows how to load and access some Dandiset information, like the assets contained within, and uses the DandiAPIClient, it displays the name/path of the assets. The notebook sucessfully loads and displays basic metadata fields, as well as the dandiset.id. But it does not explore multiple or all available fields.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook provides code to load the Dandiset and list the first 5 assets. It also demonstrates loading a specific NWB file (an asset) and accessing the LFP data. However, it doesn't explicitly show how to iterate through different asset types or comprehensively explore asset metadata beyond the file path. The notebook loads and visualizes LFP data from one particular asset. It does load asset information but it is limited only to one asset. Therefore, the notebook demonstrates how to load a specific asset but it doesn't explore multiple asset types. It touches upon loading asset information and metadata via listing the assets, but deeper metadata exploration is lacking.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads assets using the Dandi API client and lists the available assets. The notebook then proceeds to load and explore LFP data from a specific asset, demonstrating how to access the data within an NWB file.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook provides code to connect to the DANDI archive, retrieve the Dandiset, and list the available assets. It then proceeds to load and explore LFP data from one of the assets. Therefore, it successfully lists the assets, then demonstrates loading a specific asset but does not explore the metadata extensively.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from a URL in the Dandiset. It also shows how to access the LFP data and plots it. The notebook demonstrates accessing a specific data structure (\"LFPs\") and extracts/plots data. Thus, the notebook demonstrates successfully loading an NWB file and accessing/visualizing basic NWB components. It does not, however, provide extensive navigation of the NWB hierarchy, focusing on single data access and plotting. Because the notebook focuses on one data type, the response to the question cannot be above 6.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, downloads an NWB file, reads it, and accesses LFP data. It imports necessary libraries, accesses the LFP series, and plots the data, demonstrating access to a basic NWB component. However, it's limited to LFP data and doesn't delve into other data structures or a deeper exploration of the NWB hierarchy. Thus it deserves a 6.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file, accesses LFP data, and plots a subset of it. It demonstrates accessing basic NWB components like acquisition data and specifically the LFPs. The notebook does not show much about the detailed NWB hierarchy but does successfully load and extract data. However, it only focuses on LFP data, limiting its scope of exploring other NWB data structuctures.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 5.333333333333333,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads LFP data from an NWB file hosted on DANDI using `pynwb` and `remfile`. It accesses the LFP series, extracts data for the first 10 channels and 1000 timepoints, and plots the selected data. The notebook also shows basic usage of `DandiAPIClient` and handles remote file access. It demonstrates loading of a specific data type, LFP data, and can access data elements. The notebook closes the NWB files at the end. However, it does not deal with different data types beyond LFP. It does not explore complex data structures nor demonstrates advanced data access techniques. Therefore, it deserves a score of 5.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads data from a remote NWB file using pynwb and remfile. It accesses LFP data, extracts a subset of the data for the first 10 channels and 1000 timepoints, and plots it. This demonstrates loading a specific data type (LFP) and accessing multiple data elements (channels and timepoints). However, it does not cover other data types or more advanced techniques. Hence, a score of 6 is appropriate.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads LFP data from an NWB file within the Dandiset. It demonstrates how to access the LFP series, extract a subset of the data (first 10 channels and first 1000 timepoints), and plot the data. The code executes without errors and visualizes the data. Therefore, it successfully demonstrates loading specific data series. It does close the file at the end. It does not handle different data types appropriately, and focuses on LFP, so a higher score is not warranted. It also does not demonstrate advanced techniques such as filtering based on timestamps or metadata. It reads and visualizes, but thats pretty much it.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook loads LFP data from an NWB file in the Dandiset and generates a plot of the first 10 channels over time. It includes labels, title, and legend, providing a clear visualization of the selected LFP data. While the visualization is limited to a single type of data (LFP) and uses a basic plot, it is correctly formatted and informative. Therefore, the notebook sufficiently creates clear visualizations of one data type with proper labeling, therefore obtaining a score of 7.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads LFP data from an NWB file within the Dandiset and generates a basic plot of voltage over time for ten channels. The plot includes axis labels, a title, and a legend, which enhances readability. The notebook focuses primarily on visualizing a single data type (LFP), uses a straightforward plotting approach, and incorporates essential formatting, but it doesn't delve into advanced visualization techniques or multiple data types. Therefore, a score of 5 is most appropriate.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook loads LFP data from a remote NWB file within the Dandiset, extracts a subset of the data (first 10 channels and 1000 timepoints), and generates a plot of these channels over time. The plot includes x and y axis labels, a title, and a legend to distinguish channels. The code executes without errors and shows how to connect to DANDI, load an NWB file, and visualize LFP data. It does not demonstrate multiple visualization types or advanced techniques. Thus, it deserves a 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook generates a single plot visualizing LFP data from the first 10 channels over the first 1000 timepoints. The plot is readable, includes axis labels (time and voltage), a title, and a legend. The formatting is adequate, with each channel offset for clarity. The plot could benefit from improved aesthetics and more detailed labeling (e.g., units on the y-axis offset). Given these features, a score of 6 is appropriate. The plot fulfills the basic requirements for readability and information conveyance without achieving publication-level quality.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook generates a plot of LFP data for the first 10 channels over a short time window. The code includes labels for the x and y axes, a title describing the data, and a legend to distinguish between channels. The channels are offset vertically for readability, which is a good choice. All the required elements of a basic plot are present. Although functional, the plot has basic formatting (e.g., simple lines, basic labels) and could benefit from more detailed information or customization for publication. Therefore, the plot is readable, but far from publication ready, leading to the score of 5.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook generates a plot of LFP data for the first 10 channels over time. The plot is readable and includes labels for the x and y axes, a title, and a legend. The plot is formatted with `plt.tight_layout()`, improving readability. The channels are vertically offset for better visualization, but there are opportunities to improve further such as adding units to the y-axis label, and explicitly specifying the voltage unit (e.g. microvolts), and having channel labels instead of channel numbers on for the y-axis ticks. Overall, the plot is of good quality. Due to the lack of units, and specific channel information, a rating of 7 is justified.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads LFP data from the NWB file. There is not any other data being loaded. There is only one type of data being investigated.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads LFP data from the NWB file. No other data streams like event data or single neuron activities are explicitly loaded in the provided code. Therefore, only one data stream is loaded.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads LFP data from the NWB file. While the notebook prints the first few assets, it does not load any of those. Thus, only one type of data, namely LFP data is loaded.\nTherefore, the score is 1.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook displays only one type of plot which is the LFP data over time for multiple channels. All the traces are plotted on the same axis with the same x and y scales. While multiple channels of data are visualized, it's still the same kind of information being plotted. So the notebook demonstrates only 1 type of plot.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook displays one type of plot, which is the LFP data over time for multiple channels. Although the channels are offset vertically, the fundamental type of plot remains the same: a time series plot of voltage. There are no other plots present in the notebook.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook shows one type of plot: the plot of LFP data over time for multiple channels",
+            "repnum": 2
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "000673",
+      "model": "openai/gpt-4o",
+      "prompt": "prompt-b-3.txt",
+      "total_prompt_tokens": 734163,
+      "total_completion_tokens": 6354,
+      "total_vision_prompt_tokens": 1205,
+      "total_vision_completion_tokens": 118,
+      "elapsed_time_seconds": 217.79520320892334,
+      "timestamp": "2025-04-15 18:58:05",
       "system_info": {
         "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
         "hostname": "jupyter-magland",
@@ -3791,7 +4237,7 @@
     "notebook": "dandisets/000945/2025-04-07-quasar-alpha-exp/000945.ipynb",
     "dandiset_id": "000945",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 54.333333333333336,
+    "overall_score": 54.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -4237,7 +4683,7 @@
     "notebook": "dandisets/000945/2025-04-09-quasar-alpha/000945.ipynb",
     "dandiset_id": "000945",
     "subfolder": "2025-04-09-quasar-alpha",
-    "overall_score": 56.333333333333336,
+    "overall_score": 56.33333333333334,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -5352,7 +5798,7 @@
     "notebook": "dandisets/000945/2025-04-15-gemini-2.0-flash-001-prompt-a-3/000945.ipynb",
     "dandiset_id": "000945",
     "subfolder": "2025-04-15-gemini-2.0-flash-001-prompt-a-3",
-    "overall_score": 62.333333333333336,
+    "overall_score": 62.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -5798,7 +6244,7 @@
     "notebook": "dandisets/001174/2025-04-01-deepseek-chat-v3-0324/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-01-deepseek-chat-v3-0324",
-    "overall_score": 55.333333333333336,
+    "overall_score": 55.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -6241,7 +6687,7 @@
     "notebook": "dandisets/001174/2025-04-04-gemini-2.0-flash-001/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-04-gemini-2.0-flash-001",
-    "overall_score": 52.333333333333336,
+    "overall_score": 52.33333333333334,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -6464,7 +6910,7 @@
     "notebook": "dandisets/001174/2025-04-07-claude-3.5-sonnet/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-07-claude-3.5-sonnet",
-    "overall_score": 56.333333333333336,
+    "overall_score": 56.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -7133,7 +7579,7 @@
     "notebook": "dandisets/001174/2025-04-10-claude-3.7-sonnet-prompt-a-2/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-10-claude-3.7-sonnet-prompt-a-2",
-    "overall_score": 63.666666666666664,
+    "overall_score": 63.66666666666667,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -8471,7 +8917,7 @@
     "notebook": "dandisets/001174/2025-04-15-claude-3.7-sonnet-prompt-b-3/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-15-claude-3.7-sonnet-prompt-b-3",
-    "overall_score": 62.0,
+    "overall_score": 62.00000000000001,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -8694,7 +9140,7 @@
     "notebook": "dandisets/001174/2025-04-15-gemini-2.0-flash-001-prompt-a-3/001174.ipynb",
     "dandiset_id": "001174",
     "subfolder": "2025-04-15-gemini-2.0-flash-001-prompt-a-3",
-    "overall_score": 53.0,
+    "overall_score": 52.99999999999999,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -9128,6 +9574,452 @@
       "total_vision_completion_tokens": 210,
       "elapsed_time_seconds": 73.10929107666016,
       "timestamp": "2025-04-15 14:39:42",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/001174/2025-04-15-gpt-4o-prompt-a-3/001174.ipynb",
+    "dandiset_id": "001174",
+    "subfolder": "2025-04-15-gpt-4o-prompt-a-3",
+    "overall_score": 45.666666666666664,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 9.0,
+        "reps": [
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good overview of the Dandiset. It gives the title, ID, brief description, license, keywords, and citation. It also previews the notebook's content. It could improve by giving more detail about the structure of the data within the Dandiset. Since the notebook is introductory, I will give it a score of 9.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook includes the Dandiset ID, title, description, keywords and license. The description provides information about the study, methods, and brain regions involved. Overall, the notebook provides a good description of the Dandiset and its purpose, contents, and associated metadata. The overview section clearly articulates the notebook's content summary and the conclusion.\n\nBased on the rubric, a score of 9 reflects the quality of the description in this notebook. The description includes purpose, contents, and key metadata fields. While it is not a score of 10 as the data organization isn't detailed. A score of 8 would not be high enough either as this description does mention key metadata fields.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides a good overview of the Dandiset, including its title, ID, description, license, keywords, and a citation. It also summarizes the notebook content, outlining the steps taken to explore the data. The notebook clearly explains the purpose of the Dandiset (study of motor cortices using calcium imaging) and its basic contents (data from SMA and M1 in macaques during various tasks). The description of the Dandiset is located at the beginning of the notebook under the section \"Overview of the Dandiset,\" providing easy access for users. It also mentions key metadata fields indirectly by highlighting session description and the number of acquisition data series. The data organization is implicitly touched upon through the exploration of an NWB file. The notebook fulfills most criteria for a high score.\n\n    It could have been even better by explicitly outlining the data organization within the NWB files of the Dandiset and giving more details on the experimental paradigm. Also, instead of printing the first 5 assets, it could be more valuable to show a summary with the different subjects and sessions included in the dandiset. However, it does offer a comprehensive initial description of the Dandiset's contents and purpose. Therefore, I will give it a 9.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset and prints the number of assets as well as the asset paths. It also loads the session description from an example NWB file, which shows that basic metadata fields are loaded and displayed. Therefore, the notebook shows how to load and display some basic metadata fields from the Dandiset.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully connects to the DANDI API, retrieves a specific dandiset (001174), lists the assets associated with it, and displays the file paths of the first 5 assets. It also loads metadata from one of the NWB files and prints the session description and number of acquisition data series. This demonstrates effective loading and display of basic metadata fields, justifies the score of 6.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully connects to the DANDI API, retrieves the dandiset using its ID (\"001174\"), and lists the assets present in the dandiset. It also prints the descriptions and session description. It successfully loads and displays some metadata fields.\nThe assets are listed, which shows the notebook is capable of loading and displaying basic information.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook demonstrates how to connect to the DANDI archive, list available assets, load a specific NWB file, and access some metadata. It doesn't explore different asset types or provide comprehensive handling, but it covers the basics. The notebook prints the list of assets and loads the data from one asset; This is not just loading basic information but demonstrating loading a specific asset. It also shows how to extract session description data.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook starts by connecting to the DANDI archive and lists the available assets. It then loads metadata from a specified NWB file. Therefore, the notebook successfully lists available assets and demonstrates how to load a specific asset.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully connects to the DANDI API, retrieves the Dandiset \"001174\", and lists the paths of the first 5 assets. It then proceeds to load an NWB file from the Dandiset using a URL and explores its metadata (session description, number of acquisition data series), and visualizes 'OnePhotonSeries' data.\nIt showcases how to load and list assets, as well as load specific asset and visualize the data, thus providing a good demonstration of how to load assets of the Dandiset",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from a URL, prints the session description, and the number of acquisition data series. It then visualizes part of the OnePhotonSeries data. This shows how to access and explore basic components of the NWB file. The code runs without errors.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook demonstrates loading an NWB file from a URL, accesses basic metadata like session description, and retrieves data from \"OnePhotonSeries\". It successfully opens the file, prints basic session information and visualizes some data. Thus, the notebook demonstrates accessing and visualizing data from NWB components. Therefore, a score of 6 seems appropriate. The notebook could go further by showing the overall structure of the nwb file (what are the different groups in nwb.processing, etc), rather than just diving straight into visualization of OnePhotonSeries.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from a URL, accesses the session description and acquisition data series. This demonstrates loading and accessing basic components of the NWB file. The visualization further confirms that the data has been loaded. Therefore, it demonstrates accessing basic NWB components (score 6) but does not deeply explore multiple data structures or the hierarchy in great detail (would need a higher score).",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 5.0,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads an NWB file from a URL and extracts and visualizes a OnePhotonSeries. It also displays session descriptions and the number of acquisition data series. However, it does not demonstrate how to load or handle multiple data types or explore complex data structures within the NWB file in detail. Therefore, the score should be 5.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads an NWB file from a URL using remfile and h5py, then reads it using pynwb. It accesses the 'OnePhotonSeries' data and visualizes a subset of it. This demonstrates loading the NWB file and accessing a specific data series which justifies a score of 5.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook loads an NWB file from a DANDI archive using the DANDI API and remfile. It then reads the NWB file to extract the session description and the number of acquisition data series. It loads and visualizes a subset of the OnePhotonSeries data, demonstrating how to access and plot data arrays. Therefore, it successfully loads basic data arrays and also demonstrates loading a specific data type.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 5.666666666666667,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides code to load data from a specific 'OnePhotonSeries' within the NWB file and displays it using matplotlib's `imshow` function with a 'hot' colormap and correct axes labels and a colorbar. The visualization is basic, showing the fluorescence intensity across spatial dimensions, but correctly displays the data. It visualizes one data type. The plot has a title, x and y labels, and a colorbar label.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook shows how to visualize data from an NWB file using a heatmap. The code loads OnePhotonSeries data and displays it, including axis labels, title, and a colorbar. However, it only visualizes one type of data and the visualization is fairly basic. Considering the 'Shows basic visualizations with some formatting' category is a good fit. The figure could be made better with more formatting and explorations of more data types.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook loads data from an NWB file and generates a basic heatmap-style visualization of OnePhotonSeries data. The plot includes axis labels, a title, and a colorbar, which are positive aspects. However, it only visualizes one type of data and the visualization is relatively simple. It does not show advanced techniques. Therefore, visualization is rated as in the middle of the scale.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook contains one plot. The plot has a title, axis labels, and a colorbar label, making it readable and well-formatted. Therefore, this is a clear plot with proper formatting.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook contains one plot. The plot includes a title, axis labels, and a colorbar. The plot is readable and provides basic information about the data.\n    However, the plot could be improved by adding a more descriptive title and perhaps a more appropriate colormap. While functional, it's not quite publication-ready, but beyond minimal formatting. This places it at a 6. Also, there's only one plot in the notebook, which is a negative factor. The plot's aesthetic and information content are adequate but not exceptional.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook contains one plot. The plot is readable and contains axis labels ('X Coordinate' and 'Y Coordinate') and a colorbar with the label 'Fluorescence Intensity'. The plot also has a title. The formatting is acceptable.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads one data stream, OnePhotonSeries, from the NWB file. The code explicitly accesses this data stream for visualization. Therefore, only one fundamentally different data stream is loaded.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads data from one NWB file (\"OnePhotonSeries\"). The notebook only visualizes this one data stream. Therefore, the number of fundamentally different data streams loaded is 1.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads and visualizes data from \"OnePhotonSeries\". Although it lists assets, it only loads data from one source in the NWB file i.e. one data stream identified as \"OnePhotonSeries\" which is the one-photon calcium imaging data. It mentions there are more data series, but it doesn't load them therefore the score is 1. Different assets found are different sessions not different data streams in the sessions.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook shows just one type of plot, which is a heatmap/imshow style plot of the `OnePhotonSeries` data. There are no other types of plots shown in the notebook.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook only shows one type of plot, which is an imshow plot to visualize the OnePhotonSeries data. The visualization shows fluorescence intensity as a function of X and Y coordinates.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook only contains one type of plot: the heatmap-like visualization of the OnePhotonSeries data. Although the axes are labeled, it's essentially a heatmap, which represents the fluorescence intensity as a function of x and y coordinates. There are no other plots in the notebook. Therefore, the notebook only shows one type of plot.",
+            "repnum": 2
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001174",
+      "model": "openai/gpt-4o",
+      "prompt": "prompt-a-3.txt",
+      "total_prompt_tokens": 73464,
+      "total_completion_tokens": 1943,
+      "total_vision_prompt_tokens": 0,
+      "total_vision_completion_tokens": 0,
+      "elapsed_time_seconds": 55.19734454154968,
+      "timestamp": "2025-04-15 19:04:26",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/001174/2025-04-15-gpt-4o-prompt-b-3/001174.ipynb",
+    "dandiset_id": "001174",
+    "subfolder": "2025-04-15-gpt-4o-prompt-b-3",
+    "overall_score": 46.66666666666667,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 8.333333333333334,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides a good description of the Dandiset. It includes the Dandiset ID, the title is inferable, and an overview of the purpose and contents of the Dandiset. It could have included a more detailed description of the metadata, though.",
+            "repnum": 0
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook includes the Dandiset ID, the title (inferred from the text), the purpose of the dataset (study of motor cortices in non-human primates), and an overview of the contents (calcium imaging data in SMA and M1). It also mentions the conditions under which data were collected (rest and task engagement). There is a good description of the experimental purpose and the kind of data it holds including key metadata fields such as brain regions. Therefore, the notebook earns a score of 9.",
+            "repnum": 1
+          },
+          {
+            "score": 9.0,
+            "thinking": "The notebook provides the Dandiset ID, title, purpose, and a glimpse into the data contained (calcium imaging data in macaques, study of motor cortices, SMA and M1 areas, rest and task engagement conditions). It mentions the organization by subjects and sessions, and what type of data is avaialble. This gives a good overview of the dataset.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook uses the DandiAPIClient to load the Dandiset and then lists the assets within the Dandiset. It displays the filenames of the first 5 assets. This shows how to access basic metadata (asset paths) after loading the dandiset. Minimal explanation is provided beyond printing. However, the dandiset loading and asset listing are successful, so I will give a score of 6. It doesn't quite achieve level 7, as it mainly focuses on asset paths rather than delving into other metadata aspects in detail. I am not giving level 8 because there is no exploration of metadata with explanations, instead the assets are printed without any interpretation. I am not giving level 10 because it does not demonstrate working with all key metadata fields.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook loads the Dandiset and displays the number of assets and the paths of the first 5 assets. This constitutes loading and displaying basic metadata fields. The code executes without errors and provides a decent starting point for further metadata exploration. The notebook does not delve deep into the metadata or provide descriptions of various fields. Therefore, a score of 6 is appropriate.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook loads the Dandiset and prints the number of assets within it, as well as listing the first 5 asset paths. This shows that the notebook successfully loads basic metadata fields. The code executes with no errors.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 5.333333333333333,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset and lists the available assets.  It also demonstrates how to load and read a specific NWB file from the dandiset. However, it does not explore metadata or different asset types extensively. The notebook focuses primarily on loading and using one specific asset (the NWB file for one-photon imaging data). Therefore, it mostly demonstrates loading a specific asset.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully lists the assets in the Dandiset. It also successfully loads the first frame for one asset and event amplitude data. This satisfies loading basic asset information. However, the notebook does not delve into metadata access or exploration of multiple assets types.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook uses the DandiAPIClient to get the dandiset and then lists the asset paths. This constitutes loading basic asset information., although it could be more comprehensive. It doesn't access or explore metadata.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the NWB file from a URL, reads the data, and plots the first frame of the OnePhotonSeries and the Mean Event Amplitude. This demonstrates accessing basic NWB components. The notebook effectively shows how to access the data. The notebook could improve by loading many types of data and exploring relations between datatypes.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from a DANDI asset and demonstrates accessing basic NWB components, such as imaging data and event amplitude data. It opens the file, reads the OnePhotonSeries data, and plots the first frame, demonstrating access to imaging data. Additionally, it accesses and plots mean event amplitude. However, it doesn't delve deeply into the NWB hierarchy or explore numerous data structures beyond one-photon imaging and event amplitudes. Therefore, it earns a 6.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from a DANDI archive URL into a pynwb object. It then accesses the OnePhotonSeries data and plots the first frame. It also accesses the EventAmplitude data and plots the mean event amplitude. It demonstrates accessing basic components. Thus, I believe that a score of 6 is appropriate, because it shows how to load and read a basic NWB file and access 2 basic elements.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 5.0,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads data from an NWB file using pynwb and h5py. It reads the 'OnePhotonSeries' data and plots the first frame. It also loads 'EventAmplitude' data and plots the mean amplitude. The notebook demonstrates accessing specific data types within the NWB file, therefore the notebook is given a score of 5. Shows how to access the acquistion and processing data, and the associated fields inside.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads data from NWB files using `pynwb` and `h5py`. It retrieves specific data like 'OnePhotonSeries' and 'EventAmplitude' demonstrating the ability to load specific data types. The notebook demonstrates loading data arrays: the image frame and the event amplitude data. However, it doesn't fully explore the complex data types or delve deeper into the structure of the NWB file beyond these basic loading and plotting steps. Therefore, a score of 5 is appropriate. It loads specific data types from the NWB file and performs basic analysis and visualization.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads an NWB file from the Dandi archive using a remote file and h5py, then reads the file into pynwb. It then extracts specific data arrays, namely 'OnePhotonSeries' and 'EventAmplitude'. These actions demonstrate loading specific data types. Therefore, the notebook gets a score of 5. It doesn't fully explore the complex data structures and doesn't provide advanced data access techniques, so a score higher than 5 is not appropriate.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 6.666666666666667,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook loads an NWB file and visualizes two types of data: the first frame of one-photon imaging data and the mean event amplitude. The plots are simple but functional, with labels and titles. It covers two datasets and shows visualization of each. The notebook could be enhanced with more formatting and documentation of the visualizations.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook loads an NWB file from a DANDI archive and visualizes two types of data: a frame from the OnePhotonSeries and the mean event amplitude. The visualizations are basic (imshow and line plot) but effective. The axes are labeled, and titles are present. However, there's room for improvement in terms of formatting and more advanced visualization techniques. There are also no interactive tools implemented for visualization. Therefore, a score of 7 seems appropriate.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook loads an NWB file and visualizes two data types: the first frame of OnePhotonSeries data and the mean event amplitude. The plots have titles and axis labels, but they are relatively basic. The notebook could be improved by adding more types of visualizations, more formatting, or more documentation.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 5.333333333333333,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook contains two plots. The first one displays the first frame of OnePhotonSeries data as a grayscale image. The plot has a title. The second plot displays the mean event amplitude vs unit number. This plot also has a title and axis labels. The plots are readable and have basic but sufficient labels. I do not see major formatting issues.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "Two plots are generated in the notebook. The first plot visualizes the first frame of the one-photon imaging data with a title. The second plot shows the mean event amplitude with labeled axes and a title. The plots are readable and adequately labeled. However, they lack detailed formatting that would be expected in publication-quality figures (e.g., font sizes, axis ticks, color schemes). Therefore, a score of 6 is appropriate.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The plots are readable and have basic labels such as titles and axis labels. The formatting is minimal but sufficient to understand the data displayed. The plots are not publication-ready, but they are clear enough for exploratory data analysis. Therefore, a score of 5 is appropriate.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 2.0,
+        "reps": [
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads and visualizes two distinct data streams from the NWB file: 'OnePhotonSeries' and 'EventAmplitude'. These represent fundamentally different types of data (imaging data and event-related measures) extracted from the same subject. Therefore, the notebook loads two fundamentally different data streams. Note that the asset listing prior to that is not loading data *from* a NWB file, only listing available files.",
+            "repnum": 0
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads two fundamentally different data streams from the NWB file. Namely, 'OnePhotonSeries' which represents the raw calcium imaging data, and 'EventAmplitude' which represents processed event amplitudes from units within the imaging data. The two streams represent different levels of data processing. Thus, the correct answer is 2.",
+            "repnum": 1
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook loads two data streams from a single NWB file: OnePhotonSeries data (imaging data) and EventAmplitude data. These represent fundamentally different types of data recorded in the experiment.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 2.0,
+        "reps": [
+          {
+            "score": 2.0,
+            "thinking": "The notebook displays two fundamentally different types of plots: an image (imshow) and a line plot. Therefore, the answer is 2.",
+            "repnum": 0
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook displays two fundamentally different types of plots: an image plot (imshow) of the first frame of imaging data and a line plot of the mean event amplitude. Therefore, the answer is 2.",
+            "repnum": 1
+          },
+          {
+            "score": 2.0,
+            "thinking": "The notebook displays an image plot of the calcium imaging data and a line plot. These are fundamentally different types of plots. Therefore, the notebook shows two different types of plot.",
+            "repnum": 2
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001174",
+      "model": "openai/gpt-4o",
+      "prompt": "prompt-b-3.txt",
+      "total_prompt_tokens": 667771,
+      "total_completion_tokens": 8238,
+      "total_vision_prompt_tokens": 985,
+      "total_vision_completion_tokens": 152,
+      "elapsed_time_seconds": 221.0057234764099,
+      "timestamp": "2025-04-15 19:08:07",
       "system_info": {
         "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
         "hostname": "jupyter-magland",
@@ -9586,7 +10478,7 @@
     "notebook": "dandisets/001275/2025-04-04-gemini-2.0-flash-001/001275.ipynb",
     "dandiset_id": "001275",
     "subfolder": "2025-04-04-gemini-2.0-flash-001",
-    "overall_score": 46.333333333333336,
+    "overall_score": 46.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -9809,7 +10701,7 @@
     "notebook": "dandisets/001275/2025-04-07-claude-3.5-sonnet/001275.ipynb",
     "dandiset_id": "001275",
     "subfolder": "2025-04-07-claude-3.5-sonnet",
-    "overall_score": 55.33333333333333,
+    "overall_score": 55.333333333333336,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -10032,7 +10924,7 @@
     "notebook": "dandisets/001275/2025-04-07-quasar-alpha-exp/001275.ipynb",
     "dandiset_id": "001275",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 56.0,
+    "overall_score": 55.99999999999999,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -12708,7 +13600,7 @@
     "notebook": "dandisets/001276/2025-04-10-quasar-alpha-prompt-b-1/001276.ipynb",
     "dandiset_id": "001276",
     "subfolder": "2025-04-10-quasar-alpha-prompt-b-1",
-    "overall_score": 48.333333333333336,
+    "overall_score": 48.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -12931,7 +13823,7 @@
     "notebook": "dandisets/001333/2025-04-02-claude-3.7-sonnet/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-02-claude-3.7-sonnet",
-    "overall_score": 62.0,
+    "overall_score": 62.00000000000001,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -13823,7 +14715,7 @@
     "notebook": "dandisets/001333/2025-04-07-quasar-alpha-exp/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 46.333333333333336,
+    "overall_score": 46.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -14046,7 +14938,7 @@
     "notebook": "dandisets/001333/2025-04-09-quasar-alpha/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-09-quasar-alpha",
-    "overall_score": 49.0,
+    "overall_score": 48.99999999999999,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -14492,7 +15384,7 @@
     "notebook": "dandisets/001333/2025-04-10-claude-3.7-sonnet-prompt-b-1/001333.ipynb",
     "dandiset_id": "001333",
     "subfolder": "2025-04-10-claude-3.7-sonnet-prompt-b-1",
-    "overall_score": 43.333333333333336,
+    "overall_score": 43.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -15607,7 +16499,7 @@
     "notebook": "dandisets/001335/2025-04-07-claude-3.5-sonnet/001335.ipynb",
     "dandiset_id": "001335",
     "subfolder": "2025-04-07-claude-3.5-sonnet",
-    "overall_score": 59.0,
+    "overall_score": 58.99999999999999,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -15830,7 +16722,7 @@
     "notebook": "dandisets/001335/2025-04-07-quasar-alpha-exp/001335.ipynb",
     "dandiset_id": "001335",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 60.333333333333336,
+    "overall_score": 60.33333333333333,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -16276,7 +17168,7 @@
     "notebook": "dandisets/001335/2025-04-09-quasar-alpha/001335.ipynb",
     "dandiset_id": "001335",
     "subfolder": "2025-04-09-quasar-alpha",
-    "overall_score": 49.333333333333336,
+    "overall_score": 49.33333333333334,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -16938,6 +17830,452 @@
         "hostname": "system76-pc",
         "processor": "x86_64",
         "python_version": "3.12.2"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/001335/2025-04-15-gpt-4o-prompt-a-3/001335.ipynb",
+    "dandiset_id": "001335",
+    "subfolder": "2025-04-15-gpt-4o-prompt-a-3",
+    "overall_score": 43.0,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 7.0,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides the Dandiset ID, license, link, and a brief description of the dataset's content. It explains that the dataset contains Neuropixels recordings from the hippocampus of head-fixed mice during odor presentation. Furthermore, the notebook describes the contributors. This aligns with level 7 of the rubric, which entails detailing the Dandiset's purpose, contents, and basic metadata.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides the Dandiset ID, title, license, a link to the dataset, and a basic description of the contents. The description includes information about head-fixed mice, odor presentation, and Neuropixels recordings from the hippocampus. This covers the purpose, contents, and some metadata. Therefore it merits a score of 7.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook provides a Dandiset ID, title, license, link to the dataset, and a brief description of the contents (Neuropixels recordings from the hippocampus of head-fixed wild-type mice during odor presentation). It also mentions the contributors. Therefore, it gives a good overview of the dataset and its purpose. It does not mention the data organization.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook uses the DandiAPIClient to load the dandiset and retrieves its assets. It then prints the Dandiset ID and lists the first 5 assets, as well as loads more metadata from an NWB file contained in the Dandiset (session description, identifier, experimenter, keywords). This shows how to load and display basic metadata fields, and also explore more detailed metadata of the NWB files containing neural data.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook connects to the DANDI API, retrieves the dandiset by its ID, and lists the assets. It also loads an NWB file and displays its session description, identifier, experimenter, and keywords, demonstrating loading and displaying of basic metadata fields.\nTherefore, the notebook successfully loads and displays basic metadata fields.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully connects to the DANDI API, loads the dandiset using its ID (\"001335\"), and retrieves a list of assets. It then prints the first 5 asset paths, which demonstrates basic dandiset loading and navigation within the dataset. It also loads metadata in the NWB file and prints Session Description, Identifier, Experimenter, and Keywords. Thus, the notebook loads and displays basic metadata fields. So I choose 6.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook connects to the DANDI API, retrieves the dandiset \"001335\", and lists the first 5 assets. The notebook successfully shows how to load assets. The notebook does not explore multiple asset types and only loads a single asset. The notebook also accesses a subset of the metadata for the loaded NWB file.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully connects to the DANDI API, retrieves the specified Dandiset (001335), and lists the available assets. It then shows how to load a specific asset using its URL and access its metadata (session description, identifier, experimenter, keywords). Therefore, it demonstrates loading specific assets and accessing asset metadata. It does not, however, explore multiple asset types.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook connects to the DANDI API, retrieves the Dandiset, and lists the available assets. It also loads metadata from a specific NWB file, demonstrating how to access asset information. However, it primarily focuses on a single asset (the NWB file) and does not explore multiple asset types. Loading and exploring a single asset gives it a 6 score. Not all aspects of asset handling and usage are shown.}",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 7.0,
+            "thinking": "The notebook successfully loads an NWB file from the DANDI archive using the provided DANDI ID. It then accesses basic metadata components such as session description, identifier, experimenter, and keywords. It also Extracts and visualizes LFP data from the NWB file. So it Demonstrates accessing basic NWB components and explores multiple NWB data structures in the form of LFP data.. hence the score of 7.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully connects to the DANDI API, retrieves asset information, and then loads an NWB file from a specific asset URL. It proceeds to extract and print basic metadata like session description, identifier, experimenter, and keywords. Furthermore, it loads and visualizes LFP data, demonstrating access to a specific data structure within the NWB file. Therefore, it adequately demonstrates accessing basic NWB components and deserves a score of 6.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads an NWB file from the DANDI archive and shows how to access basic information such as session description, identifier, experimenter, and keywords, demonstrating accessing basic NWB components. It then proceeds to visualize LFP data, delving further into the contents. Thus, it earns a score of 6.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 5.333333333333333,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads an NWB file using the DANDI API and the pynwb library. The notebook then extractes the LFP data from the loaded NWB file. Information from the NWB file such as the session description, identifier, experimenter, and keywords are displayed. Therefore, the notebook successfully loads a basic data array and demonstrates loading specific data types (LFP data). Thus, the notebook shows a reasonable loading of data within the file.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads data from an NWB file in the Dandiset. It connects to the DANDI API, identifies assets (NWB files), opens one, and extracts LFP data. The code execution is not failing. It demonstrates loading a specific data type (LFP) but only a subset of it and represents it. It could include how to load metadata. Although the user claims it is loading metadata from the NWB file, actually, the way it is doing is merely printing some values. It is not actually retrieving nor loading metadata elements from the NWB file. I will give the score of 5.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads data from an NWB file. It connects to the DANDI API, retrieves the dandiset and its assets, and loads metadata such as session descriptions and experimenter details using pynwb. The notebook also loads LFP data and visualizes it. It does not comprehensively demonstrate loading and handling multiple data types, but rather focuses on LFP data. It successfully loads basic data arrays and demonstrates loading specific data types (LFP). It also accesses multiple data elements (first 1000 samples of the first 10 electrodes) but could be improved by handling different data types appropriately with more examples.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 5.0,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook loads LFP data from the NWB file and generates a plot of the LFP data over time. The plot includes a title, x-axis label (Time (s)), and y-axis label (Voltage (V)). However, it only visualizes a single data type (LFP), and the visualization is fairly basic. The notebook could be improved by visualizing other data types present in the NWB file, such as spike trains or event data, and by adding more sophisticated formatting to the plots. Therefore, the score is 5.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads LFP data from the NWB file and generates a basic plot of the LFP data over time. The plot includes a title and axis labels, and while it is relatively simple, the notebook does not fail and presents a visualization of the selected data.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook provides code to load LFP data from an NWB file within a Dandiset and visualizes a sample of this data using matplotlib. The plot is labeled with time, voltage, and a title. The notebook focuses primarily on visualizing one basic data type. Thus, the notebook demonstrated simple visualizations with some formatting. I am choosing score 5.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 5.0,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook presents one plot of LFP data. The plot has a title, x and y axis labels and the data is clearly visible. However, the formatting is basic. Therefore, the plot is readable and contains basic labels, but does not have advanced formatting.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook contains a single plot of LFP data. The plot has a title, x and y axis labels, and the data is clearly visible. However, it's a fairly basic plot with minimal formatting beyond the labels. The plot is readable but could benefit from more detailed formatting (e.g., legend for multiple electrodes, better tick labels, etc.).",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook contains one plot of LFP data. The plot is readable with basic labels (title, x and y axis labels). The formatting is minimal (e.g., no legend, no specific styling). The x and y axis labels include units.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads only Local Field Potential (LFP) data from the NWB file. Therefore, only one distinct data stream is accessed and visualized, corresponding to the LFP data.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads and visualizes only the Local Field Potential (LFP) data from the NWB file. Therefore, only one type of data stream is loaded.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook focuses on loading and visualizing Local Field Potential (LFP) data. No other data streams are explicitly loaded. Therefore, only one data stream is loaded.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook displays only one type of plot: a line plot of LFP data over time. Therefore, the notebook shows one fundamental type of plot.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook displays one type of plot: a time series plot of LFP data. While different channels are plotted on the same axes, it is still fundamentally the same type of plot.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook shows only one type of plot - a line plot of LFP data. Therefore, the answer is 1.",
+            "repnum": 2
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001335",
+      "model": "openai/gpt-4o",
+      "prompt": "prompt-a-3.txt",
+      "total_prompt_tokens": 65260,
+      "total_completion_tokens": 2116,
+      "total_vision_prompt_tokens": 0,
+      "total_vision_completion_tokens": 0,
+      "elapsed_time_seconds": 61.49361538887024,
+      "timestamp": "2025-04-15 19:00:56",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
+      }
+    }
+  },
+  {
+    "notebook": "dandisets/001335/2025-04-15-gpt-4o-prompt-b-3/001335.ipynb",
+    "dandiset_id": "001335",
+    "subfolder": "2025-04-15-gpt-4o-prompt-b-3",
+    "overall_score": 43.0,
+    "scores": [
+      {
+        "name": "describe-dandiset",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook provides a concise overview of Dandiset 001335, outlining its purpose and the type of data it contains (Neuropixels recordings from the hippocampus of head-fixed mice during odor presentations). It also mentions the use of odor sequences to evoke neural responses, giving a basic understanding of the dataset's content. It also includes the Dandiset ID. This corresponds to a score of 6.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook mentions the Dandiset ID (001335), and provides a brief overview of its contents, including that it contains Neuropixels recordings from the hippocampus of mice during odor presentations. The purpose of the recordings is also described as evoking neural responses using various odor sequences. This level of detail corresponds to a score of 6.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook includes the Dandiset ID (001335) and a brief overview of its contents, mentioning Neuropixels recordings from the hippocampus of head-fixed mice during odor presentations. It also briefly mentions the purpose. Therefore, the score is 6.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook uses the DANDI API to load information about the dandiset. It retrieves the dandiset and lists the available assets, also showing the first 5 asset paths. This demonstrates loading Dandiset metadata and assets. The loading of assets is somewhat limited, but it's a good start for exploring metadata fields. Includes the number of assets and prints the paths of first 5. Thus it does load and display basic metadata fields such as assset path, number of assets.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook loads the dandiset and prints the number of assets, as well as the first 5 assets. It does not extensively explore the metadata, but successfully loads and displays basic metadata fields like number of assets, and the paths of those assets. The code does not throw any errors.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads the Dandiset and shows basic metadata (asset paths). It does not, however, deeply explore metadata fields or provide comprehensive descriptions. It initializes the DandiAPIClient, retrieves the specified Dandiset (\"001335\"), and then prints out the paths of first 5 assets discovered in the mentioned Dandiset. This shows the user how to connect to DANDI and discover files, earning this notebook a score in the upper midrange. This is more than just loading the ID or some trivial metadata; basic descriptive information has been loaded and displayed. However it does not explore *multiple* fields, rather displaying first n assets and their paths and also no field descriptions. So, a 6 looks most fitting for this level. Closer to the 5 than the 7.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-dandiset-assets",
+        "version": 1,
+        "score": 5.0,
+        "reps": [
+          {
+            "score": 4.0,
+            "thinking": "The notebook loads the Dandiset and lists the available assets. It does not access asset metadata or explore multiple asset types, but is able to successfully list assets, and load the first asset for visualization.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully connects to the DANDI archive, retrieves the dandiset, and lists the available assets. It also shows how to download specific asset. It doesn't access asset metadata directly, but showing the available path indicates how to access assets. Thus, it successfully shows how to load Dandiset assets.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook uses DandiAPIClient to connect to the DANDI archive, retrieves the dandiset with ID \"001335\", and lists the assets found within. This demonstrates a successful listing of available assets. Furthermore, the notebook iterates through the first 5 assets to print asset path, showing a basic level of asset information. However, it doesn't load multiple files or delve into asset metadata in depth, preventing a higher score.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb",
+        "version": 1,
+        "score": 6.0,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook loads an NWB file from a DANDI archive, accessing the LFP data. The notebook demonstrates basic NWB loading and data extraction, focusing on the LFP data interface. It could be expanded to explore other file components and structures for a higher rating. There is code that successful loads an NWB file and demonstrates accessing basic NWB components.",
+            "repnum": 0
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook loads an NWB file from a URL using pynwb and remfile, reads the data, and plots LFP data from a single channel. This shows how to load the file and access specific data components within it, such as the LFP data. Therefore, it demonstrates how to access basic NWB components.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook loads the dandiset and then proceeds to stream data from the NWB file using pynwb. It loads LFP data and plots a segment of it. The code successfully demonstrates accessing a specific data interface within the NWB file (\"LFP\") and visualizing the data. Thus the notebook demonstrates accessing basic NWB components.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-nwb-data",
+        "version": 1,
+        "score": 5.333333333333333,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook successfully loads LFP data from a remote NWB file within the Dandiset. It uses pynwb, h5py, and remfile to access and read the data. The notebook demonstrates the loading of a specific data type (LFP) and access to a portion of the data. The notebook could be improved by showcasing other data types within the NWB file and demonstrating more advanced access patterns, which would warrant a higher score. The notebook loads data from a remote NWB file; it does not specifically address the \"dandiset\", although it does take the url from the dandiset. I will treat this as a minor error that does not affect the appropriateness of awarding 6.",
+            "repnum": 0
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook successfully loads the NWB file from the DANDI archive using pynwb and remfile. It then extracts LFP data and plots it. The code runs without errors and demonstrates how to access a specific data type (LFP) within the NWB file. The notebook loads data specific to LFP type, and shows how to access basic data arrays from the file. Thus, the notebook shows how to load data, but it did not show how to access complex data structures.",
+            "repnum": 1
+          },
+          {
+            "score": 5.0,
+            "thinking": "The notebook loads an NWB file from a remote DANDI archive using pynwb and remfile. It successfully accesses and plots LFP data from a specified channel. The notebook focuses on a specific data type, LFP, and reads a subset of it (the first 500 samples from channel 0). The code runs without errors. This demonstrates how to load a specific data type. It successfully loads data, visualizes portion of the data, and closes the file, following good practices.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "visualize-nwb-data",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 5.0,
+            "thinking": "The notebook demonstrates how to load LFP data from a remote NWB file and visualizes it using matplotlib. The plot includes a title, axis labels, and a legend. Since it focuses on visualizing one data type (LFP) with simple formatting, the notebook earns a score of 5.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook loads LFP data from an NWB file in a Dandiset and visualizes it, it shows how to access and plot the data correctly, with proper labeling of axes and title. It only deals with LFP data and lacks advanced visualization or interactivity. Therefore, it warrants a score of 7 as it creates a clear visualization with appropriate labels. The plot presented is informative and directly relates to NWB data, making the plot useful for interpreting LFP signals. A more comprehensive notebook might include other visualization strategies, interactive elements, or analysis of the visualized data. It produces a graph with proper labeling.",
+            "repnum": 1
+          },
+          {
+            "score": 7.0,
+            "thinking": "The notebook demonstrates loading LFP data from a remote NWB file and plotting it. The plot includes a title, x/y labels, and a legend. It focuses on the visualization of a single data type (LFP). The notebook could be improved with more data types, advanced visuals or interactive plots.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quality",
+        "version": 1,
+        "score": 6.333333333333333,
+        "reps": [
+          {
+            "score": 6.0,
+            "thinking": "The notebook contains a single plot of LFP data. The plot is readable with a title, x and y axis labels, and a legend. The formatting is adequate but not exceptional. Voltage is displayed as Voltage (V) which is good documentation.",
+            "repnum": 0
+          },
+          {
+            "score": 7.0,
+            "thinking": "The plot has a title, axis labels including units, and a legend. The plot is readable and well-formatted.",
+            "repnum": 1
+          },
+          {
+            "score": 6.0,
+            "thinking": "The notebook contains a single plot of LFP data. The plot is readable, includes labels for the axes (\"Sample Number\", \"Voltage (V)\"), a title (\"LFP Data from Channel 0\"), and a legend. The plot is generally well-formatted, providing clear visual information. Thus, it fulfills the criteria for a score of 6.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "load-data-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads and visualizes only one data stream: LFP data. Although it mentions the existence of multiple channels, it only extracts data from channel 0, hence still representing a single stream of the same type of data.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads and visualizes only the LFP data from the NWB file. There is no other data stream considered in this notebook.",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook loads and visualizes Local Field Potential (LFP) data from a single channel (Channel 0). Although the NWB file likely contains other types of data streams (e.g., spike times, behavior), the notebook only focuses on the LFP data. Crucially, it only loads the \"LFP\" data interface and extracts the first 500 samples from channel 0 for plotting. Since only LFP data is accessed and used, it constitutes one data stream. This aligns with the question of \"fundamentally different data streams loaded\", such that repeated access to the same kind of data is still just one data stream. Note that the question asks how many data streams have been loaded and used, not the total available data streams available in the dataset. Also, to note, the use of the word \"fundamentally\" seems to make distinctions based on the NWB data interfaces class names, more significant than just different regions within the same class.",
+            "repnum": 2
+          }
+        ]
+      },
+      {
+        "name": "plot-quantity",
+        "version": 1,
+        "score": 1.0,
+        "reps": [
+          {
+            "score": 1.0,
+            "thinking": "The notebook only contains one plot, which is a line plot of LFP data from a single channel over time (sample number). There are no other fundamentally different types of plots presented.",
+            "repnum": 0
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook shows only one type of plot - a line plot of LFP data. Thus, the score should be 1",
+            "repnum": 1
+          },
+          {
+            "score": 1.0,
+            "thinking": "The notebook only has one plot: a line plot of the local field potential data from channel 0.",
+            "repnum": 2
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "dandiset_id": "001335",
+      "model": "openai/gpt-4o",
+      "prompt": "prompt-b-3.txt",
+      "total_prompt_tokens": 126013,
+      "total_completion_tokens": 2134,
+      "total_vision_prompt_tokens": 515,
+      "total_vision_completion_tokens": 90,
+      "elapsed_time_seconds": 77.27641129493713,
+      "timestamp": "2025-04-15 19:02:14",
+      "system_info": {
+        "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+        "hostname": "jupyter-magland",
+        "processor": "x86_64",
+        "python_version": "3.11.10"
       }
     }
   },
@@ -18506,7 +19844,7 @@
     "notebook": "dandisets/001363/2025-04-10-quasar-alpha-prompt-b-1/001363.ipynb",
     "dandiset_id": "001363",
     "subfolder": "2025-04-10-quasar-alpha-prompt-b-1",
-    "overall_score": 49.0,
+    "overall_score": 49.00000000000001,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -18729,7 +20067,7 @@
     "notebook": "dandisets/001366/2025-04-04-claude-3.7-sonnet/001366.ipynb",
     "dandiset_id": "001366",
     "subfolder": "2025-04-04-claude-3.7-sonnet",
-    "overall_score": 62.66666666666667,
+    "overall_score": 62.666666666666664,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -19621,7 +20959,7 @@
     "notebook": "dandisets/001366/2025-04-07-quasar-alpha-exp/001366.ipynb",
     "dandiset_id": "001366",
     "subfolder": "2025-04-07-quasar-alpha-exp",
-    "overall_score": 51.0,
+    "overall_score": 51.00000000000001,
     "scores": [
       {
         "name": "describe-dandiset",
@@ -20067,7 +21405,7 @@
     "notebook": "dandisets/001366/2025-04-09-quasar-alpha/001366.ipynb",
     "dandiset_id": "001366",
     "subfolder": "2025-04-09-quasar-alpha",
-    "overall_score": 53.666666666666664,
+    "overall_score": 53.66666666666667,
     "scores": [
       {
         "name": "describe-dandiset",
